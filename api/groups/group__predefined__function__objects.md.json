@@ -12,10 +12,12 @@
       "category": "modules",
       "fullname": "arithmetic_operations",
       "kind": "group",
+      "language": "",
       "name": "arithmetic_operations",
+      "qualifiedname": "arithmetic_operations",
       "refid": "group__arithmetic__operations",
       "title": "Arithmetic Operations",
-      "url": "/api/groups/group__arithmetic__operations.html",
+      "url": "{{ site.baseurl }}/api/groups/group__arithmetic__operations.html",
       "visibility": "public"
     },
     {
@@ -23,10 +25,12 @@
       "category": "modules",
       "fullname": "comparison_operations",
       "kind": "group",
+      "language": "",
       "name": "comparison_operations",
+      "qualifiedname": "comparison_operations",
       "refid": "group__comparison__operations",
       "title": "Comparison Operations",
-      "url": "/api/groups/group__comparison__operations.html",
+      "url": "{{ site.baseurl }}/api/groups/group__comparison__operations.html",
       "visibility": "public"
     },
     {
@@ -34,10 +38,12 @@
       "category": "modules",
       "fullname": "logical_operations",
       "kind": "group",
+      "language": "",
       "name": "logical_operations",
+      "qualifiedname": "logical_operations",
       "refid": "group__logical__operations",
       "title": "Logical Operations",
-      "url": "/api/groups/group__logical__operations.html",
+      "url": "{{ site.baseurl }}/api/groups/group__logical__operations.html",
       "visibility": "public"
     },
     {
@@ -45,10 +51,12 @@
       "category": "modules",
       "fullname": "bitwise_operations",
       "kind": "group",
+      "language": "",
       "name": "bitwise_operations",
+      "qualifiedname": "bitwise_operations",
       "refid": "group__bitwise__operations",
       "title": "Bitwise Operations",
-      "url": "/api/groups/group__bitwise__operations.html",
+      "url": "{{ site.baseurl }}/api/groups/group__bitwise__operations.html",
       "visibility": "public"
     },
     {
@@ -56,10 +64,12 @@
       "category": "modules",
       "fullname": "generalized_identity_operations",
       "kind": "group",
+      "language": "",
       "name": "generalized_identity_operations",
+      "qualifiedname": "generalized_identity_operations",
       "refid": "group__generalized__identity__operations",
       "title": "Generalized Identity Operations",
-      "url": "/api/groups/group__generalized__identity__operations.html",
+      "url": "{{ site.baseurl }}/api/groups/group__generalized__identity__operations.html",
       "visibility": "public"
     }
   ],
@@ -67,15 +77,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "function_objects",
     "kind": "group",
+    "language": "",
     "name": "function_objects",
+    "qualifiedname": "function_objects",
     "refid": "group__function__objects",
     "title": "Function Objects",
-    "url": "/api/groups/group__function__objects.html",
+    "url": "{{ site.baseurl }}/api/groups/group__function__objects.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -84,10 +97,12 @@
       "category": "modules",
       "fullname": "function_objects",
       "kind": "group",
+      "language": "",
       "name": "function_objects",
+      "qualifiedname": "function_objects",
       "refid": "group__function__objects",
       "title": "Function Objects",
-      "url": "/api/groups/group__function__objects.html",
+      "url": "{{ site.baseurl }}/api/groups/group__function__objects.html",
       "visibility": "public"
     }
   ],
@@ -98,10 +113,12 @@
     "category": "modules",
     "fullname": "function_objects",
     "kind": "group",
+    "language": "",
     "name": "function_objects",
+    "qualifiedname": "function_objects",
     "refid": "group__function__objects",
     "title": "Function Objects",
-    "url": "/api/groups/group__function__objects.html",
+    "url": "{{ site.baseurl }}/api/groups/group__function__objects.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -110,17 +127,20 @@
       "category": "modules",
       "fullname": "function_objects",
       "kind": "group",
+      "language": "",
       "name": "function_objects",
+      "qualifiedname": "function_objects",
       "refid": "group__function__objects",
       "title": "Function Objects",
-      "url": "/api/groups/group__function__objects.html",
+      "url": "{{ site.baseurl }}/api/groups/group__function__objects.html",
       "visibility": "public"
     }
   ],
+  "qualifiedname": "predefined_function_objects",
   "refid": "group__predefined__function__objects",
   "static": false,
   "strong": false,
   "title": "Predefined Function Objects",
-  "url": "/api/groups/group__predefined__function__objects.html",
+  "url": "{{ site.baseurl }}/api/groups/group__predefined__function__objects.html",
   "visibility": "public"
 }

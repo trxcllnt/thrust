@@ -10,15 +10,15 @@ has_toc: false
 
 ## Groups
 
-* **[Copying](/api/groups/group__copying.html)**
-* **[Merging](/api/groups/group__merging.html)**
-* **[Prefix Sums](/api/groups/group__prefixsums.html)**
-* **[Reductions](/api/groups/group__reductions.html)**
-* **[Reordering](/api/groups/group__reordering.html)**
-* **[Searching](/api/groups/group__searching.html)**
-* **[Set Operations](/api/groups/group__set__operations.html)**
-* **[Sorting](/api/groups/group__sorting.html)**
-* **[Transformations](/api/groups/group__transformations.html)**
+* **[Copying]({{ site.baseurl }}/api/groups/group__copying.html)**
+* **[Merging]({{ site.baseurl }}/api/groups/group__merging.html)**
+* **[Prefix Sums]({{ site.baseurl }}/api/groups/group__prefixsums.html)**
+* **[Reductions]({{ site.baseurl }}/api/groups/group__reductions.html)**
+* **[Reordering]({{ site.baseurl }}/api/groups/group__reordering.html)**
+* **[Searching]({{ site.baseurl }}/api/groups/group__searching.html)**
+* **[Set Operations]({{ site.baseurl }}/api/groups/group__set__operations.html)**
+* **[Sorting]({{ site.baseurl }}/api/groups/group__sorting.html)**
+* **[Transformations]({{ site.baseurl }}/api/groups/group__transformations.html)**
 
 <code class="doxybook">
 </code>

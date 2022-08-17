@@ -12,10 +12,12 @@
       "category": "modules",
       "fullname": "complex_numbers",
       "kind": "group",
+      "language": "",
       "name": "complex_numbers",
+      "qualifiedname": "complex_numbers",
       "refid": "group__complex__numbers",
       "title": "Complex Numbers",
-      "url": "/api/groups/group__complex__numbers.html",
+      "url": "{{ site.baseurl }}/api/groups/group__complex__numbers.html",
       "visibility": "public"
     }
   ],
@@ -23,13 +25,15 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "name": "numerics",
   "override": false,
   "parent": null,
+  "qualifiedname": "numerics",
   "refid": "group__numerics",
   "static": false,
   "strong": false,
   "title": "Numerics",
-  "url": "/api/groups/group__numerics.html",
+  "url": "{{ site.baseurl }}/api/groups/group__numerics.html",
   "visibility": "public"
 }

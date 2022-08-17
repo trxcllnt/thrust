@@ -10,15 +10,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "utility",
     "kind": "group",
+    "language": "",
     "name": "utility",
+    "qualifiedname": "utility",
     "refid": "group__utility",
     "title": "Utility",
-    "url": "/api/groups/group__utility.html",
+    "url": "{{ site.baseurl }}/api/groups/group__utility.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -27,10 +30,12 @@
       "category": "modules",
       "fullname": "utility",
       "kind": "group",
+      "language": "",
       "name": "utility",
+      "qualifiedname": "utility",
       "refid": "group__utility",
       "title": "Utility",
-      "url": "/api/groups/group__utility.html",
+      "url": "{{ site.baseurl }}/api/groups/group__utility.html",
       "visibility": "public"
     }
   ],
@@ -41,10 +46,12 @@
     "category": "modules",
     "fullname": "utility",
     "kind": "group",
+    "language": "",
     "name": "utility",
+    "qualifiedname": "utility",
     "refid": "group__utility",
     "title": "Utility",
-    "url": "/api/groups/group__utility.html",
+    "url": "{{ site.baseurl }}/api/groups/group__utility.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -53,10 +60,12 @@
       "category": "modules",
       "fullname": "utility",
       "kind": "group",
+      "language": "",
       "name": "utility",
+      "qualifiedname": "utility",
       "refid": "group__utility",
       "title": "Utility",
-      "url": "/api/groups/group__utility.html",
+      "url": "{{ site.baseurl }}/api/groups/group__utility.html",
       "visibility": "public"
     }
   ],
@@ -64,34 +73,40 @@
     {
       "anchor": "",
       "category": "classes",
-      "fullname": "pair",
+      "fullname": "thrust::pair",
       "kind": "struct",
-      "name": "pair",
-      "refid": "structpair",
-      "title": "pair",
-      "url": "/api/classes/structpair.html",
+      "language": "cpp",
+      "name": "thrust::pair",
+      "qualifiedname": "thrust::pair",
+      "refid": "structthrust_1_1pair",
+      "title": "thrust::pair",
+      "url": "{{ site.baseurl }}/api/classes/structthrust_1_1pair.html",
       "visibility": "public"
     },
     {
       "anchor": "",
       "category": "classes",
-      "fullname": "tuple_element",
+      "fullname": "thrust::tuple_element",
       "kind": "struct",
-      "name": "tuple_element",
-      "refid": "structtuple__element",
-      "title": "tuple_element",
-      "url": "/api/classes/structtuple__element.html",
+      "language": "cpp",
+      "name": "thrust::tuple_element",
+      "qualifiedname": "thrust::tuple_element",
+      "refid": "structthrust_1_1tuple__element",
+      "title": "thrust::tuple_element",
+      "url": "{{ site.baseurl }}/api/classes/structthrust_1_1tuple__element.html",
       "visibility": "public"
     },
     {
       "anchor": "",
       "category": "classes",
-      "fullname": "tuple_size",
+      "fullname": "thrust::tuple_size",
       "kind": "struct",
-      "name": "tuple_size",
-      "refid": "structtuple__size",
-      "title": "tuple_size",
-      "url": "/api/classes/structtuple__size.html",
+      "language": "cpp",
+      "name": "thrust::tuple_size",
+      "qualifiedname": "thrust::tuple_size",
+      "refid": "structthrust_1_1tuple__size",
+      "title": "thrust::tuple_size",
+      "url": "{{ site.baseurl }}/api/classes/structthrust_1_1tuple__size.html",
       "visibility": "public"
     }
   ],
@@ -103,7 +118,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ bool operator==",
+      "definition": "__host__ __device__ bool thrust::operator==",
       "deleted": false,
       "details": "This operator tests two <code>pairs</code> for equality.",
       "explicit": false,
@@ -111,6 +126,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 10,
         "file": "thrust/pair.h",
@@ -131,17 +147,18 @@
       "params": [
         {
           "name": "x",
-          "type": "const <a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 > &",
+          "type": "const pair< T1, T2 > &",
           "typePlain": "const pair< T1, T2 > &"
         },
         {
           "name": "y",
-          "type": "const <a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 > &",
+          "type": "const pair< T1, T2 > &",
           "typePlain": "const pair< T1, T2 > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__pair_1gad91ec9be2a9e6ff3db95b29b1e07f984",
+      "qualifiedname": "thrust::operator==",
+      "refid": "group__pair_1gabf46c54f860c9e666f1eef126350ffb4",
       "returns": [
         "<code>true</code> if and only if <code>x.first == y.first && x.second == y.second</code>."
       ],
@@ -172,7 +189,7 @@
       "title": "operator==",
       "type": "__host__ __device__ bool",
       "typePlain": "__host__ __device__ bool",
-      "url": "/api/groups/group__pair.html#function-operator==",
+      "url": "{{ site.baseurl }}/api/groups/group__pair.html#function-operator==",
       "virtual": false,
       "visibility": "public"
     },
@@ -183,7 +200,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ bool operator<",
+      "definition": "__host__ __device__ bool thrust::operator<",
       "deleted": false,
       "details": "This operator tests two pairs for ascending ordering.",
       "explicit": false,
@@ -191,6 +208,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 5,
         "file": "thrust/pair.h",
@@ -211,17 +229,18 @@
       "params": [
         {
           "name": "x",
-          "type": "const <a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 > &",
+          "type": "const pair< T1, T2 > &",
           "typePlain": "const pair< T1, T2 > &"
         },
         {
           "name": "y",
-          "type": "const <a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 > &",
+          "type": "const pair< T1, T2 > &",
           "typePlain": "const pair< T1, T2 > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__pair_1gae4f6b671ed69153ca7d4d4e8be349f55",
+      "qualifiedname": "thrust::operator<",
+      "refid": "group__pair_1ga447a8857c41150d99d8a13e1d61d838a",
       "returns": [
         "<code>true</code> if and only if <code>x.first &lt; y.first || (!(y.first &lt; x.first) && x.second &lt; y.second)</code>."
       ],
@@ -252,7 +271,7 @@
       "title": "operator<",
       "type": "__host__ __device__ bool",
       "typePlain": "__host__ __device__ bool",
-      "url": "/api/groups/group__pair.html#function-operator<",
+      "url": "{{ site.baseurl }}/api/groups/group__pair.html#function-operator<",
       "virtual": false,
       "visibility": "public"
     },
@@ -263,7 +282,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ bool operator!=",
+      "definition": "__host__ __device__ bool thrust::operator!=",
       "deleted": false,
       "details": "This operator tests two pairs for inequality.",
       "explicit": false,
@@ -271,6 +290,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 10,
         "file": "thrust/pair.h",
@@ -291,17 +311,18 @@
       "params": [
         {
           "name": "x",
-          "type": "const <a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 > &",
+          "type": "const pair< T1, T2 > &",
           "typePlain": "const pair< T1, T2 > &"
         },
         {
           "name": "y",
-          "type": "const <a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 > &",
+          "type": "const pair< T1, T2 > &",
           "typePlain": "const pair< T1, T2 > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__pair_1ga2a0d71087147e8f5e172ae23188d59df",
+      "qualifiedname": "thrust::operator!=",
+      "refid": "group__pair_1gaae5a30de74797657fe1a2ea2d305729a",
       "returns": [
         "<code>true</code> if and only if <code>!(x == y)</code>."
       ],
@@ -332,7 +353,7 @@
       "title": "operator!=",
       "type": "__host__ __device__ bool",
       "typePlain": "__host__ __device__ bool",
-      "url": "/api/groups/group__pair.html#function-operator!=",
+      "url": "{{ site.baseurl }}/api/groups/group__pair.html#function-operator!=",
       "virtual": false,
       "visibility": "public"
     },
@@ -343,7 +364,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ bool operator>",
+      "definition": "__host__ __device__ bool thrust::operator>",
       "deleted": false,
       "details": "This operator tests two pairs for descending ordering.",
       "explicit": false,
@@ -351,6 +372,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 10,
         "file": "thrust/pair.h",
@@ -371,17 +393,18 @@
       "params": [
         {
           "name": "x",
-          "type": "const <a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 > &",
+          "type": "const pair< T1, T2 > &",
           "typePlain": "const pair< T1, T2 > &"
         },
         {
           "name": "y",
-          "type": "const <a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 > &",
+          "type": "const pair< T1, T2 > &",
           "typePlain": "const pair< T1, T2 > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__pair_1ga03c90a5ef011f0c3bf3d94e985d3fe36",
+      "qualifiedname": "thrust::operator>",
+      "refid": "group__pair_1gacec28b73f3dfc963e2938439967068bc",
       "returns": [
         "<code>true</code> if and only if <code>y &lt; x</code>."
       ],
@@ -412,7 +435,7 @@
       "title": "operator>",
       "type": "__host__ __device__ bool",
       "typePlain": "__host__ __device__ bool",
-      "url": "/api/groups/group__pair.html#function-operator>",
+      "url": "{{ site.baseurl }}/api/groups/group__pair.html#function-operator>",
       "virtual": false,
       "visibility": "public"
     },
@@ -423,7 +446,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ bool operator<=",
+      "definition": "__host__ __device__ bool thrust::operator<=",
       "deleted": false,
       "details": "This operator tests two pairs for ascending ordering or equivalence.",
       "explicit": false,
@@ -431,6 +454,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 5,
         "file": "thrust/pair.h",
@@ -451,17 +475,18 @@
       "params": [
         {
           "name": "x",
-          "type": "const <a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 > &",
+          "type": "const pair< T1, T2 > &",
           "typePlain": "const pair< T1, T2 > &"
         },
         {
           "name": "y",
-          "type": "const <a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 > &",
+          "type": "const pair< T1, T2 > &",
           "typePlain": "const pair< T1, T2 > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__pair_1gaff51fc852d1d83f26db5537e4cfb3de6",
+      "qualifiedname": "thrust::operator<=",
+      "refid": "group__pair_1gaf9187730f2927bb1887919a78e85587f",
       "returns": [
         "<code>true</code> if and only if <code>!(y &lt; x)</code>."
       ],
@@ -492,7 +517,7 @@
       "title": "operator<=",
       "type": "__host__ __device__ bool",
       "typePlain": "__host__ __device__ bool",
-      "url": "/api/groups/group__pair.html#function-operator<=",
+      "url": "{{ site.baseurl }}/api/groups/group__pair.html#function-operator<=",
       "virtual": false,
       "visibility": "public"
     },
@@ -503,7 +528,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ bool operator>=",
+      "definition": "__host__ __device__ bool thrust::operator>=",
       "deleted": false,
       "details": "This operator tests two pairs for descending ordering or equivalence.",
       "explicit": false,
@@ -511,6 +536,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 10,
         "file": "thrust/pair.h",
@@ -531,17 +557,18 @@
       "params": [
         {
           "name": "x",
-          "type": "const <a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 > &",
+          "type": "const pair< T1, T2 > &",
           "typePlain": "const pair< T1, T2 > &"
         },
         {
           "name": "y",
-          "type": "const <a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 > &",
+          "type": "const pair< T1, T2 > &",
           "typePlain": "const pair< T1, T2 > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__pair_1ga83c983e9dce338c2e9d1df16321e4bb3",
+      "qualifiedname": "thrust::operator>=",
+      "refid": "group__pair_1ga0bd91162a588cb4b86cd9e45ba77e918",
       "returns": [
         "<code>true</code> if and only if <code>!(x &lt; y)</code>."
       ],
@@ -572,7 +599,7 @@
       "title": "operator>=",
       "type": "__host__ __device__ bool",
       "typePlain": "__host__ __device__ bool",
-      "url": "/api/groups/group__pair.html#function-operator>=",
+      "url": "{{ site.baseurl }}/api/groups/group__pair.html#function-operator>=",
       "virtual": false,
       "visibility": "public"
     },
@@ -583,7 +610,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void swap",
+      "definition": "__host__ __device__ void thrust::swap",
       "deleted": false,
       "details": "<code>swap</code> swaps the contents of two <code>pair</code>s.",
       "explicit": false,
@@ -591,6 +618,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 10,
         "file": "thrust/pair.h",
@@ -611,17 +639,18 @@
       "params": [
         {
           "name": "x",
-          "type": "<a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 > &",
+          "type": "pair< T1, T2 > &",
           "typePlain": "pair< T1, T2 > &"
         },
         {
           "name": "y",
-          "type": "<a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 > &",
+          "type": "pair< T1, T2 > &",
           "typePlain": "pair< T1, T2 > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__pair_1ga5f199ee2e8819514b8f5d9f472c82d38",
+      "qualifiedname": "thrust::swap",
+      "refid": "group__pair_1ga8b86ab5052f0acba4896937a91fc936a",
       "static": false,
       "strong": false,
       "templateParams": [
@@ -639,18 +668,18 @@
       "title": "swap",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__pair.html#function-swap",
+      "url": "{{ site.baseurl }}/api/groups/group__pair.html#function-swap",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-make_pair",
+      "anchor": "#function-make-pair",
       "argsString": "(T1 x, T2 y)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ pair<T1,T2> make_pair",
+      "definition": "__host__ __device__ pair< T1, T2 > thrust::make_pair",
       "deleted": false,
       "details": "This convenience function creates a <code>pair</code> from two objects.",
       "explicit": false,
@@ -658,6 +687,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 10,
         "file": "thrust/pair.h",
@@ -688,7 +718,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__pair_1ga88753dfd7943297ecc3d521dd979f864",
+      "qualifiedname": "thrust::make_pair",
+      "refid": "group__pair_1ga110e6c930d099c109042e54a4eb929a6",
       "returns": [
         "A newly-constructed <code>pair</code> copied from <code>a</code> and <code>b</code>."
       ],
@@ -717,17 +748,18 @@
         }
       ],
       "title": "make_pair",
-      "type": "__host__ __device__ <a href=\"/api/classes/structpair.html\">pair</a>< T1, T2 >",
+      "type": "__host__ __device__ pair< T1, T2 >",
       "typePlain": "__host__ __device__ pair< T1, T2 >",
-      "url": "/api/groups/group__pair.html#function-make_pair",
+      "url": "{{ site.baseurl }}/api/groups/group__pair.html#function-make-pair",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "pair",
   "refid": "group__pair",
   "static": false,
   "strong": false,
   "title": "Pair",
-  "url": "/api/groups/group__pair.html",
+  "url": "{{ site.baseurl }}/api/groups/group__pair.html",
   "visibility": "public"
 }

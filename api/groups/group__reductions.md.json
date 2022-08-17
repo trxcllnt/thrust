@@ -12,10 +12,12 @@
       "category": "modules",
       "fullname": "counting",
       "kind": "group",
+      "language": "",
       "name": "counting",
+      "qualifiedname": "counting",
       "refid": "group__counting",
       "title": "Counting",
-      "url": "/api/groups/group__counting.html",
+      "url": "{{ site.baseurl }}/api/groups/group__counting.html",
       "visibility": "public"
     },
     {
@@ -23,10 +25,12 @@
       "category": "modules",
       "fullname": "comparisons",
       "kind": "group",
+      "language": "",
       "name": "comparisons",
+      "qualifiedname": "comparisons",
       "refid": "group__comparisons",
       "title": "Comparisons",
-      "url": "/api/groups/group__comparisons.html",
+      "url": "{{ site.baseurl }}/api/groups/group__comparisons.html",
       "visibility": "public"
     },
     {
@@ -34,10 +38,12 @@
       "category": "modules",
       "fullname": "extrema",
       "kind": "group",
+      "language": "",
       "name": "extrema",
+      "qualifiedname": "extrema",
       "refid": "group__extrema",
       "title": "Extrema",
-      "url": "/api/groups/group__extrema.html",
+      "url": "{{ site.baseurl }}/api/groups/group__extrema.html",
       "visibility": "public"
     },
     {
@@ -45,10 +51,12 @@
       "category": "modules",
       "fullname": "transformed_reductions",
       "kind": "group",
+      "language": "",
       "name": "transformed_reductions",
+      "qualifiedname": "transformed_reductions",
       "refid": "group__transformed__reductions",
       "title": "Transformed Reductions",
-      "url": "/api/groups/group__transformed__reductions.html",
+      "url": "{{ site.baseurl }}/api/groups/group__transformed__reductions.html",
       "visibility": "public"
     },
     {
@@ -56,10 +64,12 @@
       "category": "modules",
       "fullname": "logical",
       "kind": "group",
+      "language": "",
       "name": "logical",
+      "qualifiedname": "logical",
       "refid": "group__logical",
       "title": "Logical",
-      "url": "/api/groups/group__logical.html",
+      "url": "{{ site.baseurl }}/api/groups/group__logical.html",
       "visibility": "public"
     },
     {
@@ -67,10 +77,12 @@
       "category": "modules",
       "fullname": "predicates",
       "kind": "group",
+      "language": "",
       "name": "predicates",
+      "qualifiedname": "predicates",
       "refid": "group__predicates",
       "title": "Predicates",
-      "url": "/api/groups/group__predicates.html",
+      "url": "{{ site.baseurl }}/api/groups/group__predicates.html",
       "visibility": "public"
     }
   ],
@@ -78,15 +90,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "algorithms",
     "kind": "group",
+    "language": "",
     "name": "algorithms",
+    "qualifiedname": "algorithms",
     "refid": "group__algorithms",
     "title": "Algorithms",
-    "url": "/api/groups/group__algorithms.html",
+    "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -95,10 +110,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     }
   ],
@@ -109,10 +126,12 @@
     "category": "modules",
     "fullname": "algorithms",
     "kind": "group",
+    "language": "",
     "name": "algorithms",
+    "qualifiedname": "algorithms",
     "refid": "group__algorithms",
     "title": "Algorithms",
-    "url": "/api/groups/group__algorithms.html",
+    "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -121,10 +140,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     }
   ],
@@ -136,7 +157,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ thrust::iterator_traits<InputIterator>::value_type reduce",
+      "definition": "__host__ __device__ thrust::iterator_traits< InputIterator >::value_type thrust::reduce",
       "deleted": false,
       "details": "<code>reduce</code> is a generalization of summation: it computes the sum (or some other binary operation) of all the elements in the range <code>[first, last)</code>. This version of <code>reduce</code> uses <code>0</code> as the initial value of the reduction. <code>reduce</code> is similar to the C++ Standard Template Library's <code>std::accumulate</code>. The primary difference between the two functions is that <code>std::accumulate</code> guarantees the order of summation, while <code>reduce</code> requires associativity of the binary operation to parallelize the reduction.\n\nNote that <code>reduce</code> also assumes that the binary reduction operator (in this case operator+) is commutative. If the reduction operator is not commutative then <code>thrust::reduce</code> should not be used. Instead, one could use <code>inclusive&#95;scan</code> (which does not require commutativity) and select the last element of the output array.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>reduce</code> to compute the sum of a sequence of integers using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/reduce.h>\n#include <thrust/execution_policy.h>\n...\nint data[6] = {1, 0, 2, 2, 1, 3};\nint result = thrust::reduce(thrust::host, data, data + 6);\n\n// result == 9\n```",
       "explicit": false,
@@ -144,6 +165,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 5,
         "file": "thrust/reduce.h",
@@ -183,7 +205,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__reductions_1ga65d41152ce10942f780e276f05466b1c",
+      "qualifiedname": "thrust::reduce",
+      "refid": "group__reductions_1ga76e89362d46ef788f1fb2c16c28042b7",
       "returns": [
         "The result of the reduction."
       ],
@@ -215,9 +238,9 @@
         }
       ],
       "title": "reduce",
-      "type": "__host__ __device__ thrust::iterator_traits< InputIterator >::value_type",
+      "type": "__host__ __device__ <a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html\">thrust::iterator_traits</a>< InputIterator >::value_type",
       "typePlain": "__host__ __device__ thrust::iterator_traits< InputIterator >::value_type",
-      "url": "/api/groups/group__reductions.html#function-reduce",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce",
       "virtual": false,
       "visibility": "public"
     },
@@ -228,7 +251,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "thrust::iterator_traits<InputIterator>::value_type reduce",
+      "definition": "thrust::iterator_traits< InputIterator >::value_type thrust::reduce",
       "deleted": false,
       "details": "<code>reduce</code> is a generalization of summation: it computes the sum (or some other binary operation) of all the elements in the range <code>[first, last)</code>. This version of <code>reduce</code> uses <code>0</code> as the initial value of the reduction. <code>reduce</code> is similar to the C++ Standard Template Library's <code>std::accumulate</code>. The primary difference between the two functions is that <code>std::accumulate</code> guarantees the order of summation, while <code>reduce</code> requires associativity of the binary operation to parallelize the reduction.\n\nNote that <code>reduce</code> also assumes that the binary reduction operator (in this case operator+) is commutative. If the reduction operator is not commutative then <code>thrust::reduce</code> should not be used. Instead, one could use <code>inclusive&#95;scan</code> (which does not require commutativity) and select the last element of the output array.\n\n\nThe following code snippet demonstrates how to use <code>reduce</code> to compute the sum of a sequence of integers.\n\n\n\n```cpp\n#include <thrust/reduce.h>\n...\nint data[6] = {1, 0, 2, 2, 1, 3};\nint result = thrust::reduce(data, data + 6);\n\n// result == 9\n```",
       "explicit": false,
@@ -236,6 +259,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 40,
         "file": "thrust/reduce.h",
@@ -266,7 +290,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__reductions_1gaa49654f0bfa15324be9082c6565d523b",
+      "qualifiedname": "thrust::reduce",
+      "refid": "group__reductions_1ga4fd69af6cd437e3bf95a46cf3836dc08",
       "returns": [
         "The result of the reduction."
       ],
@@ -289,9 +314,9 @@
         }
       ],
       "title": "reduce",
-      "type": "thrust::iterator_traits< InputIterator >::value_type",
+      "type": "<a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html\">thrust::iterator_traits</a>< InputIterator >::value_type",
       "typePlain": "thrust::iterator_traits< InputIterator >::value_type",
-      "url": "/api/groups/group__reductions.html#function-reduce",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce",
       "virtual": false,
       "visibility": "public"
     },
@@ -302,7 +327,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ T reduce",
+      "definition": "__host__ __device__ T thrust::reduce",
       "deleted": false,
       "details": "<code>reduce</code> is a generalization of summation: it computes the sum (or some other binary operation) of all the elements in the range <code>[first, last)</code>. This version of <code>reduce</code> uses <code>init</code> as the initial value of the reduction. <code>reduce</code> is similar to the C++ Standard Template Library's <code>std::accumulate</code>. The primary difference between the two functions is that <code>std::accumulate</code> guarantees the order of summation, while <code>reduce</code> requires associativity of the binary operation to parallelize the reduction.\n\nNote that <code>reduce</code> also assumes that the binary reduction operator (in this case operator+) is commutative. If the reduction operator is not commutative then <code>thrust::reduce</code> should not be used. Instead, one could use <code>inclusive&#95;scan</code> (which does not require commutativity) and select the last element of the output array.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>reduce</code> to compute the sum of a sequence of integers including an intialization value using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/reduce.h>\n#include <thrust/execution_policy.h>\n...\nint data[6] = {1, 0, 2, 2, 1, 3};\nint result = thrust::reduce(thrust::host, data, data + 6, 1);\n\n// result == 10\n```",
       "explicit": false,
@@ -310,6 +335,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 5,
         "file": "thrust/reduce.h",
@@ -358,7 +384,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__reductions_1gac4ec1ab4fe5cc09b26c32d1994f8b181",
+      "qualifiedname": "thrust::reduce",
+      "refid": "group__reductions_1ga6ac0fe1561f58692e85112bd1145ddff",
       "returns": [
         "The result of the reduction."
       ],
@@ -401,7 +428,7 @@
       "title": "reduce",
       "type": "__host__ __device__ T",
       "typePlain": "__host__ __device__ T",
-      "url": "/api/groups/group__reductions.html#function-reduce",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce",
       "virtual": false,
       "visibility": "public"
     },
@@ -412,7 +439,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "T reduce",
+      "definition": "T thrust::reduce",
       "deleted": false,
       "details": "<code>reduce</code> is a generalization of summation: it computes the sum (or some other binary operation) of all the elements in the range <code>[first, last)</code>. This version of <code>reduce</code> uses <code>init</code> as the initial value of the reduction. <code>reduce</code> is similar to the C++ Standard Template Library's <code>std::accumulate</code>. The primary difference between the two functions is that <code>std::accumulate</code> guarantees the order of summation, while <code>reduce</code> requires associativity of the binary operation to parallelize the reduction.\n\nNote that <code>reduce</code> also assumes that the binary reduction operator (in this case operator+) is commutative. If the reduction operator is not commutative then <code>thrust::reduce</code> should not be used. Instead, one could use <code>inclusive&#95;scan</code> (which does not require commutativity) and select the last element of the output array.\n\n\nThe following code snippet demonstrates how to use <code>reduce</code> to compute the sum of a sequence of integers including an intialization value.\n\n\n\n```cpp\n#include <thrust/reduce.h>\n...\nint data[6] = {1, 0, 2, 2, 1, 3};\nint result = thrust::reduce(data, data + 6, 1);\n\n// result == 10\n```",
       "explicit": false,
@@ -420,6 +447,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 5,
         "file": "thrust/reduce.h",
@@ -459,7 +487,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__reductions_1gaf2ed3122a9785b29fc05957e3e016fe2",
+      "qualifiedname": "thrust::reduce",
+      "refid": "group__reductions_1gad88f81c37fb8a41039d2185f26fec99d",
       "returns": [
         "The result of the reduction."
       ],
@@ -493,7 +522,7 @@
       "title": "reduce",
       "type": "T",
       "typePlain": "T",
-      "url": "/api/groups/group__reductions.html#function-reduce",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce",
       "virtual": false,
       "visibility": "public"
     },
@@ -504,7 +533,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ T reduce",
+      "definition": "__host__ __device__ T thrust::reduce",
       "deleted": false,
       "details": "<code>reduce</code> is a generalization of summation: it computes the sum (or some other binary operation) of all the elements in the range <code>[first, last)</code>. This version of <code>reduce</code> uses <code>init</code> as the initial value of the reduction and <code>binary&#95;op</code> as the binary function used for summation. <code>reduce</code> is similar to the C++ Standard Template Library's <code>std::accumulate</code>. The primary difference between the two functions is that <code>std::accumulate</code> guarantees the order of summation, while <code>reduce</code> requires associativity of <code>binary&#95;op</code> to parallelize the reduction.\n\nNote that <code>reduce</code> also assumes that the binary reduction operator (in this case <code>binary&#95;op</code>) is commutative. If the reduction operator is not commutative then <code>thrust::reduce</code> should not be used. Instead, one could use <code>inclusive&#95;scan</code> (which does not require commutativity) and select the last element of the output array.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>reduce</code> to compute the maximum value of a sequence of integers using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/reduce.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\nint data[6] = {1, 0, 2, 2, 1, 3};\nint result = thrust::reduce(thrust::host,\n                            data, data + 6,\n                            -1,\n                            thrust::maximum<int>());\n// result == 3\n```",
       "explicit": false,
@@ -512,6 +541,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 5,
         "file": "thrust/reduce.h",
@@ -569,13 +599,14 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__reductions_1ga6f415ed09f1e7f329bafa1628613cd40",
+      "qualifiedname": "thrust::reduce",
+      "refid": "group__reductions_1ga6869a1fbdf07499b2ed96fb3ec803c13",
       "returns": [
         "The result of the reduction."
       ],
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/accumulate\">https://en.cppreference.com/w/cpp/algorithm/accumulate</a>",
-        "<a href=\"/api/groups/group__transformed__reductions.html#function-transform_reduce\">transform_reduce</a>"
+        "transform_reduce "
       ],
       "static": false,
       "strong": false,
@@ -622,7 +653,7 @@
       "title": "reduce",
       "type": "__host__ __device__ T",
       "typePlain": "__host__ __device__ T",
-      "url": "/api/groups/group__reductions.html#function-reduce",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce",
       "virtual": false,
       "visibility": "public"
     },
@@ -633,7 +664,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "T reduce",
+      "definition": "T thrust::reduce",
       "deleted": false,
       "details": "<code>reduce</code> is a generalization of summation: it computes the sum (or some other binary operation) of all the elements in the range <code>[first, last)</code>. This version of <code>reduce</code> uses <code>init</code> as the initial value of the reduction and <code>binary&#95;op</code> as the binary function used for summation. <code>reduce</code> is similar to the C++ Standard Template Library's <code>std::accumulate</code>. The primary difference between the two functions is that <code>std::accumulate</code> guarantees the order of summation, while <code>reduce</code> requires associativity of <code>binary&#95;op</code> to parallelize the reduction.\n\nNote that <code>reduce</code> also assumes that the binary reduction operator (in this case <code>binary&#95;op</code>) is commutative. If the reduction operator is not commutative then <code>thrust::reduce</code> should not be used. Instead, one could use <code>inclusive&#95;scan</code> (which does not require commutativity) and select the last element of the output array.\n\n\nThe following code snippet demonstrates how to use <code>reduce</code> to compute the maximum value of a sequence of integers.\n\n\n\n```cpp\n#include <thrust/reduce.h>\n#include <thrust/functional.h>\n...\nint data[6] = {1, 0, 2, 2, 1, 3};\nint result = thrust::reduce(data, data + 6,\n                            -1,\n                            thrust::maximum<int>());\n// result == 3\n```",
       "explicit": false,
@@ -641,6 +672,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 5,
         "file": "thrust/reduce.h",
@@ -689,13 +721,14 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__reductions_1gadb19d9b21d3e652163c44cbab008013e",
+      "qualifiedname": "thrust::reduce",
+      "refid": "group__reductions_1ga5e9cef4919927834bec50fc4829f6e6b",
       "returns": [
         "The result of the reduction."
       ],
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/accumulate\">https://en.cppreference.com/w/cpp/algorithm/accumulate</a>",
-        "<a href=\"/api/groups/group__transformed__reductions.html#function-transform_reduce\">transform_reduce</a>"
+        "transform_reduce "
       ],
       "static": false,
       "strong": false,
@@ -733,25 +766,26 @@
       "title": "reduce",
       "type": "T",
       "typePlain": "T",
-      "url": "/api/groups/group__reductions.html#function-reduce",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-reduce_by_key",
+      "anchor": "#function-reduce-by-key",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator1 keys_first, InputIterator1 keys_last, InputIterator2 values_first, OutputIterator1 keys_output, OutputIterator2 values_output)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ thrust::pair<OutputIterator1,OutputIterator2> reduce_by_key",
+      "definition": "__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > thrust::reduce_by_key",
       "deleted": false,
-      "details": "<code>reduce&#95;by&#95;key</code> is a generalization of <code>reduce</code> to key-value pairs. For each group of consecutive keys in the range <code>[keys&#95;first, keys&#95;last)</code> that are equal, <code>reduce&#95;by&#95;key</code> copies the first element of the group to the <code>keys&#95;output</code>. The corresponding values in the range are reduced using the <code>plus</code> and the result copied to <code>values&#95;output</code>.\n\nThis version of <code>reduce&#95;by&#95;key</code> uses the function object <code><a href=\"/api/classes/structequal__to.html\">equal&#95;to</a></code> to test for equality and <code>plus</code> to reduce values with equal keys.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>reduce&#95;by&#95;key</code> to compact a sequence of key/value pairs and sum values with equal keys using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/reduce.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 7;\nint A[N] = {1, 3, 3, 3, 2, 2, 1}; // input keys\nint B[N] = {9, 8, 7, 6, 5, 4, 3}; // input values\nint C[N];                         // output keys\nint D[N];                         // output values\n\nthrust::pair<int*,int*> new_end;\nnew_end = thrust::reduce_by_key(thrust::host, A, A + N, B, C, D);\n\n// The first four keys in C are now {1, 3, 2, 1} and new_end.first - C is 4.\n// The first four values in D are now {9, 21, 9, 3} and new_end.second - D is 4.\n```",
+      "details": "<code>reduce&#95;by&#95;key</code> is a generalization of <code>reduce</code> to key-value pairs. For each group of consecutive keys in the range <code>[keys&#95;first, keys&#95;last)</code> that are equal, <code>reduce&#95;by&#95;key</code> copies the first element of the group to the <code>keys&#95;output</code>. The corresponding values in the range are reduced using the <code>plus</code> and the result copied to <code>values&#95;output</code>.\n\nThis version of <code>reduce&#95;by&#95;key</code> uses the function object <code><a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1equal__to.html\">equal&#95;to</a></code> to test for equality and <code>plus</code> to reduce values with equal keys.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>reduce&#95;by&#95;key</code> to compact a sequence of key/value pairs and sum values with equal keys using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/reduce.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 7;\nint A[N] = {1, 3, 3, 3, 2, 2, 1}; // input keys\nint B[N] = {9, 8, 7, 6, 5, 4, 3}; // input values\nint C[N];                         // output keys\nint D[N];                         // output values\n\nthrust::pair<int*,int*> new_end;\nnew_end = thrust::reduce_by_key(thrust::host, A, A + N, B, C, D);\n\n// The first four keys in C are now {1, 3, 2, 1} and new_end.first - C is 4.\n// The first four values in D are now {9, 21, 9, 3} and new_end.second - D is 4.\n```",
       "explicit": false,
       "fullname": "reductions::reduce_by_key",
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 3,
         "file": "thrust/reduce.h",
@@ -821,15 +855,16 @@
         "The input ranges shall not overlap either output range."
       ],
       "pureVirtual": false,
-      "refid": "group__reductions_1ga3c1e7e95f3c9890cf893d14e9bd32899",
+      "qualifiedname": "thrust::reduce_by_key",
+      "refid": "group__reductions_1gab70270b001b1c52458a20ac15a1739dd",
       "returns": [
         "A pair of iterators at end of the ranges <code>[keys&#95;output, keys&#95;output&#95;last)</code> and <code>[values&#95;output, values&#95;output&#95;last)</code>."
       ],
       "see": [
-        "<a href=\"/api/groups/group__reductions.html#function-reduce\">reduce</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_copy\">unique_copy</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_by_key\">unique_by_key</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_by_key_copy\">unique_by_key_copy</a>"
+        "reduce ",
+        "unique_copy ",
+        "unique_by_key ",
+        "unique_by_key_copy "
       ],
       "static": false,
       "strong": false,
@@ -883,27 +918,28 @@
         }
       ],
       "title": "reduce_by_key",
-      "type": "__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 >",
+      "type": "__host__ __device__ <a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1pair.html\">thrust::pair</a>< OutputIterator1, OutputIterator2 >",
       "typePlain": "__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 >",
-      "url": "/api/groups/group__reductions.html#function-reduce_by_key",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce-by-key",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-reduce_by_key",
+      "anchor": "#function-reduce-by-key",
       "argsString": "(InputIterator1 keys_first, InputIterator1 keys_last, InputIterator2 values_first, OutputIterator1 keys_output, OutputIterator2 values_output)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "thrust::pair<OutputIterator1,OutputIterator2> reduce_by_key",
+      "definition": "thrust::pair< OutputIterator1, OutputIterator2 > thrust::reduce_by_key",
       "deleted": false,
-      "details": "<code>reduce&#95;by&#95;key</code> is a generalization of <code>reduce</code> to key-value pairs. For each group of consecutive keys in the range <code>[keys&#95;first, keys&#95;last)</code> that are equal, <code>reduce&#95;by&#95;key</code> copies the first element of the group to the <code>keys&#95;output</code>. The corresponding values in the range are reduced using the <code>plus</code> and the result copied to <code>values&#95;output</code>.\n\nThis version of <code>reduce&#95;by&#95;key</code> uses the function object <code><a href=\"/api/classes/structequal__to.html\">equal&#95;to</a></code> to test for equality and <code>plus</code> to reduce values with equal keys.\n\n\nThe following code snippet demonstrates how to use <code>reduce&#95;by&#95;key</code> to compact a sequence of key/value pairs and sum values with equal keys.\n\n\n\n```cpp\n#include <thrust/reduce.h>\n...\nconst int N = 7;\nint A[N] = {1, 3, 3, 3, 2, 2, 1}; // input keys\nint B[N] = {9, 8, 7, 6, 5, 4, 3}; // input values\nint C[N];                         // output keys\nint D[N];                         // output values\n\nthrust::pair<int*,int*> new_end;\nnew_end = thrust::reduce_by_key(A, A + N, B, C, D);\n\n// The first four keys in C are now {1, 3, 2, 1} and new_end.first - C is 4.\n// The first four values in D are now {9, 21, 9, 3} and new_end.second - D is 4.\n```",
+      "details": "<code>reduce&#95;by&#95;key</code> is a generalization of <code>reduce</code> to key-value pairs. For each group of consecutive keys in the range <code>[keys&#95;first, keys&#95;last)</code> that are equal, <code>reduce&#95;by&#95;key</code> copies the first element of the group to the <code>keys&#95;output</code>. The corresponding values in the range are reduced using the <code>plus</code> and the result copied to <code>values&#95;output</code>.\n\nThis version of <code>reduce&#95;by&#95;key</code> uses the function object <code><a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1equal__to.html\">equal&#95;to</a></code> to test for equality and <code>plus</code> to reduce values with equal keys.\n\n\nThe following code snippet demonstrates how to use <code>reduce&#95;by&#95;key</code> to compact a sequence of key/value pairs and sum values with equal keys.\n\n\n\n```cpp\n#include <thrust/reduce.h>\n...\nconst int N = 7;\nint A[N] = {1, 3, 3, 3, 2, 2, 1}; // input keys\nint B[N] = {9, 8, 7, 6, 5, 4, 3}; // input values\nint C[N];                         // output keys\nint D[N];                         // output values\n\nthrust::pair<int*,int*> new_end;\nnew_end = thrust::reduce_by_key(A, A + N, B, C, D);\n\n// The first four keys in C are now {1, 3, 2, 1} and new_end.first - C is 4.\n// The first four values in D are now {9, 21, 9, 3} and new_end.second - D is 4.\n```",
       "explicit": false,
       "fullname": "reductions::reduce_by_key",
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 3,
         "file": "thrust/reduce.h",
@@ -964,15 +1000,16 @@
         "The input ranges shall not overlap either output range."
       ],
       "pureVirtual": false,
-      "refid": "group__reductions_1gabf585b81ff0798638f4a36a5da2091bf",
+      "qualifiedname": "thrust::reduce_by_key",
+      "refid": "group__reductions_1gab9ff4507e03235f511e59169106bde5c",
       "returns": [
         "A pair of iterators at end of the ranges <code>[keys&#95;output, keys&#95;output&#95;last)</code> and <code>[values&#95;output, values&#95;output&#95;last)</code>."
       ],
       "see": [
-        "<a href=\"/api/groups/group__reductions.html#function-reduce\">reduce</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_copy\">unique_copy</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_by_key\">unique_by_key</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_by_key_copy\">unique_by_key_copy</a>"
+        "reduce ",
+        "unique_copy ",
+        "unique_by_key ",
+        "unique_by_key_copy "
       ],
       "static": false,
       "strong": false,
@@ -1017,20 +1054,20 @@
         }
       ],
       "title": "reduce_by_key",
-      "type": "thrust::pair< OutputIterator1, OutputIterator2 >",
+      "type": "<a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1pair.html\">thrust::pair</a>< OutputIterator1, OutputIterator2 >",
       "typePlain": "thrust::pair< OutputIterator1, OutputIterator2 >",
-      "url": "/api/groups/group__reductions.html#function-reduce_by_key",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce-by-key",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-reduce_by_key",
+      "anchor": "#function-reduce-by-key",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator1 keys_first, InputIterator1 keys_last, InputIterator2 values_first, OutputIterator1 keys_output, OutputIterator2 values_output, BinaryPredicate binary_pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ thrust::pair<OutputIterator1,OutputIterator2> reduce_by_key",
+      "definition": "__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > thrust::reduce_by_key",
       "deleted": false,
       "details": "<code>reduce&#95;by&#95;key</code> is a generalization of <code>reduce</code> to key-value pairs. For each group of consecutive keys in the range <code>[keys&#95;first, keys&#95;last)</code> that are equal, <code>reduce&#95;by&#95;key</code> copies the first element of the group to the <code>keys&#95;output</code>. The corresponding values in the range are reduced using the <code>plus</code> and the result copied to <code>values&#95;output</code>.\n\nThis version of <code>reduce&#95;by&#95;key</code> uses the function object <code>binary&#95;pred</code> to test for equality and <code>plus</code> to reduce values with equal keys.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>reduce&#95;by&#95;key</code> to compact a sequence of key/value pairs and sum values with equal keys using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/reduce.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 7;\nint A[N] = {1, 3, 3, 3, 2, 2, 1}; // input keys\nint B[N] = {9, 8, 7, 6, 5, 4, 3}; // input values\nint C[N];                         // output keys\nint D[N];                         // output values\n\nthrust::pair<int*,int*> new_end;\nthrust::equal_to<int> binary_pred;\nnew_end = thrust::reduce_by_key(thrust::host, A, A + N, B, C, D, binary_pred);\n\n// The first four keys in C are now {1, 3, 2, 1} and new_end.first - C is 4.\n// The first four values in D are now {9, 21, 9, 3} and new_end.second - D is 4.\n```",
       "explicit": false,
@@ -1038,6 +1075,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 3,
         "file": "thrust/reduce.h",
@@ -1116,15 +1154,16 @@
         "The input ranges shall not overlap either output range."
       ],
       "pureVirtual": false,
-      "refid": "group__reductions_1ga91a89289fa1a51ea672cd2144057cad4",
+      "qualifiedname": "thrust::reduce_by_key",
+      "refid": "group__reductions_1ga19efedf5fd2b6e829b0223915c8c1160",
       "returns": [
         "A pair of iterators at end of the ranges <code>[keys&#95;output, keys&#95;output&#95;last)</code> and <code>[values&#95;output, values&#95;output&#95;last)</code>."
       ],
       "see": [
-        "<a href=\"/api/groups/group__reductions.html#function-reduce\">reduce</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_copy\">unique_copy</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_by_key\">unique_by_key</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_by_key_copy\">unique_by_key_copy</a>"
+        "reduce ",
+        "unique_copy ",
+        "unique_by_key ",
+        "unique_by_key_copy "
       ],
       "static": false,
       "strong": false,
@@ -1187,20 +1226,20 @@
         }
       ],
       "title": "reduce_by_key",
-      "type": "__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 >",
+      "type": "__host__ __device__ <a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1pair.html\">thrust::pair</a>< OutputIterator1, OutputIterator2 >",
       "typePlain": "__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 >",
-      "url": "/api/groups/group__reductions.html#function-reduce_by_key",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce-by-key",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-reduce_by_key",
+      "anchor": "#function-reduce-by-key",
       "argsString": "(InputIterator1 keys_first, InputIterator1 keys_last, InputIterator2 values_first, OutputIterator1 keys_output, OutputIterator2 values_output, BinaryPredicate binary_pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "thrust::pair<OutputIterator1,OutputIterator2> reduce_by_key",
+      "definition": "thrust::pair< OutputIterator1, OutputIterator2 > thrust::reduce_by_key",
       "deleted": false,
       "details": "<code>reduce&#95;by&#95;key</code> is a generalization of <code>reduce</code> to key-value pairs. For each group of consecutive keys in the range <code>[keys&#95;first, keys&#95;last)</code> that are equal, <code>reduce&#95;by&#95;key</code> copies the first element of the group to the <code>keys&#95;output</code>. The corresponding values in the range are reduced using the <code>plus</code> and the result copied to <code>values&#95;output</code>.\n\nThis version of <code>reduce&#95;by&#95;key</code> uses the function object <code>binary&#95;pred</code> to test for equality and <code>plus</code> to reduce values with equal keys.\n\n\nThe following code snippet demonstrates how to use <code>reduce&#95;by&#95;key</code> to compact a sequence of key/value pairs and sum values with equal keys.\n\n\n\n```cpp\n#include <thrust/reduce.h>\n...\nconst int N = 7;\nint A[N] = {1, 3, 3, 3, 2, 2, 1}; // input keys\nint B[N] = {9, 8, 7, 6, 5, 4, 3}; // input values\nint C[N];                         // output keys\nint D[N];                         // output values\n\nthrust::pair<int*,int*> new_end;\nthrust::equal_to<int> binary_pred;\nnew_end = thrust::reduce_by_key(A, A + N, B, C, D, binary_pred);\n\n// The first four keys in C are now {1, 3, 2, 1} and new_end.first - C is 4.\n// The first four values in D are now {9, 21, 9, 3} and new_end.second - D is 4.\n```",
       "explicit": false,
@@ -1208,6 +1247,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 3,
         "file": "thrust/reduce.h",
@@ -1277,15 +1317,16 @@
         "The input ranges shall not overlap either output range."
       ],
       "pureVirtual": false,
-      "refid": "group__reductions_1ga195d55a61d6db19fae8356afe8782eda",
+      "qualifiedname": "thrust::reduce_by_key",
+      "refid": "group__reductions_1ga57d272415cad873c95cf2f0f534face9",
       "returns": [
         "A pair of iterators at end of the ranges <code>[keys&#95;output, keys&#95;output&#95;last)</code> and <code>[values&#95;output, values&#95;output&#95;last)</code>."
       ],
       "see": [
-        "<a href=\"/api/groups/group__reductions.html#function-reduce\">reduce</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_copy\">unique_copy</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_by_key\">unique_by_key</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_by_key_copy\">unique_by_key_copy</a>"
+        "reduce ",
+        "unique_copy ",
+        "unique_by_key ",
+        "unique_by_key_copy "
       ],
       "static": false,
       "strong": false,
@@ -1339,20 +1380,20 @@
         }
       ],
       "title": "reduce_by_key",
-      "type": "thrust::pair< OutputIterator1, OutputIterator2 >",
+      "type": "<a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1pair.html\">thrust::pair</a>< OutputIterator1, OutputIterator2 >",
       "typePlain": "thrust::pair< OutputIterator1, OutputIterator2 >",
-      "url": "/api/groups/group__reductions.html#function-reduce_by_key",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce-by-key",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-reduce_by_key",
+      "anchor": "#function-reduce-by-key",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator1 keys_first, InputIterator1 keys_last, InputIterator2 values_first, OutputIterator1 keys_output, OutputIterator2 values_output, BinaryPredicate binary_pred, BinaryFunction binary_op)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ thrust::pair<OutputIterator1,OutputIterator2> reduce_by_key",
+      "definition": "__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > thrust::reduce_by_key",
       "deleted": false,
       "details": "<code>reduce&#95;by&#95;key</code> is a generalization of <code>reduce</code> to key-value pairs. For each group of consecutive keys in the range <code>[keys&#95;first, keys&#95;last)</code> that are equal, <code>reduce&#95;by&#95;key</code> copies the first element of the group to the <code>keys&#95;output</code>. The corresponding values in the range are reduced using the <code>BinaryFunction</code><code>binary&#95;op</code> and the result copied to <code>values&#95;output</code>. Specifically, if consecutive key iterators <code>i</code> and <code></code>(i + 1) are such that <code>binary&#95;pred(&#42;i, &#42;(i+1))</code> is <code>true</code>, then the corresponding values are reduced to a single value with <code>binary&#95;op</code>.\n\nThis version of <code>reduce&#95;by&#95;key</code> uses the function object <code>binary&#95;pred</code> to test for equality and <code>binary&#95;op</code> to reduce values with equal keys.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>reduce&#95;by&#95;key</code> to compact a sequence of key/value pairs and sum values with equal keys using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/reduce.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 7;\nint A[N] = {1, 3, 3, 3, 2, 2, 1}; // input keys\nint B[N] = {9, 8, 7, 6, 5, 4, 3}; // input values\nint C[N];                         // output keys\nint D[N];                         // output values\n\nthrust::pair<int*,int*> new_end;\nthrust::equal_to<int> binary_pred;\nthrust::plus<int> binary_op;\nnew_end = thrust::reduce_by_key(thrust::host, A, A + N, B, C, D, binary_pred, binary_op);\n\n// The first four keys in C are now {1, 3, 2, 1} and new_end.first - C is 4.\n// The first four values in D are now {9, 21, 9, 3} and new_end.second - D is 4.\n```",
       "explicit": false,
@@ -1360,6 +1401,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 3,
         "file": "thrust/reduce.h",
@@ -1447,15 +1489,16 @@
         "The input ranges shall not overlap either output range."
       ],
       "pureVirtual": false,
-      "refid": "group__reductions_1ga90867c357749abe887429836d41db2ac",
+      "qualifiedname": "thrust::reduce_by_key",
+      "refid": "group__reductions_1ga0430894470bc1de12dc2ce53c5325de8",
       "returns": [
         "A pair of iterators at end of the ranges <code>[keys&#95;output, keys&#95;output&#95;last)</code> and <code>[values&#95;output, values&#95;output&#95;last)</code>."
       ],
       "see": [
-        "<a href=\"/api/groups/group__reductions.html#function-reduce\">reduce</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_copy\">unique_copy</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_by_key\">unique_by_key</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_by_key_copy\">unique_by_key_copy</a>"
+        "reduce ",
+        "unique_copy ",
+        "unique_by_key ",
+        "unique_by_key_copy "
       ],
       "static": false,
       "strong": false,
@@ -1527,20 +1570,20 @@
         }
       ],
       "title": "reduce_by_key",
-      "type": "__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 >",
+      "type": "__host__ __device__ <a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1pair.html\">thrust::pair</a>< OutputIterator1, OutputIterator2 >",
       "typePlain": "__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 >",
-      "url": "/api/groups/group__reductions.html#function-reduce_by_key",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce-by-key",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-reduce_by_key",
+      "anchor": "#function-reduce-by-key",
       "argsString": "(InputIterator1 keys_first, InputIterator1 keys_last, InputIterator2 values_first, OutputIterator1 keys_output, OutputIterator2 values_output, BinaryPredicate binary_pred, BinaryFunction binary_op)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "thrust::pair<OutputIterator1,OutputIterator2> reduce_by_key",
+      "definition": "thrust::pair< OutputIterator1, OutputIterator2 > thrust::reduce_by_key",
       "deleted": false,
       "details": "<code>reduce&#95;by&#95;key</code> is a generalization of <code>reduce</code> to key-value pairs. For each group of consecutive keys in the range <code>[keys&#95;first, keys&#95;last)</code> that are equal, <code>reduce&#95;by&#95;key</code> copies the first element of the group to the <code>keys&#95;output</code>. The corresponding values in the range are reduced using the <code>BinaryFunction</code><code>binary&#95;op</code> and the result copied to <code>values&#95;output</code>. Specifically, if consecutive key iterators <code>i</code> and <code></code>(i + 1) are such that <code>binary&#95;pred(&#42;i, &#42;(i+1))</code> is <code>true</code>, then the corresponding values are reduced to a single value with <code>binary&#95;op</code>.\n\nThis version of <code>reduce&#95;by&#95;key</code> uses the function object <code>binary&#95;pred</code> to test for equality and <code>binary&#95;op</code> to reduce values with equal keys.\n\n\nThe following code snippet demonstrates how to use <code>reduce&#95;by&#95;key</code> to compact a sequence of key/value pairs and sum values with equal keys.\n\n\n\n```cpp\n#include <thrust/reduce.h>\n...\nconst int N = 7;\nint A[N] = {1, 3, 3, 3, 2, 2, 1}; // input keys\nint B[N] = {9, 8, 7, 6, 5, 4, 3}; // input values\nint C[N];                         // output keys\nint D[N];                         // output values\n\nthrust::pair<int*,int*> new_end;\nthrust::equal_to<int> binary_pred;\nthrust::plus<int> binary_op;\nnew_end = thrust::reduce_by_key(A, A + N, B, C, D, binary_pred, binary_op);\n\n// The first four keys in C are now {1, 3, 2, 1} and new_end.first - C is 4.\n// The first four values in D are now {9, 21, 9, 3} and new_end.second - D is 4.\n```",
       "explicit": false,
@@ -1548,6 +1591,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 3,
         "file": "thrust/reduce.h",
@@ -1626,15 +1670,16 @@
         "The input ranges shall not overlap either output range."
       ],
       "pureVirtual": false,
-      "refid": "group__reductions_1ga31b60245b2e8264dfd9ab76100db412c",
+      "qualifiedname": "thrust::reduce_by_key",
+      "refid": "group__reductions_1gab3e386472112538d710875d0d8880fca",
       "returns": [
         "A pair of iterators at end of the ranges <code>[keys&#95;output, keys&#95;output&#95;last)</code> and <code>[values&#95;output, values&#95;output&#95;last)</code>."
       ],
       "see": [
-        "<a href=\"/api/groups/group__reductions.html#function-reduce\">reduce</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_copy\">unique_copy</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_by_key\">unique_by_key</a>",
-        "<a href=\"/api/groups/group__stream__compaction.html#function-unique_by_key_copy\">unique_by_key_copy</a>"
+        "reduce ",
+        "unique_copy ",
+        "unique_by_key ",
+        "unique_by_key_copy "
       ],
       "static": false,
       "strong": false,
@@ -1697,17 +1742,18 @@
         }
       ],
       "title": "reduce_by_key",
-      "type": "thrust::pair< OutputIterator1, OutputIterator2 >",
+      "type": "<a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1pair.html\">thrust::pair</a>< OutputIterator1, OutputIterator2 >",
       "typePlain": "thrust::pair< OutputIterator1, OutputIterator2 >",
-      "url": "/api/groups/group__reductions.html#function-reduce_by_key",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce-by-key",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "reductions",
   "refid": "group__reductions",
   "static": false,
   "strong": false,
   "title": "Reductions",
-  "url": "/api/groups/group__reductions.html",
+  "url": "{{ site.baseurl }}/api/groups/group__reductions.html",
   "visibility": "public"
 }

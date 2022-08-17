@@ -10,15 +10,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "algorithms",
     "kind": "group",
+    "language": "",
     "name": "algorithms",
+    "qualifiedname": "algorithms",
     "refid": "group__algorithms",
     "title": "Algorithms",
-    "url": "/api/groups/group__algorithms.html",
+    "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -27,10 +30,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     }
   ],
@@ -41,10 +46,12 @@
     "category": "modules",
     "fullname": "algorithms",
     "kind": "group",
+    "language": "",
     "name": "algorithms",
+    "qualifiedname": "algorithms",
     "refid": "group__algorithms",
     "title": "Algorithms",
-    "url": "/api/groups/group__algorithms.html",
+    "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -53,10 +60,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     }
   ],
@@ -68,7 +77,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void sort",
+      "definition": "__host__ __device__ void thrust::sort",
       "deleted": false,
       "details": "<code>sort</code> sorts the elements in <code>[first, last)</code> into ascending order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[first, last)</code> such that <code>i</code> precedes <code>j</code>, then <code>&#42;j</code> is not less than <code>&#42;i</code>. Note: <code>sort</code> is not guaranteed to be stable. That is, suppose that <code>&#42;i</code> and <code>&#42;j</code> are equivalent: neither one is less than the other. It is not guaranteed that the relative order of these two elements will be preserved by <code>sort</code>.\n\nThis version of <code>sort</code> compares objects using <code>operator&lt;</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>sort</code> to sort a sequence of integers using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/sort.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 6;\nint A[N] = {1, 4, 2, 8, 5, 7};\nthrust::sort(thrust::host, A, A + N);\n// A is now {1, 2, 4, 5, 7, 8}\n```",
       "explicit": false,
@@ -76,6 +85,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -115,11 +125,12 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1ga752e268bbf39848c7d9ef6debe34ca12",
+      "qualifiedname": "thrust::sort",
+      "refid": "group__sorting_1ga1099d781e06c43805be06a918f7b7499",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/sort\">https://en.cppreference.com/w/cpp/algorithm/sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort\">stable&#95;sort</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort_by_key\">sort&#95;by&#95;key</a></code>"
+        "<code>stable&#95;sort</code>",
+        "<code>sort&#95;by&#95;key</code>"
       ],
       "static": false,
       "strong": false,
@@ -148,7 +159,7 @@
       "title": "sort",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__sorting.html#function-sort",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-sort",
       "virtual": false,
       "visibility": "public"
     },
@@ -159,7 +170,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void sort",
+      "definition": "void thrust::sort",
       "deleted": false,
       "details": "<code>sort</code> sorts the elements in <code>[first, last)</code> into ascending order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[first, last)</code> such that <code>i</code> precedes <code>j</code>, then <code>&#42;j</code> is not less than <code>&#42;i</code>. Note: <code>sort</code> is not guaranteed to be stable. That is, suppose that <code>&#42;i</code> and <code>&#42;j</code> are equivalent: neither one is less than the other. It is not guaranteed that the relative order of these two elements will be preserved by <code>sort</code>.\n\nThis version of <code>sort</code> compares objects using <code>operator&lt;</code>.\n\n\nThe following code snippet demonstrates how to use <code>sort</code> to sort a sequence of integers.\n\n\n\n```cpp\n#include <thrust/sort.h>\n...\nconst int N = 6;\nint A[N] = {1, 4, 2, 8, 5, 7};\nthrust::sort(A, A + N);\n// A is now {1, 2, 4, 5, 7, 8}\n```",
       "explicit": false,
@@ -167,6 +178,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -197,11 +209,12 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1gae50381e49cb58c02b7413ecfc66765f0",
+      "qualifiedname": "thrust::sort",
+      "refid": "group__sorting_1ga01621fff7b6eb24fb68944cc2f10af6a",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/sort\">https://en.cppreference.com/w/cpp/algorithm/sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort\">stable&#95;sort</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort_by_key\">sort&#95;by&#95;key</a></code>"
+        "<code>stable&#95;sort</code>",
+        "<code>sort&#95;by&#95;key</code>"
       ],
       "static": false,
       "strong": false,
@@ -221,7 +234,7 @@
       "title": "sort",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__sorting.html#function-sort",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-sort",
       "virtual": false,
       "visibility": "public"
     },
@@ -232,7 +245,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void sort",
+      "definition": "__host__ __device__ void thrust::sort",
       "deleted": false,
       "details": "<code>sort</code> sorts the elements in <code>[first, last)</code> into ascending order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[first, last)</code> such that <code>i</code> precedes <code>j</code>, then <code>&#42;j</code> is not less than <code>&#42;i</code>. Note: <code>sort</code> is not guaranteed to be stable. That is, suppose that <code>&#42;i</code> and <code>&#42;j</code> are equivalent: neither one is less than the other. It is not guaranteed that the relative order of these two elements will be preserved by <code>sort</code>.\n\nThis version of <code>sort</code> compares objects using a function object <code>comp</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code demonstrates how to sort integers in descending order using the greater<int> comparison operator using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/sort.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 6;\nint A[N] = {1, 4, 2, 8, 5, 7};\nthrust::sort(thrust::host, A, A + N, thrust::greater<int>());\n// A is now {8, 7, 5, 4, 2, 1};\n```",
       "explicit": false,
@@ -240,6 +253,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -288,11 +302,12 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1ga6aff42124ddf74b0cf68f2819759fcdb",
+      "qualifiedname": "thrust::sort",
+      "refid": "group__sorting_1ga3f47925d80f4970d5730051dba1c5603",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/sort\">https://en.cppreference.com/w/cpp/algorithm/sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort\">stable&#95;sort</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort_by_key\">sort&#95;by&#95;key</a></code>"
+        "<code>stable&#95;sort</code>",
+        "<code>sort&#95;by&#95;key</code>"
       ],
       "static": false,
       "strong": false,
@@ -330,7 +345,7 @@
       "title": "sort",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__sorting.html#function-sort",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-sort",
       "virtual": false,
       "visibility": "public"
     },
@@ -341,7 +356,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void sort",
+      "definition": "__host__ __device__ void thrust::sort",
       "deleted": false,
       "details": "<code>sort</code> sorts the elements in <code>[first, last)</code> into ascending order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[first, last)</code> such that <code>i</code> precedes <code>j</code>, then <code>&#42;j</code> is not less than <code>&#42;i</code>. Note: <code>sort</code> is not guaranteed to be stable. That is, suppose that <code>&#42;i</code> and <code>&#42;j</code> are equivalent: neither one is less than the other. It is not guaranteed that the relative order of these two elements will be preserved by <code>sort</code>.\n\nThis version of <code>sort</code> compares objects using a function object <code>comp</code>.\n\n\nThe following code demonstrates how to sort integers in descending order using the greater<int> comparison operator.\n\n\n\n```cpp\n#include <thrust/sort.h>\n#include <thrust/functional.h>\n...\nconst int N = 6;\nint A[N] = {1, 4, 2, 8, 5, 7};\nthrust::sort(A, A + N, thrust::greater<int>());\n// A is now {8, 7, 5, 4, 2, 1};\n```",
       "explicit": false,
@@ -349,6 +364,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -388,11 +404,12 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1ga0c87fd1f105f5fbb48b64392ae1e4058",
+      "qualifiedname": "thrust::sort",
+      "refid": "group__sorting_1gaef9372b75a6920c67c43150627e74225",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/sort\">https://en.cppreference.com/w/cpp/algorithm/sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort\">stable&#95;sort</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort_by_key\">sort&#95;by&#95;key</a></code>"
+        "<code>stable&#95;sort</code>",
+        "<code>sort&#95;by&#95;key</code>"
       ],
       "static": false,
       "strong": false,
@@ -421,18 +438,18 @@
       "title": "sort",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__sorting.html#function-sort",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-sort",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-stable_sort",
+      "anchor": "#function-stable-sort",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, RandomAccessIterator first, RandomAccessIterator last)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void stable_sort",
+      "definition": "__host__ __device__ void thrust::stable_sort",
       "deleted": false,
       "details": "<code>stable&#95;sort</code> is much like <code>sort:</code> it sorts the elements in <code>[first, last)</code> into ascending order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[first, last)</code> such that <code>i</code> precedes <code>j</code>, then <code>&#42;j</code> is not less than <code>&#42;i</code>.\n\nAs the name suggests, <code>stable&#95;sort</code> is stable: it preserves the relative ordering of equivalent elements. That is, if <code>x</code> and <code>y</code> are elements in <code>[first, last)</code> such that <code>x</code> precedes <code>y</code>, and if the two elements are equivalent (neither <code>x &lt; y</code> nor <code>y &lt; x</code>) then a postcondition of <code>stable&#95;sort</code> is that <code>x</code> still precedes <code>y</code>.\n\nThis version of <code>stable&#95;sort</code> compares objects using <code>operator&lt;</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>sort</code> to sort a sequence of integers using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/sort.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 6;\nint A[N] = {1, 4, 2, 8, 5, 7};\nthrust::stable_sort(thrust::host, A, A + N);\n// A is now {1, 2, 4, 5, 7, 8}\n```",
       "explicit": false,
@@ -440,6 +457,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -479,11 +497,12 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1ga59a7a24518e4ca8ec53b17b949a13471",
+      "qualifiedname": "thrust::stable_sort",
+      "refid": "group__sorting_1ga703dbe25a420a7eef8d93a65f3588d96",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/stable_sort\">https://en.cppreference.com/w/cpp/algorithm/stable_sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort\">sort</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort_by_key\">stable&#95;sort&#95;by&#95;key</a></code>"
+        "<code>sort</code>",
+        "<code>stable&#95;sort&#95;by&#95;key</code>"
       ],
       "static": false,
       "strong": false,
@@ -512,18 +531,18 @@
       "title": "stable_sort",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__sorting.html#function-stable_sort",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-stable_sort",
+      "anchor": "#function-stable-sort",
       "argsString": "(RandomAccessIterator first, RandomAccessIterator last)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void stable_sort",
+      "definition": "void thrust::stable_sort",
       "deleted": false,
       "details": "<code>stable&#95;sort</code> is much like <code>sort:</code> it sorts the elements in <code>[first, last)</code> into ascending order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[first, last)</code> such that <code>i</code> precedes <code>j</code>, then <code>&#42;j</code> is not less than <code>&#42;i</code>.\n\nAs the name suggests, <code>stable&#95;sort</code> is stable: it preserves the relative ordering of equivalent elements. That is, if <code>x</code> and <code>y</code> are elements in <code>[first, last)</code> such that <code>x</code> precedes <code>y</code>, and if the two elements are equivalent (neither <code>x &lt; y</code> nor <code>y &lt; x</code>) then a postcondition of <code>stable&#95;sort</code> is that <code>x</code> still precedes <code>y</code>.\n\nThis version of <code>stable&#95;sort</code> compares objects using <code>operator&lt;</code>.\n\n\nThe following code snippet demonstrates how to use <code>sort</code> to sort a sequence of integers.\n\n\n\n```cpp\n#include <thrust/sort.h>\n...\nconst int N = 6;\nint A[N] = {1, 4, 2, 8, 5, 7};\nthrust::stable_sort(A, A + N);\n// A is now {1, 2, 4, 5, 7, 8}\n```",
       "explicit": false,
@@ -531,6 +550,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -561,11 +581,12 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1ga261df5894805c2e9aea6cd56505a0681",
+      "qualifiedname": "thrust::stable_sort",
+      "refid": "group__sorting_1ga1bf137e4504dab24744409b905350f7b",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/stable_sort\">https://en.cppreference.com/w/cpp/algorithm/stable_sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort\">sort</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort_by_key\">stable&#95;sort&#95;by&#95;key</a></code>"
+        "<code>sort</code>",
+        "<code>stable&#95;sort&#95;by&#95;key</code>"
       ],
       "static": false,
       "strong": false,
@@ -585,18 +606,18 @@
       "title": "stable_sort",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__sorting.html#function-stable_sort",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-stable_sort",
+      "anchor": "#function-stable-sort",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, RandomAccessIterator first, RandomAccessIterator last, StrictWeakOrdering comp)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void stable_sort",
+      "definition": "__host__ __device__ void thrust::stable_sort",
       "deleted": false,
       "details": "<code>stable&#95;sort</code> is much like <code>sort:</code> it sorts the elements in <code>[first, last)</code> into ascending order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[first, last)</code> such that <code>i</code> precedes <code>j</code>, then <code>&#42;j</code> is not less than <code>&#42;i</code>.\n\nAs the name suggests, <code>stable&#95;sort</code> is stable: it preserves the relative ordering of equivalent elements. That is, if <code>x</code> and <code>y</code> are elements in <code>[first, last)</code> such that <code>x</code> precedes <code>y</code>, and if the two elements are equivalent (neither <code>x &lt; y</code> nor <code>y &lt; x</code>) then a postcondition of <code>stable&#95;sort</code> is that <code>x</code> still precedes <code>y</code>.\n\nThis version of <code>stable&#95;sort</code> compares objects using a function object <code>comp</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code demonstrates how to sort integers in descending order using the greater<int> comparison operator using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/sort.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 6;\nint A[N] = {1, 4, 2, 8, 5, 7};\nthrust::sort(A, A + N, thrust::greater<int>());\n// A is now {8, 7, 5, 4, 2, 1};\n```",
       "explicit": false,
@@ -604,6 +625,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -652,11 +674,12 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1ga42d1f6a3e22fadf8f33afe736a62aeb8",
+      "qualifiedname": "thrust::stable_sort",
+      "refid": "group__sorting_1ga7d9f0889aa9f87d237ca64d68b6b6d39",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/stable_sort\">https://en.cppreference.com/w/cpp/algorithm/stable_sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort\">sort</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort_by_key\">stable&#95;sort&#95;by&#95;key</a></code>"
+        "<code>sort</code>",
+        "<code>stable&#95;sort&#95;by&#95;key</code>"
       ],
       "static": false,
       "strong": false,
@@ -694,18 +717,18 @@
       "title": "stable_sort",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__sorting.html#function-stable_sort",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-stable_sort",
+      "anchor": "#function-stable-sort",
       "argsString": "(RandomAccessIterator first, RandomAccessIterator last, StrictWeakOrdering comp)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void stable_sort",
+      "definition": "void thrust::stable_sort",
       "deleted": false,
       "details": "<code>stable&#95;sort</code> is much like <code>sort:</code> it sorts the elements in <code>[first, last)</code> into ascending order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[first, last)</code> such that <code>i</code> precedes <code>j</code>, then <code>&#42;j</code> is not less than <code>&#42;i</code>.\n\nAs the name suggests, <code>stable&#95;sort</code> is stable: it preserves the relative ordering of equivalent elements. That is, if <code>x</code> and <code>y</code> are elements in <code>[first, last)</code> such that <code>x</code> precedes <code>y</code>, and if the two elements are equivalent (neither <code>x &lt; y</code> nor <code>y &lt; x</code>) then a postcondition of <code>stable&#95;sort</code> is that <code>x</code> still precedes <code>y</code>.\n\nThis version of <code>stable&#95;sort</code> compares objects using a function object <code>comp</code>.\n\n\nThe following code demonstrates how to sort integers in descending order using the greater<int> comparison operator.\n\n\n\n```cpp\n#include <thrust/sort.h>\n#include <thrust/functional.h>\n...\nconst int N = 6;\nint A[N] = {1, 4, 2, 8, 5, 7};\nthrust::sort(A, A + N, thrust::greater<int>());\n// A is now {8, 7, 5, 4, 2, 1};\n```",
       "explicit": false,
@@ -713,6 +736,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -752,11 +776,12 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1gae5d31bade6adb110916383e492e31f4c",
+      "qualifiedname": "thrust::stable_sort",
+      "refid": "group__sorting_1ga77581e28069f26d1c21fc6c3f9d35b25",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/stable_sort\">https://en.cppreference.com/w/cpp/algorithm/stable_sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort\">sort</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort_by_key\">stable&#95;sort&#95;by&#95;key</a></code>"
+        "<code>sort</code>",
+        "<code>stable&#95;sort&#95;by&#95;key</code>"
       ],
       "static": false,
       "strong": false,
@@ -785,18 +810,18 @@
       "title": "stable_sort",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__sorting.html#function-stable_sort",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-sort_by_key",
+      "anchor": "#function-sort-by-key",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, RandomAccessIterator1 keys_first, RandomAccessIterator1 keys_last, RandomAccessIterator2 values_first)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void sort_by_key",
+      "definition": "__host__ __device__ void thrust::sort_by_key",
       "deleted": false,
       "details": "<code>sort&#95;by&#95;key</code> performs a key-value sort. That is, <code>sort&#95;by&#95;key</code> sorts the elements in <code>[keys&#95;first, keys&#95;last)</code> and <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> into ascending key order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[keys&#95;first, keys&#95;last)</code> such that <code>i</code> precedes <code>j</code>, and <code>p</code> and <code>q</code> are iterators in <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> corresponding to <code>i</code> and <code>j</code> respectively, then <code>&#42;j</code> is not less than <code>&#42;i</code>.\n\nNote: <code>sort&#95;by&#95;key</code> is not guaranteed to be stable. That is, suppose that <code>&#42;i</code> and <code>&#42;j</code> are equivalent: neither one is less than the other. It is not guaranteed that the relative order of these two keys or the relative order of their corresponding values will be preserved by <code>sort&#95;by&#95;key</code>.\n\nThis version of <code>sort&#95;by&#95;key</code> compares key objects using <code>operator&lt;</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>sort&#95;by&#95;key</code> to sort an array of character values using integers as sorting keys using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/sort.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 6;\nint    keys[N] = {  1,   4,   2,   8,   5,   7};\nchar values[N] = {'a', 'b', 'c', 'd', 'e', 'f'};\nthrust::sort_by_key(thrust::host, keys, keys + N, values);\n// keys is now   {  1,   2,   4,   5,   7,   8}\n// values is now {'a', 'c', 'b', 'e', 'f', 'd'}\n```",
       "explicit": false,
@@ -804,6 +829,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -855,11 +881,12 @@
         "The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the range <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1ga0661fa7c4c3f0d1e36b87820179f7933",
+      "qualifiedname": "thrust::sort_by_key",
+      "refid": "group__sorting_1gabe038d6107f7c824cf74120500ef45ea",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/sort\">https://en.cppreference.com/w/cpp/algorithm/sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort_by_key\">stable&#95;sort&#95;by&#95;key</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort\">sort</a></code>"
+        "<code>stable&#95;sort&#95;by&#95;key</code>",
+        "<code>sort</code>"
       ],
       "static": false,
       "strong": false,
@@ -897,18 +924,18 @@
       "title": "sort_by_key",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__sorting.html#function-sort_by_key",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-sort-by-key",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-sort_by_key",
+      "anchor": "#function-sort-by-key",
       "argsString": "(RandomAccessIterator1 keys_first, RandomAccessIterator1 keys_last, RandomAccessIterator2 values_first)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void sort_by_key",
+      "definition": "void thrust::sort_by_key",
       "deleted": false,
       "details": "<code>sort&#95;by&#95;key</code> performs a key-value sort. That is, <code>sort&#95;by&#95;key</code> sorts the elements in <code>[keys&#95;first, keys&#95;last)</code> and <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> into ascending key order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[keys&#95;first, keys&#95;last)</code> such that <code>i</code> precedes <code>j</code>, and <code>p</code> and <code>q</code> are iterators in <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> corresponding to <code>i</code> and <code>j</code> respectively, then <code>&#42;j</code> is not less than <code>&#42;i</code>.\n\nNote: <code>sort&#95;by&#95;key</code> is not guaranteed to be stable. That is, suppose that <code>&#42;i</code> and <code>&#42;j</code> are equivalent: neither one is less than the other. It is not guaranteed that the relative order of these two keys or the relative order of their corresponding values will be preserved by <code>sort&#95;by&#95;key</code>.\n\nThis version of <code>sort&#95;by&#95;key</code> compares key objects using <code>operator&lt;</code>.\n\n\nThe following code snippet demonstrates how to use <code>sort&#95;by&#95;key</code> to sort an array of character values using integers as sorting keys.\n\n\n\n```cpp\n#include <thrust/sort.h>\n...\nconst int N = 6;\nint    keys[N] = {  1,   4,   2,   8,   5,   7};\nchar values[N] = {'a', 'b', 'c', 'd', 'e', 'f'};\nthrust::sort_by_key(keys, keys + N, values);\n// keys is now   {  1,   2,   4,   5,   7,   8}\n// values is now {'a', 'c', 'b', 'e', 'f', 'd'}\n```",
       "explicit": false,
@@ -916,6 +943,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -958,11 +986,12 @@
         "The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the range <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1gae29ea4586f7a97635ba0d377ca7e8c33",
+      "qualifiedname": "thrust::sort_by_key",
+      "refid": "group__sorting_1ga2bb765aeef19f6a04ca8b8ba11efff24",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/sort\">https://en.cppreference.com/w/cpp/algorithm/sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort_by_key\">stable&#95;sort&#95;by&#95;key</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort\">sort</a></code>"
+        "<code>stable&#95;sort&#95;by&#95;key</code>",
+        "<code>sort</code>"
       ],
       "static": false,
       "strong": false,
@@ -991,18 +1020,18 @@
       "title": "sort_by_key",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__sorting.html#function-sort_by_key",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-sort-by-key",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-sort_by_key",
+      "anchor": "#function-sort-by-key",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, RandomAccessIterator1 keys_first, RandomAccessIterator1 keys_last, RandomAccessIterator2 values_first, StrictWeakOrdering comp)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void sort_by_key",
+      "definition": "__host__ __device__ void thrust::sort_by_key",
       "deleted": false,
       "details": "<code>sort&#95;by&#95;key</code> performs a key-value sort. That is, <code>sort&#95;by&#95;key</code> sorts the elements in <code>[keys&#95;first, keys&#95;last)</code> and <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> into ascending key order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[keys&#95;first, keys&#95;last)</code> such that <code>i</code> precedes <code>j</code>, and <code>p</code> and <code>q</code> are iterators in <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> corresponding to <code>i</code> and <code>j</code> respectively, then <code>&#42;j</code> is not less than <code>&#42;i</code>.\n\nNote: <code>sort&#95;by&#95;key</code> is not guaranteed to be stable. That is, suppose that <code>&#42;i</code> and <code>&#42;j</code> are equivalent: neither one is less than the other. It is not guaranteed that the relative order of these two keys or the relative order of their corresponding values will be preserved by <code>sort&#95;by&#95;key</code>.\n\nThis version of <code>sort&#95;by&#95;key</code> compares key objects using a function object <code>comp</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>sort&#95;by&#95;key</code> to sort an array of character values using integers as sorting keys using the <code>thrust::host</code> execution policy for parallelization.The keys are sorted in descending order using the <code>greater&lt;int&gt;</code> comparison operator.\n\n\n\n```cpp\n#include <thrust/sort.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 6;\nint    keys[N] = {  1,   4,   2,   8,   5,   7};\nchar values[N] = {'a', 'b', 'c', 'd', 'e', 'f'};\nthrust::sort_by_key(thrust::host, keys, keys + N, values, thrust::greater<int>());\n// keys is now   {  8,   7,   5,   4,   2,   1}\n// values is now {'d', 'f', 'e', 'b', 'c', 'a'}\n```",
       "explicit": false,
@@ -1010,6 +1039,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -1070,11 +1100,12 @@
         "The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the range <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1ga2be68bdbe0460c62021acb250a566629",
+      "qualifiedname": "thrust::sort_by_key",
+      "refid": "group__sorting_1gaec4e3610a36062ee3e3d16607ce5ad80",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/sort\">https://en.cppreference.com/w/cpp/algorithm/sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort_by_key\">stable&#95;sort&#95;by&#95;key</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort\">sort</a></code>"
+        "<code>stable&#95;sort&#95;by&#95;key</code>",
+        "<code>sort</code>"
       ],
       "static": false,
       "strong": false,
@@ -1121,18 +1152,18 @@
       "title": "sort_by_key",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__sorting.html#function-sort_by_key",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-sort-by-key",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-sort_by_key",
+      "anchor": "#function-sort-by-key",
       "argsString": "(RandomAccessIterator1 keys_first, RandomAccessIterator1 keys_last, RandomAccessIterator2 values_first, StrictWeakOrdering comp)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void sort_by_key",
+      "definition": "void thrust::sort_by_key",
       "deleted": false,
       "details": "<code>sort&#95;by&#95;key</code> performs a key-value sort. That is, <code>sort&#95;by&#95;key</code> sorts the elements in <code>[keys&#95;first, keys&#95;last)</code> and <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> into ascending key order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[keys&#95;first, keys&#95;last)</code> such that <code>i</code> precedes <code>j</code>, and <code>p</code> and <code>q</code> are iterators in <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> corresponding to <code>i</code> and <code>j</code> respectively, then <code>&#42;j</code> is not less than <code>&#42;i</code>.\n\nNote: <code>sort&#95;by&#95;key</code> is not guaranteed to be stable. That is, suppose that <code>&#42;i</code> and <code>&#42;j</code> are equivalent: neither one is less than the other. It is not guaranteed that the relative order of these two keys or the relative order of their corresponding values will be preserved by <code>sort&#95;by&#95;key</code>.\n\nThis version of <code>sort&#95;by&#95;key</code> compares key objects using a function object <code>comp</code>.\n\n\nThe following code snippet demonstrates how to use <code>sort&#95;by&#95;key</code> to sort an array of character values using integers as sorting keys. The keys are sorted in descending order using the greater<int> comparison operator.\n\n\n\n```cpp\n#include <thrust/sort.h>\n...\nconst int N = 6;\nint    keys[N] = {  1,   4,   2,   8,   5,   7};\nchar values[N] = {'a', 'b', 'c', 'd', 'e', 'f'};\nthrust::sort_by_key(keys, keys + N, values, thrust::greater<int>());\n// keys is now   {  8,   7,   5,   4,   2,   1}\n// values is now {'d', 'f', 'e', 'b', 'c', 'a'}\n```",
       "explicit": false,
@@ -1140,6 +1171,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -1191,11 +1223,12 @@
         "The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the range <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1gaed1e9e2530f6a1270003f6bc5685e7e4",
+      "qualifiedname": "thrust::sort_by_key",
+      "refid": "group__sorting_1ga99f37e94fdfaf47489ad35b62851d314",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/sort\">https://en.cppreference.com/w/cpp/algorithm/sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort_by_key\">stable&#95;sort&#95;by&#95;key</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort\">sort</a></code>"
+        "<code>stable&#95;sort&#95;by&#95;key</code>",
+        "<code>sort</code>"
       ],
       "static": false,
       "strong": false,
@@ -1233,18 +1266,18 @@
       "title": "sort_by_key",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__sorting.html#function-sort_by_key",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-sort-by-key",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-stable_sort_by_key",
+      "anchor": "#function-stable-sort-by-key",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, RandomAccessIterator1 keys_first, RandomAccessIterator1 keys_last, RandomAccessIterator2 values_first)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void stable_sort_by_key",
+      "definition": "__host__ __device__ void thrust::stable_sort_by_key",
       "deleted": false,
       "details": "<code>stable&#95;sort&#95;by&#95;key</code> performs a key-value sort. That is, <code>stable&#95;sort&#95;by&#95;key</code> sorts the elements in <code>[keys&#95;first, keys&#95;last)</code> and <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> into ascending key order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[keys&#95;first, keys&#95;last)</code> such that <code>i</code> precedes <code>j</code>, and <code>p</code> and <code>q</code> are iterators in <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> corresponding to <code>i</code> and <code>j</code> respectively, then <code>&#42;j</code> is not less than <code>&#42;i</code>.\n\nAs the name suggests, <code>stable&#95;sort&#95;by&#95;key</code> is stable: it preserves the relative ordering of equivalent elements. That is, if <code>x</code> and <code>y</code> are elements in <code>[keys&#95;first, keys&#95;last)</code> such that <code>x</code> precedes <code>y</code>, and if the two elements are equivalent (neither <code>x &lt; y</code> nor <code>y &lt; x</code>) then a postcondition of <code>stable&#95;sort&#95;by&#95;key</code> is that <code>x</code> still precedes <code>y</code>.\n\nThis version of <code>stable&#95;sort&#95;by&#95;key</code> compares key objects using <code>operator&lt;</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>stable&#95;sort&#95;by&#95;key</code> to sort an array of characters using integers as sorting keys using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/sort.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 6;\nint    keys[N] = {  1,   4,   2,   8,   5,   7};\nchar values[N] = {'a', 'b', 'c', 'd', 'e', 'f'};\nthrust::stable_sort_by_key(thrust::host, keys, keys + N, values);\n// keys is now   {  1,   2,   4,   5,   7,   8}\n// values is now {'a', 'c', 'b', 'e', 'f', 'd'}\n```",
       "explicit": false,
@@ -1252,6 +1285,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -1303,11 +1337,12 @@
         "The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the range <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1ga31fc9a54f4e75c7f659c50dbaa717434",
+      "qualifiedname": "thrust::stable_sort_by_key",
+      "refid": "group__sorting_1gac6960b926c89bc29ffcfb4f451a4f2ef",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/sort\">https://en.cppreference.com/w/cpp/algorithm/sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort_by_key\">sort&#95;by&#95;key</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort\">stable&#95;sort</a></code>"
+        "<code>sort&#95;by&#95;key</code>",
+        "<code>stable&#95;sort</code>"
       ],
       "static": false,
       "strong": false,
@@ -1345,18 +1380,18 @@
       "title": "stable_sort_by_key",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__sorting.html#function-stable_sort_by_key",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort-by-key",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-stable_sort_by_key",
+      "anchor": "#function-stable-sort-by-key",
       "argsString": "(RandomAccessIterator1 keys_first, RandomAccessIterator1 keys_last, RandomAccessIterator2 values_first)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void stable_sort_by_key",
+      "definition": "void thrust::stable_sort_by_key",
       "deleted": false,
       "details": "<code>stable&#95;sort&#95;by&#95;key</code> performs a key-value sort. That is, <code>stable&#95;sort&#95;by&#95;key</code> sorts the elements in <code>[keys&#95;first, keys&#95;last)</code> and <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> into ascending key order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[keys&#95;first, keys&#95;last)</code> such that <code>i</code> precedes <code>j</code>, and <code>p</code> and <code>q</code> are iterators in <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> corresponding to <code>i</code> and <code>j</code> respectively, then <code>&#42;j</code> is not less than <code>&#42;i</code>.\n\nAs the name suggests, <code>stable&#95;sort&#95;by&#95;key</code> is stable: it preserves the relative ordering of equivalent elements. That is, if <code>x</code> and <code>y</code> are elements in <code>[keys&#95;first, keys&#95;last)</code> such that <code>x</code> precedes <code>y</code>, and if the two elements are equivalent (neither <code>x &lt; y</code> nor <code>y &lt; x</code>) then a postcondition of <code>stable&#95;sort&#95;by&#95;key</code> is that <code>x</code> still precedes <code>y</code>.\n\nThis version of <code>stable&#95;sort&#95;by&#95;key</code> compares key objects using <code>operator&lt;</code>.\n\n\nThe following code snippet demonstrates how to use <code>stable&#95;sort&#95;by&#95;key</code> to sort an array of characters using integers as sorting keys.\n\n\n\n```cpp\n#include <thrust/sort.h>\n...\nconst int N = 6;\nint    keys[N] = {  1,   4,   2,   8,   5,   7};\nchar values[N] = {'a', 'b', 'c', 'd', 'e', 'f'};\nthrust::stable_sort_by_key(keys, keys + N, values);\n// keys is now   {  1,   2,   4,   5,   7,   8}\n// values is now {'a', 'c', 'b', 'e', 'f', 'd'}\n```",
       "explicit": false,
@@ -1364,6 +1399,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -1406,11 +1442,12 @@
         "The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the range <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1gaeaebdf8536e4683449d8b52d477c5fe9",
+      "qualifiedname": "thrust::stable_sort_by_key",
+      "refid": "group__sorting_1gaf1fe1e4c1f203dd6a0c5deaab9dd8541",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/sort\">https://en.cppreference.com/w/cpp/algorithm/sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort_by_key\">sort&#95;by&#95;key</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort\">stable&#95;sort</a></code>"
+        "<code>sort&#95;by&#95;key</code>",
+        "<code>stable&#95;sort</code>"
       ],
       "static": false,
       "strong": false,
@@ -1439,18 +1476,18 @@
       "title": "stable_sort_by_key",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__sorting.html#function-stable_sort_by_key",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort-by-key",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-stable_sort_by_key",
+      "anchor": "#function-stable-sort-by-key",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, RandomAccessIterator1 keys_first, RandomAccessIterator1 keys_last, RandomAccessIterator2 values_first, StrictWeakOrdering comp)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void stable_sort_by_key",
+      "definition": "__host__ __device__ void thrust::stable_sort_by_key",
       "deleted": false,
       "details": "<code>stable&#95;sort&#95;by&#95;key</code> performs a key-value sort. That is, <code>stable&#95;sort&#95;by&#95;key</code> sorts the elements in <code>[keys&#95;first, keys&#95;last)</code> and <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> into ascending key order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[keys&#95;first, keys&#95;last)</code> such that <code>i</code> precedes <code>j</code>, and <code>p</code> and <code>q</code> are iterators in <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> corresponding to <code>i</code> and <code>j</code> respectively, then <code>&#42;j</code> is not less than <code>&#42;i</code>.\n\nAs the name suggests, <code>stable&#95;sort&#95;by&#95;key</code> is stable: it preserves the relative ordering of equivalent elements. That is, if <code>x</code> and <code>y</code> are elements in <code>[keys&#95;first, keys&#95;last)</code> such that <code>x</code> precedes <code>y</code>, and if the two elements are equivalent (neither <code>x &lt; y</code> nor <code>y &lt; x</code>) then a postcondition of <code>stable&#95;sort&#95;by&#95;key</code> is that <code>x</code> still precedes <code>y</code>.\n\nThis version of <code>stable&#95;sort&#95;by&#95;key</code> compares key objects using the function object <code>comp</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>sort&#95;by&#95;key</code> to sort an array of character values using integers as sorting keys using the <code>thrust::host</code> execution policy for parallelization. The keys are sorted in descending order using the <code>greater&lt;int&gt;</code> comparison operator.\n\n\n\n```cpp\n#include <thrust/sort.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 6;\nint    keys[N] = {  1,   4,   2,   8,   5,   7};\nchar values[N] = {'a', 'b', 'c', 'd', 'e', 'f'};\nthrust::stable_sort_by_key(thrust::host, keys, keys + N, values, thrust::greater<int>());\n// keys is now   {  8,   7,   5,   4,   2,   1}\n// values is now {'d', 'f', 'e', 'b', 'c', 'a'}\n```",
       "explicit": false,
@@ -1458,6 +1495,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -1518,11 +1556,12 @@
         "The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the range <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1gac4a39358dd978c65cf48b58ffdede6fd",
+      "qualifiedname": "thrust::stable_sort_by_key",
+      "refid": "group__sorting_1gaee08ac5db848d5d3a8704bd6e7f3869b",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/sort\">https://en.cppreference.com/w/cpp/algorithm/sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort_by_key\">sort&#95;by&#95;key</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort\">stable&#95;sort</a></code>"
+        "<code>sort&#95;by&#95;key</code>",
+        "<code>stable&#95;sort</code>"
       ],
       "static": false,
       "strong": false,
@@ -1569,18 +1608,18 @@
       "title": "stable_sort_by_key",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__sorting.html#function-stable_sort_by_key",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort-by-key",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-stable_sort_by_key",
+      "anchor": "#function-stable-sort-by-key",
       "argsString": "(RandomAccessIterator1 keys_first, RandomAccessIterator1 keys_last, RandomAccessIterator2 values_first, StrictWeakOrdering comp)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void stable_sort_by_key",
+      "definition": "void thrust::stable_sort_by_key",
       "deleted": false,
       "details": "<code>stable&#95;sort&#95;by&#95;key</code> performs a key-value sort. That is, <code>stable&#95;sort&#95;by&#95;key</code> sorts the elements in <code>[keys&#95;first, keys&#95;last)</code> and <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> into ascending key order, meaning that if <code>i</code> and <code>j</code> are any two valid iterators in <code>[keys&#95;first, keys&#95;last)</code> such that <code>i</code> precedes <code>j</code>, and <code>p</code> and <code>q</code> are iterators in <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code> corresponding to <code>i</code> and <code>j</code> respectively, then <code>&#42;j</code> is not less than <code>&#42;i</code>.\n\nAs the name suggests, <code>stable&#95;sort&#95;by&#95;key</code> is stable: it preserves the relative ordering of equivalent elements. That is, if <code>x</code> and <code>y</code> are elements in <code>[keys&#95;first, keys&#95;last)</code> such that <code>x</code> precedes <code>y</code>, and if the two elements are equivalent (neither <code>x &lt; y</code> nor <code>y &lt; x</code>) then a postcondition of <code>stable&#95;sort&#95;by&#95;key</code> is that <code>x</code> still precedes <code>y</code>.\n\nThis version of <code>stable&#95;sort&#95;by&#95;key</code> compares key objects using the function object <code>comp</code>.\n\n\nThe following code snippet demonstrates how to use <code>sort&#95;by&#95;key</code> to sort an array of character values using integers as sorting keys. The keys are sorted in descending order using the greater<int> comparison operator.\n\n\n\n```cpp\n#include <thrust/sort.h>\n...\nconst int N = 6;\nint    keys[N] = {  1,   4,   2,   8,   5,   7};\nchar values[N] = {'a', 'b', 'c', 'd', 'e', 'f'};\nthrust::stable_sort_by_key(keys, keys + N, values, thrust::greater<int>());\n// keys is now   {  8,   7,   5,   4,   2,   1}\n// values is now {'d', 'f', 'e', 'b', 'c', 'a'}\n```",
       "explicit": false,
@@ -1588,6 +1627,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sort.h",
@@ -1639,11 +1679,12 @@
         "The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the range <code>[values&#95;first, values&#95;first + (keys&#95;last - keys&#95;first))</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__sorting_1ga70cb5ef705f3745b639842feafce544d",
+      "qualifiedname": "thrust::stable_sort_by_key",
+      "refid": "group__sorting_1gac0210e19d68263b648a5558c78ae61ee",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/sort\">https://en.cppreference.com/w/cpp/algorithm/sort</a>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-sort_by_key\">sort&#95;by&#95;key</a></code>",
-        "<code><a href=\"/api/groups/group__sorting.html#function-stable_sort\">stable&#95;sort</a></code>"
+        "<code>sort&#95;by&#95;key</code>",
+        "<code>stable&#95;sort</code>"
       ],
       "static": false,
       "strong": false,
@@ -1681,15 +1722,16 @@
       "title": "stable_sort_by_key",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__sorting.html#function-stable_sort_by_key",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort-by-key",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "sorting",
   "refid": "group__sorting",
   "static": false,
   "strong": false,
   "title": "Sorting",
-  "url": "/api/groups/group__sorting.html",
+  "url": "{{ site.baseurl }}/api/groups/group__sorting.html",
   "visibility": "public"
 }

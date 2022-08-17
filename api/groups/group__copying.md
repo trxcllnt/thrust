@@ -11,14 +11,14 @@ has_toc: false
 
 ## Groups
 
-* **[Gathering](/api/groups/group__gathering.html)**
-* **[Scattering](/api/groups/group__scattering.html)**
+* **[Gathering]({{ site.baseurl }}/api/groups/group__gathering.html)**
+* **[Scattering]({{ site.baseurl }}/api/groups/group__scattering.html)**
 
 <code class="doxybook">
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename OutputIterator&gt;</span>
-<span>__host__ __device__ OutputIterator </span><span><b><a href="/api/groups/group__copying.html#function-copy">copy</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__copying.html#function-copy">thrust::copy</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;OutputIterator result);</span>
@@ -27,49 +27,49 @@ has_toc: false
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Size,</span>
 <span>&nbsp;&nbsp;typename OutputIterator&gt;</span>
-<span>__host__ __device__ OutputIterator </span><span><b><a href="/api/groups/group__copying.html#function-copy_n">copy&#95;n</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__copying.html#function-copy-n">thrust::copy&#95;n</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;Size n,</span>
 <span>&nbsp;&nbsp;OutputIterator result);</span>
 <br>
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename OutputIterator&gt;</span>
-<span>OutputIterator </span><span><b><a href="/api/groups/group__copying.html#function-copy">copy</a></b>(InputIterator first,</span>
+<span>OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__copying.html#function-copy">thrust::copy</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;OutputIterator result);</span>
 <br>
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Size,</span>
 <span>&nbsp;&nbsp;typename OutputIterator&gt;</span>
-<span>OutputIterator </span><span><b><a href="/api/groups/group__copying.html#function-copy_n">copy&#95;n</a></b>(InputIterator first,</span>
+<span>OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__copying.html#function-copy-n">thrust::copy&#95;n</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;Size n,</span>
 <span>&nbsp;&nbsp;OutputIterator result);</span>
 <br>
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator1,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator2&gt;</span>
-<span>__host__ __device__ ForwardIterator2 </span><span><b><a href="/api/groups/group__copying.html#function-swap_ranges">swap&#95;ranges</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ ForwardIterator2 </span><span><b><a href="{{ site.baseurl }}/api/groups/group__copying.html#function-swap-ranges">thrust::swap&#95;ranges</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator1 first1,</span>
 <span>&nbsp;&nbsp;ForwardIterator1 last1,</span>
 <span>&nbsp;&nbsp;ForwardIterator2 first2);</span>
 <br>
 <span>template &lt;typename ForwardIterator1,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator2&gt;</span>
-<span>ForwardIterator2 </span><span><b><a href="/api/groups/group__copying.html#function-swap_ranges">swap&#95;ranges</a></b>(ForwardIterator1 first1,</span>
+<span>ForwardIterator2 </span><span><b><a href="{{ site.baseurl }}/api/groups/group__copying.html#function-swap-ranges">thrust::swap&#95;ranges</a></b>(ForwardIterator1 first1,</span>
 <span>&nbsp;&nbsp;ForwardIterator1 last1,</span>
 <span>&nbsp;&nbsp;ForwardIterator2 first2);</span>
 <br>
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator&gt;</span>
-<span>__host__ __device__ ForwardIterator </span><span><b><a href="/api/groups/group__copying.html#function-uninitialized_copy">uninitialized&#95;copy</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__copying.html#function-uninitialized-copy">thrust::uninitialized&#95;copy</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;ForwardIterator result);</span>
 <br>
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator&gt;</span>
-<span>ForwardIterator </span><span><b><a href="/api/groups/group__copying.html#function-uninitialized_copy">uninitialized&#95;copy</a></b>(InputIterator first,</span>
+<span>ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__copying.html#function-uninitialized-copy">thrust::uninitialized&#95;copy</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;ForwardIterator result);</span>
 <br>
@@ -77,7 +77,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Size,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator&gt;</span>
-<span>__host__ __device__ ForwardIterator </span><span><b><a href="/api/groups/group__copying.html#function-uninitialized_copy_n">uninitialized&#95;copy&#95;n</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__copying.html#function-uninitialized-copy-n">thrust::uninitialized&#95;copy&#95;n</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;Size n,</span>
 <span>&nbsp;&nbsp;ForwardIterator result);</span>
@@ -85,7 +85,7 @@ has_toc: false
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Size,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator&gt;</span>
-<span>ForwardIterator </span><span><b><a href="/api/groups/group__copying.html#function-uninitialized_copy_n">uninitialized&#95;copy&#95;n</a></b>(InputIterator first,</span>
+<span>ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__copying.html#function-uninitialized-copy-n">thrust::uninitialized&#95;copy&#95;n</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;Size n,</span>
 <span>&nbsp;&nbsp;ForwardIterator result);</span>
 </code>
@@ -93,7 +93,7 @@ has_toc: false
 ## Functions
 
 <h3 id="function-copy">
-Function <code>copy</code>
+Function <code>thrust::copy</code>
 </h3>
 
 <code class="doxybook">
@@ -150,8 +150,8 @@ The end of the destination sequence.
 **See**:
 <a href="https://en.cppreference.com/w/cpp/algorithm/copy">https://en.cppreference.com/w/cpp/algorithm/copy</a>
 
-<h3 id="function-copy_n">
-Function <code>copy&#95;n</code>
+<h3 id="function-copy-n">
+Function <code>thrust::copy&#95;n</code>
 </h3>
 
 <code class="doxybook">
@@ -211,7 +211,7 @@ The end of the destination range.
 * thrust::copy 
 
 <h3 id="function-copy">
-Function <code>copy</code>
+Function <code>thrust::copy</code>
 </h3>
 
 <code class="doxybook">
@@ -262,8 +262,8 @@ The end of the destination sequence.
 **See**:
 <a href="https://en.cppreference.com/w/cpp/algorithm/copy">https://en.cppreference.com/w/cpp/algorithm/copy</a>
 
-<h3 id="function-copy_n">
-Function <code>copy&#95;n</code>
+<h3 id="function-copy-n">
+Function <code>thrust::copy&#95;n</code>
 </h3>
 
 <code class="doxybook">
@@ -315,8 +315,8 @@ The end of the destination range.
 * <a href="https://en.cppreference.com/w/cpp/algorithm/copy_n">https://en.cppreference.com/w/cpp/algorithm/copy_n</a>
 * thrust::copy 
 
-<h3 id="function-swap_ranges">
-Function <code>swap&#95;ranges</code>
+<h3 id="function-swap-ranges">
+Function <code>thrust::swap&#95;ranges</code>
 </h3>
 
 <code class="doxybook">
@@ -371,10 +371,10 @@ An iterator pointing to one position past the last element of the second sequenc
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/swap_ranges">https://en.cppreference.com/w/cpp/algorithm/swap_ranges</a>
-* <code><a href="/api/groups/group__swap.html#function-swap">swap</a></code>
+* <code><a href="{{ site.baseurl }}/api/groups/group__swap.html">Swap</a></code>
 
-<h3 id="function-swap_ranges">
-Function <code>swap&#95;ranges</code>
+<h3 id="function-swap-ranges">
+Function <code>thrust::swap&#95;ranges</code>
 </h3>
 
 <code class="doxybook">
@@ -422,10 +422,10 @@ An iterator pointing to one position past the last element of the second sequenc
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/swap_ranges">https://en.cppreference.com/w/cpp/algorithm/swap_ranges</a>
-* <code><a href="/api/groups/group__swap.html#function-swap">swap</a></code>
+* <code><a href="{{ site.baseurl }}/api/groups/group__swap.html">Swap</a></code>
 
-<h3 id="function-uninitialized_copy">
-Function <code>uninitialized&#95;copy</code>
+<h3 id="function-uninitialized-copy">
+Function <code>thrust::uninitialized&#95;copy</code>
 </h3>
 
 <code class="doxybook">
@@ -488,13 +488,13 @@ An iterator pointing to the last element of the output range.
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/memory/uninitialized_copy">https://en.cppreference.com/w/cpp/memory/uninitialized_copy</a>
-* <code><a href="/api/groups/group__copying.html#function-copy">copy</a></code>
-* <code><a href="/api/groups/group__filling.html#function-uninitialized_fill">uninitialized&#95;fill</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_new">device&#95;new</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_malloc">device&#95;malloc</a></code>
+* <code>copy</code>
+* <code>uninitialized&#95;fill</code>
+* <code>device&#95;new</code>
+* <code>device&#95;malloc</code>
 
-<h3 id="function-uninitialized_copy">
-Function <code>uninitialized&#95;copy</code>
+<h3 id="function-uninitialized-copy">
+Function <code>thrust::uninitialized&#95;copy</code>
 </h3>
 
 <code class="doxybook">
@@ -550,13 +550,13 @@ An iterator pointing to the last element of the output range.
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/memory/uninitialized_copy">https://en.cppreference.com/w/cpp/memory/uninitialized_copy</a>
-* <code><a href="/api/groups/group__copying.html#function-copy">copy</a></code>
-* <code><a href="/api/groups/group__filling.html#function-uninitialized_fill">uninitialized&#95;fill</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_new">device&#95;new</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_malloc">device&#95;malloc</a></code>
+* <code>copy</code>
+* <code>uninitialized&#95;fill</code>
+* <code>device&#95;new</code>
+* <code>device&#95;malloc</code>
 
-<h3 id="function-uninitialized_copy_n">
-Function <code>uninitialized&#95;copy&#95;n</code>
+<h3 id="function-uninitialized-copy-n">
+Function <code>thrust::uninitialized&#95;copy&#95;n</code>
 </h3>
 
 <code class="doxybook">
@@ -621,14 +621,14 @@ An iterator pointing to the last element of the output range.
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/memory/uninitialized_copy">https://en.cppreference.com/w/cpp/memory/uninitialized_copy</a>
-* <code><a href="/api/groups/group__copying.html#function-uninitialized_copy">uninitialized&#95;copy</a></code>
-* <code><a href="/api/groups/group__copying.html#function-copy">copy</a></code>
-* <code><a href="/api/groups/group__filling.html#function-uninitialized_fill">uninitialized&#95;fill</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_new">device&#95;new</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_malloc">device&#95;malloc</a></code>
+* <code>uninitialized&#95;copy</code>
+* <code>copy</code>
+* <code>uninitialized&#95;fill</code>
+* <code>device&#95;new</code>
+* <code>device&#95;malloc</code>
 
-<h3 id="function-uninitialized_copy_n">
-Function <code>uninitialized&#95;copy&#95;n</code>
+<h3 id="function-uninitialized-copy-n">
+Function <code>thrust::uninitialized&#95;copy&#95;n</code>
 </h3>
 
 <code class="doxybook">
@@ -686,10 +686,10 @@ An iterator pointing to the last element of the output range.
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/memory/uninitialized_copy">https://en.cppreference.com/w/cpp/memory/uninitialized_copy</a>
-* <code><a href="/api/groups/group__copying.html#function-uninitialized_copy">uninitialized&#95;copy</a></code>
-* <code><a href="/api/groups/group__copying.html#function-copy">copy</a></code>
-* <code><a href="/api/groups/group__filling.html#function-uninitialized_fill">uninitialized&#95;fill</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_new">device&#95;new</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_malloc">device&#95;malloc</a></code>
+* <code>uninitialized&#95;copy</code>
+* <code>copy</code>
+* <code>uninitialized&#95;fill</code>
+* <code>device&#95;new</code>
+* <code>device&#95;malloc</code>
 
 

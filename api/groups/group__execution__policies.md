@@ -10,28 +10,28 @@ has_toc: false
 
 <code class="doxybook">
 <span>template &lt;typename DerivedPolicy&gt;</span>
-<span>struct <b><a href="/api/classes/structhost__execution__policy.html">host&#95;execution&#95;policy</a></b>;</span>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1host__execution__policy.html">thrust::host&#95;execution&#95;policy</a></b>;</span>
 <br>
 <span>template &lt;typename DerivedPolicy&gt;</span>
-<span>struct <b><a href="/api/classes/structdevice__execution__policy.html">device&#95;execution&#95;policy</a></b>;</span>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1device__execution__policy.html">thrust::device&#95;execution&#95;policy</a></b>;</span>
 <br>
-<span>static const detail::host_t <b><a href="/api/groups/group__execution__policies.html#variable-host">execution&#95;policies::host</a></b>;</span>
+<span>static const detail::host_t <b><a href="{{ site.baseurl }}/api/groups/group__execution__policies.html#variable-host">thrust::host</a></b>;</span>
 <br>
-<span>THRUST_INLINE_CONSTANT detail::device_t <b><a href="/api/groups/group__execution__policies.html#variable-device">execution&#95;policies::device</a></b>;</span>
+<span>THRUST_INLINE_CONSTANT detail::device_t <b><a href="{{ site.baseurl }}/api/groups/group__execution__policies.html#variable-device">thrust::device</a></b>;</span>
 </code>
 
 ## Member Classes
 
-<h3 id="struct-host_execution_policy">
-<a href="/api/classes/structhost__execution__policy.html">Struct <code>host&#95;execution&#95;policy</code>
+<h3 id="struct-thrusthost-execution-policy">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1host__execution__policy.html">Struct <code>thrust::host&#95;execution&#95;policy</code>
 </a>
 </h3>
 
 **Inherits From**:
 `thrust::system::__THRUST_HOST_SYSTEM_NAMESPACE::execution_policy< DerivedPolicy >`
 
-<h3 id="struct-device_execution_policy">
-<a href="/api/classes/structdevice__execution__policy.html">Struct <code>device&#95;execution&#95;policy</code>
+<h3 id="struct-thrustdevice-execution-policy">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1device__execution__policy.html">Struct <code>thrust::device&#95;execution&#95;policy</code>
 </a>
 </h3>
 
@@ -42,7 +42,7 @@ has_toc: false
 ## Variables
 
 <h3 id="variable-host">
-Variable <code>execution&#95;policies::host</code>
+Variable <code>thrust::host</code>
 </h3>
 
 <code class="doxybook">
@@ -51,7 +51,7 @@ Variable <code>execution&#95;policies::host</code>
 
 Instead of relying on implicit algorithm dispatch through iterator system tags, users may directly target algorithm dispatch at Thrust's host system by providing <code>thrust::host</code> as an algorithm parameter.
 
-Explicit dispatch can be useful in avoiding the introduction of data copies into containers such as <code>thrust::host&#95;vector</code>.
+Explicit dispatch can be useful in avoiding the introduction of data copies into containers such as <code><a href="{{ site.baseurl }}/api/classes/classthrust_1_1host__vector.html">thrust::host&#95;vector</a></code>.
 
 Note that even though <code>thrust::host</code> targets the host CPU, it is a parallel execution policy. That is, the order that an algorithm invokes functors or dereferences iterators is not defined.
 
@@ -84,11 +84,11 @@ thrust::for_each(thrust::host, vec.begin(), vec.end(), printf_functor());
 ```
 
 **See**:
-* <a href="/api/classes/structhost__execution__policy.html">host_execution_policy</a>
+* <a href="{{ site.baseurl }}/api/classes/structthrust_1_1host__execution__policy.html">host_execution_policy</a>
 * thrust::device 
 
 <h3 id="variable-device">
-Variable <code>execution&#95;policies::device</code>
+Variable <code>thrust::device</code>
 </h3>
 
 <code class="doxybook">
@@ -97,7 +97,7 @@ Variable <code>execution&#95;policies::device</code>
 
 Instead of relying on implicit algorithm dispatch through iterator system tags, users may directly target algorithm dispatch at Thrust's device system by providing <code>thrust::device</code> as an algorithm parameter.
 
-Explicit dispatch can be useful in avoiding the introduction of data copies into containers such as <code>thrust::device&#95;vector</code> or to avoid wrapping e.g. raw pointers allocated by the CUDA API with types such as <code>thrust::device&#95;ptr</code>.
+Explicit dispatch can be useful in avoiding the introduction of data copies into containers such as <code><a href="{{ site.baseurl }}/api/classes/classthrust_1_1device__vector.html">thrust::device&#95;vector</a></code> or to avoid wrapping e.g. raw pointers allocated by the CUDA API with types such as <code><a href="{{ site.baseurl }}/api/classes/classthrust_1_1device__ptr.html">thrust::device&#95;ptr</a></code>.
 
 The user must take care to guarantee that the iterators provided to an algorithm are compatible with the device backend system. For example, raw pointers allocated by <code>std::malloc</code> typically cannot be dereferenced by a GPU. For this reason, raw pointers allocated by host APIs should not be mixed with a <code>thrust::device</code> algorithm invocation when the device backend is CUDA.
 
@@ -131,7 +131,7 @@ thrust::for_each(thrust::device, vec.begin(), vec.end(), printf_functor());
 ```
 
 **See**:
-* <a href="/api/classes/structhost__execution__policy.html">host_execution_policy</a>
+* <a href="{{ site.baseurl }}/api/classes/structthrust_1_1host__execution__policy.html">host_execution_policy</a>
 * thrust::device 
 
 

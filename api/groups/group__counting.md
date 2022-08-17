@@ -13,28 +13,28 @@ has_toc: false
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename EqualityComparable&gt;</span>
-<span>__host__ __device__ thrust::iterator_traits< InputIterator >::difference_type </span><span><b><a href="/api/groups/group__counting.html#function-count">count</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html">thrust::iterator_traits</a>< InputIterator >::difference_type </span><span><b><a href="{{ site.baseurl }}/api/groups/group__counting.html#function-count">thrust::count</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;const EqualityComparable & value);</span>
 <br>
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename EqualityComparable&gt;</span>
-<span>thrust::iterator_traits< InputIterator >::difference_type </span><span><b><a href="/api/groups/group__counting.html#function-count">count</a></b>(InputIterator first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html">thrust::iterator_traits</a>< InputIterator >::difference_type </span><span><b><a href="{{ site.baseurl }}/api/groups/group__counting.html#function-count">thrust::count</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;const EqualityComparable & value);</span>
 <br>
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ thrust::iterator_traits< InputIterator >::difference_type </span><span><b><a href="/api/groups/group__counting.html#function-count_if">count&#95;if</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html">thrust::iterator_traits</a>< InputIterator >::difference_type </span><span><b><a href="{{ site.baseurl }}/api/groups/group__counting.html#function-count-if">thrust::count&#95;if</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span>
 <br>
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>thrust::iterator_traits< InputIterator >::difference_type </span><span><b><a href="/api/groups/group__counting.html#function-count_if">count&#95;if</a></b>(InputIterator first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html">thrust::iterator_traits</a>< InputIterator >::difference_type </span><span><b><a href="{{ site.baseurl }}/api/groups/group__counting.html#function-count-if">thrust::count&#95;if</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span>
 </code>
@@ -42,14 +42,14 @@ has_toc: false
 ## Functions
 
 <h3 id="function-count">
-Function <code>count</code>
+Function <code>thrust::count</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename EqualityComparable&gt;</span>
-<span>__host__ __device__ thrust::iterator_traits< InputIterator >::difference_type </span><span><b>count</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html">thrust::iterator_traits</a>< InputIterator >::difference_type </span><span><b>count</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;const EqualityComparable & value);</span></code>
@@ -96,13 +96,13 @@ The number of elements equal to <code>value</code>.
 <a href="https://en.cppreference.com/w/cpp/algorithm/count">https://en.cppreference.com/w/cpp/algorithm/count</a>
 
 <h3 id="function-count">
-Function <code>count</code>
+Function <code>thrust::count</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename EqualityComparable&gt;</span>
-<span>thrust::iterator_traits< InputIterator >::difference_type </span><span><b>count</b>(InputIterator first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html">thrust::iterator_traits</a>< InputIterator >::difference_type </span><span><b>count</b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;const EqualityComparable & value);</span></code>
 <code>count</code> finds the number of elements in <code>[first,last)</code> that are equal to <code>value</code>. More precisely, <code>count</code> returns the number of iterators <code>i</code> in <code>[first, last)</code> such that <code>&#42;i == value</code>.
@@ -140,15 +140,15 @@ The number of elements equal to <code>value</code>.
 **See**:
 <a href="https://en.cppreference.com/w/cpp/algorithm/count">https://en.cppreference.com/w/cpp/algorithm/count</a>
 
-<h3 id="function-count_if">
-Function <code>count&#95;if</code>
+<h3 id="function-count-if">
+Function <code>thrust::count&#95;if</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ thrust::iterator_traits< InputIterator >::difference_type </span><span><b>count_if</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html">thrust::iterator_traits</a>< InputIterator >::difference_type </span><span><b>count_if</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span></code>
@@ -205,14 +205,14 @@ The number of elements where <code>pred</code> is <code>true</code>.
 **See**:
 <a href="https://en.cppreference.com/w/cpp/algorithm/count">https://en.cppreference.com/w/cpp/algorithm/count</a>
 
-<h3 id="function-count_if">
-Function <code>count&#95;if</code>
+<h3 id="function-count-if">
+Function <code>thrust::count&#95;if</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>thrust::iterator_traits< InputIterator >::difference_type </span><span><b>count_if</b>(InputIterator first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html">thrust::iterator_traits</a>< InputIterator >::difference_type </span><span><b>count_if</b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span></code>
 <code>count&#95;if</code> finds the number of elements in <code>[first,last)</code> for which a predicate is <code>true</code>. More precisely, <code>count&#95;if</code> returns the number of iterators <code>i</code> in <code>[first, last)</code> such that <code>pred(&#42;i) == true</code>.

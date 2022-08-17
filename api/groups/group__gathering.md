@@ -14,7 +14,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator,</span>
 <span>&nbsp;&nbsp;typename OutputIterator&gt;</span>
-<span>__host__ __device__ OutputIterator </span><span><b><a href="/api/groups/group__gathering.html#function-gather">gather</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__gathering.html#function-gather">thrust::gather</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator map_first,</span>
 <span>&nbsp;&nbsp;InputIterator map_last,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator input_first,</span>
@@ -23,7 +23,7 @@ has_toc: false
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator,</span>
 <span>&nbsp;&nbsp;typename OutputIterator&gt;</span>
-<span>OutputIterator </span><span><b><a href="/api/groups/group__gathering.html#function-gather">gather</a></b>(InputIterator map_first,</span>
+<span>OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__gathering.html#function-gather">thrust::gather</a></b>(InputIterator map_first,</span>
 <span>&nbsp;&nbsp;InputIterator map_last,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator input_first,</span>
 <span>&nbsp;&nbsp;OutputIterator result);</span>
@@ -33,7 +33,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename InputIterator2,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator,</span>
 <span>&nbsp;&nbsp;typename OutputIterator&gt;</span>
-<span>__host__ __device__ OutputIterator </span><span><b><a href="/api/groups/group__gathering.html#function-gather_if">gather&#95;if</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__gathering.html#function-gather-if">thrust::gather&#95;if</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 map_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 map_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 stencil,</span>
@@ -44,7 +44,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename InputIterator2,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator,</span>
 <span>&nbsp;&nbsp;typename OutputIterator&gt;</span>
-<span>OutputIterator </span><span><b><a href="/api/groups/group__gathering.html#function-gather_if">gather&#95;if</a></b>(InputIterator1 map_first,</span>
+<span>OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__gathering.html#function-gather-if">thrust::gather&#95;if</a></b>(InputIterator1 map_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 map_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 stencil,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator input_first,</span>
@@ -56,7 +56,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename RandomAccessIterator,</span>
 <span>&nbsp;&nbsp;typename OutputIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ OutputIterator </span><span><b><a href="/api/groups/group__gathering.html#function-gather_if">gather&#95;if</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__gathering.html#function-gather-if">thrust::gather&#95;if</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 map_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 map_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 stencil,</span>
@@ -69,7 +69,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename RandomAccessIterator,</span>
 <span>&nbsp;&nbsp;typename OutputIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>OutputIterator </span><span><b><a href="/api/groups/group__gathering.html#function-gather_if">gather&#95;if</a></b>(InputIterator1 map_first,</span>
+<span>OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__gathering.html#function-gather-if">thrust::gather&#95;if</a></b>(InputIterator1 map_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 map_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 stencil,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator input_first,</span>
@@ -80,7 +80,7 @@ has_toc: false
 ## Functions
 
 <h3 id="function-gather">
-Function <code>gather</code>
+Function <code>thrust::gather</code>
 </h3>
 
 <code class="doxybook">
@@ -145,7 +145,7 @@ thrust::gather(thrust::device,
 * The input data shall not overlap the range <code>[result, result + (map&#95;last - map&#95;first))</code>.
 
 <h3 id="function-gather">
-Function <code>gather</code>
+Function <code>thrust::gather</code>
 </h3>
 
 <code class="doxybook">
@@ -201,8 +201,8 @@ thrust::gather(d_map.begin(), d_map.end(),
 * The range <code>[map&#95;first, map&#95;last)</code> shall not overlap the range <code>[result, result + (map&#95;last - map&#95;first))</code>. 
 * The input data shall not overlap the range <code>[result, result + (map&#95;last - map&#95;first))</code>.
 
-<h3 id="function-gather_if">
-Function <code>gather&#95;if</code>
+<h3 id="function-gather-if">
+Function <code>thrust::gather&#95;if</code>
 </h3>
 
 <code class="doxybook">
@@ -276,8 +276,8 @@ thrust::gather_if(thrust::device,
 * The range <code>[stencil, stencil + (map&#95;last - map&#95;first))</code> shall not overlap the range <code>[result, result + (map&#95;last - map&#95;first))</code>. 
 * The input data shall not overlap the range <code>[result, result + (map&#95;last - map&#95;first))</code>.
 
-<h3 id="function-gather_if">
-Function <code>gather&#95;if</code>
+<h3 id="function-gather-if">
+Function <code>thrust::gather&#95;if</code>
 </h3>
 
 <code class="doxybook">
@@ -343,8 +343,8 @@ thrust::gather_if(d_map.begin(), d_map.end(),
 * The range <code>[stencil, stencil + (map&#95;last - map&#95;first))</code> shall not overlap the range <code>[result, result + (map&#95;last - map&#95;first))</code>. 
 * The input data shall not overlap the range <code>[result, result + (map&#95;last - map&#95;first))</code>.
 
-<h3 id="function-gather_if">
-Function <code>gather&#95;if</code>
+<h3 id="function-gather-if">
+Function <code>thrust::gather&#95;if</code>
 </h3>
 
 <code class="doxybook">
@@ -432,8 +432,8 @@ thrust::gather_if(thrust::device,
 * The range <code>[stencil, stencil + (map&#95;last - map&#95;first))</code> shall not overlap the range <code>[result, result + (map&#95;last - map&#95;first))</code>. 
 * The input data shall not overlap the range <code>[result, result + (map&#95;last - map&#95;first))</code>.
 
-<h3 id="function-gather_if">
-Function <code>gather&#95;if</code>
+<h3 id="function-gather-if">
+Function <code>thrust::gather&#95;if</code>
 </h3>
 
 <code class="doxybook">

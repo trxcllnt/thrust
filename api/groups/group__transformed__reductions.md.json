@@ -10,15 +10,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "reductions",
     "kind": "group",
+    "language": "",
     "name": "reductions",
+    "qualifiedname": "reductions",
     "refid": "group__reductions",
     "title": "Reductions",
-    "url": "/api/groups/group__reductions.html",
+    "url": "{{ site.baseurl }}/api/groups/group__reductions.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -27,10 +30,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     },
     {
@@ -38,10 +43,12 @@
       "category": "modules",
       "fullname": "reductions",
       "kind": "group",
+      "language": "",
       "name": "reductions",
+      "qualifiedname": "reductions",
       "refid": "group__reductions",
       "title": "Reductions",
-      "url": "/api/groups/group__reductions.html",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html",
       "visibility": "public"
     }
   ],
@@ -52,10 +59,12 @@
     "category": "modules",
     "fullname": "reductions",
     "kind": "group",
+    "language": "",
     "name": "reductions",
+    "qualifiedname": "reductions",
     "refid": "group__reductions",
     "title": "Reductions",
-    "url": "/api/groups/group__reductions.html",
+    "url": "{{ site.baseurl }}/api/groups/group__reductions.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -64,10 +73,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     },
     {
@@ -75,22 +86,24 @@
       "category": "modules",
       "fullname": "reductions",
       "kind": "group",
+      "language": "",
       "name": "reductions",
+      "qualifiedname": "reductions",
       "refid": "group__reductions",
       "title": "Reductions",
-      "url": "/api/groups/group__reductions.html",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html",
       "visibility": "public"
     }
   ],
   "publicFunctions": [
     {
       "abstract": false,
-      "anchor": "#function-inner_product",
+      "anchor": "#function-inner-product",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator1 first1, InputIterator1 last1, InputIterator2 first2, OutputType init)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ OutputType inner_product",
+      "definition": "__host__ __device__ OutputType thrust::inner_product",
       "deleted": false,
       "details": "<code>inner&#95;product</code> calculates an inner product of the ranges <code>[first1, last1)</code> and <code>[first2, first2 + (last1 - first1))</code>.\n\nSpecifically, this version of <code>inner&#95;product</code> computes the sum <code>init + (&#42;first1 &#42; &#42;first2) + (&#42;(first1+1) &#42; &#42;(first2+1)) + ... </code>\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code demonstrates how to use <code>inner&#95;product</code> to compute the dot product of two vectors using the <code>thrust::host</code> execution policy for parallelization.\n\n\n\n```cpp\n#include <thrust/inner_product.h>\n#include <thrust/execution_policy.h>\n...\nfloat vec1[3] = {1.0f, 2.0f, 5.0f};\nfloat vec2[3] = {4.0f, 1.0f, 5.0f};\n\nfloat result = thrust::inner_product(thrust::host, vec1, vec1 + 3, vec2, 0.0f);\n\n// result == 31.0f\n```",
       "explicit": false,
@@ -98,6 +111,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 12,
         "file": "thrust/inner_product.h",
@@ -155,7 +169,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformed__reductions_1gab492e1cbc9312f36999e26fcc49a1c61",
+      "qualifiedname": "thrust::inner_product",
+      "refid": "group__transformed__reductions_1ga321192d85c5f510e52300ae762c7e995",
       "returns": [
         "The inner product of sequences <code>[first1, last1)</code> and <code>[first2, last2)</code> plus <code>init</code>."
       ],
@@ -207,18 +222,18 @@
       "title": "inner_product",
       "type": "__host__ __device__ OutputType",
       "typePlain": "__host__ __device__ OutputType",
-      "url": "/api/groups/group__transformed__reductions.html#function-inner_product",
+      "url": "{{ site.baseurl }}/api/groups/group__transformed__reductions.html#function-inner-product",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-inner_product",
+      "anchor": "#function-inner-product",
       "argsString": "(InputIterator1 first1, InputIterator1 last1, InputIterator2 first2, OutputType init)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "OutputType inner_product",
+      "definition": "OutputType thrust::inner_product",
       "deleted": false,
       "details": "<code>inner&#95;product</code> calculates an inner product of the ranges <code>[first1, last1)</code> and <code>[first2, first2 + (last1 - first1))</code>.\n\nSpecifically, this version of <code>inner&#95;product</code> computes the sum <code>init + (&#42;first1 &#42; &#42;first2) + (&#42;(first1+1) &#42; &#42;(first2+1)) + ... </code>\n\nUnlike the C++ Standard Template Library function <code>std::inner&#95;product</code>, this version offers no guarantee on order of execution.\n\n\nThe following code demonstrates how to use <code>inner&#95;product</code> to compute the dot product of two vectors.\n\n\n\n```cpp\n#include <thrust/inner_product.h>\n...\nfloat vec1[3] = {1.0f, 2.0f, 5.0f};\nfloat vec2[3] = {4.0f, 1.0f, 5.0f};\n\nfloat result = thrust::inner_product(vec1, vec1 + 3, vec2, 0.0f);\n\n// result == 31.0f\n```",
       "explicit": false,
@@ -226,6 +241,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 12,
         "file": "thrust/inner_product.h",
@@ -274,7 +290,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformed__reductions_1ga5a997d8167aa8337b51f52bd8efc51f3",
+      "qualifiedname": "thrust::inner_product",
+      "refid": "group__transformed__reductions_1ga295676877375893891b3e06fac5be34a",
       "returns": [
         "The inner product of sequences <code>[first1, last1)</code> and <code>[first2, last2)</code> plus <code>init</code>."
       ],
@@ -317,18 +334,18 @@
       "title": "inner_product",
       "type": "OutputType",
       "typePlain": "OutputType",
-      "url": "/api/groups/group__transformed__reductions.html#function-inner_product",
+      "url": "{{ site.baseurl }}/api/groups/group__transformed__reductions.html#function-inner-product",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-inner_product",
+      "anchor": "#function-inner-product",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator1 first1, InputIterator1 last1, InputIterator2 first2, OutputType init, BinaryFunction1 binary_op1, BinaryFunction2 binary_op2)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ OutputType inner_product",
+      "definition": "__host__ __device__ OutputType thrust::inner_product",
       "deleted": false,
       "details": "<code>inner&#95;product</code> calculates an inner product of the ranges <code>[first1, last1)</code> and <code>[first2, first2 + (last1 - first1))</code>.\n\nThis version of <code>inner&#95;product</code> is identical to the first, except that is uses two user-supplied function objects instead of <code>operator+</code> and <code>operator&#42;</code>.\n\nSpecifically, this version of <code>inner&#95;product</code> computes the sum <code>binary&#95;op1( init, binary&#95;op2(&#42;first1, &#42;first2) ), ... </code>\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\n\n```cpp\n#include <thrust/inner_product.h>\n#include <thrust/execution_policy.h>\n...\nfloat vec1[3] = {1.0f, 2.0f, 5.0f};\nfloat vec2[3] = {4.0f, 1.0f, 5.0f};\n\nfloat init = 0.0f;\nthrust::plus<float>       binary_op1;\nthrust::multiplies<float> binary_op2;\n\nfloat result = thrust::inner_product(thrust::host, vec1, vec1 + 3, vec2, init, binary_op1, binary_op2);\n\n// result == 31.0f\n```",
       "explicit": false,
@@ -336,6 +353,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 12,
         "file": "thrust/inner_product.h",
@@ -411,7 +429,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformed__reductions_1ga42f96c43467c3b3bf4f7e9ebcf5b8d33",
+      "qualifiedname": "thrust::inner_product",
+      "refid": "group__transformed__reductions_1ga13f18496e409c64a0cbf21e19c3bdad2",
       "returns": [
         "The inner product of sequences <code>[first1, last1)</code> and <code>[first2, last2)</code>."
       ],
@@ -481,18 +500,18 @@
       "title": "inner_product",
       "type": "__host__ __device__ OutputType",
       "typePlain": "__host__ __device__ OutputType",
-      "url": "/api/groups/group__transformed__reductions.html#function-inner_product",
+      "url": "{{ site.baseurl }}/api/groups/group__transformed__reductions.html#function-inner-product",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-inner_product",
+      "anchor": "#function-inner-product",
       "argsString": "(InputIterator1 first1, InputIterator1 last1, InputIterator2 first2, OutputType init, BinaryFunction1 binary_op1, BinaryFunction2 binary_op2)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "OutputType inner_product",
+      "definition": "OutputType thrust::inner_product",
       "deleted": false,
       "details": "<code>inner&#95;product</code> calculates an inner product of the ranges <code>[first1, last1)</code> and <code>[first2, first2 + (last1 - first1))</code>.\n\nThis version of <code>inner&#95;product</code> is identical to the first, except that is uses two user-supplied function objects instead of <code>operator+</code> and <code>operator&#42;</code>.\n\nSpecifically, this version of <code>inner&#95;product</code> computes the sum <code>binary&#95;op1( init, binary&#95;op2(&#42;first1, &#42;first2) ), ... </code>\n\nUnlike the C++ Standard Template Library function <code>std::inner&#95;product</code>, this version offers no guarantee on order of execution.\n\n\n\n```cpp\n#include <thrust/inner_product.h>\n...\nfloat vec1[3] = {1.0f, 2.0f, 5.0f};\nfloat vec2[3] = {4.0f, 1.0f, 5.0f};\n\nfloat init = 0.0f;\nthrust::plus<float>       binary_op1;\nthrust::multiplies<float> binary_op2;\n\nfloat result = thrust::inner_product(vec1, vec1 + 3, vec2, init, binary_op1, binary_op2);\n\n// result == 31.0f\n```",
       "explicit": false,
@@ -500,6 +519,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 12,
         "file": "thrust/inner_product.h",
@@ -566,7 +586,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformed__reductions_1gaf04fa6411cc92aa36286f78c1e7cbbe3",
+      "qualifiedname": "thrust::inner_product",
+      "refid": "group__transformed__reductions_1gad9df36f7648745ca572037727b66b48d",
       "returns": [
         "The inner product of sequences <code>[first1, last1)</code> and <code>[first2, last2)</code>."
       ],
@@ -627,18 +648,18 @@
       "title": "inner_product",
       "type": "OutputType",
       "typePlain": "OutputType",
-      "url": "/api/groups/group__transformed__reductions.html#function-inner_product",
+      "url": "{{ site.baseurl }}/api/groups/group__transformed__reductions.html#function-inner-product",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-transform_reduce",
+      "anchor": "#function-transform-reduce",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator first, InputIterator last, UnaryFunction unary_op, OutputType init, BinaryFunction binary_op)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ OutputType transform_reduce",
+      "definition": "__host__ __device__ OutputType thrust::transform_reduce",
       "deleted": false,
       "details": "<code>transform&#95;reduce</code> fuses the <code>transform</code> and <code>reduce</code> operations. <code>transform&#95;reduce</code> is equivalent to performing a transformation defined by <code>unary&#95;op</code> into a temporary sequence and then performing <code>reduce</code> on the transformed sequence. In most cases, fusing these two operations together is more efficient, since fewer memory reads and writes are required.\n\n<code>transform&#95;reduce</code> performs a reduction on the transformation of the sequence <code>[first, last)</code> according to <code>unary&#95;op</code>. Specifically, <code>unary&#95;op</code> is applied to each element of the sequence and then the result is reduced to a single value with <code>binary&#95;op</code> using the initial value <code>init</code>. Note that the transformation <code>unary&#95;op</code> is not applied to the initial value <code>init</code>. The order of reduction is not specified, so <code>binary&#95;op</code> must be both commutative and associative.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>transform&#95;reduce</code> to compute the maximum value of the absolute value of the elements of a range using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/transform_reduce.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n\ntemplate<typename T>\nstruct absolute_value : public unary_function<T,T>\n{\n  __host__ __device__ T operator()(const T &x) const\n  {\n    return x < T(0) ? -x : x;\n  }\n};\n\n...\n\nint data[6] = {-1, 0, -2, -2, 1, -3};\nint result = thrust::transform_reduce(thrust::host,\n                                      data, data + 6,\n                                      absolute_value<int>(),\n                                      0,\n                                      thrust::maximum<int>());\n// result == 3\n```",
       "explicit": false,
@@ -646,6 +667,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 14,
         "file": "thrust/transform_reduce.h",
@@ -712,13 +734,14 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformed__reductions_1ga6d3a92217affbe58e6bbba327768c064",
+      "qualifiedname": "thrust::transform_reduce",
+      "refid": "group__transformed__reductions_1gaba339b23d412c93369720f2df77914ed",
       "returns": [
         "The result of the transformed reduction."
       ],
       "see": [
-        "<code><a href=\"/api/groups/group__transformations.html#function-transform\">transform</a></code>",
-        "<code><a href=\"/api/groups/group__reductions.html#function-reduce\">reduce</a></code>"
+        "<code>transform</code>",
+        "<code>reduce</code>"
       ],
       "static": false,
       "strong": false,
@@ -774,18 +797,18 @@
       "title": "transform_reduce",
       "type": "__host__ __device__ OutputType",
       "typePlain": "__host__ __device__ OutputType",
-      "url": "/api/groups/group__transformed__reductions.html#function-transform_reduce",
+      "url": "{{ site.baseurl }}/api/groups/group__transformed__reductions.html#function-transform-reduce",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-transform_reduce",
+      "anchor": "#function-transform-reduce",
       "argsString": "(InputIterator first, InputIterator last, UnaryFunction unary_op, OutputType init, BinaryFunction binary_op)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "OutputType transform_reduce",
+      "definition": "OutputType thrust::transform_reduce",
       "deleted": false,
       "details": "<code>transform&#95;reduce</code> fuses the <code>transform</code> and <code>reduce</code> operations. <code>transform&#95;reduce</code> is equivalent to performing a transformation defined by <code>unary&#95;op</code> into a temporary sequence and then performing <code>reduce</code> on the transformed sequence. In most cases, fusing these two operations together is more efficient, since fewer memory reads and writes are required.\n\n<code>transform&#95;reduce</code> performs a reduction on the transformation of the sequence <code>[first, last)</code> according to <code>unary&#95;op</code>. Specifically, <code>unary&#95;op</code> is applied to each element of the sequence and then the result is reduced to a single value with <code>binary&#95;op</code> using the initial value <code>init</code>. Note that the transformation <code>unary&#95;op</code> is not applied to the initial value <code>init</code>. The order of reduction is not specified, so <code>binary&#95;op</code> must be both commutative and associative.\n\n\nThe following code snippet demonstrates how to use <code>transform&#95;reduce</code> to compute the maximum value of the absolute value of the elements of a range.\n\n\n\n```cpp\n#include <thrust/transform_reduce.h>\n#include <thrust/functional.h>\n\ntemplate<typename T>\nstruct absolute_value : public unary_function<T,T>\n{\n  __host__ __device__ T operator()(const T &x) const\n  {\n    return x < T(0) ? -x : x;\n  }\n};\n\n...\n\nint data[6] = {-1, 0, -2, -2, 1, -3};\nint result = thrust::transform_reduce(data, data + 6,\n                                      absolute_value<int>(),\n                                      0,\n                                      thrust::maximum<int>());\n// result == 3\n```",
       "explicit": false,
@@ -793,6 +816,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 14,
         "file": "thrust/transform_reduce.h",
@@ -850,13 +874,14 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformed__reductions_1ga47435ed7d9be91e16b9a149293665169",
+      "qualifiedname": "thrust::transform_reduce",
+      "refid": "group__transformed__reductions_1ga0d4232a9685675f488c3cc847111e48d",
       "returns": [
         "The result of the transformed reduction."
       ],
       "see": [
-        "<code><a href=\"/api/groups/group__transformations.html#function-transform\">transform</a></code>",
-        "<code><a href=\"/api/groups/group__reductions.html#function-reduce\">reduce</a></code>"
+        "<code>transform</code>",
+        "<code>reduce</code>"
       ],
       "static": false,
       "strong": false,
@@ -903,15 +928,16 @@
       "title": "transform_reduce",
       "type": "OutputType",
       "typePlain": "OutputType",
-      "url": "/api/groups/group__transformed__reductions.html#function-transform_reduce",
+      "url": "{{ site.baseurl }}/api/groups/group__transformed__reductions.html#function-transform-reduce",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "transformed_reductions",
   "refid": "group__transformed__reductions",
   "static": false,
   "strong": false,
   "title": "Transformed Reductions",
-  "url": "/api/groups/group__transformed__reductions.html",
+  "url": "{{ site.baseurl }}/api/groups/group__transformed__reductions.html",
   "visibility": "public"
 }

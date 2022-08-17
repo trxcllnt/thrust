@@ -11,62 +11,62 @@ has_toc: false
 
 ## Groups
 
-* **[Binary Search](/api/groups/group__binary__search.html)**
+* **[Binary Search]({{ site.baseurl }}/api/groups/group__binary__search.html)**
 
 <code class="doxybook">
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename T&gt;</span>
-<span>__host__ __device__ InputIterator </span><span><b><a href="/api/groups/group__searching.html#function-find">find</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ InputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__searching.html#function-find">thrust::find</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;const T & value);</span>
 <br>
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename T&gt;</span>
-<span>InputIterator </span><span><b><a href="/api/groups/group__searching.html#function-find">find</a></b>(InputIterator first,</span>
+<span>InputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__searching.html#function-find">thrust::find</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;const T & value);</span>
 <br>
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ InputIterator </span><span><b><a href="/api/groups/group__searching.html#function-find_if">find&#95;if</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ InputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__searching.html#function-find-if">thrust::find&#95;if</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span>
 <br>
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>InputIterator </span><span><b><a href="/api/groups/group__searching.html#function-find_if">find&#95;if</a></b>(InputIterator first,</span>
+<span>InputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__searching.html#function-find-if">thrust::find&#95;if</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span>
 <br>
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ InputIterator </span><span><b><a href="/api/groups/group__searching.html#function-find_if_not">find&#95;if&#95;not</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ InputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__searching.html#function-find-if-not">thrust::find&#95;if&#95;not</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span>
 <br>
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>InputIterator </span><span><b><a href="/api/groups/group__searching.html#function-find_if_not">find&#95;if&#95;not</a></b>(InputIterator first,</span>
+<span>InputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__searching.html#function-find-if-not">thrust::find&#95;if&#95;not</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span>
 <br>
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename InputIterator1,</span>
 <span>&nbsp;&nbsp;typename InputIterator2&gt;</span>
-<span>__host__ __device__ thrust::pair< InputIterator1, InputIterator2 > </span><span><b><a href="/api/groups/group__searching.html#function-mismatch">mismatch</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< InputIterator1, InputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__searching.html#function-mismatch">thrust::mismatch</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 first1,</span>
 <span>&nbsp;&nbsp;InputIterator1 last1,</span>
 <span>&nbsp;&nbsp;InputIterator2 first2);</span>
 <br>
 <span>template &lt;typename InputIterator1,</span>
 <span>&nbsp;&nbsp;typename InputIterator2&gt;</span>
-<span>thrust::pair< InputIterator1, InputIterator2 > </span><span><b><a href="/api/groups/group__searching.html#function-mismatch">mismatch</a></b>(InputIterator1 first1,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< InputIterator1, InputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__searching.html#function-mismatch">thrust::mismatch</a></b>(InputIterator1 first1,</span>
 <span>&nbsp;&nbsp;InputIterator1 last1,</span>
 <span>&nbsp;&nbsp;InputIterator2 first2);</span>
 <br>
@@ -74,7 +74,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename InputIterator1,</span>
 <span>&nbsp;&nbsp;typename InputIterator2,</span>
 <span>&nbsp;&nbsp;typename BinaryPredicate&gt;</span>
-<span>__host__ __device__ thrust::pair< InputIterator1, InputIterator2 > </span><span><b><a href="/api/groups/group__searching.html#function-mismatch">mismatch</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< InputIterator1, InputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__searching.html#function-mismatch">thrust::mismatch</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 first1,</span>
 <span>&nbsp;&nbsp;InputIterator1 last1,</span>
 <span>&nbsp;&nbsp;InputIterator2 first2,</span>
@@ -83,7 +83,7 @@ has_toc: false
 <span>template &lt;typename InputIterator1,</span>
 <span>&nbsp;&nbsp;typename InputIterator2,</span>
 <span>&nbsp;&nbsp;typename BinaryPredicate&gt;</span>
-<span>thrust::pair< InputIterator1, InputIterator2 > </span><span><b><a href="/api/groups/group__searching.html#function-mismatch">mismatch</a></b>(InputIterator1 first1,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< InputIterator1, InputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__searching.html#function-mismatch">thrust::mismatch</a></b>(InputIterator1 first1,</span>
 <span>&nbsp;&nbsp;InputIterator1 last1,</span>
 <span>&nbsp;&nbsp;InputIterator2 first2,</span>
 <span>&nbsp;&nbsp;BinaryPredicate pred);</span>
@@ -91,14 +91,14 @@ has_toc: false
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ ForwardIterator </span><span><b><a href="/api/groups/group__searching.html#function-partition_point">partition&#95;point</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__searching.html#function-partition-point">thrust::partition&#95;point</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span>
 <br>
 <span>template &lt;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>ForwardIterator </span><span><b><a href="/api/groups/group__searching.html#function-partition_point">partition&#95;point</a></b>(ForwardIterator first,</span>
+<span>ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__searching.html#function-partition-point">thrust::partition&#95;point</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span>
 </code>
@@ -106,7 +106,7 @@ has_toc: false
 ## Functions
 
 <h3 id="function-find">
-Function <code>find</code>
+Function <code>thrust::find</code>
 </h3>
 
 <code class="doxybook">
@@ -157,11 +157,11 @@ iter = thrust::find(thrust::device, input.begin(), input.end(), 9); // returns i
 The first iterator <code>i</code> such that <code>&#42;i == value</code> or <code>last</code>.
 
 **See**:
-* <a href="/api/groups/group__searching.html#function-find_if">find_if</a>
-* <a href="/api/groups/group__searching.html#function-mismatch">mismatch</a>
+* find_if 
+* mismatch 
 
 <h3 id="function-find">
-Function <code>find</code>
+Function <code>thrust::find</code>
 </h3>
 
 <code class="doxybook">
@@ -205,11 +205,11 @@ iter = thrust::find(input.begin(), input.end(), 9); // returns input.end()
 The first iterator <code>i</code> such that <code>&#42;i == value</code> or <code>last</code>.
 
 **See**:
-* <a href="/api/groups/group__searching.html#function-find_if">find_if</a>
-* <a href="/api/groups/group__searching.html#function-mismatch">mismatch</a>
+* find_if 
+* mismatch 
 
-<h3 id="function-find_if">
-Function <code>find&#95;if</code>
+<h3 id="function-find-if">
+Function <code>thrust::find&#95;if</code>
 </h3>
 
 <code class="doxybook">
@@ -280,12 +280,12 @@ iter = thrust::find_if(thrust::device, input.begin(), input.end(), greater_than_
 The first iterator <code>i</code> such that <code>pred(&#42;i)</code> is <code>true</code>, or <code>last</code>.
 
 **See**:
-* <a href="/api/groups/group__searching.html#function-find">find</a>
-* <a href="/api/groups/group__searching.html#function-find_if_not">find_if_not</a>
-* <a href="/api/groups/group__searching.html#function-mismatch">mismatch</a>
+* find 
+* find_if_not 
+* mismatch 
 
-<h3 id="function-find_if">
-Function <code>find&#95;if</code>
+<h3 id="function-find-if">
+Function <code>thrust::find&#95;if</code>
 </h3>
 
 <code class="doxybook">
@@ -348,12 +348,12 @@ iter = thrust::find_if(input.begin(), input.end(), greater_than_ten());  // retu
 The first iterator <code>i</code> such that <code>pred(&#42;i)</code> is <code>true</code>, or <code>last</code>.
 
 **See**:
-* <a href="/api/groups/group__searching.html#function-find">find</a>
-* <a href="/api/groups/group__searching.html#function-find_if_not">find_if_not</a>
-* <a href="/api/groups/group__searching.html#function-mismatch">mismatch</a>
+* find 
+* find_if_not 
+* mismatch 
 
-<h3 id="function-find_if_not">
-Function <code>find&#95;if&#95;not</code>
+<h3 id="function-find-if-not">
+Function <code>thrust::find&#95;if&#95;not</code>
 </h3>
 
 <code class="doxybook">
@@ -424,12 +424,12 @@ iter = thrust::find_if_not(thrust::device, input.begin(), input.end(), greater_t
 The first iterator <code>i</code> such that <code>pred(&#42;i)</code> is <code>false</code>, or <code>last</code>.
 
 **See**:
-* <a href="/api/groups/group__searching.html#function-find">find</a>
-* <a href="/api/groups/group__searching.html#function-find_if">find_if</a>
-* <a href="/api/groups/group__searching.html#function-mismatch">mismatch</a>
+* find 
+* find_if 
+* mismatch 
 
-<h3 id="function-find_if_not">
-Function <code>find&#95;if&#95;not</code>
+<h3 id="function-find-if-not">
+Function <code>thrust::find&#95;if&#95;not</code>
 </h3>
 
 <code class="doxybook">
@@ -492,19 +492,19 @@ iter = thrust::find_if_not(input.begin(), input.end(), greater_than_ten());  // 
 The first iterator <code>i</code> such that <code>pred(&#42;i)</code> is <code>false</code>, or <code>last</code>.
 
 **See**:
-* <a href="/api/groups/group__searching.html#function-find">find</a>
-* <a href="/api/groups/group__searching.html#function-find_if">find_if</a>
-* <a href="/api/groups/group__searching.html#function-mismatch">mismatch</a>
+* find 
+* find_if 
+* mismatch 
 
 <h3 id="function-mismatch">
-Function <code>mismatch</code>
+Function <code>thrust::mismatch</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename InputIterator1,</span>
 <span>&nbsp;&nbsp;typename InputIterator2&gt;</span>
-<span>__host__ __device__ thrust::pair< InputIterator1, InputIterator2 > </span><span><b>mismatch</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< InputIterator1, InputIterator2 > </span><span><b>mismatch</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 first1,</span>
 <span>&nbsp;&nbsp;InputIterator1 last1,</span>
 <span>&nbsp;&nbsp;InputIterator2 first2);</span></code>
@@ -553,17 +553,17 @@ result = thrust::mismatch(thrust::device, vec1.begin(), vec1.end(), vec2.begin()
 The first position where the sequences differ.
 
 **See**:
-* <a href="/api/groups/group__searching.html#function-find">find</a>
-* <a href="/api/groups/group__searching.html#function-find_if">find_if</a>
+* find 
+* find_if 
 
 <h3 id="function-mismatch">
-Function <code>mismatch</code>
+Function <code>thrust::mismatch</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename InputIterator1,</span>
 <span>&nbsp;&nbsp;typename InputIterator2&gt;</span>
-<span>thrust::pair< InputIterator1, InputIterator2 > </span><span><b>mismatch</b>(InputIterator1 first1,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< InputIterator1, InputIterator2 > </span><span><b>mismatch</b>(InputIterator1 first1,</span>
 <span>&nbsp;&nbsp;InputIterator1 last1,</span>
 <span>&nbsp;&nbsp;InputIterator2 first2);</span></code>
 <code>mismatch</code> finds the first position where the two ranges <code>[first1, last1)</code> and <code>[first2, first2 + (last1 - first1))</code> differ. The two versions of <code>mismatch</code> use different tests for whether elements differ.
@@ -606,11 +606,11 @@ result = thrust::mismatch(vec1.begin(), vec1.end(), vec2.begin());
 The first position where the sequences differ.
 
 **See**:
-* <a href="/api/groups/group__searching.html#function-find">find</a>
-* <a href="/api/groups/group__searching.html#function-find_if">find_if</a>
+* find 
+* find_if 
 
 <h3 id="function-mismatch">
-Function <code>mismatch</code>
+Function <code>thrust::mismatch</code>
 </h3>
 
 <code class="doxybook">
@@ -618,7 +618,7 @@ Function <code>mismatch</code>
 <span>&nbsp;&nbsp;typename InputIterator1,</span>
 <span>&nbsp;&nbsp;typename InputIterator2,</span>
 <span>&nbsp;&nbsp;typename BinaryPredicate&gt;</span>
-<span>__host__ __device__ thrust::pair< InputIterator1, InputIterator2 > </span><span><b>mismatch</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< InputIterator1, InputIterator2 > </span><span><b>mismatch</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 first1,</span>
 <span>&nbsp;&nbsp;InputIterator1 last1,</span>
 <span>&nbsp;&nbsp;InputIterator2 first2,</span>
@@ -670,18 +670,18 @@ result = thrust::mismatch(thrust::device, vec1.begin(), vec1.end(), vec2.begin()
 The first position where the sequences differ.
 
 **See**:
-* <a href="/api/groups/group__searching.html#function-find">find</a>
-* <a href="/api/groups/group__searching.html#function-find_if">find_if</a>
+* find 
+* find_if 
 
 <h3 id="function-mismatch">
-Function <code>mismatch</code>
+Function <code>thrust::mismatch</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename InputIterator1,</span>
 <span>&nbsp;&nbsp;typename InputIterator2,</span>
 <span>&nbsp;&nbsp;typename BinaryPredicate&gt;</span>
-<span>thrust::pair< InputIterator1, InputIterator2 > </span><span><b>mismatch</b>(InputIterator1 first1,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< InputIterator1, InputIterator2 > </span><span><b>mismatch</b>(InputIterator1 first1,</span>
 <span>&nbsp;&nbsp;InputIterator1 last1,</span>
 <span>&nbsp;&nbsp;InputIterator2 first2,</span>
 <span>&nbsp;&nbsp;BinaryPredicate pred);</span></code>
@@ -727,11 +727,11 @@ result = thrust::mismatch(vec1.begin(), vec1.end(), vec2.begin(), thrust::equal_
 The first position where the sequences differ.
 
 **See**:
-* <a href="/api/groups/group__searching.html#function-find">find</a>
-* <a href="/api/groups/group__searching.html#function-find_if">find_if</a>
+* find 
+* find_if 
 
-<h3 id="function-partition_point">
-Function <code>partition&#95;point</code>
+<h3 id="function-partition-point">
+Function <code>thrust::partition&#95;point</code>
 </h3>
 
 <code class="doxybook">
@@ -790,11 +790,11 @@ The range <code>[first, last)</code> shall be partitioned by <code>pred</code>.
 An iterator <code>mid</code> such that <code>all&#95;of(first, mid, pred)</code> and <code>none&#95;of(mid, last, pred)</code> are both true.
 
 **See**:
-* <code><a href="/api/groups/group__partitioning.html#function-partition">partition</a></code>
-* <code><a href="/api/groups/group__searching.html#function-find_if_not">find&#95;if&#95;not</a></code>
+* <code>partition</code>
+* <code>find&#95;if&#95;not</code>
 
-<h3 id="function-partition_point">
-Function <code>partition&#95;point</code>
+<h3 id="function-partition-point">
+Function <code>thrust::partition&#95;point</code>
 </h3>
 
 <code class="doxybook">
@@ -844,7 +844,7 @@ The range <code>[first, last)</code> shall be partitioned by <code>pred</code>.
 An iterator <code>mid</code> such that <code>all&#95;of(first, mid, pred)</code> and <code>none&#95;of(mid, last, pred)</code> are both true.
 
 **See**:
-* <code><a href="/api/groups/group__partitioning.html#function-partition">partition</a></code>
-* <code><a href="/api/groups/group__searching.html#function-find_if_not">find&#95;if&#95;not</a></code>
+* <code>partition</code>
+* <code>find&#95;if&#95;not</code>
 
 

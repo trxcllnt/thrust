@@ -11,20 +11,20 @@ has_toc: false
 
 ## Groups
 
-* **[Vectorized Searches](/api/groups/group__vectorized__binary__search.html)**
+* **[Vectorized Searches]({{ site.baseurl }}/api/groups/group__vectorized__binary__search.html)**
 
 <code class="doxybook">
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename LessThanComparable&gt;</span>
-<span>__host__ __device__ ForwardIterator </span><span><b><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-lower-bound">thrust::lower&#95;bound</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const LessThanComparable & value);</span>
 <br>
 <span>template &lt;class ForwardIterator,</span>
 <span>&nbsp;&nbsp;class LessThanComparable&gt;</span>
-<span>ForwardIterator </span><span><b><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></b>(ForwardIterator first,</span>
+<span>ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-lower-bound">thrust::lower&#95;bound</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const LessThanComparable & value);</span>
 <br>
@@ -32,7 +32,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename T,</span>
 <span>&nbsp;&nbsp;typename StrictWeakOrdering&gt;</span>
-<span>__host__ __device__ ForwardIterator </span><span><b><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-lower-bound">thrust::lower&#95;bound</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const T & value,</span>
@@ -41,7 +41,7 @@ has_toc: false
 <span>template &lt;class ForwardIterator,</span>
 <span>&nbsp;&nbsp;class T,</span>
 <span>&nbsp;&nbsp;class StrictWeakOrdering&gt;</span>
-<span>ForwardIterator </span><span><b><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></b>(ForwardIterator first,</span>
+<span>ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-lower-bound">thrust::lower&#95;bound</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const T & value,</span>
 <span>&nbsp;&nbsp;StrictWeakOrdering comp);</span>
@@ -49,14 +49,14 @@ has_toc: false
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename LessThanComparable&gt;</span>
-<span>__host__ __device__ ForwardIterator </span><span><b><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-upper-bound">thrust::upper&#95;bound</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const LessThanComparable & value);</span>
 <br>
 <span>template &lt;class ForwardIterator,</span>
 <span>&nbsp;&nbsp;class LessThanComparable&gt;</span>
-<span>ForwardIterator </span><span><b><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></b>(ForwardIterator first,</span>
+<span>ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-upper-bound">thrust::upper&#95;bound</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const LessThanComparable & value);</span>
 <br>
@@ -64,7 +64,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename T,</span>
 <span>&nbsp;&nbsp;typename StrictWeakOrdering&gt;</span>
-<span>__host__ __device__ ForwardIterator </span><span><b><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-upper-bound">thrust::upper&#95;bound</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const T & value,</span>
@@ -73,7 +73,7 @@ has_toc: false
 <span>template &lt;class ForwardIterator,</span>
 <span>&nbsp;&nbsp;class T,</span>
 <span>&nbsp;&nbsp;class StrictWeakOrdering&gt;</span>
-<span>ForwardIterator </span><span><b><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></b>(ForwardIterator first,</span>
+<span>ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-upper-bound">thrust::upper&#95;bound</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const T & value,</span>
 <span>&nbsp;&nbsp;StrictWeakOrdering comp);</span>
@@ -81,14 +81,14 @@ has_toc: false
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename LessThanComparable&gt;</span>
-<span>__host__ __device__ bool </span><span><b><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ bool </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-binary-search">thrust::binary&#95;search</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const LessThanComparable & value);</span>
 <br>
 <span>template &lt;class ForwardIterator,</span>
 <span>&nbsp;&nbsp;class LessThanComparable&gt;</span>
-<span>bool </span><span><b><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></b>(ForwardIterator first,</span>
+<span>bool </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-binary-search">thrust::binary&#95;search</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const LessThanComparable & value);</span>
 <br>
@@ -96,7 +96,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename T,</span>
 <span>&nbsp;&nbsp;typename StrictWeakOrdering&gt;</span>
-<span>__host__ __device__ bool </span><span><b><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ bool </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-binary-search">thrust::binary&#95;search</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const T & value,</span>
@@ -105,7 +105,7 @@ has_toc: false
 <span>template &lt;class ForwardIterator,</span>
 <span>&nbsp;&nbsp;class T,</span>
 <span>&nbsp;&nbsp;class StrictWeakOrdering&gt;</span>
-<span>bool </span><span><b><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></b>(ForwardIterator first,</span>
+<span>bool </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-binary-search">thrust::binary&#95;search</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const T & value,</span>
 <span>&nbsp;&nbsp;StrictWeakOrdering comp);</span>
@@ -113,14 +113,14 @@ has_toc: false
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename LessThanComparable&gt;</span>
-<span>__host__ __device__ thrust::pair< ForwardIterator, ForwardIterator > </span><span><b><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< ForwardIterator, ForwardIterator > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-equal-range">thrust::equal&#95;range</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const LessThanComparable & value);</span>
 <br>
 <span>template &lt;class ForwardIterator,</span>
 <span>&nbsp;&nbsp;class LessThanComparable&gt;</span>
-<span>thrust::pair< ForwardIterator, ForwardIterator > </span><span><b><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></b>(ForwardIterator first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< ForwardIterator, ForwardIterator > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-equal-range">thrust::equal&#95;range</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const LessThanComparable & value);</span>
 <br>
@@ -128,7 +128,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename T,</span>
 <span>&nbsp;&nbsp;typename StrictWeakOrdering&gt;</span>
-<span>__host__ __device__ thrust::pair< ForwardIterator, ForwardIterator > </span><span><b><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< ForwardIterator, ForwardIterator > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-equal-range">thrust::equal&#95;range</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const T & value,</span>
@@ -137,7 +137,7 @@ has_toc: false
 <span>template &lt;class ForwardIterator,</span>
 <span>&nbsp;&nbsp;class T,</span>
 <span>&nbsp;&nbsp;class StrictWeakOrdering&gt;</span>
-<span>thrust::pair< ForwardIterator, ForwardIterator > </span><span><b><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></b>(ForwardIterator first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< ForwardIterator, ForwardIterator > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__binary__search.html#function-equal-range">thrust::equal&#95;range</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const T & value,</span>
 <span>&nbsp;&nbsp;StrictWeakOrdering comp);</span>
@@ -145,8 +145,8 @@ has_toc: false
 
 ## Functions
 
-<h3 id="function-lower_bound">
-Function <code>lower&#95;bound</code>
+<h3 id="function-lower-bound">
+Function <code>thrust::lower&#95;bound</code>
 </h3>
 
 <code class="doxybook">
@@ -203,12 +203,12 @@ The furthermost iterator <code>i</code>, such that <code>&#42;i &lt; value</code
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/lower_bound">https://en.cppreference.com/w/cpp/algorithm/lower_bound</a>
-* <code><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></code>
+* <code>upper&#95;bound</code>
+* <code>equal&#95;range</code>
+* <code><a href="{{ site.baseurl }}/api/groups/group__binary__search.html">Binary Search</a></code>
 
-<h3 id="function-lower_bound">
-Function <code>lower&#95;bound</code>
+<h3 id="function-lower-bound">
+Function <code>thrust::lower&#95;bound</code>
 </h3>
 
 <code class="doxybook">
@@ -258,12 +258,12 @@ The furthermost iterator <code>i</code>, such that <code>&#42;i &lt; value</code
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/lower_bound">https://en.cppreference.com/w/cpp/algorithm/lower_bound</a>
-* <code><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></code>
+* <code>upper&#95;bound</code>
+* <code>equal&#95;range</code>
+* <code><a href="{{ site.baseurl }}/api/groups/group__binary__search.html">Binary Search</a></code>
 
-<h3 id="function-lower_bound">
-Function <code>lower&#95;bound</code>
+<h3 id="function-lower-bound">
+Function <code>thrust::lower&#95;bound</code>
 </h3>
 
 <code class="doxybook">
@@ -325,12 +325,12 @@ The furthermost iterator <code>i</code>, such that <code>comp(&#42;i, value)</co
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/lower_bound">https://en.cppreference.com/w/cpp/algorithm/lower_bound</a>
-* <code><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></code>
+* <code>upper&#95;bound</code>
+* <code>equal&#95;range</code>
+* <code><a href="{{ site.baseurl }}/api/groups/group__binary__search.html">Binary Search</a></code>
 
-<h3 id="function-lower_bound">
-Function <code>lower&#95;bound</code>
+<h3 id="function-lower-bound">
+Function <code>thrust::lower&#95;bound</code>
 </h3>
 
 <code class="doxybook">
@@ -385,12 +385,12 @@ The furthermost iterator <code>i</code>, such that <code>comp(&#42;i, value)</co
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/lower_bound">https://en.cppreference.com/w/cpp/algorithm/lower_bound</a>
-* <code><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></code>
+* <code>upper&#95;bound</code>
+* <code>equal&#95;range</code>
+* <code><a href="{{ site.baseurl }}/api/groups/group__binary__search.html">Binary Search</a></code>
 
-<h3 id="function-upper_bound">
-Function <code>upper&#95;bound</code>
+<h3 id="function-upper-bound">
+Function <code>thrust::upper&#95;bound</code>
 </h3>
 
 <code class="doxybook">
@@ -447,12 +447,12 @@ The furthermost iterator <code>i</code>, such that <code>value &lt; &#42;i</code
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/upper_bound">https://en.cppreference.com/w/cpp/algorithm/upper_bound</a>
-* <code><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></code>
+* <code>lower&#95;bound</code>
+* <code>equal&#95;range</code>
+* <code><a href="{{ site.baseurl }}/api/groups/group__binary__search.html">Binary Search</a></code>
 
-<h3 id="function-upper_bound">
-Function <code>upper&#95;bound</code>
+<h3 id="function-upper-bound">
+Function <code>thrust::upper&#95;bound</code>
 </h3>
 
 <code class="doxybook">
@@ -502,12 +502,12 @@ The furthermost iterator <code>i</code>, such that <code>value &lt; &#42;i</code
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/upper_bound">https://en.cppreference.com/w/cpp/algorithm/upper_bound</a>
-* <code><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></code>
+* <code>lower&#95;bound</code>
+* <code>equal&#95;range</code>
+* <code><a href="{{ site.baseurl }}/api/groups/group__binary__search.html">Binary Search</a></code>
 
-<h3 id="function-upper_bound">
-Function <code>upper&#95;bound</code>
+<h3 id="function-upper-bound">
+Function <code>thrust::upper&#95;bound</code>
 </h3>
 
 <code class="doxybook">
@@ -569,12 +569,12 @@ The furthermost iterator <code>i</code>, such that <code>comp(value, &#42;i)</co
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/upper_bound">https://en.cppreference.com/w/cpp/algorithm/upper_bound</a>
-* <code><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></code>
+* <code>lower&#95;bound</code>
+* <code>equal&#95;range</code>
+* <code><a href="{{ site.baseurl }}/api/groups/group__binary__search.html">Binary Search</a></code>
 
-<h3 id="function-upper_bound">
-Function <code>upper&#95;bound</code>
+<h3 id="function-upper-bound">
+Function <code>thrust::upper&#95;bound</code>
 </h3>
 
 <code class="doxybook">
@@ -629,12 +629,12 @@ The furthermost iterator <code>i</code>, such that <code>comp(value, &#42;i)</co
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/upper_bound">https://en.cppreference.com/w/cpp/algorithm/upper_bound</a>
-* <code><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></code>
+* <code>lower&#95;bound</code>
+* <code>equal&#95;range</code>
+* <code><a href="{{ site.baseurl }}/api/groups/group__binary__search.html">Binary Search</a></code>
 
-<h3 id="function-binary_search">
-Function <code>binary&#95;search</code>
+<h3 id="function-binary-search">
+Function <code>thrust::binary&#95;search</code>
 </h3>
 
 <code class="doxybook">
@@ -691,12 +691,12 @@ thrust::binary_search(thrust::device, input.begin(), input.end(), 9); // returns
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/binary_search">https://en.cppreference.com/w/cpp/algorithm/binary_search</a>
-* <code><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></code>
+* <code>lower&#95;bound</code>
+* <code>upper&#95;bound</code>
+* <code>equal&#95;range</code>
 
-<h3 id="function-binary_search">
-Function <code>binary&#95;search</code>
+<h3 id="function-binary-search">
+Function <code>thrust::binary&#95;search</code>
 </h3>
 
 <code class="doxybook">
@@ -746,12 +746,12 @@ thrust::binary_search(input.begin(), input.end(), 9); // returns false
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/binary_search">https://en.cppreference.com/w/cpp/algorithm/binary_search</a>
-* <code><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></code>
+* <code>lower&#95;bound</code>
+* <code>upper&#95;bound</code>
+* <code>equal&#95;range</code>
 
-<h3 id="function-binary_search">
-Function <code>binary&#95;search</code>
+<h3 id="function-binary-search">
+Function <code>thrust::binary&#95;search</code>
 </h3>
 
 <code class="doxybook">
@@ -813,12 +813,12 @@ thrust::binary_search(thrust::device, input.begin(), input.end(), 9, thrust::les
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/binary_search">https://en.cppreference.com/w/cpp/algorithm/binary_search</a>
-* <code><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></code>
+* <code>lower&#95;bound</code>
+* <code>upper&#95;bound</code>
+* <code>equal&#95;range</code>
 
-<h3 id="function-binary_search">
-Function <code>binary&#95;search</code>
+<h3 id="function-binary-search">
+Function <code>thrust::binary&#95;search</code>
 </h3>
 
 <code class="doxybook">
@@ -873,19 +873,19 @@ thrust::binary_search(input.begin(), input.end(), 9, thrust::less<int>()); // re
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/binary_search">https://en.cppreference.com/w/cpp/algorithm/binary_search</a>
-* <code><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-equal_range">equal&#95;range</a></code>
+* <code>lower&#95;bound</code>
+* <code>upper&#95;bound</code>
+* <code>equal&#95;range</code>
 
-<h3 id="function-equal_range">
-Function <code>equal&#95;range</code>
+<h3 id="function-equal-range">
+Function <code>thrust::equal&#95;range</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename LessThanComparable&gt;</span>
-<span>__host__ __device__ thrust::pair< ForwardIterator, ForwardIterator > </span><span><b>equal_range</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< ForwardIterator, ForwardIterator > </span><span><b>equal_range</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const LessThanComparable & value);</span></code>
@@ -937,18 +937,18 @@ A <code>pair</code> of iterators <code>[i, j)</code> that define the range of eq
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/equal_range">https://en.cppreference.com/w/cpp/algorithm/equal_range</a>
-* <code><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></code>
+* <code>lower&#95;bound</code>
+* <code>upper&#95;bound</code>
+* <code><a href="{{ site.baseurl }}/api/groups/group__binary__search.html">Binary Search</a></code>
 
-<h3 id="function-equal_range">
-Function <code>equal&#95;range</code>
+<h3 id="function-equal-range">
+Function <code>thrust::equal&#95;range</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;class ForwardIterator,</span>
 <span>&nbsp;&nbsp;class LessThanComparable&gt;</span>
-<span>thrust::pair< ForwardIterator, ForwardIterator > </span><span><b>equal_range</b>(ForwardIterator first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< ForwardIterator, ForwardIterator > </span><span><b>equal_range</b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const LessThanComparable & value);</span></code>
 <code>equal&#95;range</code> is a version of binary search: it attempts to find the element value in an ordered range <code>[first, last)</code>. The value returned by <code>equal&#95;range</code> is essentially a combination of the values returned by <code>lower&#95;bound</code> and <code>upper&#95;bound:</code> it returns a <code>pair</code> of iterators <code>i</code> and <code>j</code> such that <code>i</code> is the first position where value could be inserted without violating the ordering and <code>j</code> is the last position where value could be inserted without violating the ordering. It follows that every element in the range <code>[i, j)</code> is equivalent to value, and that <code>[i, j)</code> is the largest subrange of <code>[first, last)</code> that has this property.
@@ -994,12 +994,12 @@ A <code>pair</code> of iterators <code>[i, j)</code> that define the range of eq
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/equal_range">https://en.cppreference.com/w/cpp/algorithm/equal_range</a>
-* <code><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></code>
+* <code>lower&#95;bound</code>
+* <code>upper&#95;bound</code>
+* <code><a href="{{ site.baseurl }}/api/groups/group__binary__search.html">Binary Search</a></code>
 
-<h3 id="function-equal_range">
-Function <code>equal&#95;range</code>
+<h3 id="function-equal-range">
+Function <code>thrust::equal&#95;range</code>
 </h3>
 
 <code class="doxybook">
@@ -1007,7 +1007,7 @@ Function <code>equal&#95;range</code>
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename T,</span>
 <span>&nbsp;&nbsp;typename StrictWeakOrdering&gt;</span>
-<span>__host__ __device__ thrust::pair< ForwardIterator, ForwardIterator > </span><span><b>equal_range</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< ForwardIterator, ForwardIterator > </span><span><b>equal_range</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const T & value,</span>
@@ -1063,19 +1063,19 @@ A <code>pair</code> of iterators <code>[i, j)</code> that define the range of eq
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/equal_range">https://en.cppreference.com/w/cpp/algorithm/equal_range</a>
-* <code><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></code>
+* <code>lower&#95;bound</code>
+* <code>upper&#95;bound</code>
+* <code><a href="{{ site.baseurl }}/api/groups/group__binary__search.html">Binary Search</a></code>
 
-<h3 id="function-equal_range">
-Function <code>equal&#95;range</code>
+<h3 id="function-equal-range">
+Function <code>thrust::equal&#95;range</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;class ForwardIterator,</span>
 <span>&nbsp;&nbsp;class T,</span>
 <span>&nbsp;&nbsp;class StrictWeakOrdering&gt;</span>
-<span>thrust::pair< ForwardIterator, ForwardIterator > </span><span><b>equal_range</b>(ForwardIterator first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< ForwardIterator, ForwardIterator > </span><span><b>equal_range</b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const T & value,</span>
 <span>&nbsp;&nbsp;StrictWeakOrdering comp);</span></code>
@@ -1125,8 +1125,8 @@ A <code>pair</code> of iterators <code>[i, j)</code> that define the range of eq
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/equal_range">https://en.cppreference.com/w/cpp/algorithm/equal_range</a>
-* <code><a href="/api/groups/group__binary__search.html#function-lower_bound">lower&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-upper_bound">upper&#95;bound</a></code>
-* <code><a href="/api/groups/group__binary__search.html#function-binary_search">binary&#95;search</a></code>
+* <code>lower&#95;bound</code>
+* <code>upper&#95;bound</code>
+* <code><a href="{{ site.baseurl }}/api/groups/group__binary__search.html">Binary Search</a></code>
 
 

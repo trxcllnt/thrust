@@ -10,15 +10,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "random",
     "kind": "group",
+    "language": "",
     "name": "random",
+    "qualifiedname": "random",
     "refid": "group__random",
     "title": "Random Number Generation",
-    "url": "/api/groups/group__random.html",
+    "url": "{{ site.baseurl }}/api/groups/group__random.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -27,10 +30,12 @@
       "category": "modules",
       "fullname": "random",
       "kind": "group",
+      "language": "",
       "name": "random",
+      "qualifiedname": "random",
       "refid": "group__random",
       "title": "Random Number Generation",
-      "url": "/api/groups/group__random.html",
+      "url": "{{ site.baseurl }}/api/groups/group__random.html",
       "visibility": "public"
     }
   ],
@@ -41,10 +46,12 @@
     "category": "modules",
     "fullname": "random",
     "kind": "group",
+    "language": "",
     "name": "random",
+    "qualifiedname": "random",
     "refid": "group__random",
     "title": "Random Number Generation",
-    "url": "/api/groups/group__random.html",
+    "url": "{{ site.baseurl }}/api/groups/group__random.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -53,10 +60,12 @@
       "category": "modules",
       "fullname": "random",
       "kind": "group",
+      "language": "",
       "name": "random",
+      "qualifiedname": "random",
       "refid": "group__random",
       "title": "Random Number Generation",
-      "url": "/api/groups/group__random.html",
+      "url": "{{ site.baseurl }}/api/groups/group__random.html",
       "visibility": "public"
     }
   ],
@@ -65,26 +74,30 @@
       "anchor": "",
       "brief": "A <code>discard&#95;block&#95;engine</code> adapts an existing base random number engine and produces random values by discarding some of the values returned by its base engine. Each cycle of the compound engine begins by returning <code>r</code> values successively produced by the base engine and ends by discarding <code>p-r</code> such values. The engine's state is the state of its base engine followed by the number of calls to <code>operator()</code> that have occurred since the beginning of the current cycle. ",
       "category": "classes",
-      "fullname": "random::discard_block_engine",
+      "fullname": "thrust::random::discard_block_engine",
       "kind": "class",
-      "name": "random::discard_block_engine",
-      "refid": "classrandom_1_1discard__block__engine",
+      "language": "cpp",
+      "name": "thrust::random::discard_block_engine",
+      "qualifiedname": "thrust::random::discard_block_engine",
+      "refid": "classthrust_1_1random_1_1discard__block__engine",
       "summary": "A discard_block_engine adapts an existing base random number engine and produces random values by discarding some of the values returned by its base engine. Each cycle of the compound engine begins by returning r values successively produced by the base engine and ends by discarding p-r such values. The engine's state is the state of its base engine followed by the number of calls to operator() that have occurred since the beginning of the current cycle. ",
-      "title": "random::discard_block_engine",
-      "url": "/api/classes/classrandom_1_1discard__block__engine.html",
+      "title": "thrust::random::discard_block_engine",
+      "url": "{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1discard__block__engine.html",
       "visibility": "public"
     },
     {
       "anchor": "",
       "brief": "An <code>xor&#95;combine&#95;engine</code> adapts two existing base random number engines and produces random values by combining the values produced by each. ",
       "category": "classes",
-      "fullname": "random::xor_combine_engine",
+      "fullname": "thrust::random::xor_combine_engine",
       "kind": "class",
-      "name": "random::xor_combine_engine",
-      "refid": "classrandom_1_1xor__combine__engine",
+      "language": "cpp",
+      "name": "thrust::random::xor_combine_engine",
+      "qualifiedname": "thrust::random::xor_combine_engine",
+      "refid": "classthrust_1_1random_1_1xor__combine__engine",
       "summary": "An xor_combine_engine adapts two existing base random number engines and produces random values by combining the values produced by each. ",
-      "title": "random::xor_combine_engine",
-      "url": "/api/classes/classrandom_1_1xor__combine__engine.html",
+      "title": "thrust::random::xor_combine_engine",
+      "url": "{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1xor__combine__engine.html",
       "visibility": "public"
     }
   ],
@@ -96,7 +109,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ bool random::operator==",
+      "definition": "__host__ __device__ bool thrust::random::operator==",
       "deleted": false,
       "details": "This function checks two <code>discard&#95;block&#95;engines</code> for equality. ",
       "explicit": false,
@@ -104,6 +117,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 6,
         "file": "thrust/random/discard_block_engine.h",
@@ -114,27 +128,28 @@
       "paramList": [
         {
           "name": "lhs",
-          "text": "The first <code><a href=\"/api/classes/classrandom_1_1discard__block__engine.html\">discard&#95;block&#95;engine</a></code> to test. "
+          "text": "The first <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1discard__block__engine.html\">discard&#95;block&#95;engine</a></code> to test. "
         },
         {
           "name": "rhs",
-          "text": "The second <code><a href=\"/api/classes/classrandom_1_1discard__block__engine.html\">discard&#95;block&#95;engine</a></code> to test. "
+          "text": "The second <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1discard__block__engine.html\">discard&#95;block&#95;engine</a></code> to test. "
         }
       ],
       "params": [
         {
           "name": "lhs",
-          "type": "const <a href=\"/api/classes/classrandom_1_1discard__block__engine.html\">discard_block_engine</a>< Engine, p, r > &",
+          "type": "const discard_block_engine< Engine, p, r > &",
           "typePlain": "const discard_block_engine< Engine, p, r > &"
         },
         {
           "name": "rhs",
-          "type": "const <a href=\"/api/classes/classrandom_1_1discard__block__engine.html\">discard_block_engine</a>< Engine, p, r > &",
+          "type": "const discard_block_engine< Engine, p, r > &",
           "typePlain": "const discard_block_engine< Engine, p, r > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__random__number__engine__adaptors_1ga04194fd213bdfcab74f74ee9e110a124",
+      "qualifiedname": "thrust::random::operator==",
+      "refid": "group__random__number__engine__adaptors_1gaae24208d9755e1fd7d83978edc105121",
       "returns": [
         "<code>true</code> if <code>lhs</code> is equal to <code>rhs</code>; <code>false</code>, otherwise. "
       ],
@@ -160,7 +175,7 @@
       "title": "operator==",
       "type": "__host__ __device__ bool",
       "typePlain": "__host__ __device__ bool",
-      "url": "/api/groups/group__random__number__engine__adaptors.html#function-operator==",
+      "url": "{{ site.baseurl }}/api/groups/group__random__number__engine__adaptors.html#function-operator==",
       "virtual": false,
       "visibility": "public"
     },
@@ -171,7 +186,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ bool random::operator!=",
+      "definition": "__host__ __device__ bool thrust::random::operator!=",
       "deleted": false,
       "details": "This function checks two <code>discard&#95;block&#95;engines</code> for inequality. ",
       "explicit": false,
@@ -179,6 +194,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 6,
         "file": "thrust/random/discard_block_engine.h",
@@ -189,27 +205,28 @@
       "paramList": [
         {
           "name": "lhs",
-          "text": "The first <code><a href=\"/api/classes/classrandom_1_1discard__block__engine.html\">discard&#95;block&#95;engine</a></code> to test. "
+          "text": "The first <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1discard__block__engine.html\">discard&#95;block&#95;engine</a></code> to test. "
         },
         {
           "name": "rhs",
-          "text": "The second <code><a href=\"/api/classes/classrandom_1_1discard__block__engine.html\">discard&#95;block&#95;engine</a></code> to test. "
+          "text": "The second <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1discard__block__engine.html\">discard&#95;block&#95;engine</a></code> to test. "
         }
       ],
       "params": [
         {
           "name": "lhs",
-          "type": "const <a href=\"/api/classes/classrandom_1_1discard__block__engine.html\">discard_block_engine</a>< Engine, p, r > &",
+          "type": "const discard_block_engine< Engine, p, r > &",
           "typePlain": "const discard_block_engine< Engine, p, r > &"
         },
         {
           "name": "rhs",
-          "type": "const <a href=\"/api/classes/classrandom_1_1discard__block__engine.html\">discard_block_engine</a>< Engine, p, r > &",
+          "type": "const discard_block_engine< Engine, p, r > &",
           "typePlain": "const discard_block_engine< Engine, p, r > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__random__number__engine__adaptors_1gac1383b32b937413dcf088932ebee90fe",
+      "qualifiedname": "thrust::random::operator!=",
+      "refid": "group__random__number__engine__adaptors_1gadf9aa7c0d82f66b383d1c46826c42121",
       "returns": [
         "<code>true</code> if <code>lhs</code> is not equal to <code>rhs</code>; <code>false</code>, otherwise. "
       ],
@@ -235,7 +252,7 @@
       "title": "operator!=",
       "type": "__host__ __device__ bool",
       "typePlain": "__host__ __device__ bool",
-      "url": "/api/groups/group__random__number__engine__adaptors.html#function-operator!=",
+      "url": "{{ site.baseurl }}/api/groups/group__random__number__engine__adaptors.html#function-operator!=",
       "virtual": false,
       "visibility": "public"
     },
@@ -246,14 +263,15 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "std::basic_ostream<CharT,Traits>& random::operator<<",
+      "definition": "std::basic_ostream< CharT, Traits > & thrust::random::operator<<",
       "deleted": false,
-      "details": "This function streams a <a href=\"/api/classes/classrandom_1_1discard__block__engine.html\">discard_block_engine</a> to a <code>std::basic&#95;ostream</code>. ",
+      "details": "This function streams a <a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1discard__block__engine.html\">discard_block_engine</a> to a <code>std::basic&#95;ostream</code>. ",
       "explicit": false,
       "fullname": "random_number_engine_adaptors::operator<<",
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 6,
         "file": "thrust/random/discard_block_engine.h",
@@ -268,7 +286,7 @@
         },
         {
           "name": "e",
-          "text": "The <code><a href=\"/api/classes/classrandom_1_1discard__block__engine.html\">discard&#95;block&#95;engine</a></code> to stream out. "
+          "text": "The <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1discard__block__engine.html\">discard&#95;block&#95;engine</a></code> to stream out. "
         }
       ],
       "params": [
@@ -279,12 +297,13 @@
         },
         {
           "name": "e",
-          "type": "const <a href=\"/api/classes/classrandom_1_1discard__block__engine.html\">discard_block_engine</a>< Engine, p, r > &",
+          "type": "const discard_block_engine< Engine, p, r > &",
           "typePlain": "const discard_block_engine< Engine, p, r > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__random__number__engine__adaptors_1gac442b0a1b9fd89b0cd9cc80cf6e77e92",
+      "qualifiedname": "thrust::random::operator<<",
+      "refid": "group__random__number__engine__adaptors_1ga0f5375bd851a1c28f35f2f88d30ae30c",
       "returns": [
         "<code>os</code>"
       ],
@@ -320,7 +339,7 @@
       "title": "operator<<",
       "type": "std::basic_ostream< CharT, Traits > &",
       "typePlain": "std::basic_ostream< CharT, Traits > &",
-      "url": "/api/groups/group__random__number__engine__adaptors.html#function-operator<<",
+      "url": "{{ site.baseurl }}/api/groups/group__random__number__engine__adaptors.html#function-operator<<",
       "virtual": false,
       "visibility": "public"
     },
@@ -331,14 +350,15 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "std::basic_istream<CharT,Traits>& random::operator>>",
+      "definition": "std::basic_istream< CharT, Traits > & thrust::random::operator>>",
       "deleted": false,
-      "details": "This function streams a <a href=\"/api/classes/classrandom_1_1discard__block__engine.html\">discard_block_engine</a> in from a std::basic_istream. ",
+      "details": "This function streams a <a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1discard__block__engine.html\">discard_block_engine</a> in from a std::basic_istream. ",
       "explicit": false,
       "fullname": "random_number_engine_adaptors::operator>>",
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 1,
         "file": "thrust/random/discard_block_engine.h",
@@ -353,7 +373,7 @@
         },
         {
           "name": "e",
-          "text": "The <code><a href=\"/api/classes/classrandom_1_1discard__block__engine.html\">discard&#95;block&#95;engine</a></code> to stream in. "
+          "text": "The <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1discard__block__engine.html\">discard&#95;block&#95;engine</a></code> to stream in. "
         }
       ],
       "params": [
@@ -364,12 +384,13 @@
         },
         {
           "name": "e",
-          "type": "<a href=\"/api/classes/classrandom_1_1discard__block__engine.html\">discard_block_engine</a>< Engine, p, r > &",
+          "type": "discard_block_engine< Engine, p, r > &",
           "typePlain": "discard_block_engine< Engine, p, r > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__random__number__engine__adaptors_1gad27510a0bc39e601fb5a2425541b0f64",
+      "qualifiedname": "thrust::random::operator>>",
+      "refid": "group__random__number__engine__adaptors_1ga6c8f495f886233cd9ba51ec3c51db45d",
       "returns": [
         "<code>is</code>"
       ],
@@ -405,7 +426,7 @@
       "title": "operator>>",
       "type": "std::basic_istream< CharT, Traits > &",
       "typePlain": "std::basic_istream< CharT, Traits > &",
-      "url": "/api/groups/group__random__number__engine__adaptors.html#function-operator>>",
+      "url": "{{ site.baseurl }}/api/groups/group__random__number__engine__adaptors.html#function-operator>>",
       "virtual": false,
       "visibility": "public"
     },
@@ -416,7 +437,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ bool random::operator==",
+      "definition": "__host__ __device__ bool thrust::random::operator==",
       "deleted": false,
       "details": "This function checks two <code>xor&#95;combine&#95;engines</code> for equality. ",
       "explicit": false,
@@ -424,6 +445,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 6,
         "file": "thrust/random/xor_combine_engine.h",
@@ -434,27 +456,28 @@
       "paramList": [
         {
           "name": "lhs",
-          "text": "The first <code><a href=\"/api/classes/classrandom_1_1xor__combine__engine.html\">xor&#95;combine&#95;engine</a></code> to test. "
+          "text": "The first <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1xor__combine__engine.html\">xor&#95;combine&#95;engine</a></code> to test. "
         },
         {
           "name": "rhs",
-          "text": "The second <code><a href=\"/api/classes/classrandom_1_1xor__combine__engine.html\">xor&#95;combine&#95;engine</a></code> to test. "
+          "text": "The second <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1xor__combine__engine.html\">xor&#95;combine&#95;engine</a></code> to test. "
         }
       ],
       "params": [
         {
           "name": "lhs",
-          "type": "const <a href=\"/api/classes/classrandom_1_1xor__combine__engine.html\">xor_combine_engine</a>< Engine1_, s1_, Engine2_, s2_ > &",
+          "type": "const xor_combine_engine< Engine1_, s1_, Engine2_, s2_ > &",
           "typePlain": "const xor_combine_engine< Engine1_, s1_, Engine2_, s2_ > &"
         },
         {
           "name": "rhs",
-          "type": "const <a href=\"/api/classes/classrandom_1_1xor__combine__engine.html\">xor_combine_engine</a>< Engine1_, s1_, Engine2_, s2_ > &",
+          "type": "const xor_combine_engine< Engine1_, s1_, Engine2_, s2_ > &",
           "typePlain": "const xor_combine_engine< Engine1_, s1_, Engine2_, s2_ > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__random__number__engine__adaptors_1ga0b581e9afb65823bc30066727b21b83d",
+      "qualifiedname": "thrust::random::operator==",
+      "refid": "group__random__number__engine__adaptors_1ga36351e45942c03a83f48279149fbf4f7",
       "returns": [
         "<code>true</code> if <code>lhs</code> is equal to <code>rhs</code>; <code>false</code>, otherwise. "
       ],
@@ -485,7 +508,7 @@
       "title": "operator==",
       "type": "__host__ __device__ bool",
       "typePlain": "__host__ __device__ bool",
-      "url": "/api/groups/group__random__number__engine__adaptors.html#function-operator==",
+      "url": "{{ site.baseurl }}/api/groups/group__random__number__engine__adaptors.html#function-operator==",
       "virtual": false,
       "visibility": "public"
     },
@@ -496,7 +519,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ bool random::operator!=",
+      "definition": "__host__ __device__ bool thrust::random::operator!=",
       "deleted": false,
       "details": "This function checks two <code>xor&#95;combine&#95;engines</code> for inequality. ",
       "explicit": false,
@@ -504,6 +527,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 6,
         "file": "thrust/random/xor_combine_engine.h",
@@ -514,27 +538,28 @@
       "paramList": [
         {
           "name": "lhs",
-          "text": "The first <code><a href=\"/api/classes/classrandom_1_1xor__combine__engine.html\">xor&#95;combine&#95;engine</a></code> to test. "
+          "text": "The first <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1xor__combine__engine.html\">xor&#95;combine&#95;engine</a></code> to test. "
         },
         {
           "name": "rhs",
-          "text": "The second <code><a href=\"/api/classes/classrandom_1_1xor__combine__engine.html\">xor&#95;combine&#95;engine</a></code> to test. "
+          "text": "The second <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1xor__combine__engine.html\">xor&#95;combine&#95;engine</a></code> to test. "
         }
       ],
       "params": [
         {
           "name": "lhs",
-          "type": "const <a href=\"/api/classes/classrandom_1_1xor__combine__engine.html\">xor_combine_engine</a>< Engine1_, s1_, Engine2_, s2_ > &",
+          "type": "const xor_combine_engine< Engine1_, s1_, Engine2_, s2_ > &",
           "typePlain": "const xor_combine_engine< Engine1_, s1_, Engine2_, s2_ > &"
         },
         {
           "name": "rhs",
-          "type": "const <a href=\"/api/classes/classrandom_1_1xor__combine__engine.html\">xor_combine_engine</a>< Engine1_, s1_, Engine2_, s2_ > &",
+          "type": "const xor_combine_engine< Engine1_, s1_, Engine2_, s2_ > &",
           "typePlain": "const xor_combine_engine< Engine1_, s1_, Engine2_, s2_ > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__random__number__engine__adaptors_1ga74a95bfece4a51082bb0e6b2cbbccd09",
+      "qualifiedname": "thrust::random::operator!=",
+      "refid": "group__random__number__engine__adaptors_1ga51ba86fdcabea0ae9d257fb5c06a0c96",
       "returns": [
         "<code>true</code> if <code>lhs</code> is not equal to <code>rhs</code>; <code>false</code>, otherwise. "
       ],
@@ -565,7 +590,7 @@
       "title": "operator!=",
       "type": "__host__ __device__ bool",
       "typePlain": "__host__ __device__ bool",
-      "url": "/api/groups/group__random__number__engine__adaptors.html#function-operator!=",
+      "url": "{{ site.baseurl }}/api/groups/group__random__number__engine__adaptors.html#function-operator!=",
       "virtual": false,
       "visibility": "public"
     },
@@ -576,14 +601,15 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "std::basic_ostream<CharT,Traits>& random::operator<<",
+      "definition": "std::basic_ostream< CharT, Traits > & thrust::random::operator<<",
       "deleted": false,
-      "details": "This function streams a <a href=\"/api/classes/classrandom_1_1xor__combine__engine.html\">xor_combine_engine</a> to a <code>std::basic&#95;ostream</code>. ",
+      "details": "This function streams a <a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1xor__combine__engine.html\">xor_combine_engine</a> to a <code>std::basic&#95;ostream</code>. ",
       "explicit": false,
       "fullname": "random_number_engine_adaptors::operator<<",
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 6,
         "file": "thrust/random/xor_combine_engine.h",
@@ -598,7 +624,7 @@
         },
         {
           "name": "e",
-          "text": "The <code><a href=\"/api/classes/classrandom_1_1xor__combine__engine.html\">xor&#95;combine&#95;engine</a></code> to stream out. "
+          "text": "The <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1xor__combine__engine.html\">xor&#95;combine&#95;engine</a></code> to stream out. "
         }
       ],
       "params": [
@@ -609,12 +635,13 @@
         },
         {
           "name": "e",
-          "type": "const <a href=\"/api/classes/classrandom_1_1xor__combine__engine.html\">xor_combine_engine</a>< Engine1_, s1_, Engine2_, s2_ > &",
+          "type": "const xor_combine_engine< Engine1_, s1_, Engine2_, s2_ > &",
           "typePlain": "const xor_combine_engine< Engine1_, s1_, Engine2_, s2_ > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__random__number__engine__adaptors_1gaf9b4372d916ddd987e1c0a374c4bbc3d",
+      "qualifiedname": "thrust::random::operator<<",
+      "refid": "group__random__number__engine__adaptors_1ga05a48a1043d53a3fd32d3a0bf833fb59",
       "returns": [
         "<code>os</code>"
       ],
@@ -655,7 +682,7 @@
       "title": "operator<<",
       "type": "std::basic_ostream< CharT, Traits > &",
       "typePlain": "std::basic_ostream< CharT, Traits > &",
-      "url": "/api/groups/group__random__number__engine__adaptors.html#function-operator<<",
+      "url": "{{ site.baseurl }}/api/groups/group__random__number__engine__adaptors.html#function-operator<<",
       "virtual": false,
       "visibility": "public"
     },
@@ -666,14 +693,15 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "std::basic_istream<CharT,Traits>& random::operator>>",
+      "definition": "std::basic_istream< CharT, Traits > & thrust::random::operator>>",
       "deleted": false,
-      "details": "This function streams a <a href=\"/api/classes/classrandom_1_1xor__combine__engine.html\">xor_combine_engine</a> in from a std::basic_istream. ",
+      "details": "This function streams a <a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1xor__combine__engine.html\">xor_combine_engine</a> in from a std::basic_istream. ",
       "explicit": false,
       "fullname": "random_number_engine_adaptors::operator>>",
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 1,
         "file": "thrust/random/xor_combine_engine.h",
@@ -688,7 +716,7 @@
         },
         {
           "name": "e",
-          "text": "The <code><a href=\"/api/classes/classrandom_1_1xor__combine__engine.html\">xor&#95;combine&#95;engine</a></code> to stream in. "
+          "text": "The <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1random_1_1xor__combine__engine.html\">xor&#95;combine&#95;engine</a></code> to stream in. "
         }
       ],
       "params": [
@@ -699,12 +727,13 @@
         },
         {
           "name": "e",
-          "type": "<a href=\"/api/classes/classrandom_1_1xor__combine__engine.html\">xor_combine_engine</a>< Engine1_, s1_, Engine2_, s2_ > &",
+          "type": "xor_combine_engine< Engine1_, s1_, Engine2_, s2_ > &",
           "typePlain": "xor_combine_engine< Engine1_, s1_, Engine2_, s2_ > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__random__number__engine__adaptors_1gaf00c6336cb7b0d179feb2a9f672e4def",
+      "qualifiedname": "thrust::random::operator>>",
+      "refid": "group__random__number__engine__adaptors_1ga13d460f1bd073148c738a3d77a401176",
       "returns": [
         "<code>is</code>"
       ],
@@ -745,15 +774,16 @@
       "title": "operator>>",
       "type": "std::basic_istream< CharT, Traits > &",
       "typePlain": "std::basic_istream< CharT, Traits > &",
-      "url": "/api/groups/group__random__number__engine__adaptors.html#function-operator>>",
+      "url": "{{ site.baseurl }}/api/groups/group__random__number__engine__adaptors.html#function-operator>>",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "random_number_engine_adaptors",
   "refid": "group__random__number__engine__adaptors",
   "static": false,
   "strong": false,
   "title": "Random Number Engine Adaptor Class Templates",
-  "url": "/api/groups/group__random__number__engine__adaptors.html",
+  "url": "{{ site.baseurl }}/api/groups/group__random__number__engine__adaptors.html",
   "visibility": "public"
 }

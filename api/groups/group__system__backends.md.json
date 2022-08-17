@@ -10,15 +10,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "system",
     "kind": "group",
+    "language": "",
     "name": "system",
+    "qualifiedname": "system",
     "refid": "group__system",
     "title": "System",
-    "url": "/api/groups/group__system.html",
+    "url": "{{ site.baseurl }}/api/groups/group__system.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -27,10 +30,12 @@
       "category": "modules",
       "fullname": "system",
       "kind": "group",
+      "language": "",
       "name": "system",
+      "qualifiedname": "system",
       "refid": "group__system",
       "title": "System",
-      "url": "/api/groups/group__system.html",
+      "url": "{{ site.baseurl }}/api/groups/group__system.html",
       "visibility": "public"
     }
   ],
@@ -38,72 +43,86 @@
   "namespaces": [
     {
       "anchor": "",
-      "category": "namespaces",
-      "fullname": "system::cpp",
-      "kind": "namespace",
-      "name": "system::cpp",
-      "refid": "namespacesystem_1_1cpp",
-      "title": "system::cpp",
-      "url": "/api/namespaces/namespacesystem_1_1cpp.html",
-      "visibility": "public"
-    },
-    {
-      "anchor": "",
       "brief": "<code>thrust::cpp</code> is a top-level alias for thrust::system::cpp. ",
       "category": "namespaces",
       "fullname": "thrust::cpp",
       "kind": "namespace",
+      "language": "cpp",
       "name": "thrust::cpp",
+      "qualifiedname": "thrust::cpp",
       "refid": "namespacethrust_1_1cpp",
       "summary": "thrust::cpp is a top-level alias for thrust::system::cpp. ",
       "title": "thrust::cpp",
-      "url": "/api/namespaces/namespacethrust_1_1cpp.html",
+      "url": "{{ site.baseurl }}/api/namespaces/namespacethrust_1_1cpp.html",
+      "visibility": "public"
+    },
+    {
+      "anchor": "",
+      "brief": "<code>thrust::system</code> is the namespace which contains specific Thrust backend systems. It also contains functionality for reporting error conditions originating from the operating system or other low-level application program interfaces such as the CUDA runtime. They are provided in a separate namespace for import convenience but are also aliased in the top-level <code>thrust</code> namespace for easy access. ",
+      "category": "namespaces",
+      "fullname": "thrust::system",
+      "kind": "namespace",
+      "language": "cpp",
+      "name": "thrust::system",
+      "qualifiedname": "thrust::system",
+      "refid": "namespacethrust_1_1system",
+      "summary": "thrust::system is the namespace which contains specific Thrust backend systems. It also contains functionality for reporting error conditions originating from the operating system or other low-level application program interfaces such as the CUDA runtime. They are provided in a separate namespace for import convenience but are also aliased in the top-level thrust namespace for easy access. ",
+      "title": "thrust::system",
+      "url": "{{ site.baseurl }}/api/namespaces/namespacethrust_1_1system.html",
       "visibility": "public"
     },
     {
       "anchor": "",
       "category": "namespaces",
-      "fullname": "cpp",
+      "fullname": "thrust::system::omp",
       "kind": "namespace",
-      "name": "cpp",
-      "refid": "namespacecpp",
-      "title": "cpp",
-      "url": "/api/namespaces/namespacecpp.html",
+      "language": "cpp",
+      "name": "thrust::system::omp",
+      "qualifiedname": "thrust::system::omp",
+      "refid": "namespacethrust_1_1system_1_1omp",
+      "title": "thrust::system::omp",
+      "url": "{{ site.baseurl }}/api/namespaces/namespacethrust_1_1system_1_1omp.html",
       "visibility": "public"
     },
     {
       "anchor": "",
-      "brief": "<code>thrust::system::cuda</code> is the namespace containing functionality for allocating, manipulating, and deallocating memory available to Thrust's CUDA backend system. The identifiers are provided in a separate namespace underneath <code><a href=\"/api/namespaces/namespacethrust_1_1system.html\">thrust::system</a></code> for import convenience but are also aliased in the top-level <code><a href=\"/api/namespaces/namespacethrust_1_1cuda.html\">thrust::cuda</a></code> namespace for easy access. ",
+      "category": "namespaces",
+      "fullname": "thrust::system::cpp",
+      "kind": "namespace",
+      "language": "cpp",
+      "name": "thrust::system::cpp",
+      "qualifiedname": "thrust::system::cpp",
+      "refid": "namespacethrust_1_1system_1_1cpp",
+      "title": "thrust::system::cpp",
+      "url": "{{ site.baseurl }}/api/namespaces/namespacethrust_1_1system_1_1cpp.html",
+      "visibility": "public"
+    },
+    {
+      "anchor": "",
+      "brief": "<code>thrust::system::cuda</code> is the namespace containing functionality for allocating, manipulating, and deallocating memory available to Thrust's CUDA backend system. The identifiers are provided in a separate namespace underneath <code><a href=\"{{ site.baseurl }}/api/namespaces/namespacethrust_1_1system.html\">thrust::system</a></code> for import convenience but are also aliased in the top-level <code><a href=\"{{ site.baseurl }}/api/namespaces/namespacethrust_1_1cuda.html\">thrust::cuda</a></code> namespace for easy access. ",
       "category": "namespaces",
       "fullname": "thrust::system::cuda",
       "kind": "namespace",
+      "language": "cpp",
       "name": "thrust::system::cuda",
+      "qualifiedname": "thrust::system::cuda",
       "refid": "namespacethrust_1_1system_1_1cuda",
       "summary": "thrust::system::cuda is the namespace containing functionality for allocating, manipulating, and deallocating memory available to Thrust's CUDA backend system. The identifiers are provided in a separate namespace underneath thrust::system for import convenience but are also aliased in the top-level thrust::cuda namespace for easy access. ",
       "title": "thrust::system::cuda",
-      "url": "/api/namespaces/namespacethrust_1_1system_1_1cuda.html",
+      "url": "{{ site.baseurl }}/api/namespaces/namespacethrust_1_1system_1_1cuda.html",
       "visibility": "public"
     },
     {
       "anchor": "",
       "category": "namespaces",
-      "fullname": "system",
+      "fullname": "thrust::system::tbb",
       "kind": "namespace",
-      "name": "system",
-      "refid": "namespacesystem",
-      "title": "system",
-      "url": "/api/namespaces/namespacesystem.html",
-      "visibility": "public"
-    },
-    {
-      "anchor": "",
-      "category": "namespaces",
-      "fullname": "system::omp",
-      "kind": "namespace",
-      "name": "system::omp",
-      "refid": "namespacesystem_1_1omp",
-      "title": "system::omp",
-      "url": "/api/namespaces/namespacesystem_1_1omp.html",
+      "language": "cpp",
+      "name": "thrust::system::tbb",
+      "qualifiedname": "thrust::system::tbb",
+      "refid": "namespacethrust_1_1system_1_1tbb",
+      "title": "thrust::system::tbb",
+      "url": "{{ site.baseurl }}/api/namespaces/namespacethrust_1_1system_1_1tbb.html",
       "visibility": "public"
     },
     {
@@ -112,33 +131,13 @@
       "category": "namespaces",
       "fullname": "thrust::omp",
       "kind": "namespace",
+      "language": "cpp",
       "name": "thrust::omp",
+      "qualifiedname": "thrust::omp",
       "refid": "namespacethrust_1_1omp",
       "summary": "thrust::omp is a top-level alias for thrust::system::omp. ",
       "title": "thrust::omp",
-      "url": "/api/namespaces/namespacethrust_1_1omp.html",
-      "visibility": "public"
-    },
-    {
-      "anchor": "",
-      "category": "namespaces",
-      "fullname": "omp",
-      "kind": "namespace",
-      "name": "omp",
-      "refid": "namespaceomp",
-      "title": "omp",
-      "url": "/api/namespaces/namespaceomp.html",
-      "visibility": "public"
-    },
-    {
-      "anchor": "",
-      "category": "namespaces",
-      "fullname": "system::tbb",
-      "kind": "namespace",
-      "name": "system::tbb",
-      "refid": "namespacesystem_1_1tbb",
-      "title": "system::tbb",
-      "url": "/api/namespaces/namespacesystem_1_1tbb.html",
+      "url": "{{ site.baseurl }}/api/namespaces/namespacethrust_1_1omp.html",
       "visibility": "public"
     },
     {
@@ -147,22 +146,13 @@
       "category": "namespaces",
       "fullname": "thrust::tbb",
       "kind": "namespace",
+      "language": "cpp",
       "name": "thrust::tbb",
+      "qualifiedname": "thrust::tbb",
       "refid": "namespacethrust_1_1tbb",
       "summary": "thrust::tbb is a top-level alias for thrust::system::tbb. ",
       "title": "thrust::tbb",
-      "url": "/api/namespaces/namespacethrust_1_1tbb.html",
-      "visibility": "public"
-    },
-    {
-      "anchor": "",
-      "category": "namespaces",
-      "fullname": "tbb",
-      "kind": "namespace",
-      "name": "tbb",
-      "refid": "namespacetbb",
-      "title": "tbb",
-      "url": "/api/namespaces/namespacetbb.html",
+      "url": "{{ site.baseurl }}/api/namespaces/namespacethrust_1_1tbb.html",
       "visibility": "public"
     }
   ],
@@ -172,10 +162,12 @@
     "category": "modules",
     "fullname": "system",
     "kind": "group",
+    "language": "",
     "name": "system",
+    "qualifiedname": "system",
     "refid": "group__system",
     "title": "System",
-    "url": "/api/groups/group__system.html",
+    "url": "{{ site.baseurl }}/api/groups/group__system.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -184,10 +176,12 @@
       "category": "modules",
       "fullname": "system",
       "kind": "group",
+      "language": "",
       "name": "system",
+      "qualifiedname": "system",
       "refid": "group__system",
       "title": "System",
-      "url": "/api/groups/group__system.html",
+      "url": "{{ site.baseurl }}/api/groups/group__system.html",
       "visibility": "public"
     }
   ],
@@ -197,13 +191,14 @@
       "anchor": "#using-pointer",
       "category": "types",
       "const": false,
-      "definition": "using system::cpp::pointer = typedef thrust::pointer< T, thrust::system::cpp::tag, thrust::tagged_reference<T, thrust::system::cpp::tag> >",
+      "definition": "using thrust::system::cpp::pointer = typedef thrust::pointer< T, thrust::system::cpp::tag, thrust::tagged_reference<T, thrust::system::cpp::tag> >",
       "details": "<code>cpp::pointer</code> stores a pointer to an object allocated in memory accessible by the <code>cpp</code> system. This type provides type safety when dispatching algorithms on ranges resident in <code>cpp</code> memory.\n\n<code>cpp::pointer</code> has pointer semantics: it may be dereferenced and manipulated with pointer arithmetic.\n\n<code>cpp::pointer</code> can be created with the function <code>cpp::malloc</code>, or by explicitly calling its constructor with a raw pointer.\n\nThe raw pointer encapsulated by a <code>cpp::pointer</code> may be obtained by eiter its <code>get</code> member function or the <code>raw&#95;pointer&#95;cast</code> function.",
       "explicit": false,
       "fullname": "system_backends::pointer",
       "hasDetails": true,
       "inline": false,
       "kind": "using",
+      "language": "",
       "location": {
         "bodyFile": "thrust/system/cpp/pointer.h",
         "bodyStart": 60,
@@ -216,11 +211,12 @@
         "<code>cpp::pointer</code> is not a \"smart\" pointer; it is the programmer's responsibility to deallocate memory pointed to by <code>cpp::pointer</code>."
       ],
       "override": false,
-      "refid": "group__system__backends_1gaeabad2fc2df3c2e5b702c5b9f0c69d21",
+      "qualifiedname": "thrust::system::cpp::pointer",
+      "refid": "group__system__backends_1ga813d802f876894e2479845266e5ef94f",
       "see": [
         "cpp::malloc ",
         "cpp::free ",
-        "<a href=\"/api/groups/group__memory__management.html#function-raw_pointer_cast\">raw_pointer_cast</a>"
+        "raw_pointer_cast "
       ],
       "static": false,
       "strong": false,
@@ -240,21 +236,22 @@
       "title": "pointer",
       "type": "thrust::pointer< T, thrust::system::cpp::tag, thrust::tagged_reference< T, thrust::system::cpp::tag > >",
       "typePlain": "thrust::pointer< T, thrust::system::cpp::tag, thrust::tagged_reference< T, thrust::system::cpp::tag > >",
-      "url": "/api/groups/group__system__backends.html#using-pointer",
+      "url": "{{ site.baseurl }}/api/groups/group__system__backends.html#using-pointer",
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#using-universal_pointer",
+      "anchor": "#using-universal-pointer",
       "category": "types",
       "const": false,
-      "definition": "using system::cpp::universal_pointer = typedef thrust::pointer< T, thrust::system::cpp::tag, typename std::add_lvalue_reference<T>::type >",
+      "definition": "using thrust::system::cpp::universal_pointer = typedef thrust::pointer< T, thrust::system::cpp::tag, typename std::add_lvalue_reference<T>::type >",
       "details": "<code>cpp::universal&#95;pointer</code> stores a pointer to an object allocated in memory accessible by the <code>cpp</code> system and host systems.\n\n<code>cpp::universal&#95;pointer</code> has pointer semantics: it may be dereferenced and manipulated with pointer arithmetic.\n\n<code>cpp::universal&#95;pointer</code> can be created with <code>cpp::universal&#95;allocator</code> or by explicitly calling its constructor with a raw pointer.\n\nThe raw pointer encapsulated by a <code>cpp::universal&#95;pointer</code> may be obtained by eiter its <code>get</code> member function or the <code>raw&#95;pointer&#95;cast</code> function.",
       "explicit": false,
       "fullname": "system_backends::universal_pointer",
       "hasDetails": true,
       "inline": false,
       "kind": "using",
+      "language": "",
       "location": {
         "bodyFile": "thrust/system/cpp/pointer.h",
         "bodyStart": 89,
@@ -267,10 +264,11 @@
         "<code>cpp::universal&#95;pointer</code> is not a \"smart\" pointer; it is the programmer's responsibility to deallocate memory pointed to by <code>cpp::universal&#95;pointer</code>."
       ],
       "override": false,
-      "refid": "group__system__backends_1ga5f71b6b61a680a8449cda6fcbe2f3f85",
+      "qualifiedname": "thrust::system::cpp::universal_pointer",
+      "refid": "group__system__backends_1gab8b8450b4013682f5b9e5f5e7a47d75f",
       "see": [
         "cpp::universal_allocator ",
-        "<a href=\"/api/groups/group__memory__management.html#function-raw_pointer_cast\">raw_pointer_cast</a>"
+        "raw_pointer_cast "
       ],
       "static": false,
       "strong": false,
@@ -290,7 +288,7 @@
       "title": "universal_pointer",
       "type": "thrust::pointer< T, thrust::system::cpp::tag, typename std::add_lvalue_reference< T >::type >",
       "typePlain": "thrust::pointer< T, thrust::system::cpp::tag, typename std::add_lvalue_reference< T >::type >",
-      "url": "/api/groups/group__system__backends.html#using-universal_pointer",
+      "url": "{{ site.baseurl }}/api/groups/group__system__backends.html#using-universal-pointer",
       "visibility": "public"
     },
     {
@@ -298,13 +296,14 @@
       "anchor": "#using-reference",
       "category": "types",
       "const": false,
-      "definition": "using system::cpp::reference = typedef thrust::reference<T, thrust::system::cpp::tag>",
+      "definition": "using thrust::system::cpp::reference = typedef thrust::reference<T, thrust::system::cpp::tag>",
       "details": "<code>reference</code> is a wrapped reference to an object stored in memory available to the <code>cpp</code> system. <code>reference</code> is the type of the result of dereferencing a <code>cpp::pointer</code>.",
       "explicit": false,
       "fullname": "system_backends::reference",
       "hasDetails": true,
       "inline": false,
       "kind": "using",
+      "language": "",
       "location": {
         "bodyFile": "thrust/system/cpp/pointer.h",
         "bodyStart": 98,
@@ -314,7 +313,8 @@
       },
       "name": "reference",
       "override": false,
-      "refid": "group__system__backends_1gaadd2b2c942d482beceeea9429cb2acaa",
+      "qualifiedname": "thrust::system::cpp::reference",
+      "refid": "group__system__backends_1ga98af9db6b72cb24c25132a9f5645a4a8",
       "static": false,
       "strong": false,
       "templateParams": [
@@ -333,7 +333,7 @@
       "title": "reference",
       "type": "thrust::reference< T, thrust::system::cpp::tag >",
       "typePlain": "thrust::reference< T, thrust::system::cpp::tag >",
-      "url": "/api/groups/group__system__backends.html#using-reference",
+      "url": "{{ site.baseurl }}/api/groups/group__system__backends.html#using-reference",
       "visibility": "public"
     },
     {
@@ -341,13 +341,14 @@
       "anchor": "#using-pointer",
       "category": "types",
       "const": false,
-      "definition": "using system::omp::pointer = typedef thrust::pointer< T, thrust::system::omp::tag, thrust::tagged_reference<T, thrust::system::omp::tag> >",
+      "definition": "using thrust::system::omp::pointer = typedef thrust::pointer< T, thrust::system::omp::tag, thrust::tagged_reference<T, thrust::system::omp::tag> >",
       "details": "<code>omp::pointer</code> stores a pointer to an object allocated in memory accessible by the <code>omp</code> system. This type provides type safety when dispatching algorithms on ranges resident in <code>omp</code> memory.\n\n<code>omp::pointer</code> has pointer semantics: it may be dereferenced and manipulated with pointer arithmetic.\n\n<code>omp::pointer</code> can be created with the function <code>omp::malloc</code>, or by explicitly calling its constructor with a raw pointer.\n\nThe raw pointer encapsulated by a <code>omp::pointer</code> may be obtained by eiter its <code>get</code> member function or the <code>raw&#95;pointer&#95;cast</code> function.",
       "explicit": false,
       "fullname": "system_backends::pointer",
       "hasDetails": true,
       "inline": false,
       "kind": "using",
+      "language": "",
       "location": {
         "bodyFile": "thrust/system/omp/pointer.h",
         "bodyStart": 60,
@@ -360,11 +361,12 @@
         "<code>omp::pointer</code> is not a \"smart\" pointer; it is the programmer's responsibility to deallocate memory pointed to by <code>omp::pointer</code>."
       ],
       "override": false,
-      "refid": "group__system__backends_1gaefcf84059bd5c196af9184c19d185873",
+      "qualifiedname": "thrust::system::omp::pointer",
+      "refid": "group__system__backends_1ga64dade913bc262bb19b1d45c7fbbaf44",
       "see": [
         "omp::malloc ",
         "omp::free ",
-        "<a href=\"/api/groups/group__memory__management.html#function-raw_pointer_cast\">raw_pointer_cast</a>"
+        "raw_pointer_cast "
       ],
       "static": false,
       "strong": false,
@@ -384,21 +386,22 @@
       "title": "pointer",
       "type": "thrust::pointer< T, thrust::system::omp::tag, thrust::tagged_reference< T, thrust::system::omp::tag > >",
       "typePlain": "thrust::pointer< T, thrust::system::omp::tag, thrust::tagged_reference< T, thrust::system::omp::tag > >",
-      "url": "/api/groups/group__system__backends.html#using-pointer",
+      "url": "{{ site.baseurl }}/api/groups/group__system__backends.html#using-pointer",
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#using-universal_pointer",
+      "anchor": "#using-universal-pointer",
       "category": "types",
       "const": false,
-      "definition": "using system::omp::universal_pointer = typedef thrust::pointer< T, thrust::system::omp::tag, typename std::add_lvalue_reference<T>::type >",
+      "definition": "using thrust::system::omp::universal_pointer = typedef thrust::pointer< T, thrust::system::omp::tag, typename std::add_lvalue_reference<T>::type >",
       "details": "<code>omp::universal&#95;pointer</code> stores a pointer to an object allocated in memory accessible by the <code>omp</code> system and host systems.\n\n<code>omp::universal&#95;pointer</code> has pointer semantics: it may be dereferenced and manipulated with pointer arithmetic.\n\n<code>omp::universal&#95;pointer</code> can be created with <code>omp::universal&#95;allocator</code> or by explicitly calling its constructor with a raw pointer.\n\nThe raw pointer encapsulated by a <code>omp::universal&#95;pointer</code> may be obtained by eiter its <code>get</code> member function or the <code>raw&#95;pointer&#95;cast</code> function.",
       "explicit": false,
       "fullname": "system_backends::universal_pointer",
       "hasDetails": true,
       "inline": false,
       "kind": "using",
+      "language": "",
       "location": {
         "bodyFile": "thrust/system/omp/pointer.h",
         "bodyStart": 89,
@@ -411,10 +414,11 @@
         "<code>omp::universal&#95;pointer</code> is not a \"smart\" pointer; it is the programmer's responsibility to deallocate memory pointed to by <code>omp::universal&#95;pointer</code>."
       ],
       "override": false,
-      "refid": "group__system__backends_1gaa0dcd4c04faaf4a08e080099fe1aa203",
+      "qualifiedname": "thrust::system::omp::universal_pointer",
+      "refid": "group__system__backends_1ga9eb890eccbca0f2e5c33eb703aac35ae",
       "see": [
         "omp::universal_allocator ",
-        "<a href=\"/api/groups/group__memory__management.html#function-raw_pointer_cast\">raw_pointer_cast</a>"
+        "raw_pointer_cast "
       ],
       "static": false,
       "strong": false,
@@ -434,7 +438,7 @@
       "title": "universal_pointer",
       "type": "thrust::pointer< T, thrust::system::omp::tag, typename std::add_lvalue_reference< T >::type >",
       "typePlain": "thrust::pointer< T, thrust::system::omp::tag, typename std::add_lvalue_reference< T >::type >",
-      "url": "/api/groups/group__system__backends.html#using-universal_pointer",
+      "url": "{{ site.baseurl }}/api/groups/group__system__backends.html#using-universal-pointer",
       "visibility": "public"
     },
     {
@@ -442,13 +446,14 @@
       "anchor": "#using-reference",
       "category": "types",
       "const": false,
-      "definition": "using system::omp::reference = typedef thrust::tagged_reference<T, thrust::system::omp::tag>",
+      "definition": "using thrust::system::omp::reference = typedef thrust::tagged_reference<T, thrust::system::omp::tag>",
       "details": "<code>reference</code> is a wrapped reference to an object stored in memory available to the <code>omp</code> system. <code>reference</code> is the type of the result of dereferencing a <code>omp::pointer</code>.",
       "explicit": false,
       "fullname": "system_backends::reference",
       "hasDetails": true,
       "inline": false,
       "kind": "using",
+      "language": "",
       "location": {
         "bodyFile": "thrust/system/omp/pointer.h",
         "bodyStart": 98,
@@ -458,7 +463,8 @@
       },
       "name": "reference",
       "override": false,
-      "refid": "group__system__backends_1gaf25be128ddd4b68cd38e947d7612c21f",
+      "qualifiedname": "thrust::system::omp::reference",
+      "refid": "group__system__backends_1ga4e8ee99cde0e3768685b03ae854866d6",
       "static": false,
       "strong": false,
       "templateParams": [
@@ -477,7 +483,7 @@
       "title": "reference",
       "type": "thrust::tagged_reference< T, thrust::system::omp::tag >",
       "typePlain": "thrust::tagged_reference< T, thrust::system::omp::tag >",
-      "url": "/api/groups/group__system__backends.html#using-reference",
+      "url": "{{ site.baseurl }}/api/groups/group__system__backends.html#using-reference",
       "visibility": "public"
     },
     {
@@ -485,13 +491,14 @@
       "anchor": "#using-pointer",
       "category": "types",
       "const": false,
-      "definition": "using system::tbb::pointer = typedef thrust::pointer< T, thrust::system::tbb::tag, thrust::tagged_reference<T, thrust::system::tbb::tag> >",
+      "definition": "using thrust::system::tbb::pointer = typedef thrust::pointer< T, thrust::system::tbb::tag, thrust::tagged_reference<T, thrust::system::tbb::tag> >",
       "details": "<code>tbb::pointer</code> stores a pointer to an object allocated in memory accessible by the <code>tbb</code> system. This type provides type safety when dispatching algorithms on ranges resident in <code>tbb</code> memory.\n\n<code>tbb::pointer</code> has pointer semantics: it may be dereferenced and manipulated with pointer arithmetic.\n\n<code>tbb::pointer</code> can be created with the function <code>tbb::malloc</code>, or by explicitly calling its constructor with a raw pointer.\n\nThe raw pointer encapsulated by a <code>tbb::pointer</code> may be obtained by eiter its <code>get</code> member function or the <code>raw&#95;pointer&#95;cast</code> function.",
       "explicit": false,
       "fullname": "system_backends::pointer",
       "hasDetails": true,
       "inline": false,
       "kind": "using",
+      "language": "",
       "location": {
         "bodyFile": "thrust/system/tbb/pointer.h",
         "bodyStart": 60,
@@ -504,11 +511,12 @@
         "<code>tbb::pointer</code> is not a \"smart\" pointer; it is the programmer's responsibility to deallocate memory pointed to by <code>tbb::pointer</code>."
       ],
       "override": false,
-      "refid": "group__system__backends_1ga726e3824c3283010f8bb8ba057f27450",
+      "qualifiedname": "thrust::system::tbb::pointer",
+      "refid": "group__system__backends_1gadf633c3f79ff71e0253a4d0388eba4cb",
       "see": [
         "tbb::malloc ",
         "tbb::free ",
-        "<a href=\"/api/groups/group__memory__management.html#function-raw_pointer_cast\">raw_pointer_cast</a>"
+        "raw_pointer_cast "
       ],
       "static": false,
       "strong": false,
@@ -528,21 +536,22 @@
       "title": "pointer",
       "type": "thrust::pointer< T, thrust::system::tbb::tag, thrust::tagged_reference< T, thrust::system::tbb::tag > >",
       "typePlain": "thrust::pointer< T, thrust::system::tbb::tag, thrust::tagged_reference< T, thrust::system::tbb::tag > >",
-      "url": "/api/groups/group__system__backends.html#using-pointer",
+      "url": "{{ site.baseurl }}/api/groups/group__system__backends.html#using-pointer",
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#using-universal_pointer",
+      "anchor": "#using-universal-pointer",
       "category": "types",
       "const": false,
-      "definition": "using system::tbb::universal_pointer = typedef thrust::pointer< T, thrust::system::tbb::tag, typename std::add_lvalue_reference<T>::type >",
+      "definition": "using thrust::system::tbb::universal_pointer = typedef thrust::pointer< T, thrust::system::tbb::tag, typename std::add_lvalue_reference<T>::type >",
       "details": "<code>tbb::universal&#95;pointer</code> stores a pointer to an object allocated in memory accessible by the <code>tbb</code> system and host systems.\n\n<code>tbb::universal&#95;pointer</code> has pointer semantics: it may be dereferenced and manipulated with pointer arithmetic.\n\n<code>tbb::universal&#95;pointer</code> can be created with <code>tbb::universal&#95;allocator</code> or by explicitly calling its constructor with a raw pointer.\n\nThe raw pointer encapsulated by a <code>tbb::universal&#95;pointer</code> may be obtained by eiter its <code>get</code> member function or the <code>raw&#95;pointer&#95;cast</code> function.",
       "explicit": false,
       "fullname": "system_backends::universal_pointer",
       "hasDetails": true,
       "inline": false,
       "kind": "using",
+      "language": "",
       "location": {
         "bodyFile": "thrust/system/tbb/pointer.h",
         "bodyStart": 89,
@@ -555,10 +564,11 @@
         "<code>tbb::universal&#95;pointer</code> is not a \"smart\" pointer; it is the programmer's responsibility to deallocate memory pointed to by <code>tbb::universal&#95;pointer</code>."
       ],
       "override": false,
-      "refid": "group__system__backends_1ga76b32360d217297ac939c722d4dd0060",
+      "qualifiedname": "thrust::system::tbb::universal_pointer",
+      "refid": "group__system__backends_1ga23ad86af1b8a03939d82a4f9ef268cfd",
       "see": [
         "tbb::universal_allocator ",
-        "<a href=\"/api/groups/group__memory__management.html#function-raw_pointer_cast\">raw_pointer_cast</a>"
+        "raw_pointer_cast "
       ],
       "static": false,
       "strong": false,
@@ -578,7 +588,7 @@
       "title": "universal_pointer",
       "type": "thrust::pointer< T, thrust::system::tbb::tag, typename std::add_lvalue_reference< T >::type >",
       "typePlain": "thrust::pointer< T, thrust::system::tbb::tag, typename std::add_lvalue_reference< T >::type >",
-      "url": "/api/groups/group__system__backends.html#using-universal_pointer",
+      "url": "{{ site.baseurl }}/api/groups/group__system__backends.html#using-universal-pointer",
       "visibility": "public"
     },
     {
@@ -586,13 +596,14 @@
       "anchor": "#using-reference",
       "category": "types",
       "const": false,
-      "definition": "using system::tbb::reference = typedef thrust::tagged_reference<T, thrust::system::tbb::tag>",
+      "definition": "using thrust::system::tbb::reference = typedef thrust::tagged_reference<T, thrust::system::tbb::tag>",
       "details": "<code>reference</code> is a wrapped reference to an object stored in memory available to the <code>tbb</code> system. <code>reference</code> is the type of the result of dereferencing a <code>tbb::pointer</code>.",
       "explicit": false,
       "fullname": "system_backends::reference",
       "hasDetails": true,
       "inline": false,
       "kind": "using",
+      "language": "",
       "location": {
         "bodyFile": "thrust/system/tbb/pointer.h",
         "bodyStart": 98,
@@ -602,7 +613,8 @@
       },
       "name": "reference",
       "override": false,
-      "refid": "group__system__backends_1ga0352f04f75b141b9f05a8617173550d5",
+      "qualifiedname": "thrust::system::tbb::reference",
+      "refid": "group__system__backends_1ga1168b5478b7b7f50fb104bb27164522f",
       "static": false,
       "strong": false,
       "templateParams": [
@@ -621,14 +633,15 @@
       "title": "reference",
       "type": "thrust::tagged_reference< T, thrust::system::tbb::tag >",
       "typePlain": "thrust::tagged_reference< T, thrust::system::tbb::tag >",
-      "url": "/api/groups/group__system__backends.html#using-reference",
+      "url": "{{ site.baseurl }}/api/groups/group__system__backends.html#using-reference",
       "visibility": "public"
     }
   ],
+  "qualifiedname": "system_backends",
   "refid": "group__system__backends",
   "static": false,
   "strong": false,
   "title": "Systems",
-  "url": "/api/groups/group__system__backends.html",
+  "url": "{{ site.baseurl }}/api/groups/group__system__backends.html",
   "visibility": "public"
 }

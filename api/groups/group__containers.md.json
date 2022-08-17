@@ -10,6 +10,7 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "name": "containers",
   "override": false,
   "parent": null,
@@ -25,12 +26,14 @@
         }
       ],
       "category": "classes",
-      "fullname": "device_vector",
+      "fullname": "thrust::device_vector",
       "kind": "class",
-      "name": "device_vector",
-      "refid": "classdevice__vector",
-      "title": "device_vector",
-      "url": "/api/classes/classdevice__vector.html",
+      "language": "cpp",
+      "name": "thrust::device_vector",
+      "qualifiedname": "thrust::device_vector",
+      "refid": "classthrust_1_1device__vector",
+      "title": "thrust::device_vector",
+      "url": "{{ site.baseurl }}/api/classes/classthrust_1_1device__vector.html",
       "visibility": "public"
     }
   ],
@@ -42,14 +45,15 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void swap",
+      "definition": "void thrust::swap",
       "deleted": false,
-      "details": "Exchanges the values of two vectors. <code>x</code> The first <code><a href=\"/api/classes/classdevice__vector.html\">device&#95;vector</a></code> of interest. <code>y</code> The second <code><a href=\"/api/classes/classdevice__vector.html\">device&#95;vector</a></code> of interest. ",
+      "details": "Exchanges the values of two vectors. <code>x</code> The first <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1device__vector.html\">device&#95;vector</a></code> of interest. <code>y</code> The second <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1device__vector.html\">device&#95;vector</a></code> of interest. ",
       "explicit": false,
       "fullname": "containers::swap",
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "bodyEnd": 486,
         "bodyFile": "thrust/device_vector.h",
@@ -63,17 +67,18 @@
       "params": [
         {
           "name": "a",
-          "type": "<a href=\"/api/classes/classdevice__vector.html\">device_vector</a>< T, Alloc > &",
+          "type": "device_vector< T, Alloc > &",
           "typePlain": "device_vector< T, Alloc > &"
         },
         {
           "name": "b",
-          "type": "<a href=\"/api/classes/classdevice__vector.html\">device_vector</a>< T, Alloc > &",
+          "type": "device_vector< T, Alloc > &",
           "typePlain": "device_vector< T, Alloc > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__containers_1gab925d3c3df9ed301dfe7179ded4de6c3",
+      "qualifiedname": "thrust::swap",
+      "refid": "group__containers_1ga9b8fee20df6bdcd66e3dc378843d2893",
       "static": false,
       "strong": false,
       "templateParams": [
@@ -91,15 +96,16 @@
       "title": "swap",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__containers.html#function-swap",
+      "url": "{{ site.baseurl }}/api/groups/group__containers.html#function-swap",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "containers",
   "refid": "group__containers",
   "static": false,
   "strong": false,
   "title": "Containers",
-  "url": "/api/groups/group__containers.html",
+  "url": "{{ site.baseurl }}/api/groups/group__containers.html",
   "visibility": "public"
 }

@@ -12,10 +12,12 @@
       "category": "modules",
       "fullname": "filling",
       "kind": "group",
+      "language": "",
       "name": "filling",
+      "qualifiedname": "filling",
       "refid": "group__filling",
       "title": "Filling",
-      "url": "/api/groups/group__filling.html",
+      "url": "{{ site.baseurl }}/api/groups/group__filling.html",
       "visibility": "public"
     },
     {
@@ -23,10 +25,12 @@
       "category": "modules",
       "fullname": "modifying",
       "kind": "group",
+      "language": "",
       "name": "modifying",
+      "qualifiedname": "modifying",
       "refid": "group__modifying",
       "title": "Modifying",
-      "url": "/api/groups/group__modifying.html",
+      "url": "{{ site.baseurl }}/api/groups/group__modifying.html",
       "visibility": "public"
     },
     {
@@ -34,10 +38,12 @@
       "category": "modules",
       "fullname": "replacing",
       "kind": "group",
+      "language": "",
       "name": "replacing",
+      "qualifiedname": "replacing",
       "refid": "group__replacing",
       "title": "Replacing",
-      "url": "/api/groups/group__replacing.html",
+      "url": "{{ site.baseurl }}/api/groups/group__replacing.html",
       "visibility": "public"
     }
   ],
@@ -45,15 +51,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "algorithms",
     "kind": "group",
+    "language": "",
     "name": "algorithms",
+    "qualifiedname": "algorithms",
     "refid": "group__algorithms",
     "title": "Algorithms",
-    "url": "/api/groups/group__algorithms.html",
+    "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -62,10 +71,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     }
   ],
@@ -76,10 +87,12 @@
     "category": "modules",
     "fullname": "algorithms",
     "kind": "group",
+    "language": "",
     "name": "algorithms",
+    "qualifiedname": "algorithms",
     "refid": "group__algorithms",
     "title": "Algorithms",
-    "url": "/api/groups/group__algorithms.html",
+    "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -88,22 +101,24 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     }
   ],
   "publicFunctions": [
     {
       "abstract": false,
-      "anchor": "#function-adjacent_difference",
+      "anchor": "#function-adjacent-difference",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator first, InputIterator last, OutputIterator result)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ OutputIterator adjacent_difference",
+      "definition": "__host__ __device__ OutputIterator thrust::adjacent_difference",
       "deleted": false,
       "details": "<code>adjacent&#95;difference</code> calculates the differences of adjacent elements in the range <code>[first, last)</code>. That is, <code>&#42;first</code> is assigned to <code>&#42;result</code>, and, for each iterator <code>i</code> in the range <code>[first + 1, last)</code>, the difference of <code>&#42;i</code> and <code>&#42;(i - 1)</code> is assigned to <code>&#42;(result + (i - first))</code>.\n\nThis version of <code>adjacent&#95;difference</code> uses <code>operator-</code> to calculate differences.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>adjacent&#95;difference</code> to compute the difference between adjacent elements of a range using the <code>thrust::device</code> execution policy:\n\n\n\n```cpp\n#include <thrust/adjacent_difference.h>\n#include <thrust/device_vector.h>\n#include <thrust/execution_policy.h>\n...\nint h_data[8] = {1, 2, 1, 2, 1, 2, 1, 2};\nthrust::device_vector<int> d_data(h_data, h_data + 8);\nthrust::device_vector<int> d_result(8);\n\nthrust::adjacent_difference(thrust::device, d_data.begin(), d_data.end(), d_result.begin());\n\n// d_result is now [1, 1, -1, 1, -1, 1, -1, 1]\n```",
       "explicit": false,
@@ -111,6 +126,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/adjacent_difference.h",
@@ -159,7 +175,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga005903c9b85734a3c8699a535287c597",
+      "qualifiedname": "thrust::adjacent_difference",
+      "refid": "group__transformations_1gaa41d309b53fa03bf13fe35a184148400",
       "remark": [
         "Note that <code>result</code> is permitted to be the same iterator as <code>first</code>. This is useful for computing differences \"in place\"."
       ],
@@ -168,7 +185,7 @@
       ],
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/adjacent_difference\">https://en.cppreference.com/w/cpp/algorithm/adjacent_difference</a>",
-        "<a href=\"/api/groups/group__prefixsums.html#function-inclusive_scan\">inclusive_scan</a>"
+        "inclusive_scan "
       ],
       "static": false,
       "strong": false,
@@ -206,18 +223,18 @@
       "title": "adjacent_difference",
       "type": "__host__ __device__ OutputIterator",
       "typePlain": "__host__ __device__ OutputIterator",
-      "url": "/api/groups/group__transformations.html#function-adjacent_difference",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-adjacent-difference",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-adjacent_difference",
+      "anchor": "#function-adjacent-difference",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator first, InputIterator last, OutputIterator result, BinaryFunction binary_op)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ OutputIterator adjacent_difference",
+      "definition": "__host__ __device__ OutputIterator thrust::adjacent_difference",
       "deleted": false,
       "details": "<code>adjacent&#95;difference</code> calculates the differences of adjacent elements in the range <code>[first, last)</code>. That is, <code>&#42;first</code> is assigned to <code>&#42;result</code>, and, for each iterator <code>i</code> in the range <code>[first + 1, last)</code>, <code>binary&#95;op(&#42;i, &#42;(i - 1))</code> is assigned to <code>&#42;(result + (i - first))</code>.\n\nThis version of <code>adjacent&#95;difference</code> uses the binary function <code>binary&#95;op</code> to calculate differences.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>adjacent&#95;difference</code> to compute the sum between adjacent elements of a range using the <code>thrust::device</code> execution policy:\n\n\n\n```cpp\n#include <thrust/adjacent_difference.h>\n#include <thrust/functional.h>\n#include <thrust/device_vector.h>\n#include <thrust/execution_policy.h>\n...\nint h_data[8] = {1, 2, 1, 2, 1, 2, 1, 2};\nthrust::device_vector<int> d_data(h_data, h_data + 8);\nthrust::device_vector<int> d_result(8);\n\nthrust::adjacent_difference(thrust::device, d_data.begin(), d_data.end(), d_result.begin(), thrust::plus<int>());\n\n// d_result is now [1, 3, 3, 3, 3, 3, 3, 3]\n```",
       "explicit": false,
@@ -225,6 +242,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/adjacent_difference.h",
@@ -282,7 +300,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga0df9e14b3fcaa52b2090b21fc6a94625",
+      "qualifiedname": "thrust::adjacent_difference",
+      "refid": "group__transformations_1ga6b2e362d0872c6ec3622399c41bc9081",
       "remark": [
         "Note that <code>result</code> is permitted to be the same iterator as <code>first</code>. This is useful for computing differences \"in place\"."
       ],
@@ -291,7 +310,7 @@
       ],
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/adjacent_difference\">https://en.cppreference.com/w/cpp/algorithm/adjacent_difference</a>",
-        "<a href=\"/api/groups/group__prefixsums.html#function-inclusive_scan\">inclusive_scan</a>"
+        "inclusive_scan "
       ],
       "static": false,
       "strong": false,
@@ -338,18 +357,18 @@
       "title": "adjacent_difference",
       "type": "__host__ __device__ OutputIterator",
       "typePlain": "__host__ __device__ OutputIterator",
-      "url": "/api/groups/group__transformations.html#function-adjacent_difference",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-adjacent-difference",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-adjacent_difference",
+      "anchor": "#function-adjacent-difference",
       "argsString": "(InputIterator first, InputIterator last, OutputIterator result)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "OutputIterator adjacent_difference",
+      "definition": "OutputIterator thrust::adjacent_difference",
       "deleted": false,
       "details": "<code>adjacent&#95;difference</code> calculates the differences of adjacent elements in the range <code>[first, last)</code>. That is, <code>&#42;first</code> is assigned to <code>&#42;result</code>, and, for each iterator <code>i</code> in the range <code>[first + 1, last)</code>, the difference of <code>&#42;i</code> and <code>&#42;(i - 1)</code> is assigned to <code>&#42;(result + (i - first))</code>.\n\nThis version of <code>adjacent&#95;difference</code> uses <code>operator-</code> to calculate differences.\n\n\nThe following code snippet demonstrates how to use <code>adjacent&#95;difference</code> to compute the difference between adjacent elements of a range.\n\n\n\n```cpp\n#include <thrust/adjacent_difference.h>\n#include <thrust/device_vector.h>\n...\nint h_data[8] = {1, 2, 1, 2, 1, 2, 1, 2};\nthrust::device_vector<int> d_data(h_data, h_data + 8);\nthrust::device_vector<int> d_result(8);\n\nthrust::adjacent_difference(d_data.begin(), d_data.end(), d_result.begin());\n\n// d_result is now [1, 1, -1, 1, -1, 1, -1, 1]\n```",
       "explicit": false,
@@ -357,6 +376,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/adjacent_difference.h",
@@ -396,7 +416,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga383b910ffea458d030b03f6476d86f25",
+      "qualifiedname": "thrust::adjacent_difference",
+      "refid": "group__transformations_1gaecdeb69a74548f924e3a9de420a84516",
       "remark": [
         "Note that <code>result</code> is permitted to be the same iterator as <code>first</code>. This is useful for computing differences \"in place\"."
       ],
@@ -405,7 +426,7 @@
       ],
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/adjacent_difference\">https://en.cppreference.com/w/cpp/algorithm/adjacent_difference</a>",
-        "<a href=\"/api/groups/group__prefixsums.html#function-inclusive_scan\">inclusive_scan</a>"
+        "inclusive_scan "
       ],
       "static": false,
       "strong": false,
@@ -434,18 +455,18 @@
       "title": "adjacent_difference",
       "type": "OutputIterator",
       "typePlain": "OutputIterator",
-      "url": "/api/groups/group__transformations.html#function-adjacent_difference",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-adjacent-difference",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-adjacent_difference",
+      "anchor": "#function-adjacent-difference",
       "argsString": "(InputIterator first, InputIterator last, OutputIterator result, BinaryFunction binary_op)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "OutputIterator adjacent_difference",
+      "definition": "OutputIterator thrust::adjacent_difference",
       "deleted": false,
       "details": "<code>adjacent&#95;difference</code> calculates the differences of adjacent elements in the range <code>[first, last)</code>. That is, <code>&#42;first</code> is assigned to <code>&#42;result</code>, and, for each iterator <code>i</code> in the range <code>[first + 1, last)</code>, <code>binary&#95;op(&#42;i, &#42;(i - 1))</code> is assigned to <code>&#42;(result + (i - first))</code>.\n\nThis version of <code>adjacent&#95;difference</code> uses the binary function <code>binary&#95;op</code> to calculate differences.\n\n\nThe following code snippet demonstrates how to use <code>adjacent&#95;difference</code> to compute the sum between adjacent elements of a range.\n\n\n\n```cpp\n#include <thrust/adjacent_difference.h>\n#include <thrust/functional.h>\n#include <thrust/device_vector.h>\n...\nint h_data[8] = {1, 2, 1, 2, 1, 2, 1, 2};\nthrust::device_vector<int> d_data(h_data, h_data + 8);\nthrust::device_vector<int> d_result(8);\n\nthrust::adjacent_difference(d_data.begin(), d_data.end(), d_result.begin(), thrust::plus<int>());\n\n// d_result is now [1, 3, 3, 3, 3, 3, 3, 3]\n```",
       "explicit": false,
@@ -453,6 +474,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/adjacent_difference.h",
@@ -501,7 +523,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga940b2f02734366abc1aecbb87c6767a4",
+      "qualifiedname": "thrust::adjacent_difference",
+      "refid": "group__transformations_1ga0a47f6c0431b0905eaccc7bc427af396",
       "remark": [
         "Note that <code>result</code> is permitted to be the same iterator as <code>first</code>. This is useful for computing differences \"in place\"."
       ],
@@ -510,7 +533,7 @@
       ],
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/adjacent_difference\">https://en.cppreference.com/w/cpp/algorithm/adjacent_difference</a>",
-        "<a href=\"/api/groups/group__prefixsums.html#function-inclusive_scan\">inclusive_scan</a>"
+        "inclusive_scan "
       ],
       "static": false,
       "strong": false,
@@ -548,7 +571,7 @@
       "title": "adjacent_difference",
       "type": "OutputIterator",
       "typePlain": "OutputIterator",
-      "url": "/api/groups/group__transformations.html#function-adjacent_difference",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-adjacent-difference",
       "virtual": false,
       "visibility": "public"
     },
@@ -559,14 +582,15 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void generate",
+      "definition": "__host__ __device__ void thrust::generate",
       "deleted": false,
-      "details": "<code>generate</code> assigns the result of invoking <code>gen</code>, a function object that takes no arguments, to each element in the range <code>[first,last)</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to fill a <code><a href=\"/api/classes/classhost__vector.html\">host&#95;vector</a></code> with random numbers, using the standard C library function <code>rand</code> using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/generate.h>\n#include <thrust/host_vector.h>\n#include <thrust/execution_policy.h>\n#include <cstdlib>\n...\nthrust::host_vector<int> v(10);\nsrand(13);\nthrust::generate(thrust::host, v.begin(), v.end(), rand);\n\n// the elements of v are now pseudo-random numbers\n```",
+      "details": "<code>generate</code> assigns the result of invoking <code>gen</code>, a function object that takes no arguments, to each element in the range <code>[first,last)</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to fill a <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1host__vector.html\">host&#95;vector</a></code> with random numbers, using the standard C library function <code>rand</code> using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/generate.h>\n#include <thrust/host_vector.h>\n#include <thrust/execution_policy.h>\n#include <cstdlib>\n...\nthrust::host_vector<int> v(10);\nsrand(13);\nthrust::generate(thrust::host, v.begin(), v.end(), rand);\n\n// the elements of v are now pseudo-random numbers\n```",
       "explicit": false,
       "fullname": "transformations::generate",
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/generate.h",
@@ -615,9 +639,10 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1gaf2d1e7a51e07cb17e0abe90dd3ac83bf",
+      "qualifiedname": "thrust::generate",
+      "refid": "group__transformations_1ga12910ae45ed109cf3eef7df63573e063",
       "see": [
-        "<a href=\"/api/groups/group__transformations.html#function-generate_n\">generate_n</a>",
+        "generate_n ",
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/generate\">https://en.cppreference.com/w/cpp/algorithm/generate</a>"
       ],
       "static": false,
@@ -656,7 +681,7 @@
       "title": "generate",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__transformations.html#function-generate",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-generate",
       "virtual": false,
       "visibility": "public"
     },
@@ -667,14 +692,15 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void generate",
+      "definition": "void thrust::generate",
       "deleted": false,
-      "details": "<code>generate</code> assigns the result of invoking <code>gen</code>, a function object that takes no arguments, to each element in the range <code>[first,last)</code>.\n\n\nThe following code snippet demonstrates how to fill a <code><a href=\"/api/classes/classhost__vector.html\">host&#95;vector</a></code> with random numbers, using the standard C library function <code>rand</code>.\n\n\n\n```cpp\n#include <thrust/generate.h>\n#include <thrust/host_vector.h>\n#include <thrust/execution_policy.h>\n#include <cstdlib>\n...\nthrust::host_vector<int> v(10);\nsrand(13);\nthrust::generate(v.begin(), v.end(), rand);\n\n// the elements of v are now pseudo-random numbers\n```",
+      "details": "<code>generate</code> assigns the result of invoking <code>gen</code>, a function object that takes no arguments, to each element in the range <code>[first,last)</code>.\n\n\nThe following code snippet demonstrates how to fill a <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1host__vector.html\">host&#95;vector</a></code> with random numbers, using the standard C library function <code>rand</code>.\n\n\n\n```cpp\n#include <thrust/generate.h>\n#include <thrust/host_vector.h>\n#include <thrust/execution_policy.h>\n#include <cstdlib>\n...\nthrust::host_vector<int> v(10);\nsrand(13);\nthrust::generate(v.begin(), v.end(), rand);\n\n// the elements of v are now pseudo-random numbers\n```",
       "explicit": false,
       "fullname": "transformations::generate",
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/generate.h",
@@ -714,9 +740,10 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga3450380e543353e2cd98243e483872cc",
+      "qualifiedname": "thrust::generate",
+      "refid": "group__transformations_1gaa6d990b511b9a2d92599d35bd58e7e9f",
       "see": [
-        "<a href=\"/api/groups/group__transformations.html#function-generate_n\">generate_n</a>",
+        "generate_n ",
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/generate\">https://en.cppreference.com/w/cpp/algorithm/generate</a>"
       ],
       "static": false,
@@ -746,25 +773,26 @@
       "title": "generate",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__transformations.html#function-generate",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-generate",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-generate_n",
+      "anchor": "#function-generate-n",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, OutputIterator first, Size n, Generator gen)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ OutputIterator generate_n",
+      "definition": "__host__ __device__ OutputIterator thrust::generate_n",
       "deleted": false,
-      "details": "<code>generate&#95;n</code> assigns the result of invoking <code>gen</code>, a function object that takes no arguments, to each element in the range <code>[first,first + n)</code>. The return value is <code>first + n</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to fill a <code><a href=\"/api/classes/classhost__vector.html\">host&#95;vector</a></code> with random numbers, using the standard C library function <code>rand</code> using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/generate.h>\n#include <thrust/host_vector.h>\n#include <thrust/execution_policy.h>\n#include <cstdlib>\n...\nthrust::host_vector<int> v(10);\nsrand(13);\nthrust::generate_n(thrust::host, v.begin(), 10, rand);\n\n// the elements of v are now pseudo-random numbers\n```",
+      "details": "<code>generate&#95;n</code> assigns the result of invoking <code>gen</code>, a function object that takes no arguments, to each element in the range <code>[first,first + n)</code>. The return value is <code>first + n</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to fill a <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1host__vector.html\">host&#95;vector</a></code> with random numbers, using the standard C library function <code>rand</code> using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/generate.h>\n#include <thrust/host_vector.h>\n#include <thrust/execution_policy.h>\n#include <cstdlib>\n...\nthrust::host_vector<int> v(10);\nsrand(13);\nthrust::generate_n(thrust::host, v.begin(), 10, rand);\n\n// the elements of v are now pseudo-random numbers\n```",
       "explicit": false,
       "fullname": "transformations::generate_n",
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 18,
         "file": "thrust/generate.h",
@@ -813,9 +841,10 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga36556bdfde242bc9c1f7e8f3a712bff9",
+      "qualifiedname": "thrust::generate_n",
+      "refid": "group__transformations_1ga13215ccf8a505b1dd1996b2ac3a52bd1",
       "see": [
-        "<a href=\"/api/groups/group__transformations.html#function-generate\">generate</a>",
+        "generate ",
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/generate\">https://en.cppreference.com/w/cpp/algorithm/generate</a>"
       ],
       "static": false,
@@ -863,25 +892,26 @@
       "title": "generate_n",
       "type": "__host__ __device__ OutputIterator",
       "typePlain": "__host__ __device__ OutputIterator",
-      "url": "/api/groups/group__transformations.html#function-generate_n",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-generate-n",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-generate_n",
+      "anchor": "#function-generate-n",
       "argsString": "(OutputIterator first, Size n, Generator gen)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "OutputIterator generate_n",
+      "definition": "OutputIterator thrust::generate_n",
       "deleted": false,
-      "details": "<code>generate&#95;n</code> assigns the result of invoking <code>gen</code>, a function object that takes no arguments, to each element in the range <code>[first,first + n)</code>. The return value is <code>first + n</code>.\n\n\nThe following code snippet demonstrates how to fill a <code><a href=\"/api/classes/classhost__vector.html\">host&#95;vector</a></code> with random numbers, using the standard C library function <code>rand</code>.\n\n\n\n```cpp\n#include <thrust/generate.h>\n#include <thrust/host_vector.h>\n#include <stdlib.h>\n...\nthrust::host_vector<int> v(10);\nsrand(13);\nthrust::generate_n(v.begin(), 10, rand);\n\n// the elements of v are now pseudo-random numbers\n```",
+      "details": "<code>generate&#95;n</code> assigns the result of invoking <code>gen</code>, a function object that takes no arguments, to each element in the range <code>[first,first + n)</code>. The return value is <code>first + n</code>.\n\n\nThe following code snippet demonstrates how to fill a <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1host__vector.html\">host&#95;vector</a></code> with random numbers, using the standard C library function <code>rand</code>.\n\n\n\n```cpp\n#include <thrust/generate.h>\n#include <thrust/host_vector.h>\n#include <stdlib.h>\n...\nthrust::host_vector<int> v(10);\nsrand(13);\nthrust::generate_n(v.begin(), 10, rand);\n\n// the elements of v are now pseudo-random numbers\n```",
       "explicit": false,
       "fullname": "transformations::generate_n",
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 18,
         "file": "thrust/generate.h",
@@ -921,9 +951,10 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1gae400a76d92745328167eb962ad0badb0",
+      "qualifiedname": "thrust::generate_n",
+      "refid": "group__transformations_1gaed80b4c08f4ebbd7598cd2cea418e2b3",
       "see": [
-        "<a href=\"/api/groups/group__transformations.html#function-generate\">generate</a>",
+        "generate ",
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/generate\">https://en.cppreference.com/w/cpp/algorithm/generate</a>"
       ],
       "static": false,
@@ -962,7 +993,7 @@
       "title": "generate_n",
       "type": "OutputIterator",
       "typePlain": "OutputIterator",
-      "url": "/api/groups/group__transformations.html#function-generate_n",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-generate-n",
       "virtual": false,
       "visibility": "public"
     },
@@ -973,7 +1004,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void sequence",
+      "definition": "__host__ __device__ void thrust::sequence",
       "deleted": false,
       "details": "<code>sequence</code> fills the range <code>[first, last)</code> with a sequence of numbers.\n\nFor each iterator <code>i</code> in the range <code>[first, last)</code>, this version of <code>sequence</code> performs the assignment <code>&#42;i = (i - first)</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>sequence</code> to fill a range with a sequence of numbers using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/sequence.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 10;\nint A[N];\nthrust::sequence(thrust::host, A, A + 10);\n// A is now {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}\n```",
       "explicit": false,
@@ -981,6 +1012,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sequence.h",
@@ -1023,7 +1055,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1gae9ae41dee778298fb943574626ab1dfe",
+      "qualifiedname": "thrust::sequence",
+      "refid": "group__transformations_1ga233a3db0c5031023c8e9385acd4b9759",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/iota\">https://en.cppreference.com/w/cpp/algorithm/iota</a>"
       ],
@@ -1054,7 +1087,7 @@
       "title": "sequence",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__transformations.html#function-sequence",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-sequence",
       "virtual": false,
       "visibility": "public"
     },
@@ -1065,7 +1098,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void sequence",
+      "definition": "void thrust::sequence",
       "deleted": false,
       "details": "<code>sequence</code> fills the range <code>[first, last)</code> with a sequence of numbers.\n\nFor each iterator <code>i</code> in the range <code>[first, last)</code>, this version of <code>sequence</code> performs the assignment <code>&#42;i = (i - first)</code>.\n\n\nThe following code snippet demonstrates how to use <code>sequence</code> to fill a range with a sequence of numbers.\n\n\n\n```cpp\n#include <thrust/sequence.h>\n...\nconst int N = 10;\nint A[N];\nthrust::sequence(A, A + 10);\n// A is now {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}\n```",
       "explicit": false,
@@ -1073,6 +1106,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sequence.h",
@@ -1106,7 +1140,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga4d8fe7cefad15e7f654212c2c950e04b",
+      "qualifiedname": "thrust::sequence",
+      "refid": "group__transformations_1ga08c1dd7914c155d5fed6458330af3443",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/iota\">https://en.cppreference.com/w/cpp/algorithm/iota</a>"
       ],
@@ -1128,7 +1163,7 @@
       "title": "sequence",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__transformations.html#function-sequence",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-sequence",
       "virtual": false,
       "visibility": "public"
     },
@@ -1139,7 +1174,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void sequence",
+      "definition": "__host__ __device__ void thrust::sequence",
       "deleted": false,
       "details": "<code>sequence</code> fills the range <code>[first, last)</code> with a sequence of numbers.\n\nFor each iterator <code>i</code> in the range <code>[first, last)</code>, this version of <code>sequence</code> performs the assignment <code>&#42;i = init + (i - first)</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>sequence</code> to fill a range with a sequence of numbers starting from the value 1 using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/sequence.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 10;\nint A[N];\nthrust::sequence(thrust::host, A, A + 10, 1);\n// A is now {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}\n```",
       "explicit": false,
@@ -1147,6 +1182,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sequence.h",
@@ -1198,7 +1234,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga89522e497569d44c1bc4220d41caecbc",
+      "qualifiedname": "thrust::sequence",
+      "refid": "group__transformations_1ga9d17b70466df6b9a57f94170935a03f8",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/iota\">https://en.cppreference.com/w/cpp/algorithm/iota</a>"
       ],
@@ -1238,7 +1275,7 @@
       "title": "sequence",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__transformations.html#function-sequence",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-sequence",
       "virtual": false,
       "visibility": "public"
     },
@@ -1249,7 +1286,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void sequence",
+      "definition": "void thrust::sequence",
       "deleted": false,
       "details": "<code>sequence</code> fills the range <code>[first, last)</code> with a sequence of numbers.\n\nFor each iterator <code>i</code> in the range <code>[first, last)</code>, this version of <code>sequence</code> performs the assignment <code>&#42;i = init + (i - first)</code>.\n\n\nThe following code snippet demonstrates how to use <code>sequence</code> to fill a range with a sequence of numbers starting from the value 1.\n\n\n\n```cpp\n#include <thrust/sequence.h>\n...\nconst int N = 10;\nint A[N];\nthrust::sequence(A, A + 10, 1);\n// A is now {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}\n```",
       "explicit": false,
@@ -1257,6 +1294,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sequence.h",
@@ -1299,7 +1337,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga45671ec928922c36ed05f4b5222e1e89",
+      "qualifiedname": "thrust::sequence",
+      "refid": "group__transformations_1gaee768044bec3b9efcc5b9f733ed9a6a5",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/iota\">https://en.cppreference.com/w/cpp/algorithm/iota</a>"
       ],
@@ -1330,7 +1369,7 @@
       "title": "sequence",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__transformations.html#function-sequence",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-sequence",
       "virtual": false,
       "visibility": "public"
     },
@@ -1341,7 +1380,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void sequence",
+      "definition": "__host__ __device__ void thrust::sequence",
       "deleted": false,
       "details": "<code>sequence</code> fills the range <code>[first, last)</code> with a sequence of numbers.\n\nFor each iterator <code>i</code> in the range <code>[first, last)</code>, this version of <code>sequence</code> performs the assignment <code>&#42;i = init + step &#42; (i - first)</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>sequence</code> to fill a range with a sequence of numbers starting from the value 1 with a step size of 3 using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/sequence.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 10;\nint A[N];\nthrust::sequence(thrust::host, A, A + 10, 1, 3);\n// A is now {1, 4, 7, 10, 13, 16, 19, 22, 25, 28}\n```",
       "explicit": false,
@@ -1349,6 +1388,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sequence.h",
@@ -1409,7 +1449,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1gac37a4f1cd564171630d4c49dd3857a7d",
+      "qualifiedname": "thrust::sequence",
+      "refid": "group__transformations_1ga78a51c44c687267fd12436ed65a2009f",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/iota\">https://en.cppreference.com/w/cpp/algorithm/iota</a>"
       ],
@@ -1449,7 +1490,7 @@
       "title": "sequence",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__transformations.html#function-sequence",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-sequence",
       "virtual": false,
       "visibility": "public"
     },
@@ -1460,7 +1501,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void sequence",
+      "definition": "void thrust::sequence",
       "deleted": false,
       "details": "<code>sequence</code> fills the range <code>[first, last)</code> with a sequence of numbers.\n\nFor each iterator <code>i</code> in the range <code>[first, last)</code>, this version of <code>sequence</code> performs the assignment <code>&#42;i = init + step &#42; (i - first)</code>.\n\n\nThe following code snippet demonstrates how to use <code>sequence</code> to fill a range with a sequence of numbers starting from the value 1 with a step size of 3.\n\n\n\n```cpp\n#include <thrust/sequence.h>\n...\nconst int N = 10;\nint A[N];\nthrust::sequence(A, A + 10, 1, 3);\n// A is now {1, 4, 7, 10, 13, 16, 19, 22, 25, 28}\n```",
       "explicit": false,
@@ -1468,6 +1509,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/sequence.h",
@@ -1519,7 +1561,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1gad4fd8c967e70bf810f16d6e24d7aa599",
+      "qualifiedname": "thrust::sequence",
+      "refid": "group__transformations_1ga57eb3695750a80676b34c9e7302535da",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/iota\">https://en.cppreference.com/w/cpp/algorithm/iota</a>"
       ],
@@ -1550,7 +1593,7 @@
       "title": "sequence",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__transformations.html#function-sequence",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-sequence",
       "virtual": false,
       "visibility": "public"
     },
@@ -1561,7 +1604,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void tabulate",
+      "definition": "__host__ __device__ void thrust::tabulate",
       "deleted": false,
       "details": "<code>tabulate</code> fills the range <code>[first, last)</code> with the value of a function applied to each element's index.\n\nFor each iterator <code>i</code> in the range <code>[first, last)</code>, <code>tabulate</code> performs the assignment <code>&#42;i = unary&#95;op(i - first)</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>tabulate</code> to generate the first <code>n</code> non-positive integers using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/tabulate.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\nconst int N = 10;\nint A[N];\nthrust::tabulate(thrust::host, A, A + 10, thrust::negate<int>());\n// A is now {0, -1, -2, -3, -4, -5, -6, -7, -8, -9}\n```",
       "explicit": false,
@@ -1569,6 +1612,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/tabulate.h",
@@ -1617,7 +1661,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1gaab1fa0092cd5e8b1fe702c7599c6fe36",
+      "qualifiedname": "thrust::tabulate",
+      "refid": "group__transformations_1ga0408227dba108ecd776cf306106c58a3",
       "see": [
         "thrust::fill ",
         "thrust::generate ",
@@ -1659,7 +1704,7 @@
       "title": "tabulate",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__transformations.html#function-tabulate",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-tabulate",
       "virtual": false,
       "visibility": "public"
     },
@@ -1670,7 +1715,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void tabulate",
+      "definition": "void thrust::tabulate",
       "deleted": false,
       "details": "<code>tabulate</code> fills the range <code>[first, last)</code> with the value of a function applied to each element's index.\n\nFor each iterator <code>i</code> in the range <code>[first, last)</code>, <code>tabulate</code> performs the assignment <code>&#42;i = unary&#95;op(i - first)</code>.\n\n\nThe following code snippet demonstrates how to use <code>tabulate</code> to generate the first <code>n</code> non-positive integers:\n\n\n\n```cpp\n#include <thrust/tabulate.h>\n#include <thrust/functional.h>\n...\nconst int N = 10;\nint A[N];\nthrust::tabulate(A, A + 10, thrust::negate<int>());\n// A is now {0, -1, -2, -3, -4, -5, -6, -7, -8, -9}\n```",
       "explicit": false,
@@ -1678,6 +1723,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/tabulate.h",
@@ -1717,7 +1763,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga655ce60d2533bf0bb5c28a3f1796721c",
+      "qualifiedname": "thrust::tabulate",
+      "refid": "group__transformations_1ga0ddf108cc4d1109addeed3251824f951",
       "see": [
         "thrust::fill ",
         "thrust::generate ",
@@ -1750,7 +1797,7 @@
       "title": "tabulate",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__transformations.html#function-tabulate",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-tabulate",
       "virtual": false,
       "visibility": "public"
     },
@@ -1761,7 +1808,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ OutputIterator transform",
+      "definition": "__host__ __device__ OutputIterator thrust::transform",
       "deleted": false,
       "details": "This version of <code>transform</code> applies a unary function to each element of an input sequence and stores the result in the corresponding position in an output sequence. Specifically, for each iterator <code>i</code> in the range [<code>first</code>, <code>last</code>) the operation <code>op(&#42;i)</code> is performed and the result is assigned to <code>&#42;o</code>, where <code>o</code> is the corresponding output iterator in the range [<code>result</code>, <code>result</code> + (<code>last</code> - <code>first</code>) ). The input and output sequences may coincide, resulting in an in-place transformation.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>transform</code> to negate a range in-place using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/transform.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\n\nint data[10] = {-5, 0, 2, -3, 2, 4, 0, -1, 2, 8};\n\nthrust::negate<int> op;\n\nthrust::transform(thrust::host, data, data + 10, data, op); // in-place transformation\n\n// data is now {5, 0, -2, 3, -2, -4, 0, 1, -2, -8};\n```",
       "explicit": false,
@@ -1769,6 +1816,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 18,
         "file": "thrust/transform.h",
@@ -1829,7 +1877,8 @@
         "<code>first</code> may equal <code>result</code>, but the range <code>[first, last)</code> shall not overlap the range <code>[result, result + (last - first))</code> otherwise."
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga255c20eb9f388066fd38a556a0b91b9a",
+      "qualifiedname": "thrust::transform",
+      "refid": "group__transformations_1ga281b2e453bfa53807eda1d71614fb504",
       "returns": [
         "The end of the output sequence."
       ],
@@ -1881,7 +1930,7 @@
       "title": "transform",
       "type": "__host__ __device__ OutputIterator",
       "typePlain": "__host__ __device__ OutputIterator",
-      "url": "/api/groups/group__transformations.html#function-transform",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-transform",
       "virtual": false,
       "visibility": "public"
     },
@@ -1892,7 +1941,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "OutputIterator transform",
+      "definition": "OutputIterator thrust::transform",
       "deleted": false,
       "details": "This version of <code>transform</code> applies a unary function to each element of an input sequence and stores the result in the corresponding position in an output sequence. Specifically, for each iterator <code>i</code> in the range [<code>first</code>, <code>last</code>) the operation <code>op(&#42;i)</code> is performed and the result is assigned to <code>&#42;o</code>, where <code>o</code> is the corresponding output iterator in the range [<code>result</code>, <code>result</code> + (<code>last</code> - <code>first</code>) ). The input and output sequences may coincide, resulting in an in-place transformation.\n\n\nThe following code snippet demonstrates how to use <code>transform</code>\n\n\n\n```cpp\n#include <thrust/transform.h>\n#include <thrust/functional.h>\n\nint data[10] = {-5, 0, 2, -3, 2, 4, 0, -1, 2, 8};\n\nthrust::negate<int> op;\n\nthrust::transform(data, data + 10, data, op); // in-place transformation\n\n// data is now {5, 0, -2, 3, -2, -4, 0, 1, -2, -8};\n```",
       "explicit": false,
@@ -1900,6 +1949,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 18,
         "file": "thrust/transform.h",
@@ -1951,7 +2001,8 @@
         "<code>first</code> may equal <code>result</code>, but the range <code>[first, last)</code> shall not overlap the range <code>[result, result + (last - first))</code> otherwise."
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga105b6dca38b7ae259d3ea43afb208600",
+      "qualifiedname": "thrust::transform",
+      "refid": "group__transformations_1gacbd546527729f24f27dc44e34a5b8f73",
       "returns": [
         "The end of the output sequence."
       ],
@@ -1994,7 +2045,7 @@
       "title": "transform",
       "type": "OutputIterator",
       "typePlain": "OutputIterator",
-      "url": "/api/groups/group__transformations.html#function-transform",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-transform",
       "virtual": false,
       "visibility": "public"
     },
@@ -2005,7 +2056,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ OutputIterator transform",
+      "definition": "__host__ __device__ OutputIterator thrust::transform",
       "deleted": false,
       "details": "This version of <code>transform</code> applies a binary function to each pair of elements from two input sequences and stores the result in the corresponding position in an output sequence. Specifically, for each iterator <code>i</code> in the range [<code>first1</code>, <code>last1</code>) and <code>j = first + (i - first1)</code> in the range [<code>first2</code>, <code>last2</code>) the operation <code>op(&#42;i,&#42;j)</code> is performed and the result is assigned to <code>&#42;o</code>, where <code>o</code> is the corresponding output iterator in the range [<code>result</code>, <code>result</code> + (<code>last</code> - <code>first</code>) ). The input and output sequences may coincide, resulting in an in-place transformation.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>transform</code> to compute the sum of two ranges using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/transform.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\n\nint input1[6] = {-5,  0,  2,  3,  2,  4};\nint input2[6] = { 3,  6, -2,  1,  2,  3};\nint output[6];\n\nthrust::plus<int> op;\n\nthrust::transform(thrust::host, input1, input1 + 6, input2, output, op);\n\n// output is now {-2,  6,  0,  4,  4,  7};\n```",
       "explicit": false,
@@ -2013,6 +2064,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 18,
         "file": "thrust/transform.h",
@@ -2083,7 +2135,8 @@
         "<code>first2</code> may equal <code>result</code>, but the range <code>[first2, first2 + (last1 - first1))</code> shall not overlap the range <code>[result, result + (last1 - first1))</code> otherwise."
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1gae759506cab7a0852e79ff7a7ae60129f",
+      "qualifiedname": "thrust::transform",
+      "refid": "group__transformations_1gacca2dd17ae9de2f7bcbb8da6d6f6fce4",
       "returns": [
         "The end of the output sequence."
       ],
@@ -2144,7 +2197,7 @@
       "title": "transform",
       "type": "__host__ __device__ OutputIterator",
       "typePlain": "__host__ __device__ OutputIterator",
-      "url": "/api/groups/group__transformations.html#function-transform",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-transform",
       "virtual": false,
       "visibility": "public"
     },
@@ -2155,7 +2208,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "OutputIterator transform",
+      "definition": "OutputIterator thrust::transform",
       "deleted": false,
       "details": "This version of <code>transform</code> applies a binary function to each pair of elements from two input sequences and stores the result in the corresponding position in an output sequence. Specifically, for each iterator <code>i</code> in the range [<code>first1</code>, <code>last1</code>) and <code>j = first + (i - first1)</code> in the range [<code>first2</code>, <code>last2</code>) the operation <code>op(&#42;i,&#42;j)</code> is performed and the result is assigned to <code>&#42;o</code>, where <code>o</code> is the corresponding output iterator in the range [<code>result</code>, <code>result</code> + (<code>last</code> - <code>first</code>) ). The input and output sequences may coincide, resulting in an in-place transformation.\n\n\nThe following code snippet demonstrates how to use <code>transform</code>\n\n\n\n```cpp\n#include <thrust/transform.h>\n#include <thrust/functional.h>\n\nint input1[6] = {-5,  0,  2,  3,  2,  4};\nint input2[6] = { 3,  6, -2,  1,  2,  3};\nint output[6];\n\nthrust::plus<int> op;\n\nthrust::transform(input1, input1 + 6, input2, output, op);\n\n// output is now {-2,  6,  0,  4,  4,  7};\n```",
       "explicit": false,
@@ -2163,6 +2216,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 18,
         "file": "thrust/transform.h",
@@ -2224,7 +2278,8 @@
         "<code>first2</code> may equal <code>result</code>, but the range <code>[first2, first2 + (last1 - first1))</code> shall not overlap the range <code>[result, result + (last1 - first1))</code> otherwise."
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga3c86950e72d55426735fd56df6f7114d",
+      "qualifiedname": "thrust::transform",
+      "refid": "group__transformations_1ga68a3ba7d332887f1332ca3bc04453792",
       "returns": [
         "The end of the output sequence."
       ],
@@ -2276,18 +2331,18 @@
       "title": "transform",
       "type": "OutputIterator",
       "typePlain": "OutputIterator",
-      "url": "/api/groups/group__transformations.html#function-transform",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-transform",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-transform_if",
+      "anchor": "#function-transform-if",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator first, InputIterator last, ForwardIterator result, UnaryFunction op, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ ForwardIterator transform_if",
+      "definition": "__host__ __device__ ForwardIterator thrust::transform_if",
       "deleted": false,
       "details": "This version of <code>transform&#95;if</code> conditionally applies a unary function to each element of an input sequence and stores the result in the corresponding position in an output sequence if the corresponding position in the input sequence satifies a predicate. Otherwise, the corresponding position in the output sequence is not modified.\n\nSpecifically, for each iterator <code>i</code> in the range <code>[first, last)</code> the predicate <code>pred(&#42;i)</code> is evaluated. If this predicate evaluates to <code>true</code>, the result of <code>op(&#42;i)</code> is assigned to <code>&#42;o</code>, where <code>o</code> is the corresponding output iterator in the range <code>[result, result + (last - first) )</code>. Otherwise, <code>op(&#42;i)</code> is not evaluated and no assignment occurs. The input and output sequences may coincide, resulting in an in-place transformation.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>transform&#95;if</code> to negate the odd-valued elements of a range using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/transform.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\n\nint data[10]    = {-5, 0, 2, -3, 2, 4, 0, -1, 2, 8};\n\nstruct is_odd\n{\n  __host__ __device__\n  bool operator()(int x)\n  {\n    return x % 2;\n  }\n};\n\nthrust::negate<int> op;\nthrust::identity<int> identity;\n\n// negate odd elements\nthrust::transform_if(thrust::host, data, data + 10, data, op, is_odd()); // in-place transformation\n\n// data is now {5, 0, 2, 3, 2, 4, 0, 1, 2, 8};\n```",
       "explicit": false,
@@ -2295,6 +2350,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 19,
         "file": "thrust/transform.h",
@@ -2364,7 +2420,8 @@
         "<code>first</code> may equal <code>result</code>, but the range <code>[first, last)</code> shall not overlap the range <code>[result, result + (last - first))</code> otherwise."
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1gacce13493cac8ff4cdd8ea862e2665025",
+      "qualifiedname": "thrust::transform_if",
+      "refid": "group__transformations_1gaaf162576bd1daef87b80ea82bfbf8558",
       "returns": [
         "The end of the output sequence."
       ],
@@ -2425,18 +2482,18 @@
       "title": "transform_if",
       "type": "__host__ __device__ ForwardIterator",
       "typePlain": "__host__ __device__ ForwardIterator",
-      "url": "/api/groups/group__transformations.html#function-transform_if",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-transform-if",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-transform_if",
+      "anchor": "#function-transform-if",
       "argsString": "(InputIterator first, InputIterator last, ForwardIterator result, UnaryFunction op, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "ForwardIterator transform_if",
+      "definition": "ForwardIterator thrust::transform_if",
       "deleted": false,
       "details": "This version of <code>transform&#95;if</code> conditionally applies a unary function to each element of an input sequence and stores the result in the corresponding position in an output sequence if the corresponding position in the input sequence satifies a predicate. Otherwise, the corresponding position in the output sequence is not modified.\n\nSpecifically, for each iterator <code>i</code> in the range <code>[first, last)</code> the predicate <code>pred(&#42;i)</code> is evaluated. If this predicate evaluates to <code>true</code>, the result of <code>op(&#42;i)</code> is assigned to <code>&#42;o</code>, where <code>o</code> is the corresponding output iterator in the range <code>[result, result + (last - first) )</code>. Otherwise, <code>op(&#42;i)</code> is not evaluated and no assignment occurs. The input and output sequences may coincide, resulting in an in-place transformation.\n\n\nThe following code snippet demonstrates how to use <code>transform&#95;if:</code>\n\n\n\n```cpp\n#include <thrust/transform.h>\n#include <thrust/functional.h>\n\nint data[10]    = {-5, 0, 2, -3, 2, 4, 0, -1, 2, 8};\n\nstruct is_odd\n{\n  __host__ __device__\n  bool operator()(int x)\n  {\n    return x % 2;\n  }\n};\n\nthrust::negate<int> op;\nthrust::identity<int> identity;\n\n// negate odd elements\nthrust::transform_if(data, data + 10, data, op, is_odd()); // in-place transformation\n\n// data is now {5, 0, 2, 3, 2, 4, 0, 1, 2, 8};\n```",
       "explicit": false,
@@ -2444,6 +2501,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 19,
         "file": "thrust/transform.h",
@@ -2504,7 +2562,8 @@
         "<code>first</code> may equal <code>result</code>, but the range <code>[first, last)</code> shall not overlap the range <code>[result, result + (last - first))</code> otherwise."
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga42245065d93daf66da0e12dd1a66f3fd",
+      "qualifiedname": "thrust::transform_if",
+      "refid": "group__transformations_1ga7a231d3ed7e33397e36a20f788a0548c",
       "returns": [
         "The end of the output sequence."
       ],
@@ -2556,18 +2615,18 @@
       "title": "transform_if",
       "type": "ForwardIterator",
       "typePlain": "ForwardIterator",
-      "url": "/api/groups/group__transformations.html#function-transform_if",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-transform-if",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-transform_if",
+      "anchor": "#function-transform-if",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator1 first, InputIterator1 last, InputIterator2 stencil, ForwardIterator result, UnaryFunction op, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ ForwardIterator transform_if",
+      "definition": "__host__ __device__ ForwardIterator thrust::transform_if",
       "deleted": false,
       "details": "This version of <code>transform&#95;if</code> conditionally applies a unary function to each element of an input sequence and stores the result in the corresponding position in an output sequence if the corresponding position in a stencil sequence satisfies a predicate. Otherwise, the corresponding position in the output sequence is not modified.\n\nSpecifically, for each iterator <code>i</code> in the range <code>[first, last)</code> the predicate <code>pred(&#42;s)</code> is evaluated, where <code>s</code> is the corresponding input iterator in the range <code>[stencil, stencil + (last - first) )</code>. If this predicate evaluates to <code>true</code>, the result of <code>op(&#42;i)</code> is assigned to <code>&#42;o</code>, where <code>o</code> is the corresponding output iterator in the range <code>[result, result + (last - first) )</code>. Otherwise, <code>op(&#42;i)</code> is not evaluated and no assignment occurs. The input and output sequences may coincide, resulting in an in-place transformation.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>transform&#95;if</code> using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/transform.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\n\nint data[10]    = {-5, 0, 2, -3, 2, 4, 0, -1, 2, 8};\nint stencil[10] = { 1, 0, 1,  0, 1, 0, 1,  0, 1, 0};\n\nthrust::negate<int> op;\nthrust::identity<int> identity;\n\nthrust::transform_if(thrust::host, data, data + 10, stencil, data, op, identity); // in-place transformation\n\n// data is now {5, 0, -2, -3, -2,  4, 0, -1, -2,  8};\n```",
       "explicit": false,
@@ -2575,6 +2634,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 19,
         "file": "thrust/transform.h",
@@ -2654,7 +2714,8 @@
         "<code>stencil</code> may equal <code>result</code>, but the range <code>[stencil, stencil + (last - first))</code> shall not overlap the range <code>[result, result + (last - first))</code> otherwise."
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1gaa175c2da198e8f76004fe2616a3f9741",
+      "qualifiedname": "thrust::transform_if",
+      "refid": "group__transformations_1ga9db3a1a18f443a8d1bcc4132d8d03e15",
       "returns": [
         "The end of the output sequence."
       ],
@@ -2724,18 +2785,18 @@
       "title": "transform_if",
       "type": "__host__ __device__ ForwardIterator",
       "typePlain": "__host__ __device__ ForwardIterator",
-      "url": "/api/groups/group__transformations.html#function-transform_if",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-transform-if",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-transform_if",
+      "anchor": "#function-transform-if",
       "argsString": "(InputIterator1 first, InputIterator1 last, InputIterator2 stencil, ForwardIterator result, UnaryFunction op, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "ForwardIterator transform_if",
+      "definition": "ForwardIterator thrust::transform_if",
       "deleted": false,
       "details": "This version of <code>transform&#95;if</code> conditionally applies a unary function to each element of an input sequence and stores the result in the corresponding position in an output sequence if the corresponding position in a stencil sequence satisfies a predicate. Otherwise, the corresponding position in the output sequence is not modified.\n\nSpecifically, for each iterator <code>i</code> in the range <code>[first, last)</code> the predicate <code>pred(&#42;s)</code> is evaluated, where <code>s</code> is the corresponding input iterator in the range <code>[stencil, stencil + (last - first) )</code>. If this predicate evaluates to <code>true</code>, the result of <code>op(&#42;i)</code> is assigned to <code>&#42;o</code>, where <code>o</code> is the corresponding output iterator in the range <code>[result, result + (last - first) )</code>. Otherwise, <code>op(&#42;i)</code> is not evaluated and no assignment occurs. The input and output sequences may coincide, resulting in an in-place transformation.\n\n\nThe following code snippet demonstrates how to use <code>transform&#95;if:</code>\n\n\n\n```cpp\n#include <thrust/transform.h>\n#include <thrust/functional.h>\n\nint data[10]    = {-5, 0, 2, -3, 2, 4, 0, -1, 2, 8};\nint stencil[10] = { 1, 0, 1,  0, 1, 0, 1,  0, 1, 0};\n\nthrust::negate<int> op;\nthrust::identity<int> identity;\n\nthrust::transform_if(data, data + 10, stencil, data, op, identity); // in-place transformation\n\n// data is now {5, 0, -2, -3, -2,  4, 0, -1, -2,  8};\n```",
       "explicit": false,
@@ -2743,6 +2804,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 19,
         "file": "thrust/transform.h",
@@ -2813,7 +2875,8 @@
         "<code>stencil</code> may equal <code>result</code>, but the range <code>[stencil, stencil + (last - first))</code> shall not overlap the range <code>[result, result + (last - first))</code> otherwise."
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1gadb9784df3e77e920404bc0ceb8da2627",
+      "qualifiedname": "thrust::transform_if",
+      "refid": "group__transformations_1ga4bee9c11e0802a939496b1a1dd048244",
       "returns": [
         "The end of the output sequence."
       ],
@@ -2874,18 +2937,18 @@
       "title": "transform_if",
       "type": "ForwardIterator",
       "typePlain": "ForwardIterator",
-      "url": "/api/groups/group__transformations.html#function-transform_if",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-transform-if",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-transform_if",
+      "anchor": "#function-transform-if",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator1 first1, InputIterator1 last1, InputIterator2 first2, InputIterator3 stencil, ForwardIterator result, BinaryFunction binary_op, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ ForwardIterator transform_if",
+      "definition": "__host__ __device__ ForwardIterator thrust::transform_if",
       "deleted": false,
       "details": "This version of <code>transform&#95;if</code> conditionally applies a binary function to each pair of elements from two input sequences and stores the result in the corresponding position in an output sequence if the corresponding position in a stencil sequence satifies a predicate. Otherwise, the corresponding position in the output sequence is not modified.\n\nSpecifically, for each iterator <code>i</code> in the range <code>[first1, last1)</code> and <code>j = first2 + (i - first1)</code> in the range <code>[first2, first2 + (last1 - first1) )</code>, the predicate <code>pred(&#42;s)</code> is evaluated, where <code>s</code> is the corresponding input iterator in the range <code>[stencil, stencil + (last1 - first1) )</code>. If this predicate evaluates to <code>true</code>, the result of <code>binary&#95;op(&#42;i,&#42;j)</code> is assigned to <code>&#42;o</code>, where <code>o</code> is the corresponding output iterator in the range <code>[result, result + (last1 - first1) )</code>. Otherwise, <code>binary&#95;op(&#42;i,&#42;j)</code> is not evaluated and no assignment occurs. The input and output sequences may coincide, resulting in an in-place transformation.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>transform&#95;if</code> using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/transform.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\n\nint input1[6]  = {-5,  0,  2,  3,  2,  4};\nint input2[6]  = { 3,  6, -2,  1,  2,  3};\nint stencil[8] = { 1,  0,  1,  0,  1,  0};\nint output[6];\n\nthrust::plus<int> op;\nthrust::identity<int> identity;\n\nthrust::transform_if(thrust::host, input1, input1 + 6, input2, stencil, output, op, identity);\n\n// output is now {-2,  0,  0,  3,  4,  4};\n```",
       "explicit": false,
@@ -2893,6 +2956,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 19,
         "file": "thrust/transform.h",
@@ -2982,7 +3046,8 @@
         "<code>stencil</code> may equal <code>result</code>, but the range <code>[stencil, stencil + (last1 - first1))</code> shall not overlap the range <code>[result, result + (last1 - first1))</code> otherwise."
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga1831d637d3b4c22368a5108da8dadbb9",
+      "qualifiedname": "thrust::transform_if",
+      "refid": "group__transformations_1ga37362347fdbe0d2bfeea1ef9a84a6aeb",
       "returns": [
         "The end of the output sequence."
       ],
@@ -3057,18 +3122,18 @@
       "title": "transform_if",
       "type": "__host__ __device__ ForwardIterator",
       "typePlain": "__host__ __device__ ForwardIterator",
-      "url": "/api/groups/group__transformations.html#function-transform_if",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-transform-if",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-transform_if",
+      "anchor": "#function-transform-if",
       "argsString": "(InputIterator1 first1, InputIterator1 last1, InputIterator2 first2, InputIterator3 stencil, ForwardIterator result, BinaryFunction binary_op, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "ForwardIterator transform_if",
+      "definition": "ForwardIterator thrust::transform_if",
       "deleted": false,
       "details": "This version of <code>transform&#95;if</code> conditionally applies a binary function to each pair of elements from two input sequences and stores the result in the corresponding position in an output sequence if the corresponding position in a stencil sequence satifies a predicate. Otherwise, the corresponding position in the output sequence is not modified.\n\nSpecifically, for each iterator <code>i</code> in the range <code>[first1, last1)</code> and <code>j = first2 + (i - first1)</code> in the range <code>[first2, first2 + (last1 - first1) )</code>, the predicate <code>pred(&#42;s)</code> is evaluated, where <code>s</code> is the corresponding input iterator in the range <code>[stencil, stencil + (last1 - first1) )</code>. If this predicate evaluates to <code>true</code>, the result of <code>binary&#95;op(&#42;i,&#42;j)</code> is assigned to <code>&#42;o</code>, where <code>o</code> is the corresponding output iterator in the range <code>[result, result + (last1 - first1) )</code>. Otherwise, <code>binary&#95;op(&#42;i,&#42;j)</code> is not evaluated and no assignment occurs. The input and output sequences may coincide, resulting in an in-place transformation.\n\n\nThe following code snippet demonstrates how to use <code>transform&#95;if:</code>\n\n\n\n```cpp\n#include <thrust/transform.h>\n#include <thrust/functional.h>\n\nint input1[6]  = {-5,  0,  2,  3,  2,  4};\nint input2[6]  = { 3,  6, -2,  1,  2,  3};\nint stencil[8] = { 1,  0,  1,  0,  1,  0};\nint output[6];\n\nthrust::plus<int> op;\nthrust::identity<int> identity;\n\nthrust::transform_if(input1, input1 + 6, input2, stencil, output, op, identity);\n\n// output is now {-2,  0,  0,  3,  4,  4};\n```",
       "explicit": false,
@@ -3076,6 +3141,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 19,
         "file": "thrust/transform.h",
@@ -3156,7 +3222,8 @@
         "<code>stencil</code> may equal <code>result</code>, but the range <code>[stencil, stencil + (last1 - first1))</code> shall not overlap the range <code>[result, result + (last1 - first1))</code> otherwise."
       ],
       "pureVirtual": false,
-      "refid": "group__transformations_1ga2895156e9ab80670372e4d8ad695a3c9",
+      "qualifiedname": "thrust::transform_if",
+      "refid": "group__transformations_1ga4cace41496814acafa048ff5e14034d1",
       "returns": [
         "The end of the output sequence."
       ],
@@ -3222,15 +3289,16 @@
       "title": "transform_if",
       "type": "ForwardIterator",
       "typePlain": "ForwardIterator",
-      "url": "/api/groups/group__transformations.html#function-transform_if",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html#function-transform-if",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "transformations",
   "refid": "group__transformations",
   "static": false,
   "strong": false,
   "title": "Transformations",
-  "url": "/api/groups/group__transformations.html",
+  "url": "{{ site.baseurl }}/api/groups/group__transformations.html",
   "visibility": "public"
 }

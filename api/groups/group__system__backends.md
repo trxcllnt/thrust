@@ -10,60 +10,54 @@ has_toc: false
 # Systems
 
 <code class="doxybook">
-<span>namespace <b><a href="/api/namespaces/namespacesystem_1_1cpp.html">system::cpp</a></b> { <i>…</i> }</span>
+<span class="doxybook-comment">/* <code>thrust::cpp</code> is a top-level alias for thrust::system::cpp.  */</span><span>namespace <b><a href="{{ site.baseurl }}/api/namespaces/namespacethrust_1_1cpp.html">thrust::cpp</a></b> { <i>…</i> }</span>
 <br>
-<span class="doxybook-comment">/* <code>thrust::cpp</code> is a top-level alias for thrust::system::cpp.  */</span><span>namespace <b><a href="/api/namespaces/namespacethrust_1_1cpp.html">thrust::cpp</a></b> { <i>…</i> }</span>
+<span class="doxybook-comment">/* <code>thrust::system</code> is the namespace which contains specific Thrust backend systems. It also contains functionality for reporting error conditions originating from the operating system or other low-level application program interfaces such as the CUDA runtime. They are provided in a separate namespace for import convenience but are also aliased in the top-level <code>thrust</code> namespace for easy access.  */</span><span>namespace <b><a href="{{ site.baseurl }}/api/namespaces/namespacethrust_1_1system.html">thrust::system</a></b> { <i>…</i> }</span>
 <br>
-<span>namespace <b><a href="/api/namespaces/namespacecpp.html">cpp</a></b> { <i>…</i> }</span>
+<span>namespace <b><a href="{{ site.baseurl }}/api/namespaces/namespacethrust_1_1system_1_1omp.html">thrust::system::omp</a></b> { <i>…</i> }</span>
 <br>
-<span class="doxybook-comment">/* <code>thrust::system::cuda</code> is the namespace containing functionality for allocating, manipulating, and deallocating memory available to Thrust's CUDA backend system. The identifiers are provided in a separate namespace underneath <code><a href="/api/namespaces/namespacethrust_1_1system.html">thrust::system</a></code> for import convenience but are also aliased in the top-level <code><a href="/api/namespaces/namespacethrust_1_1cuda.html">thrust::cuda</a></code> namespace for easy access.  */</span><span>namespace <b><a href="/api/namespaces/namespacethrust_1_1system_1_1cuda.html">thrust::system::cuda</a></b> { <i>…</i> }</span>
+<span>namespace <b><a href="{{ site.baseurl }}/api/namespaces/namespacethrust_1_1system_1_1cpp.html">thrust::system::cpp</a></b> { <i>…</i> }</span>
 <br>
-<span>namespace <b><a href="/api/namespaces/namespacesystem.html">system</a></b> { <i>…</i> }</span>
+<span class="doxybook-comment">/* <code>thrust::system::cuda</code> is the namespace containing functionality for allocating, manipulating, and deallocating memory available to Thrust's CUDA backend system. The identifiers are provided in a separate namespace underneath <code><a href="{{ site.baseurl }}/api/namespaces/namespacethrust_1_1system.html">thrust::system</a></code> for import convenience but are also aliased in the top-level <code><a href="{{ site.baseurl }}/api/namespaces/namespacethrust_1_1cuda.html">thrust::cuda</a></code> namespace for easy access.  */</span><span>namespace <b><a href="{{ site.baseurl }}/api/namespaces/namespacethrust_1_1system_1_1cuda.html">thrust::system::cuda</a></b> { <i>…</i> }</span>
 <br>
-<span>namespace <b><a href="/api/namespaces/namespacesystem_1_1omp.html">system::omp</a></b> { <i>…</i> }</span>
+<span>namespace <b><a href="{{ site.baseurl }}/api/namespaces/namespacethrust_1_1system_1_1tbb.html">thrust::system::tbb</a></b> { <i>…</i> }</span>
 <br>
-<span class="doxybook-comment">/* <code>thrust::omp</code> is a top-level alias for thrust::system::omp.  */</span><span>namespace <b><a href="/api/namespaces/namespacethrust_1_1omp.html">thrust::omp</a></b> { <i>…</i> }</span>
+<span class="doxybook-comment">/* <code>thrust::omp</code> is a top-level alias for thrust::system::omp.  */</span><span>namespace <b><a href="{{ site.baseurl }}/api/namespaces/namespacethrust_1_1omp.html">thrust::omp</a></b> { <i>…</i> }</span>
 <br>
-<span>namespace <b><a href="/api/namespaces/namespaceomp.html">omp</a></b> { <i>…</i> }</span>
-<br>
-<span>namespace <b><a href="/api/namespaces/namespacesystem_1_1tbb.html">system::tbb</a></b> { <i>…</i> }</span>
-<br>
-<span class="doxybook-comment">/* <code>thrust::tbb</code> is a top-level alias for thrust::system::tbb.  */</span><span>namespace <b><a href="/api/namespaces/namespacethrust_1_1tbb.html">thrust::tbb</a></b> { <i>…</i> }</span>
-<br>
-<span>namespace <b><a href="/api/namespaces/namespacetbb.html">tbb</a></b> { <i>…</i> }</span>
+<span class="doxybook-comment">/* <code>thrust::tbb</code> is a top-level alias for thrust::system::tbb.  */</span><span>namespace <b><a href="{{ site.baseurl }}/api/namespaces/namespacethrust_1_1tbb.html">thrust::tbb</a></b> { <i>…</i> }</span>
 <br>
 <span>template &lt;typename T&gt;</span>
-<span>using <b><a href="/api/groups/group__system__backends.html#using-pointer">pointer</a></b> = <i>see below</i>;</span>
+<span>using <b><a href="{{ site.baseurl }}/api/groups/group__system__backends.html#using-pointer">thrust::system::cpp::pointer</a></b> = <i>see below</i>;</span>
 <br>
 <span>template &lt;typename T&gt;</span>
-<span>using <b><a href="/api/groups/group__system__backends.html#using-universal_pointer">universal&#95;pointer</a></b> = <i>see below</i>;</span>
+<span>using <b><a href="{{ site.baseurl }}/api/groups/group__system__backends.html#using-universal-pointer">thrust::system::cpp::universal&#95;pointer</a></b> = <i>see below</i>;</span>
 <br>
 <span>template &lt;typename T&gt;</span>
-<span>using <b><a href="/api/groups/group__system__backends.html#using-reference">reference</a></b> = <i>see below</i>;</span>
+<span>using <b><a href="{{ site.baseurl }}/api/groups/group__system__backends.html#using-reference">thrust::system::cpp::reference</a></b> = <i>see below</i>;</span>
 <br>
 <span>template &lt;typename T&gt;</span>
-<span>using <b><a href="/api/groups/group__system__backends.html#using-pointer">pointer</a></b> = <i>see below</i>;</span>
+<span>using <b><a href="{{ site.baseurl }}/api/groups/group__system__backends.html#using-pointer">thrust::system::omp::pointer</a></b> = <i>see below</i>;</span>
 <br>
 <span>template &lt;typename T&gt;</span>
-<span>using <b><a href="/api/groups/group__system__backends.html#using-universal_pointer">universal&#95;pointer</a></b> = <i>see below</i>;</span>
+<span>using <b><a href="{{ site.baseurl }}/api/groups/group__system__backends.html#using-universal-pointer">thrust::system::omp::universal&#95;pointer</a></b> = <i>see below</i>;</span>
 <br>
 <span>template &lt;typename T&gt;</span>
-<span>using <b><a href="/api/groups/group__system__backends.html#using-reference">reference</a></b> = <i>see below</i>;</span>
+<span>using <b><a href="{{ site.baseurl }}/api/groups/group__system__backends.html#using-reference">thrust::system::omp::reference</a></b> = <i>see below</i>;</span>
 <br>
 <span>template &lt;typename T&gt;</span>
-<span>using <b><a href="/api/groups/group__system__backends.html#using-pointer">pointer</a></b> = <i>see below</i>;</span>
+<span>using <b><a href="{{ site.baseurl }}/api/groups/group__system__backends.html#using-pointer">thrust::system::tbb::pointer</a></b> = <i>see below</i>;</span>
 <br>
 <span>template &lt;typename T&gt;</span>
-<span>using <b><a href="/api/groups/group__system__backends.html#using-universal_pointer">universal&#95;pointer</a></b> = <i>see below</i>;</span>
+<span>using <b><a href="{{ site.baseurl }}/api/groups/group__system__backends.html#using-universal-pointer">thrust::system::tbb::universal&#95;pointer</a></b> = <i>see below</i>;</span>
 <br>
 <span>template &lt;typename T&gt;</span>
-<span>using <b><a href="/api/groups/group__system__backends.html#using-reference">reference</a></b> = <i>see below</i>;</span>
+<span>using <b><a href="{{ site.baseurl }}/api/groups/group__system__backends.html#using-reference">thrust::system::tbb::reference</a></b> = <i>see below</i>;</span>
 </code>
 
 ## Types
 
 <h3 id="using-pointer">
-Type Alias <code>pointer</code>
+Type Alias <code>thrust::system::cpp::pointer</code>
 </h3>
 
 <code class="doxybook">
@@ -86,10 +80,10 @@ The raw pointer encapsulated by a <code>cpp::pointer</code> may be obtained by e
 **See**:
 * cpp::malloc 
 * cpp::free 
-* <a href="/api/groups/group__memory__management.html#function-raw_pointer_cast">raw_pointer_cast</a>
+* raw_pointer_cast 
 
-<h3 id="using-universal_pointer">
-Type Alias <code>universal&#95;pointer</code>
+<h3 id="using-universal-pointer">
+Type Alias <code>thrust::system::cpp::universal&#95;pointer</code>
 </h3>
 
 <code class="doxybook">
@@ -111,10 +105,10 @@ The raw pointer encapsulated by a <code>cpp::universal&#95;pointer</code> may be
 
 **See**:
 * cpp::universal_allocator 
-* <a href="/api/groups/group__memory__management.html#function-raw_pointer_cast">raw_pointer_cast</a>
+* raw_pointer_cast 
 
 <h3 id="using-reference">
-Type Alias <code>reference</code>
+Type Alias <code>thrust::system::cpp::reference</code>
 </h3>
 
 <code class="doxybook">
@@ -126,7 +120,7 @@ Type Alias <code>reference</code>
 **`T`**: Specifies the type of the referenced object. 
 
 <h3 id="using-pointer">
-Type Alias <code>pointer</code>
+Type Alias <code>thrust::system::omp::pointer</code>
 </h3>
 
 <code class="doxybook">
@@ -149,10 +143,10 @@ The raw pointer encapsulated by a <code>omp::pointer</code> may be obtained by e
 **See**:
 * omp::malloc 
 * omp::free 
-* <a href="/api/groups/group__memory__management.html#function-raw_pointer_cast">raw_pointer_cast</a>
+* raw_pointer_cast 
 
-<h3 id="using-universal_pointer">
-Type Alias <code>universal&#95;pointer</code>
+<h3 id="using-universal-pointer">
+Type Alias <code>thrust::system::omp::universal&#95;pointer</code>
 </h3>
 
 <code class="doxybook">
@@ -174,10 +168,10 @@ The raw pointer encapsulated by a <code>omp::universal&#95;pointer</code> may be
 
 **See**:
 * omp::universal_allocator 
-* <a href="/api/groups/group__memory__management.html#function-raw_pointer_cast">raw_pointer_cast</a>
+* raw_pointer_cast 
 
 <h3 id="using-reference">
-Type Alias <code>reference</code>
+Type Alias <code>thrust::system::omp::reference</code>
 </h3>
 
 <code class="doxybook">
@@ -189,7 +183,7 @@ Type Alias <code>reference</code>
 **`T`**: Specifies the type of the referenced object. 
 
 <h3 id="using-pointer">
-Type Alias <code>pointer</code>
+Type Alias <code>thrust::system::tbb::pointer</code>
 </h3>
 
 <code class="doxybook">
@@ -212,10 +206,10 @@ The raw pointer encapsulated by a <code>tbb::pointer</code> may be obtained by e
 **See**:
 * tbb::malloc 
 * tbb::free 
-* <a href="/api/groups/group__memory__management.html#function-raw_pointer_cast">raw_pointer_cast</a>
+* raw_pointer_cast 
 
-<h3 id="using-universal_pointer">
-Type Alias <code>universal&#95;pointer</code>
+<h3 id="using-universal-pointer">
+Type Alias <code>thrust::system::tbb::universal&#95;pointer</code>
 </h3>
 
 <code class="doxybook">
@@ -237,10 +231,10 @@ The raw pointer encapsulated by a <code>tbb::universal&#95;pointer</code> may be
 
 **See**:
 * tbb::universal_allocator 
-* <a href="/api/groups/group__memory__management.html#function-raw_pointer_cast">raw_pointer_cast</a>
+* raw_pointer_cast 
 
 <h3 id="using-reference">
-Type Alias <code>reference</code>
+Type Alias <code>thrust::system::tbb::reference</code>
 </h3>
 
 <code class="doxybook">

@@ -12,10 +12,12 @@
       "category": "modules",
       "fullname": "searching",
       "kind": "group",
+      "language": "",
       "name": "searching",
+      "qualifiedname": "searching",
       "refid": "group__searching",
       "title": "Searching",
-      "url": "/api/groups/group__searching.html",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html",
       "visibility": "public"
     },
     {
@@ -23,10 +25,12 @@
       "category": "modules",
       "fullname": "copying",
       "kind": "group",
+      "language": "",
       "name": "copying",
+      "qualifiedname": "copying",
       "refid": "group__copying",
       "title": "Copying",
-      "url": "/api/groups/group__copying.html",
+      "url": "{{ site.baseurl }}/api/groups/group__copying.html",
       "visibility": "public"
     },
     {
@@ -34,10 +38,12 @@
       "category": "modules",
       "fullname": "reductions",
       "kind": "group",
+      "language": "",
       "name": "reductions",
+      "qualifiedname": "reductions",
       "refid": "group__reductions",
       "title": "Reductions",
-      "url": "/api/groups/group__reductions.html",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html",
       "visibility": "public"
     },
     {
@@ -45,10 +51,12 @@
       "category": "modules",
       "fullname": "merging",
       "kind": "group",
+      "language": "",
       "name": "merging",
+      "qualifiedname": "merging",
       "refid": "group__merging",
       "title": "Merging",
-      "url": "/api/groups/group__merging.html",
+      "url": "{{ site.baseurl }}/api/groups/group__merging.html",
       "visibility": "public"
     },
     {
@@ -56,10 +64,12 @@
       "category": "modules",
       "fullname": "reordering",
       "kind": "group",
+      "language": "",
       "name": "reordering",
+      "qualifiedname": "reordering",
       "refid": "group__reordering",
       "title": "Reordering",
-      "url": "/api/groups/group__reordering.html",
+      "url": "{{ site.baseurl }}/api/groups/group__reordering.html",
       "visibility": "public"
     },
     {
@@ -67,10 +77,12 @@
       "category": "modules",
       "fullname": "prefixsums",
       "kind": "group",
+      "language": "",
       "name": "prefixsums",
+      "qualifiedname": "prefixsums",
       "refid": "group__prefixsums",
       "title": "Prefix Sums",
-      "url": "/api/groups/group__prefixsums.html",
+      "url": "{{ site.baseurl }}/api/groups/group__prefixsums.html",
       "visibility": "public"
     },
     {
@@ -78,10 +90,12 @@
       "category": "modules",
       "fullname": "set_operations",
       "kind": "group",
+      "language": "",
       "name": "set_operations",
+      "qualifiedname": "set_operations",
       "refid": "group__set__operations",
       "title": "Set Operations",
-      "url": "/api/groups/group__set__operations.html",
+      "url": "{{ site.baseurl }}/api/groups/group__set__operations.html",
       "visibility": "public"
     },
     {
@@ -89,10 +103,12 @@
       "category": "modules",
       "fullname": "sorting",
       "kind": "group",
+      "language": "",
       "name": "sorting",
+      "qualifiedname": "sorting",
       "refid": "group__sorting",
       "title": "Sorting",
-      "url": "/api/groups/group__sorting.html",
+      "url": "{{ site.baseurl }}/api/groups/group__sorting.html",
       "visibility": "public"
     },
     {
@@ -100,10 +116,12 @@
       "category": "modules",
       "fullname": "transformations",
       "kind": "group",
+      "language": "",
       "name": "transformations",
+      "qualifiedname": "transformations",
       "refid": "group__transformations",
       "title": "Transformations",
-      "url": "/api/groups/group__transformations.html",
+      "url": "{{ site.baseurl }}/api/groups/group__transformations.html",
       "visibility": "public"
     }
   ],
@@ -111,13 +129,15 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "name": "algorithms",
   "override": false,
   "parent": null,
+  "qualifiedname": "algorithms",
   "refid": "group__algorithms",
   "static": false,
   "strong": false,
   "title": "Algorithms",
-  "url": "/api/groups/group__algorithms.html",
+  "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
   "visibility": "public"
 }

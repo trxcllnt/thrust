@@ -13,14 +13,14 @@ has_toc: false
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename T&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__filling.html#function-fill">fill</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__filling.html#function-fill">thrust::fill</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const T & value);</span>
 <br>
 <span>template &lt;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename T&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__filling.html#function-fill">fill</a></b>(ForwardIterator first,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__filling.html#function-fill">thrust::fill</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const T & value);</span>
 <br>
@@ -28,7 +28,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator,</span>
 <span>&nbsp;&nbsp;typename Size,</span>
 <span>&nbsp;&nbsp;typename T&gt;</span>
-<span>__host__ __device__ OutputIterator </span><span><b><a href="/api/groups/group__filling.html#function-fill_n">fill&#95;n</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__filling.html#function-fill-n">thrust::fill&#95;n</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;OutputIterator first,</span>
 <span>&nbsp;&nbsp;Size n,</span>
 <span>&nbsp;&nbsp;const T & value);</span>
@@ -36,21 +36,21 @@ has_toc: false
 <span>template &lt;typename OutputIterator,</span>
 <span>&nbsp;&nbsp;typename Size,</span>
 <span>&nbsp;&nbsp;typename T&gt;</span>
-<span>__host__ __device__ OutputIterator </span><span><b><a href="/api/groups/group__filling.html#function-fill_n">fill&#95;n</a></b>(OutputIterator first,</span>
+<span>__host__ __device__ OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__filling.html#function-fill-n">thrust::fill&#95;n</a></b>(OutputIterator first,</span>
 <span>&nbsp;&nbsp;Size n,</span>
 <span>&nbsp;&nbsp;const T & value);</span>
 <br>
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename T&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__filling.html#function-uninitialized_fill">uninitialized&#95;fill</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__filling.html#function-uninitialized-fill">thrust::uninitialized&#95;fill</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const T & x);</span>
 <br>
 <span>template &lt;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename T&gt;</span>
-<span>void </span><span><b><a href="/api/groups/group__filling.html#function-uninitialized_fill">uninitialized&#95;fill</a></b>(ForwardIterator first,</span>
+<span>void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__filling.html#function-uninitialized-fill">thrust::uninitialized&#95;fill</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;const T & x);</span>
 <br>
@@ -58,7 +58,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename Size,</span>
 <span>&nbsp;&nbsp;typename T&gt;</span>
-<span>__host__ __device__ ForwardIterator </span><span><b><a href="/api/groups/group__filling.html#function-uninitialized_fill_n">uninitialized&#95;fill&#95;n</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__filling.html#function-uninitialized-fill-n">thrust::uninitialized&#95;fill&#95;n</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;Size n,</span>
 <span>&nbsp;&nbsp;const T & x);</span>
@@ -66,7 +66,7 @@ has_toc: false
 <span>template &lt;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename Size,</span>
 <span>&nbsp;&nbsp;typename T&gt;</span>
-<span>ForwardIterator </span><span><b><a href="/api/groups/group__filling.html#function-uninitialized_fill_n">uninitialized&#95;fill&#95;n</a></b>(ForwardIterator first,</span>
+<span>ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__filling.html#function-uninitialized-fill-n">thrust::uninitialized&#95;fill&#95;n</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;Size n,</span>
 <span>&nbsp;&nbsp;const T & x);</span>
 </code>
@@ -74,7 +74,7 @@ has_toc: false
 ## Functions
 
 <h3 id="function-fill">
-Function <code>fill</code>
+Function <code>thrust::fill</code>
 </h3>
 
 <code class="doxybook">
@@ -90,7 +90,7 @@ Function <code>fill</code>
 The algorithm's execution is parallelized as determined by <code>exec</code>.
 
 
-The following code snippet demonstrates how to use <code>fill</code> to set a thrust::device_vector's elements to a given value using the <code>thrust::device</code> execution policy for parallelization:
+The following code snippet demonstrates how to use <code>fill</code> to set a <a href="{{ site.baseurl }}/api/classes/classthrust_1_1device__vector.html">thrust::device_vector</a>'s elements to a given value using the <code>thrust::device</code> execution policy for parallelization:
 
 
 
@@ -118,11 +118,11 @@ thrust::fill(thrust::device, v.begin(), v.end(), 137);
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/fill">https://en.cppreference.com/w/cpp/algorithm/fill</a>
-* <code><a href="/api/groups/group__filling.html#function-fill_n">fill&#95;n</a></code>
-* <code><a href="/api/groups/group__filling.html#function-uninitialized_fill">uninitialized&#95;fill</a></code>
+* <code>fill&#95;n</code>
+* <code>uninitialized&#95;fill</code>
 
 <h3 id="function-fill">
-Function <code>fill</code>
+Function <code>thrust::fill</code>
 </h3>
 
 <code class="doxybook">
@@ -134,7 +134,7 @@ Function <code>fill</code>
 <code>fill</code> assigns the value <code>value</code> to every element in the range <code>[first, last)</code>. That is, for every iterator <code>i</code> in <code>[first, last)</code>, it performs the assignment <code>&#42;i = value</code>.
 
 
-The following code snippet demonstrates how to use <code>fill</code> to set a thrust::device_vector's elements to a given value.
+The following code snippet demonstrates how to use <code>fill</code> to set a <a href="{{ site.baseurl }}/api/classes/classthrust_1_1device__vector.html">thrust::device_vector</a>'s elements to a given value.
 
 
 
@@ -159,11 +159,11 @@ thrust::fill(v.begin(), v.end(), 137);
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/fill">https://en.cppreference.com/w/cpp/algorithm/fill</a>
-* <code><a href="/api/groups/group__filling.html#function-fill_n">fill&#95;n</a></code>
-* <code><a href="/api/groups/group__filling.html#function-uninitialized_fill">uninitialized&#95;fill</a></code>
+* <code>fill&#95;n</code>
+* <code>uninitialized&#95;fill</code>
 
-<h3 id="function-fill_n">
-Function <code>fill&#95;n</code>
+<h3 id="function-fill-n">
+Function <code>thrust::fill&#95;n</code>
 </h3>
 
 <code class="doxybook">
@@ -180,7 +180,7 @@ Function <code>fill&#95;n</code>
 The algorithm's execution is parallelized as determined by <code>exec</code>.
 
 
-The following code snippet demonstrates how to use <code>fill</code> to set a thrust::device_vector's elements to a given value using the <code>thrust::device</code> execution policy for parallelization:
+The following code snippet demonstrates how to use <code>fill</code> to set a <a href="{{ site.baseurl }}/api/classes/classthrust_1_1device__vector.html">thrust::device_vector</a>'s elements to a given value using the <code>thrust::device</code> execution policy for parallelization:
 
 
 
@@ -211,11 +211,11 @@ thrust::fill_n(thrust::device, v.begin(), v.size(), 137);
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/fill_n">https://en.cppreference.com/w/cpp/algorithm/fill_n</a>
-* <code><a href="/api/groups/group__filling.html#function-fill">fill</a></code>
-* <code><a href="/api/groups/group__filling.html#function-uninitialized_fill_n">uninitialized&#95;fill&#95;n</a></code>
+* <code>fill</code>
+* <code>uninitialized&#95;fill&#95;n</code>
 
-<h3 id="function-fill_n">
-Function <code>fill&#95;n</code>
+<h3 id="function-fill-n">
+Function <code>thrust::fill&#95;n</code>
 </h3>
 
 <code class="doxybook">
@@ -228,7 +228,7 @@ Function <code>fill&#95;n</code>
 <code>fill&#95;n</code> assigns the value <code>value</code> to every element in the range <code>[first, first+n)</code>. That is, for every iterator <code>i</code> in <code>[first, first+n)</code>, it performs the assignment <code>&#42;i = value</code>.
 
 
-The following code snippet demonstrates how to use <code>fill</code> to set a thrust::device_vector's elements to a given value.
+The following code snippet demonstrates how to use <code>fill</code> to set a <a href="{{ site.baseurl }}/api/classes/classthrust_1_1device__vector.html">thrust::device_vector</a>'s elements to a given value.
 
 
 
@@ -256,11 +256,11 @@ thrust::fill_n(v.begin(), v.size(), 137);
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/fill_n">https://en.cppreference.com/w/cpp/algorithm/fill_n</a>
-* <code><a href="/api/groups/group__filling.html#function-fill">fill</a></code>
-* <code><a href="/api/groups/group__filling.html#function-uninitialized_fill_n">uninitialized&#95;fill&#95;n</a></code>
+* <code>fill</code>
+* <code>uninitialized&#95;fill&#95;n</code>
 
-<h3 id="function-uninitialized_fill">
-Function <code>uninitialized&#95;fill</code>
+<h3 id="function-uninitialized-fill">
+Function <code>thrust::uninitialized&#95;fill</code>
 </h3>
 
 <code class="doxybook">
@@ -314,14 +314,14 @@ thrust::uninitialized_fill(thrust::device, array, array + N, val);
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/memory/uninitialized_fill">https://en.cppreference.com/w/cpp/memory/uninitialized_fill</a>
-* <code><a href="/api/groups/group__filling.html#function-uninitialized_fill_n">uninitialized&#95;fill&#95;n</a></code>
-* <code><a href="/api/groups/group__filling.html#function-fill">fill</a></code>
-* <code><a href="/api/groups/group__copying.html#function-uninitialized_copy">uninitialized&#95;copy</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_new">device&#95;new</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_malloc">device&#95;malloc</a></code>
+* <code>uninitialized&#95;fill&#95;n</code>
+* <code>fill</code>
+* <code>uninitialized&#95;copy</code>
+* <code>device&#95;new</code>
+* <code>device&#95;malloc</code>
 
-<h3 id="function-uninitialized_fill">
-Function <code>uninitialized&#95;fill</code>
+<h3 id="function-uninitialized-fill">
+Function <code>thrust::uninitialized&#95;fill</code>
 </h3>
 
 <code class="doxybook">
@@ -368,14 +368,14 @@ thrust::uninitialized_fill(array, array + N, val);
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/memory/uninitialized_fill">https://en.cppreference.com/w/cpp/memory/uninitialized_fill</a>
-* <code><a href="/api/groups/group__filling.html#function-uninitialized_fill_n">uninitialized&#95;fill&#95;n</a></code>
-* <code><a href="/api/groups/group__filling.html#function-fill">fill</a></code>
-* <code><a href="/api/groups/group__copying.html#function-uninitialized_copy">uninitialized&#95;copy</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_new">device&#95;new</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_malloc">device&#95;malloc</a></code>
+* <code>uninitialized&#95;fill&#95;n</code>
+* <code>fill</code>
+* <code>uninitialized&#95;copy</code>
+* <code>device&#95;new</code>
+* <code>device&#95;malloc</code>
 
-<h3 id="function-uninitialized_fill_n">
-Function <code>uninitialized&#95;fill&#95;n</code>
+<h3 id="function-uninitialized-fill-n">
+Function <code>thrust::uninitialized&#95;fill&#95;n</code>
 </h3>
 
 <code class="doxybook">
@@ -433,14 +433,14 @@ thrust::uninitialized_fill_n(thrust::device, array, N, val);
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/memory/uninitialized_fill">https://en.cppreference.com/w/cpp/memory/uninitialized_fill</a>
-* <code><a href="/api/groups/group__filling.html#function-uninitialized_fill">uninitialized&#95;fill</a></code>
-* <code><a href="/api/groups/group__filling.html#function-fill">fill</a></code>
-* <code><a href="/api/groups/group__copying.html#function-uninitialized_copy_n">uninitialized&#95;copy&#95;n</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_new">device&#95;new</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_malloc">device&#95;malloc</a></code>
+* <code>uninitialized&#95;fill</code>
+* <code>fill</code>
+* <code>uninitialized&#95;copy&#95;n</code>
+* <code>device&#95;new</code>
+* <code>device&#95;malloc</code>
 
-<h3 id="function-uninitialized_fill_n">
-Function <code>uninitialized&#95;fill&#95;n</code>
+<h3 id="function-uninitialized-fill-n">
+Function <code>thrust::uninitialized&#95;fill&#95;n</code>
 </h3>
 
 <code class="doxybook">
@@ -491,10 +491,10 @@ thrust::uninitialized_fill_n(array, N, val);
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/memory/uninitialized_fill">https://en.cppreference.com/w/cpp/memory/uninitialized_fill</a>
-* <code><a href="/api/groups/group__filling.html#function-uninitialized_fill">uninitialized&#95;fill</a></code>
-* <code><a href="/api/groups/group__filling.html#function-fill">fill</a></code>
-* <code><a href="/api/groups/group__copying.html#function-uninitialized_copy_n">uninitialized&#95;copy&#95;n</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_new">device&#95;new</a></code>
-* <code><a href="/api/groups/group__memory__management.html#function-device_malloc">device&#95;malloc</a></code>
+* <code>uninitialized&#95;fill</code>
+* <code>fill</code>
+* <code>uninitialized&#95;copy&#95;n</code>
+* <code>device&#95;new</code>
+* <code>device&#95;malloc</code>
 
 

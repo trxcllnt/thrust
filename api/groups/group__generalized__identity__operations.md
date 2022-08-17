@@ -11,82 +11,82 @@ has_toc: false
 
 <code class="doxybook">
 <span>template &lt;typename T = void&gt;</span>
-<span>struct <b><a href="/api/classes/structidentity.html">identity</a></b>;</span>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1identity.html">thrust::identity</a></b>;</span>
 <br>
-<span>struct <b><a href="/api/classes/structidentity_3_01void_01_4.html">identity&lt; void &gt;</a></b>;</span>
-<br>
-<span>template &lt;typename T = void&gt;</span>
-<span>struct <b><a href="/api/classes/structmaximum.html">maximum</a></b>;</span>
-<br>
-<span>struct <b><a href="/api/classes/structmaximum_3_01void_01_4.html">maximum&lt; void &gt;</a></b>;</span>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1identity_3_01void_01_4.html">thrust::identity&lt; void &gt;</a></b>;</span>
 <br>
 <span>template &lt;typename T = void&gt;</span>
-<span>struct <b><a href="/api/classes/structminimum.html">minimum</a></b>;</span>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1maximum.html">thrust::maximum</a></b>;</span>
 <br>
-<span>struct <b><a href="/api/classes/structminimum_3_01void_01_4.html">minimum&lt; void &gt;</a></b>;</span>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1maximum_3_01void_01_4.html">thrust::maximum&lt; void &gt;</a></b>;</span>
+<br>
+<span>template &lt;typename T = void&gt;</span>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1minimum.html">thrust::minimum</a></b>;</span>
+<br>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1minimum_3_01void_01_4.html">thrust::minimum&lt; void &gt;</a></b>;</span>
 <br>
 <span>template &lt;typename T1 = void,</span>
 <span>&nbsp;&nbsp;typename T2 = void&gt;</span>
-<span>struct <b><a href="/api/classes/structproject1st.html">project1st</a></b>;</span>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1project1st.html">thrust::project1st</a></b>;</span>
 <br>
-<span>struct <b><a href="/api/classes/structproject1st_3_01void_00_01void_01_4.html">project1st&lt; void, void &gt;</a></b>;</span>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1project1st_3_01void_00_01void_01_4.html">thrust::project1st&lt; void, void &gt;</a></b>;</span>
 <br>
 <span>template &lt;typename T1 = void,</span>
 <span>&nbsp;&nbsp;typename T2 = void&gt;</span>
-<span>struct <b><a href="/api/classes/structproject2nd.html">project2nd</a></b>;</span>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1project2nd.html">thrust::project2nd</a></b>;</span>
 <br>
-<span>struct <b><a href="/api/classes/structproject2nd_3_01void_00_01void_01_4.html">project2nd&lt; void, void &gt;</a></b>;</span>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1project2nd_3_01void_00_01void_01_4.html">thrust::project2nd&lt; void, void &gt;</a></b>;</span>
 </code>
 
 ## Member Classes
 
-<h3 id="struct-identity">
-<a href="/api/classes/structidentity.html">Struct <code>identity</code>
+<h3 id="struct-thrustidentity">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1identity.html">Struct <code>thrust::identity</code>
 </a>
 </h3>
 
-<h3 id="struct-identity< void >">
-<a href="/api/classes/structidentity_3_01void_01_4.html">Struct <code>identity&lt; void &gt;</code>
+<h3 id="struct-thrustidentity<-void->">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1identity_3_01void_01_4.html">Struct <code>thrust::identity&lt; void &gt;</code>
 </a>
 </h3>
 
-<h3 id="struct-maximum">
-<a href="/api/classes/structmaximum.html">Struct <code>maximum</code>
+<h3 id="struct-thrustmaximum">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1maximum.html">Struct <code>thrust::maximum</code>
 </a>
 </h3>
 
-<h3 id="struct-maximum< void >">
-<a href="/api/classes/structmaximum_3_01void_01_4.html">Struct <code>maximum&lt; void &gt;</code>
+<h3 id="struct-thrustmaximum<-void->">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1maximum_3_01void_01_4.html">Struct <code>thrust::maximum&lt; void &gt;</code>
 </a>
 </h3>
 
-<h3 id="struct-minimum">
-<a href="/api/classes/structminimum.html">Struct <code>minimum</code>
+<h3 id="struct-thrustminimum">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1minimum.html">Struct <code>thrust::minimum</code>
 </a>
 </h3>
 
-<h3 id="struct-minimum< void >">
-<a href="/api/classes/structminimum_3_01void_01_4.html">Struct <code>minimum&lt; void &gt;</code>
+<h3 id="struct-thrustminimum<-void->">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1minimum_3_01void_01_4.html">Struct <code>thrust::minimum&lt; void &gt;</code>
 </a>
 </h3>
 
-<h3 id="struct-project1st">
-<a href="/api/classes/structproject1st.html">Struct <code>project1st</code>
+<h3 id="struct-thrustproject1st">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1project1st.html">Struct <code>thrust::project1st</code>
 </a>
 </h3>
 
-<h3 id="struct-project1st< void, void >">
-<a href="/api/classes/structproject1st_3_01void_00_01void_01_4.html">Struct <code>project1st&lt; void, void &gt;</code>
+<h3 id="struct-thrustproject1st<-void,-void->">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1project1st_3_01void_00_01void_01_4.html">Struct <code>thrust::project1st&lt; void, void &gt;</code>
 </a>
 </h3>
 
-<h3 id="struct-project2nd">
-<a href="/api/classes/structproject2nd.html">Struct <code>project2nd</code>
+<h3 id="struct-thrustproject2nd">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1project2nd.html">Struct <code>thrust::project2nd</code>
 </a>
 </h3>
 
-<h3 id="struct-project2nd< void, void >">
-<a href="/api/classes/structproject2nd_3_01void_00_01void_01_4.html">Struct <code>project2nd&lt; void, void &gt;</code>
+<h3 id="struct-thrustproject2nd<-void,-void->">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1project2nd_3_01void_00_01void_01_4.html">Struct <code>thrust::project2nd&lt; void, void &gt;</code>
 </a>
 </h3>
 

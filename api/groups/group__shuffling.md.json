@@ -10,15 +10,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "reordering",
     "kind": "group",
+    "language": "",
     "name": "reordering",
+    "qualifiedname": "reordering",
     "refid": "group__reordering",
     "title": "Reordering",
-    "url": "/api/groups/group__reordering.html",
+    "url": "{{ site.baseurl }}/api/groups/group__reordering.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -27,10 +30,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     },
     {
@@ -38,10 +43,12 @@
       "category": "modules",
       "fullname": "reordering",
       "kind": "group",
+      "language": "",
       "name": "reordering",
+      "qualifiedname": "reordering",
       "refid": "group__reordering",
       "title": "Reordering",
-      "url": "/api/groups/group__reordering.html",
+      "url": "{{ site.baseurl }}/api/groups/group__reordering.html",
       "visibility": "public"
     }
   ],
@@ -52,10 +59,12 @@
     "category": "modules",
     "fullname": "reordering",
     "kind": "group",
+    "language": "",
     "name": "reordering",
+    "qualifiedname": "reordering",
     "refid": "group__reordering",
     "title": "Reordering",
-    "url": "/api/groups/group__reordering.html",
+    "url": "{{ site.baseurl }}/api/groups/group__reordering.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -64,10 +73,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     },
     {
@@ -75,10 +86,12 @@
       "category": "modules",
       "fullname": "reordering",
       "kind": "group",
+      "language": "",
       "name": "reordering",
+      "qualifiedname": "reordering",
       "refid": "group__reordering",
       "title": "Reordering",
-      "url": "/api/groups/group__reordering.html",
+      "url": "{{ site.baseurl }}/api/groups/group__reordering.html",
       "visibility": "public"
     }
   ],
@@ -90,7 +103,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void shuffle",
+      "definition": "__host__ __device__ void thrust::shuffle",
       "deleted": false,
       "details": "<code>shuffle</code> reorders the elements <code>[first, last)</code> by a uniform pseudorandom permutation, defined by random engine <code>g</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>shuffle</code> to create a random permutation using the <code>thrust::host</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/shuffle.h>\n#include <thrust/random.h>\n#include <thrust/execution_policy.h>\nint A[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\nconst int N = sizeof(A)/sizeof(int);\nthrust::default_random_engine g;\nthrust::shuffle(thrust::host, A, A + N, g);\n// A is now {6, 5, 8, 7, 2, 1, 4, 3, 10, 9}\n```",
       "explicit": false,
@@ -98,6 +111,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 26,
         "file": "thrust/shuffle.h",
@@ -146,9 +160,10 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__shuffling_1ga12b7bf5d42aa55b5bc58e74a8c43e48e",
+      "qualifiedname": "thrust::shuffle",
+      "refid": "group__shuffling_1ga7b5bab6de935c37b3acc18c991d22d30",
       "see": [
-        "<code><a href=\"/api/groups/group__shuffling.html#function-shuffle_copy\">shuffle&#95;copy</a></code>"
+        "<code>shuffle&#95;copy</code>"
       ],
       "static": false,
       "strong": false,
@@ -186,7 +201,7 @@
       "title": "shuffle",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__shuffling.html#function-shuffle",
+      "url": "{{ site.baseurl }}/api/groups/group__shuffling.html#function-shuffle",
       "virtual": false,
       "visibility": "public"
     },
@@ -197,7 +212,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void shuffle",
+      "definition": "__host__ __device__ void thrust::shuffle",
       "deleted": false,
       "details": "<code>shuffle</code> reorders the elements <code>[first, last)</code> by a uniform pseudorandom permutation, defined by random engine <code>g</code>.\n\n\nThe following code snippet demonstrates how to use <code>shuffle</code> to create a random permutation.\n\n\n\n```cpp\n#include <thrust/shuffle.h>\n#include <thrust/random.h>\nint A[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\nconst int N = sizeof(A)/sizeof(int);\nthrust::default_random_engine g;\nthrust::shuffle(A, A + N, g);\n// A is now {6, 5, 8, 7, 2, 1, 4, 3, 10, 9}\n```",
       "explicit": false,
@@ -205,6 +220,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 26,
         "file": "thrust/shuffle.h",
@@ -244,9 +260,10 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__shuffling_1gae19bab7e8aac0f95ff75d9b0240ef16c",
+      "qualifiedname": "thrust::shuffle",
+      "refid": "group__shuffling_1gaf169d14ea32c6d6b6ae96b43e695cb42",
       "see": [
-        "<code><a href=\"/api/groups/group__shuffling.html#function-shuffle_copy\">shuffle&#95;copy</a></code>"
+        "<code>shuffle&#95;copy</code>"
       ],
       "static": false,
       "strong": false,
@@ -275,18 +292,18 @@
       "title": "shuffle",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__shuffling.html#function-shuffle",
+      "url": "{{ site.baseurl }}/api/groups/group__shuffling.html#function-shuffle",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-shuffle_copy",
+      "anchor": "#function-shuffle-copy",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, RandomIterator first, RandomIterator last, OutputIterator result, URBG &&g)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void shuffle_copy",
+      "definition": "__host__ __device__ void thrust::shuffle_copy",
       "deleted": false,
       "details": "shuffle_copy differs from shuffle only in that the reordered sequence is written to different output sequences, rather than in place. <code>shuffle&#95;copy</code> reorders the elements <code>[first, last)</code> by a uniform pseudorandom permutation, defined by random engine <code>g</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>shuffle&#95;copy</code> to create a random permutation.\n\n\n\n```cpp\n#include <thrust/shuffle.h>\n#include <thrust/random.h>\n#include <thrust/execution_policy.h>\nint A[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\nint result[10];\nconst int N = sizeof(A)/sizeof(int);\nthrust::default_random_engine g;\nthrust::shuffle_copy(thrust::host, A, A + N, result, g);\n// result is now {6, 5, 8, 7, 2, 1, 4, 3, 10, 9}\n```",
       "explicit": false,
@@ -294,6 +311,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 26,
         "file": "thrust/shuffle.h",
@@ -351,9 +369,10 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__shuffling_1ga442598f5a0e38013738c76c21631ee71",
+      "qualifiedname": "thrust::shuffle_copy",
+      "refid": "group__shuffling_1gaa7e9ef2c184b27c93dbf76a5847a6cbc",
       "see": [
-        "<code><a href=\"/api/groups/group__shuffling.html#function-shuffle\">shuffle</a></code>"
+        "<code>shuffle</code>"
       ],
       "static": false,
       "strong": false,
@@ -400,18 +419,18 @@
       "title": "shuffle_copy",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__shuffling.html#function-shuffle_copy",
+      "url": "{{ site.baseurl }}/api/groups/group__shuffling.html#function-shuffle-copy",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-shuffle_copy",
+      "anchor": "#function-shuffle-copy",
       "argsString": "(RandomIterator first, RandomIterator last, OutputIterator result, URBG &&g)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void shuffle_copy",
+      "definition": "__host__ __device__ void thrust::shuffle_copy",
       "deleted": false,
       "details": "shuffle_copy differs from shuffle only in that the reordered sequence is written to different output sequences, rather than in place. <code>shuffle&#95;copy</code> reorders the elements <code>[first, last)</code> by a uniform pseudorandom permutation, defined by random engine <code>g</code>.\n\n\nThe following code snippet demonstrates how to use <code>shuffle&#95;copy</code> to create a random permutation.\n\n\n\n```cpp\n#include <thrust/shuffle.h>\n#include <thrust/random.h>\nint A[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\nint result[10];\nconst int N = sizeof(A)/sizeof(int);\nthrust::default_random_engine g;\nthrust::shuffle_copy(A, A + N, result, g);\n// result is now {6, 5, 8, 7, 2, 1, 4, 3, 10, 9}\n```",
       "explicit": false,
@@ -419,6 +438,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 26,
         "file": "thrust/shuffle.h",
@@ -467,9 +487,10 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__shuffling_1ga918f71b9969bb39a225182c266b90235",
+      "qualifiedname": "thrust::shuffle_copy",
+      "refid": "group__shuffling_1ga910781c28ec9c96cdd9c76167bf142dc",
       "see": [
-        "<code><a href=\"/api/groups/group__shuffling.html#function-shuffle\">shuffle</a></code>"
+        "<code>shuffle</code>"
       ],
       "static": false,
       "strong": false,
@@ -507,15 +528,16 @@
       "title": "shuffle_copy",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__shuffling.html#function-shuffle_copy",
+      "url": "{{ site.baseurl }}/api/groups/group__shuffling.html#function-shuffle-copy",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "shuffling",
   "refid": "group__shuffling",
   "static": false,
   "strong": false,
   "title": "Shuffling",
-  "url": "/api/groups/group__shuffling.html",
+  "url": "{{ site.baseurl }}/api/groups/group__shuffling.html",
   "visibility": "public"
 }

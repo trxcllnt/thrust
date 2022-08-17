@@ -14,7 +14,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename InputIterator1,</span>
 <span>&nbsp;&nbsp;typename InputIterator2,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__scattering.html#function-scatter">scatter</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__scattering.html#function-scatter">thrust::scatter</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 first,</span>
 <span>&nbsp;&nbsp;InputIterator1 last,</span>
 <span>&nbsp;&nbsp;InputIterator2 map,</span>
@@ -23,7 +23,7 @@ has_toc: false
 <span>template &lt;typename InputIterator1,</span>
 <span>&nbsp;&nbsp;typename InputIterator2,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator&gt;</span>
-<span>void </span><span><b><a href="/api/groups/group__scattering.html#function-scatter">scatter</a></b>(InputIterator1 first,</span>
+<span>void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__scattering.html#function-scatter">thrust::scatter</a></b>(InputIterator1 first,</span>
 <span>&nbsp;&nbsp;InputIterator1 last,</span>
 <span>&nbsp;&nbsp;InputIterator2 map,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator result);</span>
@@ -33,7 +33,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename InputIterator2,</span>
 <span>&nbsp;&nbsp;typename InputIterator3,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__scattering.html#function-scatter_if">scatter&#95;if</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__scattering.html#function-scatter-if">thrust::scatter&#95;if</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 first,</span>
 <span>&nbsp;&nbsp;InputIterator1 last,</span>
 <span>&nbsp;&nbsp;InputIterator2 map,</span>
@@ -44,7 +44,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename InputIterator2,</span>
 <span>&nbsp;&nbsp;typename InputIterator3,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator&gt;</span>
-<span>void </span><span><b><a href="/api/groups/group__scattering.html#function-scatter_if">scatter&#95;if</a></b>(InputIterator1 first,</span>
+<span>void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__scattering.html#function-scatter-if">thrust::scatter&#95;if</a></b>(InputIterator1 first,</span>
 <span>&nbsp;&nbsp;InputIterator1 last,</span>
 <span>&nbsp;&nbsp;InputIterator2 map,</span>
 <span>&nbsp;&nbsp;InputIterator3 stencil,</span>
@@ -56,7 +56,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename InputIterator3,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__scattering.html#function-scatter_if">scatter&#95;if</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__scattering.html#function-scatter-if">thrust::scatter&#95;if</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 first,</span>
 <span>&nbsp;&nbsp;InputIterator1 last,</span>
 <span>&nbsp;&nbsp;InputIterator2 map,</span>
@@ -69,7 +69,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename InputIterator3,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>void </span><span><b><a href="/api/groups/group__scattering.html#function-scatter_if">scatter&#95;if</a></b>(InputIterator1 first,</span>
+<span>void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__scattering.html#function-scatter-if">thrust::scatter&#95;if</a></b>(InputIterator1 first,</span>
 <span>&nbsp;&nbsp;InputIterator1 last,</span>
 <span>&nbsp;&nbsp;InputIterator2 map,</span>
 <span>&nbsp;&nbsp;InputIterator3 stencil,</span>
@@ -80,7 +80,7 @@ has_toc: false
 ## Functions
 
 <h3 id="function-scatter">
-Function <code>scatter</code>
+Function <code>thrust::scatter</code>
 </h3>
 
 <code class="doxybook">
@@ -145,7 +145,7 @@ thrust::scatter(thrust::device,
 * The expression <code>result[&#42;i]</code> shall be valid for all iterators in the range <code>[map,map + (last - first))</code>.
 
 <h3 id="function-scatter">
-Function <code>scatter</code>
+Function <code>thrust::scatter</code>
 </h3>
 
 <code class="doxybook">
@@ -201,8 +201,8 @@ thrust::scatter(d_values.begin(), d_values.end(),
 * The iterator <code>result + i</code> shall not refer to any element referenced by any iterator <code>j</code> in the range <code>[map,map + (last - first))</code> for all iterators <code>i</code> in the range <code>[map,map + (last - first))</code>.
 * The expression <code>result[&#42;i]</code> shall be valid for all iterators in the range <code>[map,map + (last - first))</code>.
 
-<h3 id="function-scatter_if">
-Function <code>scatter&#95;if</code>
+<h3 id="function-scatter-if">
+Function <code>thrust::scatter&#95;if</code>
 </h3>
 
 <code class="doxybook">
@@ -261,8 +261,8 @@ thrust::scatter_if(thrust::host, V, V + 8, M, S, D);
 * The iterator <code>result + i</code> shall not refer to any element referenced by any iterator <code>j</code> in the range <code>[stencil,stencil + (last - first))</code> for all iterators <code>i</code> in the range <code>[map,map + (last - first))</code>.
 * The expression <code>result[&#42;i]</code> shall be valid for all iterators <code>i</code> in the range <code>[map,map + (last - first))</code> for which the following condition holds: <code>&#42;(stencil + i) != false</code>.
 
-<h3 id="function-scatter_if">
-Function <code>scatter&#95;if</code>
+<h3 id="function-scatter-if">
+Function <code>thrust::scatter&#95;if</code>
 </h3>
 
 <code class="doxybook">
@@ -314,8 +314,8 @@ thrust::scatter_if(V, V + 8, M, S, D);
 * The iterator <code>result + i</code> shall not refer to any element referenced by any iterator <code>j</code> in the range <code>[stencil,stencil + (last - first))</code> for all iterators <code>i</code> in the range <code>[map,map + (last - first))</code>.
 * The expression <code>result[&#42;i]</code> shall be valid for all iterators <code>i</code> in the range <code>[map,map + (last - first))</code> for which the following condition holds: <code>&#42;(stencil + i) != false</code>.
 
-<h3 id="function-scatter_if">
-Function <code>scatter&#95;if</code>
+<h3 id="function-scatter-if">
+Function <code>thrust::scatter&#95;if</code>
 </h3>
 
 <code class="doxybook">
@@ -390,8 +390,8 @@ thrust::scatter_if(thrust::host, V, V + 8, M, S, D, pred);
 * The iterator <code>result + i</code> shall not refer to any element referenced by any iterator <code>j</code> in the range <code>[stencil,stencil + (last - first))</code> for all iterators <code>i</code> in the range <code>[map,map + (last - first))</code>.
 * The expression <code>result[&#42;i]</code> shall be valid for all iterators <code>i</code> in the range <code>[map,map + (last - first))</code> for which the following condition holds: <code>pred(&#42;(stencil + i)) != false</code>.
 
-<h3 id="function-scatter_if">
-Function <code>scatter&#95;if</code>
+<h3 id="function-scatter-if">
+Function <code>thrust::scatter&#95;if</code>
 </h3>
 
 <code class="doxybook">

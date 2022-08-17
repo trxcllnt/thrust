@@ -5,13 +5,14 @@
   "category": "namespaces",
   "const": false,
   "definition": "",
-  "details": "<code><a href=\"/api/namespaces/namespacethrust_1_1tbb.html\">thrust::tbb</a></code> is a top-level alias for <code>thrust::system::tbb</code>. ",
+  "details": "<code><a href=\"{{ site.baseurl }}/api/namespaces/namespacethrust_1_1tbb.html\">thrust::tbb</a></code> is a top-level alias for <code>thrust::system::tbb</code>. ",
   "explicit": false,
   "fullname": "thrust::tbb",
   "hasAdditionalMembers": false,
   "hasDetails": true,
   "inline": false,
   "kind": "namespace",
+  "language": "cpp",
   "location": {
     "column": 1,
     "file": "thrust/system/tbb/memory.h",
@@ -22,10 +23,12 @@
     "category": "modules",
     "fullname": "system_backends",
     "kind": "group",
+    "language": "",
     "name": "system_backends",
+    "qualifiedname": "system_backends",
     "refid": "group__system__backends",
     "title": "Systems",
-    "url": "/api/groups/group__system__backends.html",
+    "url": "{{ site.baseurl }}/api/groups/group__system__backends.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -34,10 +37,12 @@
       "category": "modules",
       "fullname": "system",
       "kind": "group",
+      "language": "",
       "name": "system",
+      "qualifiedname": "system",
       "refid": "group__system",
       "title": "System",
-      "url": "/api/groups/group__system.html",
+      "url": "{{ site.baseurl }}/api/groups/group__system.html",
       "visibility": "public"
     },
     {
@@ -45,10 +50,12 @@
       "category": "modules",
       "fullname": "system_backends",
       "kind": "group",
+      "language": "",
       "name": "system_backends",
+      "qualifiedname": "system_backends",
       "refid": "group__system__backends",
       "title": "Systems",
-      "url": "/api/groups/group__system__backends.html",
+      "url": "{{ site.baseurl }}/api/groups/group__system__backends.html",
       "visibility": "public"
     }
   ],
@@ -59,10 +66,12 @@
     "category": "namespaces",
     "fullname": "thrust",
     "kind": "namespace",
+    "language": "cpp",
     "name": "thrust",
+    "qualifiedname": "thrust",
     "refid": "namespacethrust",
     "title": "thrust",
-    "url": "/api/namespaces/namespacethrust.html",
+    "url": "{{ site.baseurl }}/api/namespaces/namespacethrust.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -71,18 +80,21 @@
       "category": "namespaces",
       "fullname": "thrust",
       "kind": "namespace",
+      "language": "cpp",
       "name": "thrust",
+      "qualifiedname": "thrust",
       "refid": "namespacethrust",
       "title": "thrust",
-      "url": "/api/namespaces/namespacethrust.html",
+      "url": "{{ site.baseurl }}/api/namespaces/namespacethrust.html",
       "visibility": "public"
     }
   ],
+  "qualifiedname": "thrust::tbb",
   "refid": "namespacethrust_1_1tbb",
   "static": false,
   "strong": false,
   "summary": "thrust::tbb is a top-level alias for thrust::system::tbb. ",
   "title": "thrust::tbb",
-  "url": "/api/namespaces/namespacethrust_1_1tbb.html",
+  "url": "{{ site.baseurl }}/api/namespaces/namespacethrust_1_1tbb.html",
   "visibility": "public"
 }

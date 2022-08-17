@@ -10,15 +10,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "reductions",
     "kind": "group",
+    "language": "",
     "name": "reductions",
+    "qualifiedname": "reductions",
     "refid": "group__reductions",
     "title": "Reductions",
-    "url": "/api/groups/group__reductions.html",
+    "url": "{{ site.baseurl }}/api/groups/group__reductions.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -27,10 +30,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     },
     {
@@ -38,10 +43,12 @@
       "category": "modules",
       "fullname": "reductions",
       "kind": "group",
+      "language": "",
       "name": "reductions",
+      "qualifiedname": "reductions",
       "refid": "group__reductions",
       "title": "Reductions",
-      "url": "/api/groups/group__reductions.html",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html",
       "visibility": "public"
     }
   ],
@@ -52,10 +59,12 @@
     "category": "modules",
     "fullname": "reductions",
     "kind": "group",
+    "language": "",
     "name": "reductions",
+    "qualifiedname": "reductions",
     "refid": "group__reductions",
     "title": "Reductions",
-    "url": "/api/groups/group__reductions.html",
+    "url": "{{ site.baseurl }}/api/groups/group__reductions.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -64,10 +73,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     },
     {
@@ -75,10 +86,12 @@
       "category": "modules",
       "fullname": "reductions",
       "kind": "group",
+      "language": "",
       "name": "reductions",
+      "qualifiedname": "reductions",
       "refid": "group__reductions",
       "title": "Reductions",
-      "url": "/api/groups/group__reductions.html",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html",
       "visibility": "public"
     }
   ],
@@ -90,7 +103,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ thrust::iterator_traits<InputIterator>::difference_type count",
+      "definition": "__host__ __device__ thrust::iterator_traits< InputIterator >::difference_type thrust::count",
       "deleted": false,
       "details": "<code>count</code> finds the number of elements in <code>[first,last)</code> that are equal to <code>value</code>. More precisely, <code>count</code> returns the number of iterators <code>i</code> in <code>[first, last)</code> such that <code>&#42;i == value</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>count</code> to count the number of instances in a range of a value of interest using the <code>thrust::device</code> execution policy:\n\n\n\n```cpp\n#include <thrust/count.h>\n#include <thrust/device_vector.h>\n#include <thrust/execution_policy.h>\n...\n// put 3 1s in a device_vector\nthrust::device_vector<int> vec(5,0);\nvec[1] = 1;\nvec[3] = 1;\nvec[4] = 1;\n\n// count the 1s\nint result = thrust::count(thrust::device, vec.begin(), vec.end(), 1);\n// result == 3\n```",
       "explicit": false,
@@ -98,6 +111,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 5,
         "file": "thrust/count.h",
@@ -146,7 +160,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__counting_1ga936f69bbda138f10357f205b82ddbdd5",
+      "qualifiedname": "thrust::count",
+      "refid": "group__counting_1gadcc5ee87e006d41f417e8f8e97be2b52",
       "returns": [
         "The number of elements equal to <code>value</code>."
       ],
@@ -187,9 +202,9 @@
         }
       ],
       "title": "count",
-      "type": "__host__ __device__ thrust::iterator_traits< InputIterator >::difference_type",
+      "type": "__host__ __device__ <a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html\">thrust::iterator_traits</a>< InputIterator >::difference_type",
       "typePlain": "__host__ __device__ thrust::iterator_traits< InputIterator >::difference_type",
-      "url": "/api/groups/group__counting.html#function-count",
+      "url": "{{ site.baseurl }}/api/groups/group__counting.html#function-count",
       "virtual": false,
       "visibility": "public"
     },
@@ -200,7 +215,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "thrust::iterator_traits<InputIterator>::difference_type count",
+      "definition": "thrust::iterator_traits< InputIterator >::difference_type thrust::count",
       "deleted": false,
       "details": "<code>count</code> finds the number of elements in <code>[first,last)</code> that are equal to <code>value</code>. More precisely, <code>count</code> returns the number of iterators <code>i</code> in <code>[first, last)</code> such that <code>&#42;i == value</code>.\n\n\nThe following code snippet demonstrates how to use <code>count</code> to count the number of instances in a range of a value of interest. \n\n```cpp\n#include <thrust/count.h>\n#include <thrust/device_vector.h>\n...\n// put 3 1s in a device_vector\nthrust::device_vector<int> vec(5,0);\nvec[1] = 1;\nvec[3] = 1;\nvec[4] = 1;\n\n// count the 1s\nint result = thrust::count(vec.begin(), vec.end(), 1);\n// result == 3\n```",
       "explicit": false,
@@ -208,6 +223,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 5,
         "file": "thrust/count.h",
@@ -247,7 +263,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__counting_1ga2534cdb3f709fcbad1badf9f841867ee",
+      "qualifiedname": "thrust::count",
+      "refid": "group__counting_1ga44673d327c2caf92e51d0b479044fd4e",
       "returns": [
         "The number of elements equal to <code>value</code>."
       ],
@@ -279,20 +296,20 @@
         }
       ],
       "title": "count",
-      "type": "thrust::iterator_traits< InputIterator >::difference_type",
+      "type": "<a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html\">thrust::iterator_traits</a>< InputIterator >::difference_type",
       "typePlain": "thrust::iterator_traits< InputIterator >::difference_type",
-      "url": "/api/groups/group__counting.html#function-count",
+      "url": "{{ site.baseurl }}/api/groups/group__counting.html#function-count",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-count_if",
+      "anchor": "#function-count-if",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator first, InputIterator last, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ thrust::iterator_traits<InputIterator>::difference_type count_if",
+      "definition": "__host__ __device__ thrust::iterator_traits< InputIterator >::difference_type thrust::count_if",
       "deleted": false,
       "details": "<code>count&#95;if</code> finds the number of elements in <code>[first,last)</code> for which a predicate is <code>true</code>. More precisely, <code>count&#95;if</code> returns the number of iterators <code>i</code> in <code>[first, last)</code> such that <code>pred(&#42;i) == true</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>count</code> to count the number of odd numbers in a range using the <code>thrust::device</code> execution policy:\n\n\n\n```cpp\n#include <thrust/count.h>\n#include <thrust/device_vector.h>\n#include <thrust/execution_policy.h>\n...\nstruct is_odd\n{\n  __host__ __device__\n  bool operator()(int &x)\n  {\n    return x & 1;\n  }\n};\n...\n// fill a device_vector with even & odd numbers\nthrust::device_vector<int> vec(5);\nvec[0] = 0;\nvec[1] = 1;\nvec[2] = 2;\nvec[3] = 3;\nvec[4] = 4;\n\n// count the odd elements in vec\nint result = thrust::count_if(thrust::device, vec.begin(), vec.end(), is_odd());\n// result == 2\n```",
       "explicit": false,
@@ -300,6 +317,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 5,
         "file": "thrust/count.h",
@@ -348,7 +366,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__counting_1gafc69c174c312aae328d6557d33418411",
+      "qualifiedname": "thrust::count_if",
+      "refid": "group__counting_1ga870002a18569b26ea38150e497f13381",
       "returns": [
         "The number of elements where <code>pred</code> is <code>true</code>."
       ],
@@ -389,20 +408,20 @@
         }
       ],
       "title": "count_if",
-      "type": "__host__ __device__ thrust::iterator_traits< InputIterator >::difference_type",
+      "type": "__host__ __device__ <a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html\">thrust::iterator_traits</a>< InputIterator >::difference_type",
       "typePlain": "__host__ __device__ thrust::iterator_traits< InputIterator >::difference_type",
-      "url": "/api/groups/group__counting.html#function-count_if",
+      "url": "{{ site.baseurl }}/api/groups/group__counting.html#function-count-if",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-count_if",
+      "anchor": "#function-count-if",
       "argsString": "(InputIterator first, InputIterator last, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "thrust::iterator_traits<InputIterator>::difference_type count_if",
+      "definition": "thrust::iterator_traits< InputIterator >::difference_type thrust::count_if",
       "deleted": false,
       "details": "<code>count&#95;if</code> finds the number of elements in <code>[first,last)</code> for which a predicate is <code>true</code>. More precisely, <code>count&#95;if</code> returns the number of iterators <code>i</code> in <code>[first, last)</code> such that <code>pred(&#42;i) == true</code>.\n\n\nThe following code snippet demonstrates how to use <code>count</code> to count the number of odd numbers in a range. \n\n```cpp\n#include <thrust/count.h>\n#include <thrust/device_vector.h>\n...\nstruct is_odd\n{\n  __host__ __device__\n  bool operator()(int &x)\n  {\n    return x & 1;\n  }\n};\n...\n// fill a device_vector with even & odd numbers\nthrust::device_vector<int> vec(5);\nvec[0] = 0;\nvec[1] = 1;\nvec[2] = 2;\nvec[3] = 3;\nvec[4] = 4;\n\n// count the odd elements in vec\nint result = thrust::count_if(vec.begin(), vec.end(), is_odd());\n// result == 2\n```",
       "explicit": false,
@@ -410,6 +429,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 5,
         "file": "thrust/count.h",
@@ -449,7 +469,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__counting_1gaf1d45d0c6a1401bfedc9381a2cedd9cd",
+      "qualifiedname": "thrust::count_if",
+      "refid": "group__counting_1ga632cfedf61f2107f734814da1f3b4c3e",
       "returns": [
         "The number of elements where <code>pred</code> is <code>true</code>."
       ],
@@ -481,17 +502,18 @@
         }
       ],
       "title": "count_if",
-      "type": "thrust::iterator_traits< InputIterator >::difference_type",
+      "type": "<a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html\">thrust::iterator_traits</a>< InputIterator >::difference_type",
       "typePlain": "thrust::iterator_traits< InputIterator >::difference_type",
-      "url": "/api/groups/group__counting.html#function-count_if",
+      "url": "{{ site.baseurl }}/api/groups/group__counting.html#function-count-if",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "counting",
   "refid": "group__counting",
   "static": false,
   "strong": false,
   "title": "Counting",
-  "url": "/api/groups/group__counting.html",
+  "url": "{{ site.baseurl }}/api/groups/group__counting.html",
   "visibility": "public"
 }

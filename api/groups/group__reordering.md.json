@@ -12,21 +12,25 @@
       "category": "modules",
       "fullname": "partitioning",
       "kind": "group",
+      "language": "",
       "name": "partitioning",
+      "qualifiedname": "partitioning",
       "refid": "group__partitioning",
       "title": "Partitioning",
-      "url": "/api/groups/group__partitioning.html",
+      "url": "{{ site.baseurl }}/api/groups/group__partitioning.html",
       "visibility": "public"
     },
     {
       "anchor": "",
       "category": "modules",
-      "fullname": "Stream_compaction",
+      "fullname": "stream_compaction",
       "kind": "group",
-      "name": "Stream_compaction",
+      "language": "",
+      "name": "stream_compaction",
+      "qualifiedname": "stream_compaction",
       "refid": "group__stream__compaction",
       "title": "Stream Compaction",
-      "url": "/api/groups/group__stream__compaction.html",
+      "url": "{{ site.baseurl }}/api/groups/group__stream__compaction.html",
       "visibility": "public"
     },
     {
@@ -34,10 +38,12 @@
       "category": "modules",
       "fullname": "shuffling",
       "kind": "group",
+      "language": "",
       "name": "shuffling",
+      "qualifiedname": "shuffling",
       "refid": "group__shuffling",
       "title": "Shuffling",
-      "url": "/api/groups/group__shuffling.html",
+      "url": "{{ site.baseurl }}/api/groups/group__shuffling.html",
       "visibility": "public"
     }
   ],
@@ -45,15 +51,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "algorithms",
     "kind": "group",
+    "language": "",
     "name": "algorithms",
+    "qualifiedname": "algorithms",
     "refid": "group__algorithms",
     "title": "Algorithms",
-    "url": "/api/groups/group__algorithms.html",
+    "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -62,10 +71,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     }
   ],
@@ -76,10 +87,12 @@
     "category": "modules",
     "fullname": "algorithms",
     "kind": "group",
+    "language": "",
     "name": "algorithms",
+    "qualifiedname": "algorithms",
     "refid": "group__algorithms",
     "title": "Algorithms",
-    "url": "/api/groups/group__algorithms.html",
+    "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -88,17 +101,20 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     }
   ],
+  "qualifiedname": "reordering",
   "refid": "group__reordering",
   "static": false,
   "strong": false,
   "title": "Reordering",
-  "url": "/api/groups/group__reordering.html",
+  "url": "{{ site.baseurl }}/api/groups/group__reordering.html",
   "visibility": "public"
 }

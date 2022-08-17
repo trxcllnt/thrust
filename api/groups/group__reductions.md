@@ -11,35 +11,35 @@ has_toc: false
 
 ## Groups
 
-* **[Comparisons](/api/groups/group__comparisons.html)**
-* **[Counting](/api/groups/group__counting.html)**
-* **[Extrema](/api/groups/group__extrema.html)**
-* **[Logical](/api/groups/group__logical.html)**
-* **[Predicates](/api/groups/group__predicates.html)**
-* **[Transformed Reductions](/api/groups/group__transformed__reductions.html)**
+* **[Comparisons]({{ site.baseurl }}/api/groups/group__comparisons.html)**
+* **[Counting]({{ site.baseurl }}/api/groups/group__counting.html)**
+* **[Extrema]({{ site.baseurl }}/api/groups/group__extrema.html)**
+* **[Logical]({{ site.baseurl }}/api/groups/group__logical.html)**
+* **[Predicates]({{ site.baseurl }}/api/groups/group__predicates.html)**
+* **[Transformed Reductions]({{ site.baseurl }}/api/groups/group__transformed__reductions.html)**
 
 <code class="doxybook">
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename InputIterator&gt;</span>
-<span>__host__ __device__ thrust::iterator_traits< InputIterator >::value_type </span><span><b><a href="/api/groups/group__reductions.html#function-reduce">reduce</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html">thrust::iterator_traits</a>< InputIterator >::value_type </span><span><b><a href="{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce">thrust::reduce</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last);</span>
 <br>
 <span>template &lt;typename InputIterator&gt;</span>
-<span>thrust::iterator_traits< InputIterator >::value_type </span><span><b><a href="/api/groups/group__reductions.html#function-reduce">reduce</a></b>(InputIterator first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html">thrust::iterator_traits</a>< InputIterator >::value_type </span><span><b><a href="{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce">thrust::reduce</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last);</span>
 <br>
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename T&gt;</span>
-<span>__host__ __device__ T </span><span><b><a href="/api/groups/group__reductions.html#function-reduce">reduce</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ T </span><span><b><a href="{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce">thrust::reduce</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;T init);</span>
 <br>
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename T&gt;</span>
-<span>T </span><span><b><a href="/api/groups/group__reductions.html#function-reduce">reduce</a></b>(InputIterator first,</span>
+<span>T </span><span><b><a href="{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce">thrust::reduce</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;T init);</span>
 <br>
@@ -47,7 +47,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename T,</span>
 <span>&nbsp;&nbsp;typename BinaryFunction&gt;</span>
-<span>__host__ __device__ T </span><span><b><a href="/api/groups/group__reductions.html#function-reduce">reduce</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ T </span><span><b><a href="{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce">thrust::reduce</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;T init,</span>
@@ -56,7 +56,7 @@ has_toc: false
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename T,</span>
 <span>&nbsp;&nbsp;typename BinaryFunction&gt;</span>
-<span>T </span><span><b><a href="/api/groups/group__reductions.html#function-reduce">reduce</a></b>(InputIterator first,</span>
+<span>T </span><span><b><a href="{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce">thrust::reduce</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;T init,</span>
 <span>&nbsp;&nbsp;BinaryFunction binary_op);</span>
@@ -66,7 +66,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename InputIterator2,</span>
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2&gt;</span>
-<span>__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b><a href="/api/groups/group__reductions.html#function-reduce_by_key">reduce&#95;by&#95;key</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce-by-key">thrust::reduce&#95;by&#95;key</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 values_first,</span>
@@ -77,7 +77,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename InputIterator2,</span>
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2&gt;</span>
-<span>thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b><a href="/api/groups/group__reductions.html#function-reduce_by_key">reduce&#95;by&#95;key</a></b>(InputIterator1 keys_first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce-by-key">thrust::reduce&#95;by&#95;key</a></b>(InputIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 values_first,</span>
 <span>&nbsp;&nbsp;OutputIterator1 keys_output,</span>
@@ -89,7 +89,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename BinaryPredicate&gt;</span>
-<span>__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b><a href="/api/groups/group__reductions.html#function-reduce_by_key">reduce&#95;by&#95;key</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce-by-key">thrust::reduce&#95;by&#95;key</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 values_first,</span>
@@ -102,7 +102,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename BinaryPredicate&gt;</span>
-<span>thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b><a href="/api/groups/group__reductions.html#function-reduce_by_key">reduce&#95;by&#95;key</a></b>(InputIterator1 keys_first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce-by-key">thrust::reduce&#95;by&#95;key</a></b>(InputIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 values_first,</span>
 <span>&nbsp;&nbsp;OutputIterator1 keys_output,</span>
@@ -116,7 +116,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename BinaryPredicate,</span>
 <span>&nbsp;&nbsp;typename BinaryFunction&gt;</span>
-<span>__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b><a href="/api/groups/group__reductions.html#function-reduce_by_key">reduce&#95;by&#95;key</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce-by-key">thrust::reduce&#95;by&#95;key</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 values_first,</span>
@@ -131,7 +131,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename BinaryPredicate,</span>
 <span>&nbsp;&nbsp;typename BinaryFunction&gt;</span>
-<span>thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b><a href="/api/groups/group__reductions.html#function-reduce_by_key">reduce&#95;by&#95;key</a></b>(InputIterator1 keys_first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__reductions.html#function-reduce-by-key">thrust::reduce&#95;by&#95;key</a></b>(InputIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 values_first,</span>
 <span>&nbsp;&nbsp;OutputIterator1 keys_output,</span>
@@ -143,13 +143,13 @@ has_toc: false
 ## Functions
 
 <h3 id="function-reduce">
-Function <code>reduce</code>
+Function <code>thrust::reduce</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename InputIterator&gt;</span>
-<span>__host__ __device__ thrust::iterator_traits< InputIterator >::value_type </span><span><b>reduce</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html">thrust::iterator_traits</a>< InputIterator >::value_type </span><span><b>reduce</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last);</span></code>
 <code>reduce</code> is a generalization of summation: it computes the sum (or some other binary operation) of all the elements in the range <code>[first, last)</code>. This version of <code>reduce</code> uses <code>0</code> as the initial value of the reduction. <code>reduce</code> is similar to the C++ Standard Template Library's <code>std::accumulate</code>. The primary difference between the two functions is that <code>std::accumulate</code> guarantees the order of summation, while <code>reduce</code> requires associativity of the binary operation to parallelize the reduction.
@@ -189,12 +189,12 @@ The result of the reduction.
 <a href="https://en.cppreference.com/w/cpp/algorithm/accumulate">https://en.cppreference.com/w/cpp/algorithm/accumulate</a>
 
 <h3 id="function-reduce">
-Function <code>reduce</code>
+Function <code>thrust::reduce</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename InputIterator&gt;</span>
-<span>thrust::iterator_traits< InputIterator >::value_type </span><span><b>reduce</b>(InputIterator first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html">thrust::iterator_traits</a>< InputIterator >::value_type </span><span><b>reduce</b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last);</span></code>
 <code>reduce</code> is a generalization of summation: it computes the sum (or some other binary operation) of all the elements in the range <code>[first, last)</code>. This version of <code>reduce</code> uses <code>0</code> as the initial value of the reduction. <code>reduce</code> is similar to the C++ Standard Template Library's <code>std::accumulate</code>. The primary difference between the two functions is that <code>std::accumulate</code> guarantees the order of summation, while <code>reduce</code> requires associativity of the binary operation to parallelize the reduction.
 
@@ -228,7 +228,7 @@ The result of the reduction.
 <a href="https://en.cppreference.com/w/cpp/algorithm/accumulate">https://en.cppreference.com/w/cpp/algorithm/accumulate</a>
 
 <h3 id="function-reduce">
-Function <code>reduce</code>
+Function <code>thrust::reduce</code>
 </h3>
 
 <code class="doxybook">
@@ -278,7 +278,7 @@ The result of the reduction.
 <a href="https://en.cppreference.com/w/cpp/algorithm/accumulate">https://en.cppreference.com/w/cpp/algorithm/accumulate</a>
 
 <h3 id="function-reduce">
-Function <code>reduce</code>
+Function <code>thrust::reduce</code>
 </h3>
 
 <code class="doxybook">
@@ -321,7 +321,7 @@ The result of the reduction.
 <a href="https://en.cppreference.com/w/cpp/algorithm/accumulate">https://en.cppreference.com/w/cpp/algorithm/accumulate</a>
 
 <h3 id="function-reduce">
-Function <code>reduce</code>
+Function <code>thrust::reduce</code>
 </h3>
 
 <code class="doxybook">
@@ -376,10 +376,10 @@ The result of the reduction.
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/accumulate">https://en.cppreference.com/w/cpp/algorithm/accumulate</a>
-* <a href="/api/groups/group__transformed__reductions.html#function-transform_reduce">transform_reduce</a>
+* transform_reduce 
 
 <h3 id="function-reduce">
-Function <code>reduce</code>
+Function <code>thrust::reduce</code>
 </h3>
 
 <code class="doxybook">
@@ -426,10 +426,10 @@ The result of the reduction.
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/accumulate">https://en.cppreference.com/w/cpp/algorithm/accumulate</a>
-* <a href="/api/groups/group__transformed__reductions.html#function-transform_reduce">transform_reduce</a>
+* transform_reduce 
 
-<h3 id="function-reduce_by_key">
-Function <code>reduce&#95;by&#95;key</code>
+<h3 id="function-reduce-by-key">
+Function <code>thrust::reduce&#95;by&#95;key</code>
 </h3>
 
 <code class="doxybook">
@@ -438,7 +438,7 @@ Function <code>reduce&#95;by&#95;key</code>
 <span>&nbsp;&nbsp;typename InputIterator2,</span>
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2&gt;</span>
-<span>__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b>reduce_by_key</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b>reduce_by_key</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 values_first,</span>
@@ -446,7 +446,7 @@ Function <code>reduce&#95;by&#95;key</code>
 <span>&nbsp;&nbsp;OutputIterator2 values_output);</span></code>
 <code>reduce&#95;by&#95;key</code> is a generalization of <code>reduce</code> to key-value pairs. For each group of consecutive keys in the range <code>[keys&#95;first, keys&#95;last)</code> that are equal, <code>reduce&#95;by&#95;key</code> copies the first element of the group to the <code>keys&#95;output</code>. The corresponding values in the range are reduced using the <code>plus</code> and the result copied to <code>values&#95;output</code>.
 
-This version of <code>reduce&#95;by&#95;key</code> uses the function object <code><a href="/api/classes/structequal__to.html">equal&#95;to</a></code> to test for equality and <code>plus</code> to reduce values with equal keys.
+This version of <code>reduce&#95;by&#95;key</code> uses the function object <code><a href="{{ site.baseurl }}/api/classes/structthrust_1_1equal__to.html">equal&#95;to</a></code> to test for equality and <code>plus</code> to reduce values with equal keys.
 
 The algorithm's execution is parallelized as determined by <code>exec</code>.
 
@@ -494,13 +494,13 @@ The input ranges shall not overlap either output range.
 A pair of iterators at end of the ranges <code>[keys&#95;output, keys&#95;output&#95;last)</code> and <code>[values&#95;output, values&#95;output&#95;last)</code>.
 
 **See**:
-* <a href="/api/groups/group__reductions.html#function-reduce">reduce</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_copy">unique_copy</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_by_key">unique_by_key</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_by_key_copy">unique_by_key_copy</a>
+* reduce 
+* unique_copy 
+* unique_by_key 
+* unique_by_key_copy 
 
-<h3 id="function-reduce_by_key">
-Function <code>reduce&#95;by&#95;key</code>
+<h3 id="function-reduce-by-key">
+Function <code>thrust::reduce&#95;by&#95;key</code>
 </h3>
 
 <code class="doxybook">
@@ -508,14 +508,14 @@ Function <code>reduce&#95;by&#95;key</code>
 <span>&nbsp;&nbsp;typename InputIterator2,</span>
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2&gt;</span>
-<span>thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b>reduce_by_key</b>(InputIterator1 keys_first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b>reduce_by_key</b>(InputIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 values_first,</span>
 <span>&nbsp;&nbsp;OutputIterator1 keys_output,</span>
 <span>&nbsp;&nbsp;OutputIterator2 values_output);</span></code>
 <code>reduce&#95;by&#95;key</code> is a generalization of <code>reduce</code> to key-value pairs. For each group of consecutive keys in the range <code>[keys&#95;first, keys&#95;last)</code> that are equal, <code>reduce&#95;by&#95;key</code> copies the first element of the group to the <code>keys&#95;output</code>. The corresponding values in the range are reduced using the <code>plus</code> and the result copied to <code>values&#95;output</code>.
 
-This version of <code>reduce&#95;by&#95;key</code> uses the function object <code><a href="/api/classes/structequal__to.html">equal&#95;to</a></code> to test for equality and <code>plus</code> to reduce values with equal keys.
+This version of <code>reduce&#95;by&#95;key</code> uses the function object <code><a href="{{ site.baseurl }}/api/classes/structthrust_1_1equal__to.html">equal&#95;to</a></code> to test for equality and <code>plus</code> to reduce values with equal keys.
 
 
 The following code snippet demonstrates how to use <code>reduce&#95;by&#95;key</code> to compact a sequence of key/value pairs and sum values with equal keys.
@@ -558,13 +558,13 @@ The input ranges shall not overlap either output range.
 A pair of iterators at end of the ranges <code>[keys&#95;output, keys&#95;output&#95;last)</code> and <code>[values&#95;output, values&#95;output&#95;last)</code>.
 
 **See**:
-* <a href="/api/groups/group__reductions.html#function-reduce">reduce</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_copy">unique_copy</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_by_key">unique_by_key</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_by_key_copy">unique_by_key_copy</a>
+* reduce 
+* unique_copy 
+* unique_by_key 
+* unique_by_key_copy 
 
-<h3 id="function-reduce_by_key">
-Function <code>reduce&#95;by&#95;key</code>
+<h3 id="function-reduce-by-key">
+Function <code>thrust::reduce&#95;by&#95;key</code>
 </h3>
 
 <code class="doxybook">
@@ -574,7 +574,7 @@ Function <code>reduce&#95;by&#95;key</code>
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename BinaryPredicate&gt;</span>
-<span>__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b>reduce_by_key</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b>reduce_by_key</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 values_first,</span>
@@ -634,13 +634,13 @@ The input ranges shall not overlap either output range.
 A pair of iterators at end of the ranges <code>[keys&#95;output, keys&#95;output&#95;last)</code> and <code>[values&#95;output, values&#95;output&#95;last)</code>.
 
 **See**:
-* <a href="/api/groups/group__reductions.html#function-reduce">reduce</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_copy">unique_copy</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_by_key">unique_by_key</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_by_key_copy">unique_by_key_copy</a>
+* reduce 
+* unique_copy 
+* unique_by_key 
+* unique_by_key_copy 
 
-<h3 id="function-reduce_by_key">
-Function <code>reduce&#95;by&#95;key</code>
+<h3 id="function-reduce-by-key">
+Function <code>thrust::reduce&#95;by&#95;key</code>
 </h3>
 
 <code class="doxybook">
@@ -649,7 +649,7 @@ Function <code>reduce&#95;by&#95;key</code>
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename BinaryPredicate&gt;</span>
-<span>thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b>reduce_by_key</b>(InputIterator1 keys_first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b>reduce_by_key</b>(InputIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 values_first,</span>
 <span>&nbsp;&nbsp;OutputIterator1 keys_output,</span>
@@ -703,13 +703,13 @@ The input ranges shall not overlap either output range.
 A pair of iterators at end of the ranges <code>[keys&#95;output, keys&#95;output&#95;last)</code> and <code>[values&#95;output, values&#95;output&#95;last)</code>.
 
 **See**:
-* <a href="/api/groups/group__reductions.html#function-reduce">reduce</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_copy">unique_copy</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_by_key">unique_by_key</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_by_key_copy">unique_by_key_copy</a>
+* reduce 
+* unique_copy 
+* unique_by_key 
+* unique_by_key_copy 
 
-<h3 id="function-reduce_by_key">
-Function <code>reduce&#95;by&#95;key</code>
+<h3 id="function-reduce-by-key">
+Function <code>thrust::reduce&#95;by&#95;key</code>
 </h3>
 
 <code class="doxybook">
@@ -720,7 +720,7 @@ Function <code>reduce&#95;by&#95;key</code>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename BinaryPredicate,</span>
 <span>&nbsp;&nbsp;typename BinaryFunction&gt;</span>
-<span>__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b>reduce_by_key</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b>reduce_by_key</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 values_first,</span>
@@ -784,13 +784,13 @@ The input ranges shall not overlap either output range.
 A pair of iterators at end of the ranges <code>[keys&#95;output, keys&#95;output&#95;last)</code> and <code>[values&#95;output, values&#95;output&#95;last)</code>.
 
 **See**:
-* <a href="/api/groups/group__reductions.html#function-reduce">reduce</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_copy">unique_copy</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_by_key">unique_by_key</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_by_key_copy">unique_by_key_copy</a>
+* reduce 
+* unique_copy 
+* unique_by_key 
+* unique_by_key_copy 
 
-<h3 id="function-reduce_by_key">
-Function <code>reduce&#95;by&#95;key</code>
+<h3 id="function-reduce-by-key">
+Function <code>thrust::reduce&#95;by&#95;key</code>
 </h3>
 
 <code class="doxybook">
@@ -800,7 +800,7 @@ Function <code>reduce&#95;by&#95;key</code>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename BinaryPredicate,</span>
 <span>&nbsp;&nbsp;typename BinaryFunction&gt;</span>
-<span>thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b>reduce_by_key</b>(InputIterator1 keys_first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b>reduce_by_key</b>(InputIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;InputIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;InputIterator2 values_first,</span>
 <span>&nbsp;&nbsp;OutputIterator1 keys_output,</span>
@@ -858,9 +858,9 @@ The input ranges shall not overlap either output range.
 A pair of iterators at end of the ranges <code>[keys&#95;output, keys&#95;output&#95;last)</code> and <code>[values&#95;output, values&#95;output&#95;last)</code>.
 
 **See**:
-* <a href="/api/groups/group__reductions.html#function-reduce">reduce</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_copy">unique_copy</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_by_key">unique_by_key</a>
-* <a href="/api/groups/group__stream__compaction.html#function-unique_by_key_copy">unique_by_key_copy</a>
+* reduce 
+* unique_copy 
+* unique_by_key 
+* unique_by_key_copy 
 
 

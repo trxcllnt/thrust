@@ -12,63 +12,63 @@ has_toc: false
 <code class="doxybook">
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__sorting.html#function-sort">sort</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-sort">thrust::sort</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator last);</span>
 <br>
 <span>template &lt;typename RandomAccessIterator&gt;</span>
-<span>void </span><span><b><a href="/api/groups/group__sorting.html#function-sort">sort</a></b>(RandomAccessIterator first,</span>
+<span>void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-sort">thrust::sort</a></b>(RandomAccessIterator first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator last);</span>
 <br>
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator,</span>
 <span>&nbsp;&nbsp;typename StrictWeakOrdering&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__sorting.html#function-sort">sort</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-sort">thrust::sort</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator last,</span>
 <span>&nbsp;&nbsp;StrictWeakOrdering comp);</span>
 <br>
 <span>template &lt;typename RandomAccessIterator,</span>
 <span>&nbsp;&nbsp;typename StrictWeakOrdering&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__sorting.html#function-sort">sort</a></b>(RandomAccessIterator first,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-sort">thrust::sort</a></b>(RandomAccessIterator first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator last,</span>
 <span>&nbsp;&nbsp;StrictWeakOrdering comp);</span>
 <br>
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__sorting.html#function-stable_sort">stable&#95;sort</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort">thrust::stable&#95;sort</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator last);</span>
 <br>
 <span>template &lt;typename RandomAccessIterator&gt;</span>
-<span>void </span><span><b><a href="/api/groups/group__sorting.html#function-stable_sort">stable&#95;sort</a></b>(RandomAccessIterator first,</span>
+<span>void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort">thrust::stable&#95;sort</a></b>(RandomAccessIterator first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator last);</span>
 <br>
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator,</span>
 <span>&nbsp;&nbsp;typename StrictWeakOrdering&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__sorting.html#function-stable_sort">stable&#95;sort</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort">thrust::stable&#95;sort</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator last,</span>
 <span>&nbsp;&nbsp;StrictWeakOrdering comp);</span>
 <br>
 <span>template &lt;typename RandomAccessIterator,</span>
 <span>&nbsp;&nbsp;typename StrictWeakOrdering&gt;</span>
-<span>void </span><span><b><a href="/api/groups/group__sorting.html#function-stable_sort">stable&#95;sort</a></b>(RandomAccessIterator first,</span>
+<span>void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort">thrust::stable&#95;sort</a></b>(RandomAccessIterator first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator last,</span>
 <span>&nbsp;&nbsp;StrictWeakOrdering comp);</span>
 <br>
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator1,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator2&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__sorting.html#function-sort_by_key">sort&#95;by&#95;key</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-sort-by-key">thrust::sort&#95;by&#95;key</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator2 values_first);</span>
 <br>
 <span>template &lt;typename RandomAccessIterator1,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator2&gt;</span>
-<span>void </span><span><b><a href="/api/groups/group__sorting.html#function-sort_by_key">sort&#95;by&#95;key</a></b>(RandomAccessIterator1 keys_first,</span>
+<span>void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-sort-by-key">thrust::sort&#95;by&#95;key</a></b>(RandomAccessIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator2 values_first);</span>
 <br>
@@ -76,7 +76,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename RandomAccessIterator1,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator2,</span>
 <span>&nbsp;&nbsp;typename StrictWeakOrdering&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__sorting.html#function-sort_by_key">sort&#95;by&#95;key</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-sort-by-key">thrust::sort&#95;by&#95;key</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator2 values_first,</span>
@@ -85,7 +85,7 @@ has_toc: false
 <span>template &lt;typename RandomAccessIterator1,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator2,</span>
 <span>&nbsp;&nbsp;typename StrictWeakOrdering&gt;</span>
-<span>void </span><span><b><a href="/api/groups/group__sorting.html#function-sort_by_key">sort&#95;by&#95;key</a></b>(RandomAccessIterator1 keys_first,</span>
+<span>void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-sort-by-key">thrust::sort&#95;by&#95;key</a></b>(RandomAccessIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator2 values_first,</span>
 <span>&nbsp;&nbsp;StrictWeakOrdering comp);</span>
@@ -93,14 +93,14 @@ has_toc: false
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator1,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator2&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__sorting.html#function-stable_sort_by_key">stable&#95;sort&#95;by&#95;key</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort-by-key">thrust::stable&#95;sort&#95;by&#95;key</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator2 values_first);</span>
 <br>
 <span>template &lt;typename RandomAccessIterator1,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator2&gt;</span>
-<span>void </span><span><b><a href="/api/groups/group__sorting.html#function-stable_sort_by_key">stable&#95;sort&#95;by&#95;key</a></b>(RandomAccessIterator1 keys_first,</span>
+<span>void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort-by-key">thrust::stable&#95;sort&#95;by&#95;key</a></b>(RandomAccessIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator2 values_first);</span>
 <br>
@@ -108,7 +108,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename RandomAccessIterator1,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator2,</span>
 <span>&nbsp;&nbsp;typename StrictWeakOrdering&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__sorting.html#function-stable_sort_by_key">stable&#95;sort&#95;by&#95;key</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort-by-key">thrust::stable&#95;sort&#95;by&#95;key</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator2 values_first,</span>
@@ -117,7 +117,7 @@ has_toc: false
 <span>template &lt;typename RandomAccessIterator1,</span>
 <span>&nbsp;&nbsp;typename RandomAccessIterator2,</span>
 <span>&nbsp;&nbsp;typename StrictWeakOrdering&gt;</span>
-<span>void </span><span><b><a href="/api/groups/group__sorting.html#function-stable_sort_by_key">stable&#95;sort&#95;by&#95;key</a></b>(RandomAccessIterator1 keys_first,</span>
+<span>void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__sorting.html#function-stable-sort-by-key">thrust::stable&#95;sort&#95;by&#95;key</a></b>(RandomAccessIterator1 keys_first,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator1 keys_last,</span>
 <span>&nbsp;&nbsp;RandomAccessIterator2 values_first,</span>
 <span>&nbsp;&nbsp;StrictWeakOrdering comp);</span>
@@ -126,7 +126,7 @@ has_toc: false
 ## Functions
 
 <h3 id="function-sort">
-Function <code>sort</code>
+Function <code>thrust::sort</code>
 </h3>
 
 <code class="doxybook">
@@ -167,11 +167,11 @@ thrust::sort(thrust::host, A, A + N);
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/sort">https://en.cppreference.com/w/cpp/algorithm/sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort">stable&#95;sort</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-sort_by_key">sort&#95;by&#95;key</a></code>
+* <code>stable&#95;sort</code>
+* <code>sort&#95;by&#95;key</code>
 
 <h3 id="function-sort">
-Function <code>sort</code>
+Function <code>thrust::sort</code>
 </h3>
 
 <code class="doxybook">
@@ -205,11 +205,11 @@ thrust::sort(A, A + N);
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/sort">https://en.cppreference.com/w/cpp/algorithm/sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort">stable&#95;sort</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-sort_by_key">sort&#95;by&#95;key</a></code>
+* <code>stable&#95;sort</code>
+* <code>sort&#95;by&#95;key</code>
 
 <h3 id="function-sort">
-Function <code>sort</code>
+Function <code>thrust::sort</code>
 </h3>
 
 <code class="doxybook">
@@ -255,11 +255,11 @@ thrust::sort(thrust::host, A, A + N, thrust::greater<int>());
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/sort">https://en.cppreference.com/w/cpp/algorithm/sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort">stable&#95;sort</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-sort_by_key">sort&#95;by&#95;key</a></code>
+* <code>stable&#95;sort</code>
+* <code>sort&#95;by&#95;key</code>
 
 <h3 id="function-sort">
-Function <code>sort</code>
+Function <code>thrust::sort</code>
 </h3>
 
 <code class="doxybook">
@@ -298,11 +298,11 @@ thrust::sort(A, A + N, thrust::greater<int>());
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/sort">https://en.cppreference.com/w/cpp/algorithm/sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort">stable&#95;sort</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-sort_by_key">sort&#95;by&#95;key</a></code>
+* <code>stable&#95;sort</code>
+* <code>sort&#95;by&#95;key</code>
 
-<h3 id="function-stable_sort">
-Function <code>stable&#95;sort</code>
+<h3 id="function-stable-sort">
+Function <code>thrust::stable&#95;sort</code>
 </h3>
 
 <code class="doxybook">
@@ -345,11 +345,11 @@ thrust::stable_sort(thrust::host, A, A + N);
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/stable_sort">https://en.cppreference.com/w/cpp/algorithm/stable_sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-sort">sort</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort_by_key">stable&#95;sort&#95;by&#95;key</a></code>
+* <code>sort</code>
+* <code>stable&#95;sort&#95;by&#95;key</code>
 
-<h3 id="function-stable_sort">
-Function <code>stable&#95;sort</code>
+<h3 id="function-stable-sort">
+Function <code>thrust::stable&#95;sort</code>
 </h3>
 
 <code class="doxybook">
@@ -385,11 +385,11 @@ thrust::stable_sort(A, A + N);
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/stable_sort">https://en.cppreference.com/w/cpp/algorithm/stable_sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-sort">sort</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort_by_key">stable&#95;sort&#95;by&#95;key</a></code>
+* <code>sort</code>
+* <code>stable&#95;sort&#95;by&#95;key</code>
 
-<h3 id="function-stable_sort">
-Function <code>stable&#95;sort</code>
+<h3 id="function-stable-sort">
+Function <code>thrust::stable&#95;sort</code>
 </h3>
 
 <code class="doxybook">
@@ -437,11 +437,11 @@ thrust::sort(A, A + N, thrust::greater<int>());
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/stable_sort">https://en.cppreference.com/w/cpp/algorithm/stable_sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-sort">sort</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort_by_key">stable&#95;sort&#95;by&#95;key</a></code>
+* <code>sort</code>
+* <code>stable&#95;sort&#95;by&#95;key</code>
 
-<h3 id="function-stable_sort">
-Function <code>stable&#95;sort</code>
+<h3 id="function-stable-sort">
+Function <code>thrust::stable&#95;sort</code>
 </h3>
 
 <code class="doxybook">
@@ -482,11 +482,11 @@ thrust::sort(A, A + N, thrust::greater<int>());
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/stable_sort">https://en.cppreference.com/w/cpp/algorithm/stable_sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-sort">sort</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort_by_key">stable&#95;sort&#95;by&#95;key</a></code>
+* <code>sort</code>
+* <code>stable&#95;sort&#95;by&#95;key</code>
 
-<h3 id="function-sort_by_key">
-Function <code>sort&#95;by&#95;key</code>
+<h3 id="function-sort-by-key">
+Function <code>thrust::sort&#95;by&#95;key</code>
 </h3>
 
 <code class="doxybook">
@@ -538,11 +538,11 @@ The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the ra
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/sort">https://en.cppreference.com/w/cpp/algorithm/sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort_by_key">stable&#95;sort&#95;by&#95;key</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-sort">sort</a></code>
+* <code>stable&#95;sort&#95;by&#95;key</code>
+* <code>sort</code>
 
-<h3 id="function-sort_by_key">
-Function <code>sort&#95;by&#95;key</code>
+<h3 id="function-sort-by-key">
+Function <code>thrust::sort&#95;by&#95;key</code>
 </h3>
 
 <code class="doxybook">
@@ -587,11 +587,11 @@ The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the ra
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/sort">https://en.cppreference.com/w/cpp/algorithm/sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort_by_key">stable&#95;sort&#95;by&#95;key</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-sort">sort</a></code>
+* <code>stable&#95;sort&#95;by&#95;key</code>
+* <code>sort</code>
 
-<h3 id="function-sort_by_key">
-Function <code>sort&#95;by&#95;key</code>
+<h3 id="function-sort-by-key">
+Function <code>thrust::sort&#95;by&#95;key</code>
 </h3>
 
 <code class="doxybook">
@@ -647,11 +647,11 @@ The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the ra
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/sort">https://en.cppreference.com/w/cpp/algorithm/sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort_by_key">stable&#95;sort&#95;by&#95;key</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-sort">sort</a></code>
+* <code>stable&#95;sort&#95;by&#95;key</code>
+* <code>sort</code>
 
-<h3 id="function-sort_by_key">
-Function <code>sort&#95;by&#95;key</code>
+<h3 id="function-sort-by-key">
+Function <code>thrust::sort&#95;by&#95;key</code>
 </h3>
 
 <code class="doxybook">
@@ -700,11 +700,11 @@ The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the ra
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/sort">https://en.cppreference.com/w/cpp/algorithm/sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort_by_key">stable&#95;sort&#95;by&#95;key</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-sort">sort</a></code>
+* <code>stable&#95;sort&#95;by&#95;key</code>
+* <code>sort</code>
 
-<h3 id="function-stable_sort_by_key">
-Function <code>stable&#95;sort&#95;by&#95;key</code>
+<h3 id="function-stable-sort-by-key">
+Function <code>thrust::stable&#95;sort&#95;by&#95;key</code>
 </h3>
 
 <code class="doxybook">
@@ -756,11 +756,11 @@ The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the ra
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/sort">https://en.cppreference.com/w/cpp/algorithm/sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-sort_by_key">sort&#95;by&#95;key</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort">stable&#95;sort</a></code>
+* <code>sort&#95;by&#95;key</code>
+* <code>stable&#95;sort</code>
 
-<h3 id="function-stable_sort_by_key">
-Function <code>stable&#95;sort&#95;by&#95;key</code>
+<h3 id="function-stable-sort-by-key">
+Function <code>thrust::stable&#95;sort&#95;by&#95;key</code>
 </h3>
 
 <code class="doxybook">
@@ -805,11 +805,11 @@ The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the ra
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/sort">https://en.cppreference.com/w/cpp/algorithm/sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-sort_by_key">sort&#95;by&#95;key</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort">stable&#95;sort</a></code>
+* <code>sort&#95;by&#95;key</code>
+* <code>stable&#95;sort</code>
 
-<h3 id="function-stable_sort_by_key">
-Function <code>stable&#95;sort&#95;by&#95;key</code>
+<h3 id="function-stable-sort-by-key">
+Function <code>thrust::stable&#95;sort&#95;by&#95;key</code>
 </h3>
 
 <code class="doxybook">
@@ -865,11 +865,11 @@ The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the ra
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/sort">https://en.cppreference.com/w/cpp/algorithm/sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-sort_by_key">sort&#95;by&#95;key</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort">stable&#95;sort</a></code>
+* <code>sort&#95;by&#95;key</code>
+* <code>stable&#95;sort</code>
 
-<h3 id="function-stable_sort_by_key">
-Function <code>stable&#95;sort&#95;by&#95;key</code>
+<h3 id="function-stable-sort-by-key">
+Function <code>thrust::stable&#95;sort&#95;by&#95;key</code>
 </h3>
 
 <code class="doxybook">
@@ -918,7 +918,7 @@ The range <code>[keys&#95;first, keys&#95;last))</code> shall not overlap the ra
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/sort">https://en.cppreference.com/w/cpp/algorithm/sort</a>
-* <code><a href="/api/groups/group__sorting.html#function-sort_by_key">sort&#95;by&#95;key</a></code>
-* <code><a href="/api/groups/group__sorting.html#function-stable_sort">stable&#95;sort</a></code>
+* <code>sort&#95;by&#95;key</code>
+* <code>stable&#95;sort</code>
 
 

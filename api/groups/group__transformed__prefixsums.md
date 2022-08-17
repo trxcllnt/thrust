@@ -15,7 +15,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator,</span>
 <span>&nbsp;&nbsp;typename UnaryFunction,</span>
 <span>&nbsp;&nbsp;typename AssociativeOperator&gt;</span>
-<span>__host__ __device__ OutputIterator </span><span><b><a href="/api/groups/group__transformed__prefixsums.html#function-transform_inclusive_scan">transform&#95;inclusive&#95;scan</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__transformed__prefixsums.html#function-transform-inclusive-scan">thrust::transform&#95;inclusive&#95;scan</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;OutputIterator result,</span>
@@ -26,7 +26,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator,</span>
 <span>&nbsp;&nbsp;typename UnaryFunction,</span>
 <span>&nbsp;&nbsp;typename AssociativeOperator&gt;</span>
-<span>OutputIterator </span><span><b><a href="/api/groups/group__transformed__prefixsums.html#function-transform_inclusive_scan">transform&#95;inclusive&#95;scan</a></b>(InputIterator first,</span>
+<span>OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__transformed__prefixsums.html#function-transform-inclusive-scan">thrust::transform&#95;inclusive&#95;scan</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;OutputIterator result,</span>
 <span>&nbsp;&nbsp;UnaryFunction unary_op,</span>
@@ -38,7 +38,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename UnaryFunction,</span>
 <span>&nbsp;&nbsp;typename T,</span>
 <span>&nbsp;&nbsp;typename AssociativeOperator&gt;</span>
-<span>__host__ __device__ OutputIterator </span><span><b><a href="/api/groups/group__transformed__prefixsums.html#function-transform_exclusive_scan">transform&#95;exclusive&#95;scan</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__transformed__prefixsums.html#function-transform-exclusive-scan">thrust::transform&#95;exclusive&#95;scan</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;OutputIterator result,</span>
@@ -51,7 +51,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename UnaryFunction,</span>
 <span>&nbsp;&nbsp;typename T,</span>
 <span>&nbsp;&nbsp;typename AssociativeOperator&gt;</span>
-<span>OutputIterator </span><span><b><a href="/api/groups/group__transformed__prefixsums.html#function-transform_exclusive_scan">transform&#95;exclusive&#95;scan</a></b>(InputIterator first,</span>
+<span>OutputIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__transformed__prefixsums.html#function-transform-exclusive-scan">thrust::transform&#95;exclusive&#95;scan</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;OutputIterator result,</span>
 <span>&nbsp;&nbsp;UnaryFunction unary_op,</span>
@@ -61,8 +61,8 @@ has_toc: false
 
 ## Functions
 
-<h3 id="function-transform_inclusive_scan">
-Function <code>transform&#95;inclusive&#95;scan</code>
+<h3 id="function-transform-inclusive-scan">
+Function <code>thrust::transform&#95;inclusive&#95;scan</code>
 </h3>
 
 <code class="doxybook">
@@ -123,11 +123,11 @@ thrust::transform_inclusive_scan(thrust::host, data, data + 6, data, unary_op, b
 The end of the output sequence.
 
 **See**:
-* <code><a href="/api/groups/group__transformations.html#function-transform">transform</a></code>
-* <code><a href="/api/groups/group__prefixsums.html#function-inclusive_scan">inclusive&#95;scan</a></code>
+* <code>transform</code>
+* <code>inclusive&#95;scan</code>
 
-<h3 id="function-transform_inclusive_scan">
-Function <code>transform&#95;inclusive&#95;scan</code>
+<h3 id="function-transform-inclusive-scan">
+Function <code>thrust::transform&#95;inclusive&#95;scan</code>
 </h3>
 
 <code class="doxybook">
@@ -180,11 +180,11 @@ thrust::transform_inclusive_scan(data, data + 6, data, unary_op, binary_op); // 
 The end of the output sequence.
 
 **See**:
-* <code><a href="/api/groups/group__transformations.html#function-transform">transform</a></code>
-* <code><a href="/api/groups/group__prefixsums.html#function-inclusive_scan">inclusive&#95;scan</a></code>
+* <code>transform</code>
+* <code>inclusive&#95;scan</code>
 
-<h3 id="function-transform_exclusive_scan">
-Function <code>transform&#95;exclusive&#95;scan</code>
+<h3 id="function-transform-exclusive-scan">
+Function <code>thrust::transform&#95;exclusive&#95;scan</code>
 </h3>
 
 <code class="doxybook">
@@ -249,11 +249,11 @@ thrust::transform_exclusive_scan(thrust::host, data, data + 6, data, unary_op, 4
 The end of the output sequence.
 
 **See**:
-* <code><a href="/api/groups/group__transformations.html#function-transform">transform</a></code>
-* <code><a href="/api/groups/group__prefixsums.html#function-exclusive_scan">exclusive&#95;scan</a></code>
+* <code>transform</code>
+* <code>exclusive&#95;scan</code>
 
-<h3 id="function-transform_exclusive_scan">
-Function <code>transform&#95;exclusive&#95;scan</code>
+<h3 id="function-transform-exclusive-scan">
+Function <code>thrust::transform&#95;exclusive&#95;scan</code>
 </h3>
 
 <code class="doxybook">
@@ -310,7 +310,7 @@ thrust::transform_exclusive_scan(data, data + 6, data, unary_op, 4, binary_op); 
 The end of the output sequence.
 
 **See**:
-* <code><a href="/api/groups/group__transformations.html#function-transform">transform</a></code>
-* <code><a href="/api/groups/group__prefixsums.html#function-exclusive_scan">exclusive&#95;scan</a></code>
+* <code>transform</code>
+* <code>exclusive&#95;scan</code>
 
 

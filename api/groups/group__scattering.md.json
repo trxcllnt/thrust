@@ -10,15 +10,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "copying",
     "kind": "group",
+    "language": "",
     "name": "copying",
+    "qualifiedname": "copying",
     "refid": "group__copying",
     "title": "Copying",
-    "url": "/api/groups/group__copying.html",
+    "url": "{{ site.baseurl }}/api/groups/group__copying.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -27,10 +30,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     },
     {
@@ -38,10 +43,12 @@
       "category": "modules",
       "fullname": "copying",
       "kind": "group",
+      "language": "",
       "name": "copying",
+      "qualifiedname": "copying",
       "refid": "group__copying",
       "title": "Copying",
-      "url": "/api/groups/group__copying.html",
+      "url": "{{ site.baseurl }}/api/groups/group__copying.html",
       "visibility": "public"
     }
   ],
@@ -52,10 +59,12 @@
     "category": "modules",
     "fullname": "copying",
     "kind": "group",
+    "language": "",
     "name": "copying",
+    "qualifiedname": "copying",
     "refid": "group__copying",
     "title": "Copying",
-    "url": "/api/groups/group__copying.html",
+    "url": "{{ site.baseurl }}/api/groups/group__copying.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -64,10 +73,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     },
     {
@@ -75,10 +86,12 @@
       "category": "modules",
       "fullname": "copying",
       "kind": "group",
+      "language": "",
       "name": "copying",
+      "qualifiedname": "copying",
       "refid": "group__copying",
       "title": "Copying",
-      "url": "/api/groups/group__copying.html",
+      "url": "{{ site.baseurl }}/api/groups/group__copying.html",
       "visibility": "public"
     }
   ],
@@ -90,7 +103,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void scatter",
+      "definition": "__host__ __device__ void thrust::scatter",
       "deleted": false,
       "details": "<code>scatter</code> copies elements from a source range into an output array according to a map. For each iterator <code>i</code> in the range [<code>first</code>, <code>last</code>), the value <code>&#42;i</code> is assigned to <code>output[&#42;(map + (i - first))]</code>. The output iterator must permit random access. If the same index appears more than once in the range <code>[map, map + (last - first))</code>, the result is undefined.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>scatter</code> to reorder a range using the <code>thrust::device</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/scatter.h>\n#include <thrust/device_vector.h>\n#include <thrust/execution_policy.h>\n...\n// mark even indices with a 1; odd indices with a 0\nint values[10] = {1, 0, 1, 0, 1, 0, 1, 0, 1, 0};\nthrust::device_vector<int> d_values(values, values + 10);\n\n// scatter all even indices into the first half of the\n// range, and odd indices vice versa\nint map[10]   = {0, 5, 1, 6, 2, 7, 3, 8, 4, 9};\nthrust::device_vector<int> d_map(map, map + 10);\n\nthrust::device_vector<int> d_output(10);\nthrust::scatter(thrust::device,\n                d_values.begin(), d_values.end(),\n                d_map.begin(), d_output.begin());\n// d_output is now {1, 1, 1, 1, 1, 0, 0, 0, 0, 0}\n```",
       "explicit": false,
@@ -98,6 +111,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/scatter.h",
@@ -163,7 +177,8 @@
         "The expression <code>result[&#42;i]</code> shall be valid for all iterators in the range <code>[map,map + (last - first))</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__scattering_1ga66df295696eae8fc5144a124c0bc5f49",
+      "qualifiedname": "thrust::scatter",
+      "refid": "group__scattering_1gac1b33a02dd67cf9c8b3b3aa05c881a37",
       "static": false,
       "strong": false,
       "templateParams": [
@@ -209,7 +224,7 @@
       "title": "scatter",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__scattering.html#function-scatter",
+      "url": "{{ site.baseurl }}/api/groups/group__scattering.html#function-scatter",
       "virtual": false,
       "visibility": "public"
     },
@@ -220,7 +235,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void scatter",
+      "definition": "void thrust::scatter",
       "deleted": false,
       "details": "<code>scatter</code> copies elements from a source range into an output array according to a map. For each iterator <code>i</code> in the range [<code>first</code>, <code>last</code>), the value <code>&#42;i</code> is assigned to <code>output[&#42;(map + (i - first))]</code>. The output iterator must permit random access. If the same index appears more than once in the range <code>[map, map + (last - first))</code>, the result is undefined.\n\n\nThe following code snippet demonstrates how to use <code>scatter</code> to reorder a range.\n\n\n\n```cpp\n#include <thrust/scatter.h>\n#include <thrust/device_vector.h>\n...\n// mark even indices with a 1; odd indices with a 0\nint values[10] = {1, 0, 1, 0, 1, 0, 1, 0, 1, 0};\nthrust::device_vector<int> d_values(values, values + 10);\n\n// scatter all even indices into the first half of the\n// range, and odd indices vice versa\nint map[10]   = {0, 5, 1, 6, 2, 7, 3, 8, 4, 9};\nthrust::device_vector<int> d_map(map, map + 10);\n\nthrust::device_vector<int> d_output(10);\nthrust::scatter(d_values.begin(), d_values.end(),\n                d_map.begin(), d_output.begin());\n// d_output is now {1, 1, 1, 1, 1, 0, 0, 0, 0, 0}\n```",
       "explicit": false,
@@ -228,6 +243,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/scatter.h",
@@ -284,7 +300,8 @@
         "The expression <code>result[&#42;i]</code> shall be valid for all iterators in the range <code>[map,map + (last - first))</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__scattering_1gacb943e0571ef59fb90a75834286a6359",
+      "qualifiedname": "thrust::scatter",
+      "refid": "group__scattering_1ga8555284488141136aade6291d398126c",
       "static": false,
       "strong": false,
       "templateParams": [
@@ -321,18 +338,18 @@
       "title": "scatter",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__scattering.html#function-scatter",
+      "url": "{{ site.baseurl }}/api/groups/group__scattering.html#function-scatter",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-scatter_if",
+      "anchor": "#function-scatter-if",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator1 first, InputIterator1 last, InputIterator2 map, InputIterator3 stencil, RandomAccessIterator output)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void scatter_if",
+      "definition": "__host__ __device__ void thrust::scatter_if",
       "deleted": false,
       "details": "<code>scatter&#95;if</code> conditionally copies elements from a source range into an output array according to a map. For each iterator <code>i</code> in the range <code>[first, last)</code> such that <code>&#42;(stencil + (i - first))</code> is true, the value <code>&#42;i</code> is assigned to <code>output[&#42;(map + (i - first))]</code>. The output iterator must permit random access. If the same index appears more than once in the range <code>[map, map + (last - first))</code> the result is undefined.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\n\n```cpp\n#include <thrust/scatter.h>\n#include <thrust/execution_policy.h>\n...\nint V[8] = {10, 20, 30, 40, 50, 60, 70, 80};\nint M[8] = {0, 5, 1, 6, 2, 7, 3, 4};\nint S[8] = {1, 0, 1, 0, 1, 0, 1, 0};\nint D[8] = {0, 0, 0, 0, 0, 0, 0, 0};\n\nthrust::scatter_if(thrust::host, V, V + 8, M, S, D);\n\n// D contains [10, 30, 50, 70, 0, 0, 0, 0];\n```",
       "explicit": false,
@@ -340,6 +357,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/scatter.h",
@@ -415,7 +433,8 @@
         "The expression <code>result[&#42;i]</code> shall be valid for all iterators <code>i</code> in the range <code>[map,map + (last - first))</code> for which the following condition holds: <code>&#42;(stencil + i) != false</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__scattering_1ga11cfd4caa174046df59a9890e11f3dab",
+      "qualifiedname": "thrust::scatter_if",
+      "refid": "group__scattering_1ga39d45ea8d32a2057e941c59abff6912b",
       "static": false,
       "strong": false,
       "templateParams": [
@@ -470,18 +489,18 @@
       "title": "scatter_if",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__scattering.html#function-scatter_if",
+      "url": "{{ site.baseurl }}/api/groups/group__scattering.html#function-scatter-if",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-scatter_if",
+      "anchor": "#function-scatter-if",
       "argsString": "(InputIterator1 first, InputIterator1 last, InputIterator2 map, InputIterator3 stencil, RandomAccessIterator output)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void scatter_if",
+      "definition": "void thrust::scatter_if",
       "deleted": false,
       "details": "<code>scatter&#95;if</code> conditionally copies elements from a source range into an output array according to a map. For each iterator <code>i</code> in the range <code>[first, last)</code> such that <code>&#42;(stencil + (i - first))</code> is true, the value <code>&#42;i</code> is assigned to <code>output[&#42;(map + (i - first))]</code>. The output iterator must permit random access. If the same index appears more than once in the range <code>[map, map + (last - first))</code> the result is undefined.\n\n\n\n```cpp\n#include <thrust/scatter.h>\n...\nint V[8] = {10, 20, 30, 40, 50, 60, 70, 80};\nint M[8] = {0, 5, 1, 6, 2, 7, 3, 4};\nint S[8] = {1, 0, 1, 0, 1, 0, 1, 0};\nint D[8] = {0, 0, 0, 0, 0, 0, 0, 0};\n\nthrust::scatter_if(V, V + 8, M, S, D);\n\n// D contains [10, 30, 50, 70, 0, 0, 0, 0];\n```",
       "explicit": false,
@@ -489,6 +508,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/scatter.h",
@@ -555,7 +575,8 @@
         "The expression <code>result[&#42;i]</code> shall be valid for all iterators <code>i</code> in the range <code>[map,map + (last - first))</code> for which the following condition holds: <code>&#42;(stencil + i) != false</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__scattering_1ga4a29c1a2365cc826a14994778e47886e",
+      "qualifiedname": "thrust::scatter_if",
+      "refid": "group__scattering_1ga72c5ec1e36f08a1bd7b4e0b20e7e906d",
       "static": false,
       "strong": false,
       "templateParams": [
@@ -601,18 +622,18 @@
       "title": "scatter_if",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__scattering.html#function-scatter_if",
+      "url": "{{ site.baseurl }}/api/groups/group__scattering.html#function-scatter-if",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-scatter_if",
+      "anchor": "#function-scatter-if",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator1 first, InputIterator1 last, InputIterator2 map, InputIterator3 stencil, RandomAccessIterator output, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void scatter_if",
+      "definition": "__host__ __device__ void thrust::scatter_if",
       "deleted": false,
       "details": "<code>scatter&#95;if</code> conditionally copies elements from a source range into an output array according to a map. For each iterator <code>i</code> in the range <code>[first, last)</code> such that <code>pred(&#42;(stencil + (i - first)))</code> is <code>true</code>, the value <code>&#42;i</code> is assigned to <code>output[&#42;(map + (i - first))]</code>. The output iterator must permit random access. If the same index appears more than once in the range <code>[map, map + (last - first))</code> the result is undefined.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\n\n```cpp\n#include <thrust/scatter.h>\n#include <thrust/execution_policy.h>\n\nstruct is_even\n{\n  __host__ __device__\n  bool operator()(int x)\n  {\n    return (x % 2) == 0;\n  }\n};\n\n...\n\nint V[8] = {10, 20, 30, 40, 50, 60, 70, 80};\nint M[8] = {0, 5, 1, 6, 2, 7, 3, 4};\nint S[8] = {2, 1, 2, 1, 2, 1, 2, 1};\nint D[8] = {0, 0, 0, 0, 0, 0, 0, 0};\n\nis_even pred;\nthrust::scatter_if(thrust::host, V, V + 8, M, S, D, pred);\n\n// D contains [10, 30, 50, 70, 0, 0, 0, 0];\n```",
       "explicit": false,
@@ -620,6 +641,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/scatter.h",
@@ -704,7 +726,8 @@
         "The expression <code>result[&#42;i]</code> shall be valid for all iterators <code>i</code> in the range <code>[map,map + (last - first))</code> for which the following condition holds: <code>pred(&#42;(stencil + i)) != false</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__scattering_1ga8e1817d57c0439c42190ce6b2d83bf84",
+      "qualifiedname": "thrust::scatter_if",
+      "refid": "group__scattering_1ga65a5c4aa81a4ac0532ef5d714092a48c",
       "static": false,
       "strong": false,
       "templateParams": [
@@ -768,18 +791,18 @@
       "title": "scatter_if",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__scattering.html#function-scatter_if",
+      "url": "{{ site.baseurl }}/api/groups/group__scattering.html#function-scatter-if",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-scatter_if",
+      "anchor": "#function-scatter-if",
       "argsString": "(InputIterator1 first, InputIterator1 last, InputIterator2 map, InputIterator3 stencil, RandomAccessIterator output, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void scatter_if",
+      "definition": "void thrust::scatter_if",
       "deleted": false,
       "details": "<code>scatter&#95;if</code> conditionally copies elements from a source range into an output array according to a map. For each iterator <code>i</code> in the range <code>[first, last)</code> such that <code>pred(&#42;(stencil + (i - first)))</code> is <code>true</code>, the value <code>&#42;i</code> is assigned to <code>output[&#42;(map + (i - first))]</code>. The output iterator must permit random access. If the same index appears more than once in the range <code>[map, map + (last - first))</code> the result is undefined.\n\n\n\n```cpp\n#include <thrust/scatter.h>\n\nstruct is_even\n{\n  __host__ __device__\n  bool operator()(int x)\n  {\n    return (x % 2) == 0;\n  }\n};\n\n...\n\nint V[8] = {10, 20, 30, 40, 50, 60, 70, 80};\nint M[8] = {0, 5, 1, 6, 2, 7, 3, 4};\nint S[8] = {2, 1, 2, 1, 2, 1, 2, 1};\nint D[8] = {0, 0, 0, 0, 0, 0, 0, 0};\n\nis_even pred;\nthrust::scatter_if(V, V + 8, M, S, D, pred);\n\n// D contains [10, 30, 50, 70, 0, 0, 0, 0];\n```",
       "explicit": false,
@@ -787,6 +810,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 8,
         "file": "thrust/scatter.h",
@@ -862,7 +886,8 @@
         "The expression <code>result[&#42;i]</code> shall be valid for all iterators <code>i</code> in the range <code>[map,map + (last - first))</code> for which the following condition holds: <code>pred(&#42;(stencil + i)) != false</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__scattering_1gadfa83ccd6b1d73b29350af57d5779c45",
+      "qualifiedname": "thrust::scatter_if",
+      "refid": "group__scattering_1ga8b0fb76f92729458494d317ad529a8dd",
       "static": false,
       "strong": false,
       "templateParams": [
@@ -917,15 +942,16 @@
       "title": "scatter_if",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__scattering.html#function-scatter_if",
+      "url": "{{ site.baseurl }}/api/groups/group__scattering.html#function-scatter-if",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "scattering",
   "refid": "group__scattering",
   "static": false,
   "strong": false,
   "title": "Scattering",
-  "url": "/api/groups/group__scattering.html",
+  "url": "{{ site.baseurl }}/api/groups/group__scattering.html",
   "visibility": "public"
 }

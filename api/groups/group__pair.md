@@ -12,70 +12,70 @@ has_toc: false
 <code class="doxybook">
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>struct <b><a href="/api/classes/structpair.html">pair</a></b>;</span>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a></b>;</span>
 <br>
 <span>template &lt;size_t N,</span>
 <span>&nbsp;&nbsp;class T&gt;</span>
-<span>struct <b><a href="/api/classes/structtuple__element.html">tuple&#95;element</a></b>;</span>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1tuple__element.html">thrust::tuple&#95;element</a></b>;</span>
 <br>
 <span>template &lt;typename Pair&gt;</span>
-<span>struct <b><a href="/api/classes/structtuple__size.html">tuple&#95;size</a></b>;</span>
+<span>struct <b><a href="{{ site.baseurl }}/api/classes/structthrust_1_1tuple__size.html">thrust::tuple&#95;size</a></b>;</span>
 <br>
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ bool </span><span><b><a href="/api/groups/group__pair.html#function-operator==">operator==</a></b>(const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & x,</span>
-<span>&nbsp;&nbsp;const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & y);</span>
+<span>__host__ __device__ bool </span><span><b><a href="{{ site.baseurl }}/api/groups/group__pair.html#function-operator==">thrust::operator==</a></b>(const pair< T1, T2 > & x,</span>
+<span>&nbsp;&nbsp;const pair< T1, T2 > & y);</span>
 <br>
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ bool </span><span><b><a href="/api/groups/group__pair.html#function-operator<">operator&lt;</a></b>(const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & x,</span>
-<span>&nbsp;&nbsp;const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & y);</span>
+<span>__host__ __device__ bool </span><span><b><a href="{{ site.baseurl }}/api/groups/group__pair.html#function-operator<">thrust::operator&lt;</a></b>(const pair< T1, T2 > & x,</span>
+<span>&nbsp;&nbsp;const pair< T1, T2 > & y);</span>
 <br>
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ bool </span><span><b><a href="/api/groups/group__pair.html#function-operator!=">operator!=</a></b>(const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & x,</span>
-<span>&nbsp;&nbsp;const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & y);</span>
+<span>__host__ __device__ bool </span><span><b><a href="{{ site.baseurl }}/api/groups/group__pair.html#function-operator!=">thrust::operator!=</a></b>(const pair< T1, T2 > & x,</span>
+<span>&nbsp;&nbsp;const pair< T1, T2 > & y);</span>
 <br>
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ bool </span><span><b><a href="/api/groups/group__pair.html#function-operator>">operator&gt;</a></b>(const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & x,</span>
-<span>&nbsp;&nbsp;const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & y);</span>
+<span>__host__ __device__ bool </span><span><b><a href="{{ site.baseurl }}/api/groups/group__pair.html#function-operator>">thrust::operator&gt;</a></b>(const pair< T1, T2 > & x,</span>
+<span>&nbsp;&nbsp;const pair< T1, T2 > & y);</span>
 <br>
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ bool </span><span><b><a href="/api/groups/group__pair.html#function-operator<=">operator&lt;=</a></b>(const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & x,</span>
-<span>&nbsp;&nbsp;const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & y);</span>
+<span>__host__ __device__ bool </span><span><b><a href="{{ site.baseurl }}/api/groups/group__pair.html#function-operator<=">thrust::operator&lt;=</a></b>(const pair< T1, T2 > & x,</span>
+<span>&nbsp;&nbsp;const pair< T1, T2 > & y);</span>
 <br>
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ bool </span><span><b><a href="/api/groups/group__pair.html#function-operator>=">operator&gt;=</a></b>(const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & x,</span>
-<span>&nbsp;&nbsp;const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & y);</span>
+<span>__host__ __device__ bool </span><span><b><a href="{{ site.baseurl }}/api/groups/group__pair.html#function-operator>=">thrust::operator&gt;=</a></b>(const pair< T1, T2 > & x,</span>
+<span>&nbsp;&nbsp;const pair< T1, T2 > & y);</span>
 <br>
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__pair.html#function-swap">swap</a></b>(<a href="/api/classes/structpair.html">pair</a>< T1, T2 > & x,</span>
-<span>&nbsp;&nbsp;<a href="/api/classes/structpair.html">pair</a>< T1, T2 > & y);</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__pair.html#function-swap">thrust::swap</a></b>(pair< T1, T2 > & x,</span>
+<span>&nbsp;&nbsp;pair< T1, T2 > & y);</span>
 <br>
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ <a href="/api/classes/structpair.html">pair</a>< T1, T2 > </span><span><b><a href="/api/groups/group__pair.html#function-make_pair">make&#95;pair</a></b>(T1 x,</span>
+<span>__host__ __device__ pair< T1, T2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__pair.html#function-make-pair">thrust::make&#95;pair</a></b>(T1 x,</span>
 <span>&nbsp;&nbsp;T2 y);</span>
 </code>
 
 ## Member Classes
 
-<h3 id="struct-pair">
-<a href="/api/classes/structpair.html">Struct <code>pair</code>
+<h3 id="struct-thrustpair">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">Struct <code>thrust::pair</code>
 </a>
 </h3>
 
-<h3 id="struct-tuple_element">
-<a href="/api/classes/structtuple__element.html">Struct <code>tuple&#95;element</code>
+<h3 id="struct-thrusttuple-element">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1tuple__element.html">Struct <code>thrust::tuple&#95;element</code>
 </a>
 </h3>
 
-<h3 id="struct-tuple_size">
-<a href="/api/classes/structtuple__size.html">Struct <code>tuple&#95;size</code>
+<h3 id="struct-thrusttuple-size">
+<a href="{{ site.baseurl }}/api/classes/structthrust_1_1tuple__size.html">Struct <code>thrust::tuple&#95;size</code>
 </a>
 </h3>
 
@@ -83,14 +83,14 @@ has_toc: false
 ## Functions
 
 <h3 id="function-operator==">
-Function <code>operator==</code>
+Function <code>thrust::operator==</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ bool </span><span><b>operator==</b>(const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & x,</span>
-<span>&nbsp;&nbsp;const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & y);</span></code>
+<span>__host__ __device__ bool </span><span><b>operator==</b>(const pair< T1, T2 > & x,</span>
+<span>&nbsp;&nbsp;const pair< T1, T2 > & y);</span></code>
 This operator tests two <code>pairs</code> for equality.
 
 **Template Parameters**:
@@ -105,14 +105,14 @@ This operator tests two <code>pairs</code> for equality.
 <code>true</code> if and only if <code>x.first == y.first && x.second == y.second</code>.
 
 <h3 id="function-operator<">
-Function <code>operator&lt;</code>
+Function <code>thrust::operator&lt;</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ bool </span><span><b>operator<</b>(const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & x,</span>
-<span>&nbsp;&nbsp;const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & y);</span></code>
+<span>__host__ __device__ bool </span><span><b>operator<</b>(const pair< T1, T2 > & x,</span>
+<span>&nbsp;&nbsp;const pair< T1, T2 > & y);</span></code>
 This operator tests two pairs for ascending ordering.
 
 **Template Parameters**:
@@ -127,14 +127,14 @@ This operator tests two pairs for ascending ordering.
 <code>true</code> if and only if <code>x.first &lt; y.first || (!(y.first &lt; x.first) && x.second &lt; y.second)</code>.
 
 <h3 id="function-operator!=">
-Function <code>operator!=</code>
+Function <code>thrust::operator!=</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ bool </span><span><b>operator!=</b>(const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & x,</span>
-<span>&nbsp;&nbsp;const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & y);</span></code>
+<span>__host__ __device__ bool </span><span><b>operator!=</b>(const pair< T1, T2 > & x,</span>
+<span>&nbsp;&nbsp;const pair< T1, T2 > & y);</span></code>
 This operator tests two pairs for inequality.
 
 **Template Parameters**:
@@ -149,14 +149,14 @@ This operator tests two pairs for inequality.
 <code>true</code> if and only if <code>!(x == y)</code>.
 
 <h3 id="function-operator>">
-Function <code>operator&gt;</code>
+Function <code>thrust::operator&gt;</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ bool </span><span><b>operator></b>(const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & x,</span>
-<span>&nbsp;&nbsp;const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & y);</span></code>
+<span>__host__ __device__ bool </span><span><b>operator></b>(const pair< T1, T2 > & x,</span>
+<span>&nbsp;&nbsp;const pair< T1, T2 > & y);</span></code>
 This operator tests two pairs for descending ordering.
 
 **Template Parameters**:
@@ -171,14 +171,14 @@ This operator tests two pairs for descending ordering.
 <code>true</code> if and only if <code>y &lt; x</code>.
 
 <h3 id="function-operator<=">
-Function <code>operator&lt;=</code>
+Function <code>thrust::operator&lt;=</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ bool </span><span><b>operator<=</b>(const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & x,</span>
-<span>&nbsp;&nbsp;const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & y);</span></code>
+<span>__host__ __device__ bool </span><span><b>operator<=</b>(const pair< T1, T2 > & x,</span>
+<span>&nbsp;&nbsp;const pair< T1, T2 > & y);</span></code>
 This operator tests two pairs for ascending ordering or equivalence.
 
 **Template Parameters**:
@@ -193,14 +193,14 @@ This operator tests two pairs for ascending ordering or equivalence.
 <code>true</code> if and only if <code>!(y &lt; x)</code>.
 
 <h3 id="function-operator>=">
-Function <code>operator&gt;=</code>
+Function <code>thrust::operator&gt;=</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ bool </span><span><b>operator>=</b>(const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & x,</span>
-<span>&nbsp;&nbsp;const <a href="/api/classes/structpair.html">pair</a>< T1, T2 > & y);</span></code>
+<span>__host__ __device__ bool </span><span><b>operator>=</b>(const pair< T1, T2 > & x,</span>
+<span>&nbsp;&nbsp;const pair< T1, T2 > & y);</span></code>
 This operator tests two pairs for descending ordering or equivalence.
 
 **Template Parameters**:
@@ -215,28 +215,28 @@ This operator tests two pairs for descending ordering or equivalence.
 <code>true</code> if and only if <code>!(x &lt; y)</code>.
 
 <h3 id="function-swap">
-Function <code>swap</code>
+Function <code>thrust::swap</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ void </span><span><b>swap</b>(<a href="/api/classes/structpair.html">pair</a>< T1, T2 > & x,</span>
-<span>&nbsp;&nbsp;<a href="/api/classes/structpair.html">pair</a>< T1, T2 > & y);</span></code>
+<span>__host__ __device__ void </span><span><b>swap</b>(pair< T1, T2 > & x,</span>
+<span>&nbsp;&nbsp;pair< T1, T2 > & y);</span></code>
 <code>swap</code> swaps the contents of two <code>pair</code>s.
 
 **Function Parameters**:
 * **`x`** The first <code>pair</code> to swap. 
 * **`y`** The second <code>pair</code> to swap. 
 
-<h3 id="function-make_pair">
-Function <code>make&#95;pair</code>
+<h3 id="function-make-pair">
+Function <code>thrust::make&#95;pair</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename T1,</span>
 <span>&nbsp;&nbsp;typename T2&gt;</span>
-<span>__host__ __device__ <a href="/api/classes/structpair.html">pair</a>< T1, T2 > </span><span><b>make_pair</b>(T1 x,</span>
+<span>__host__ __device__ pair< T1, T2 > </span><span><b>make_pair</b>(T1 x,</span>
 <span>&nbsp;&nbsp;T2 y);</span></code>
 This convenience function creates a <code>pair</code> from two objects.
 

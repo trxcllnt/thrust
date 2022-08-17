@@ -11,9 +11,9 @@ has_toc: false
 
 ## Groups
 
-* **[Stream Compaction](/api/groups/group__stream__compaction.html)**
-* **[Partitioning](/api/groups/group__partitioning.html)**
-* **[Shuffling](/api/groups/group__shuffling.html)**
+* **[Partitioning]({{ site.baseurl }}/api/groups/group__partitioning.html)**
+* **[Shuffling]({{ site.baseurl }}/api/groups/group__shuffling.html)**
+* **[Stream Compaction]({{ site.baseurl }}/api/groups/group__stream__compaction.html)**
 
 <code class="doxybook">
 </code>

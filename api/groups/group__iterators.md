@@ -10,24 +10,24 @@ has_toc: false
 
 ## Groups
 
-* **[Fancy Iterators](/api/groups/group__fancyiterator.html)**
-* **[Iterator Tags](/api/groups/group__iterator__tags.html)**
+* **[Fancy Iterators]({{ site.baseurl }}/api/groups/group__fancyiterator.html)**
+* **[Iterator Tags]({{ site.baseurl }}/api/groups/group__iterator__tags.html)**
 
 <code class="doxybook">
 <span>template &lt;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Distance&gt;</span>
-<span>__host__ __device__ void </span><span><b><a href="/api/groups/group__iterators.html#function-advance">advance</a></b>(InputIterator & i,</span>
+<span>__host__ __device__ void </span><span><b><a href="{{ site.baseurl }}/api/groups/group__iterators.html#function-advance">thrust::advance</a></b>(InputIterator & i,</span>
 <span>&nbsp;&nbsp;Distance n);</span>
 <br>
 <span>template &lt;typename InputIterator&gt;</span>
-<span>__host__ __device__ thrust::iterator_traits< InputIterator >::difference_type </span><span><b><a href="/api/groups/group__iterators.html#function-distance">distance</a></b>(InputIterator first,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html">thrust::iterator_traits</a>< InputIterator >::difference_type </span><span><b><a href="{{ site.baseurl }}/api/groups/group__iterators.html#function-distance">thrust::distance</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last);</span>
 </code>
 
 ## Functions
 
 <h3 id="function-advance">
-Function <code>advance</code>
+Function <code>thrust::advance</code>
 </h3>
 
 <code class="doxybook">
@@ -69,12 +69,12 @@ thrust::advance(iter, 7);
 <a href="https://en.cppreference.com/w/cpp/iterator/advance">https://en.cppreference.com/w/cpp/iterator/advance</a>
 
 <h3 id="function-distance">
-Function <code>distance</code>
+Function <code>thrust::distance</code>
 </h3>
 
 <code class="doxybook">
 <span>template &lt;typename InputIterator&gt;</span>
-<span>__host__ __device__ thrust::iterator_traits< InputIterator >::difference_type </span><span><b>distance</b>(InputIterator first,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1iterator__traits.html">thrust::iterator_traits</a>< InputIterator >::difference_type </span><span><b>distance</b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last);</span></code>
 <code>distance</code> finds the distance between <code>first</code> and <code>last</code>, i.e. the number of times that <code>first</code> must be incremented until it is equal to <code>last</code>.
 

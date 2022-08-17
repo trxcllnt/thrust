@@ -10,15 +10,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "utility",
     "kind": "group",
+    "language": "",
     "name": "utility",
+    "qualifiedname": "utility",
     "refid": "group__utility",
     "title": "Utility",
-    "url": "/api/groups/group__utility.html",
+    "url": "{{ site.baseurl }}/api/groups/group__utility.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -27,10 +30,12 @@
       "category": "modules",
       "fullname": "utility",
       "kind": "group",
+      "language": "",
       "name": "utility",
+      "qualifiedname": "utility",
       "refid": "group__utility",
       "title": "Utility",
-      "url": "/api/groups/group__utility.html",
+      "url": "{{ site.baseurl }}/api/groups/group__utility.html",
       "visibility": "public"
     }
   ],
@@ -41,10 +46,12 @@
     "category": "modules",
     "fullname": "utility",
     "kind": "group",
+    "language": "",
     "name": "utility",
+    "qualifiedname": "utility",
     "refid": "group__utility",
     "title": "Utility",
-    "url": "/api/groups/group__utility.html",
+    "url": "{{ site.baseurl }}/api/groups/group__utility.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -53,10 +60,12 @@
       "category": "modules",
       "fullname": "utility",
       "kind": "group",
+      "language": "",
       "name": "utility",
+      "qualifiedname": "utility",
       "refid": "group__utility",
       "title": "Utility",
-      "url": "/api/groups/group__utility.html",
+      "url": "{{ site.baseurl }}/api/groups/group__utility.html",
       "visibility": "public"
     }
   ],
@@ -68,7 +77,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void swap",
+      "definition": "__host__ __device__ void thrust::swap",
       "deleted": false,
       "details": "<code>swap</code> assigns the contents of <code>a</code> to <code>b</code> and the contents of <code>b</code> to <code>a</code>. This is used as a primitive operation by many other algorithms.\n\n\nThe following code snippet demonstrates how to use <code>swap</code> to swap the contents of two variables.\n\n\n\n```cpp\n#include <thrust/swap.h>\n...\nint x = 1;\nint y = 2;\nthrust::swap(x,h);\n\n// x == 2, y == 1\n```",
       "explicit": false,
@@ -76,6 +85,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 13,
         "file": "thrust/swap.h",
@@ -106,7 +116,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__swap_1ga49bac67a5fad2ee318298d6000a19269",
+      "qualifiedname": "thrust::swap",
+      "refid": "group__swap_1ga843afbedc50bd5da1eefd2bc0c17b000",
       "static": false,
       "strong": false,
       "templateParams": [
@@ -130,15 +141,16 @@
       "title": "swap",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__swap.html#function-swap",
+      "url": "{{ site.baseurl }}/api/groups/group__swap.html#function-swap",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "swap",
   "refid": "group__swap",
   "static": false,
   "strong": false,
   "title": "Swap",
-  "url": "/api/groups/group__swap.html",
+  "url": "{{ site.baseurl }}/api/groups/group__swap.html",
   "visibility": "public"
 }

@@ -12,10 +12,12 @@
       "category": "modules",
       "fullname": "binary_search",
       "kind": "group",
+      "language": "",
       "name": "binary_search",
+      "qualifiedname": "binary_search",
       "refid": "group__binary__search",
       "title": "Binary Search",
-      "url": "/api/groups/group__binary__search.html",
+      "url": "{{ site.baseurl }}/api/groups/group__binary__search.html",
       "visibility": "public"
     }
   ],
@@ -23,15 +25,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "algorithms",
     "kind": "group",
+    "language": "",
     "name": "algorithms",
+    "qualifiedname": "algorithms",
     "refid": "group__algorithms",
     "title": "Algorithms",
-    "url": "/api/groups/group__algorithms.html",
+    "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -40,10 +45,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     }
   ],
@@ -54,10 +61,12 @@
     "category": "modules",
     "fullname": "algorithms",
     "kind": "group",
+    "language": "",
     "name": "algorithms",
+    "qualifiedname": "algorithms",
     "refid": "group__algorithms",
     "title": "Algorithms",
-    "url": "/api/groups/group__algorithms.html",
+    "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -66,10 +75,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     }
   ],
@@ -81,7 +92,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ InputIterator find",
+      "definition": "__host__ __device__ InputIterator thrust::find",
       "deleted": false,
       "details": "<code>find</code> returns the first iterator <code>i</code> in the range <code>[first, last)</code> such that <code>&#42;i == value</code> or <code>last</code> if no such iterator exists.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\n\n```cpp\n#include <thrust/find.h>\n#include <thrust/device_vector.h>\n#include <thrust/execution_policy.h>\n...\nthrust::device_vector<int> input(4);\n\ninput[0] = 0;\ninput[1] = 5;\ninput[2] = 3;\ninput[3] = 7;\n\nthrust::device_vector<int>::iterator iter;\n\niter = thrust::find(thrust::device, input.begin(), input.end(), 3); // returns input.first() + 2\niter = thrust::find(thrust::device, input.begin(), input.end(), 5); // returns input.first() + 1\niter = thrust::find(thrust::device, input.begin(), input.end(), 9); // returns input.end()\n```",
       "explicit": false,
@@ -89,6 +100,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 15,
         "file": "thrust/find.h",
@@ -137,13 +149,14 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__searching_1ga1b0a307d1831060114f83a86c85e0629",
+      "qualifiedname": "thrust::find",
+      "refid": "group__searching_1ga9f1931503e4faffefd2f9d97c974f933",
       "returns": [
         "The first iterator <code>i</code> such that <code>&#42;i == value</code> or <code>last</code>."
       ],
       "see": [
-        "<a href=\"/api/groups/group__searching.html#function-find_if\">find_if</a>",
-        "<a href=\"/api/groups/group__searching.html#function-mismatch\">mismatch</a>"
+        "find_if ",
+        "mismatch "
       ],
       "static": false,
       "strong": false,
@@ -181,7 +194,7 @@
       "title": "find",
       "type": "__host__ __device__ InputIterator",
       "typePlain": "__host__ __device__ InputIterator",
-      "url": "/api/groups/group__searching.html#function-find",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html#function-find",
       "virtual": false,
       "visibility": "public"
     },
@@ -192,7 +205,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "InputIterator find",
+      "definition": "InputIterator thrust::find",
       "deleted": false,
       "details": "<code>find</code> returns the first iterator <code>i</code> in the range <code>[first, last)</code> such that <code>&#42;i == value</code> or <code>last</code> if no such iterator exists.\n\n\n\n```cpp\n#include <thrust/find.h>\n#include <thrust/device_vector.h>\n...\nthrust::device_vector<int> input(4);\n\ninput[0] = 0;\ninput[1] = 5;\ninput[2] = 3;\ninput[3] = 7;\n\nthrust::device_vector<int>::iterator iter;\n\niter = thrust::find(input.begin(), input.end(), 3); // returns input.first() + 2\niter = thrust::find(input.begin(), input.end(), 5); // returns input.first() + 1\niter = thrust::find(input.begin(), input.end(), 9); // returns input.end()\n```",
       "explicit": false,
@@ -200,6 +213,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 15,
         "file": "thrust/find.h",
@@ -239,13 +253,14 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__searching_1ga0404d4fa9a2afa0bbc1ea165e3f50e8a",
+      "qualifiedname": "thrust::find",
+      "refid": "group__searching_1ga99c7a59cef5b9f4cdbc70f37b2e221be",
       "returns": [
         "The first iterator <code>i</code> such that <code>&#42;i == value</code> or <code>last</code>."
       ],
       "see": [
-        "<a href=\"/api/groups/group__searching.html#function-find_if\">find_if</a>",
-        "<a href=\"/api/groups/group__searching.html#function-mismatch\">mismatch</a>"
+        "find_if ",
+        "mismatch "
       ],
       "static": false,
       "strong": false,
@@ -274,18 +289,18 @@
       "title": "find",
       "type": "InputIterator",
       "typePlain": "InputIterator",
-      "url": "/api/groups/group__searching.html#function-find",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html#function-find",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-find_if",
+      "anchor": "#function-find-if",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator first, InputIterator last, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ InputIterator find_if",
+      "definition": "__host__ __device__ InputIterator thrust::find_if",
       "deleted": false,
       "details": "<code>find&#95;if</code> returns the first iterator <code>i</code> in the range <code>[first, last)</code> such that <code>pred(&#42;i)</code> is <code>true</code> or <code>last</code> if no such iterator exists.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\n\n```cpp\n#include <thrust/find.h>\n#include <thrust/device_vector.h>\n#include <thrust/execution_policy.h>\n...\n\nstruct greater_than_four\n{\n  __host__ __device__\n  bool operator()(int x)\n  {\n    return x > 4;\n  }\n};\n\nstruct greater_than_ten\n{\n  __host__ __device__\n  bool operator()(int x)\n  {\n    return x > 10;\n  }\n};\n\n...\nthrust::device_vector<int> input(4);\n\ninput[0] = 0;\ninput[1] = 5;\ninput[2] = 3;\ninput[3] = 7;\n\nthrust::device_vector<int>::iterator iter;\n\niter = thrust::find_if(thrust::device, input.begin(), input.end(), greater_than_four()); // returns input.first() + 1\n\niter = thrust::find_if(thrust::device, input.begin(), input.end(), greater_than_ten());  // returns input.end()\n```",
       "explicit": false,
@@ -293,6 +308,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 15,
         "file": "thrust/find.h",
@@ -341,14 +357,15 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__searching_1gaf63b8bc9edb82fc1abf99aa3ecfd2d16",
+      "qualifiedname": "thrust::find_if",
+      "refid": "group__searching_1gaa79b4c03009926ee393421c53a510aeb",
       "returns": [
         "The first iterator <code>i</code> such that <code>pred(&#42;i)</code> is <code>true</code>, or <code>last</code>."
       ],
       "see": [
-        "<a href=\"/api/groups/group__searching.html#function-find\">find</a>",
-        "<a href=\"/api/groups/group__searching.html#function-find_if_not\">find_if_not</a>",
-        "<a href=\"/api/groups/group__searching.html#function-mismatch\">mismatch</a>"
+        "find ",
+        "find_if_not ",
+        "mismatch "
       ],
       "static": false,
       "strong": false,
@@ -386,18 +403,18 @@
       "title": "find_if",
       "type": "__host__ __device__ InputIterator",
       "typePlain": "__host__ __device__ InputIterator",
-      "url": "/api/groups/group__searching.html#function-find_if",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html#function-find-if",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-find_if",
+      "anchor": "#function-find-if",
       "argsString": "(InputIterator first, InputIterator last, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "InputIterator find_if",
+      "definition": "InputIterator thrust::find_if",
       "deleted": false,
       "details": "<code>find&#95;if</code> returns the first iterator <code>i</code> in the range <code>[first, last)</code> such that <code>pred(&#42;i)</code> is <code>true</code> or <code>last</code> if no such iterator exists.\n\n\n\n```cpp\n#include <thrust/find.h>\n#include <thrust/device_vector.h>\n\nstruct greater_than_four\n{\n  __host__ __device__\n  bool operator()(int x)\n  {\n    return x > 4;\n  }\n};\n\nstruct greater_than_ten\n{\n  __host__ __device__\n  bool operator()(int x)\n  {\n    return x > 10;\n  }\n};\n\n...\nthrust::device_vector<int> input(4);\n\ninput[0] = 0;\ninput[1] = 5;\ninput[2] = 3;\ninput[3] = 7;\n\nthrust::device_vector<int>::iterator iter;\n\niter = thrust::find_if(input.begin(), input.end(), greater_than_four()); // returns input.first() + 1\n\niter = thrust::find_if(input.begin(), input.end(), greater_than_ten());  // returns input.end()\n```",
       "explicit": false,
@@ -405,6 +422,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 15,
         "file": "thrust/find.h",
@@ -444,14 +462,15 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__searching_1gabfd4776736f758b264a8827d19554551",
+      "qualifiedname": "thrust::find_if",
+      "refid": "group__searching_1gaf14c2f2682afa14c68b09170707a2e48",
       "returns": [
         "The first iterator <code>i</code> such that <code>pred(&#42;i)</code> is <code>true</code>, or <code>last</code>."
       ],
       "see": [
-        "<a href=\"/api/groups/group__searching.html#function-find\">find</a>",
-        "<a href=\"/api/groups/group__searching.html#function-find_if_not\">find_if_not</a>",
-        "<a href=\"/api/groups/group__searching.html#function-mismatch\">mismatch</a>"
+        "find ",
+        "find_if_not ",
+        "mismatch "
       ],
       "static": false,
       "strong": false,
@@ -480,18 +499,18 @@
       "title": "find_if",
       "type": "InputIterator",
       "typePlain": "InputIterator",
-      "url": "/api/groups/group__searching.html#function-find_if",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html#function-find-if",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-find_if_not",
+      "anchor": "#function-find-if-not",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator first, InputIterator last, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ InputIterator find_if_not",
+      "definition": "__host__ __device__ InputIterator thrust::find_if_not",
       "deleted": false,
       "details": "<code>find&#95;if&#95;not</code> returns the first iterator <code>i</code> in the range <code>[first, last)</code> such that <code>pred(&#42;i)</code> is <code>false</code> or <code>last</code> if no such iterator exists.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\n\n```cpp\n#include <thrust/find.h>\n#include <thrust/device_vector.h>\n#include <thrust/execution_policy.h>\n...\n\nstruct greater_than_four\n{\n  __host__ __device__\n  bool operator()(int x)\n  {\n    return x > 4;\n  }\n};\n\nstruct greater_than_ten\n{\n  __host__ __device__\n  bool operator()(int x)\n  {\n    return x > 10;\n  }\n};\n\n...\nthrust::device_vector<int> input(4);\n\ninput[0] = 0;\ninput[1] = 5;\ninput[2] = 3;\ninput[3] = 7;\n\nthrust::device_vector<int>::iterator iter;\n\niter = thrust::find_if_not(thrust::device, input.begin(), input.end(), greater_than_four()); // returns input.first()\n\niter = thrust::find_if_not(thrust::device, input.begin(), input.end(), greater_than_ten());  // returns input.first()\n```",
       "explicit": false,
@@ -499,6 +518,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 15,
         "file": "thrust/find.h",
@@ -547,14 +567,15 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__searching_1ga9f1e2d977c0d7f00137e7788331fb5cc",
+      "qualifiedname": "thrust::find_if_not",
+      "refid": "group__searching_1ga83319e13f59c2d44a4e5e9e21cfb8423",
       "returns": [
         "The first iterator <code>i</code> such that <code>pred(&#42;i)</code> is <code>false</code>, or <code>last</code>."
       ],
       "see": [
-        "<a href=\"/api/groups/group__searching.html#function-find\">find</a>",
-        "<a href=\"/api/groups/group__searching.html#function-find_if\">find_if</a>",
-        "<a href=\"/api/groups/group__searching.html#function-mismatch\">mismatch</a>"
+        "find ",
+        "find_if ",
+        "mismatch "
       ],
       "static": false,
       "strong": false,
@@ -592,18 +613,18 @@
       "title": "find_if_not",
       "type": "__host__ __device__ InputIterator",
       "typePlain": "__host__ __device__ InputIterator",
-      "url": "/api/groups/group__searching.html#function-find_if_not",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html#function-find-if-not",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-find_if_not",
+      "anchor": "#function-find-if-not",
       "argsString": "(InputIterator first, InputIterator last, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "InputIterator find_if_not",
+      "definition": "InputIterator thrust::find_if_not",
       "deleted": false,
       "details": "<code>find&#95;if&#95;not</code> returns the first iterator <code>i</code> in the range <code>[first, last)</code> such that <code>pred(&#42;i)</code> is <code>false</code> or <code>last</code> if no such iterator exists.\n\n\n\n```cpp\n#include <thrust/find.h>\n#include <thrust/device_vector.h>\n\nstruct greater_than_four\n{\n  __host__ __device__\n  bool operator()(int x)\n  {\n    return x > 4;\n  }\n};\n\nstruct greater_than_ten\n{\n  __host__ __device__\n  bool operator()(int x)\n  {\n    return x > 10;\n  }\n};\n\n...\nthrust::device_vector<int> input(4);\n\ninput[0] = 0;\ninput[1] = 5;\ninput[2] = 3;\ninput[3] = 7;\n\nthrust::device_vector<int>::iterator iter;\n\niter = thrust::find_if_not(input.begin(), input.end(), greater_than_four()); // returns input.first()\n\niter = thrust::find_if_not(input.begin(), input.end(), greater_than_ten());  // returns input.first()\n```",
       "explicit": false,
@@ -611,6 +632,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 15,
         "file": "thrust/find.h",
@@ -650,14 +672,15 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__searching_1gab541810e69a886155311ddd3a4d2f864",
+      "qualifiedname": "thrust::find_if_not",
+      "refid": "group__searching_1ga258cd709976cfdbb7f990859a64ad4c6",
       "returns": [
         "The first iterator <code>i</code> such that <code>pred(&#42;i)</code> is <code>false</code>, or <code>last</code>."
       ],
       "see": [
-        "<a href=\"/api/groups/group__searching.html#function-find\">find</a>",
-        "<a href=\"/api/groups/group__searching.html#function-find_if\">find_if</a>",
-        "<a href=\"/api/groups/group__searching.html#function-mismatch\">mismatch</a>"
+        "find ",
+        "find_if ",
+        "mismatch "
       ],
       "static": false,
       "strong": false,
@@ -686,7 +709,7 @@
       "title": "find_if_not",
       "type": "InputIterator",
       "typePlain": "InputIterator",
-      "url": "/api/groups/group__searching.html#function-find_if_not",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html#function-find-if-not",
       "virtual": false,
       "visibility": "public"
     },
@@ -697,7 +720,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ thrust::pair<InputIterator1, InputIterator2> mismatch",
+      "definition": "__host__ __device__ thrust::pair< InputIterator1, InputIterator2 > thrust::mismatch",
       "deleted": false,
       "details": "<code>mismatch</code> finds the first position where the two ranges <code>[first1, last1)</code> and <code>[first2, first2 + (last1 - first1))</code> differ. The two versions of <code>mismatch</code> use different tests for whether elements differ.\n\nThis version of <code>mismatch</code> finds the first iterator <code>i</code> in <code>[first1, last1)</code> such that <code>&#42;i == &#42;(first2 + (i - first1))</code> is <code>false</code>. The return value is a <code>pair</code> whose first element is <code>i</code> and whose second element is <code>&#42;(first2 + (i - first1))</code>. If no such iterator <code>i</code> exists, the return value is a <code>pair</code> whose first element is <code>last1</code> and whose second element is <code>&#42;(first2 + (last1 - first1))</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\n\n```cpp\n#include <thrust/mismatch.h>\n#include <thrust/device_vector.h>\n#include <thrust/execution_policy.h>\n...\nthrust::device_vector<int> vec1(4);\nthrust::device_vector<int> vec2(4);\n\nvec1[0] = 0;  vec2[0] = 0; \nvec1[1] = 5;  vec2[1] = 5;\nvec1[2] = 3;  vec2[2] = 8;\nvec1[3] = 7;  vec2[3] = 7;\n\ntypedef thrust::device_vector<int>::iterator Iterator;\nthrust::pair<Iterator,Iterator> result;\n\nresult = thrust::mismatch(thrust::device, vec1.begin(), vec1.end(), vec2.begin());\n\n// result.first  is vec1.begin() + 2\n// result.second is vec2.begin() + 2\n```",
       "explicit": false,
@@ -705,6 +728,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 14,
         "file": "thrust/mismatch.h",
@@ -753,13 +777,14 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__searching_1gacab4da8bfd3fcd50ffc4d842374d52d9",
+      "qualifiedname": "thrust::mismatch",
+      "refid": "group__searching_1ga682ef0063983e09e0587a8c6122b9cb0",
       "returns": [
         "The first position where the sequences differ."
       ],
       "see": [
-        "<a href=\"/api/groups/group__searching.html#function-find\">find</a>",
-        "<a href=\"/api/groups/group__searching.html#function-find_if\">find_if</a>"
+        "find ",
+        "find_if "
       ],
       "static": false,
       "strong": false,
@@ -795,9 +820,9 @@
         }
       ],
       "title": "mismatch",
-      "type": "__host__ __device__ thrust::pair< InputIterator1, InputIterator2 >",
+      "type": "__host__ __device__ <a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1pair.html\">thrust::pair</a>< InputIterator1, InputIterator2 >",
       "typePlain": "__host__ __device__ thrust::pair< InputIterator1, InputIterator2 >",
-      "url": "/api/groups/group__searching.html#function-mismatch",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html#function-mismatch",
       "virtual": false,
       "visibility": "public"
     },
@@ -808,7 +833,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "thrust::pair<InputIterator1, InputIterator2> mismatch",
+      "definition": "thrust::pair< InputIterator1, InputIterator2 > thrust::mismatch",
       "deleted": false,
       "details": "<code>mismatch</code> finds the first position where the two ranges <code>[first1, last1)</code> and <code>[first2, first2 + (last1 - first1))</code> differ. The two versions of <code>mismatch</code> use different tests for whether elements differ.\n\nThis version of <code>mismatch</code> finds the first iterator <code>i</code> in <code>[first1, last1)</code> such that <code>&#42;i == &#42;(first2 + (i - first1))</code> is <code>false</code>. The return value is a <code>pair</code> whose first element is <code>i</code> and whose second element is <code>&#42;(first2 + (i - first1))</code>. If no such iterator <code>i</code> exists, the return value is a <code>pair</code> whose first element is <code>last1</code> and whose second element is <code>&#42;(first2 + (last1 - first1))</code>.\n\n\n\n```cpp\n#include <thrust/mismatch.h>\n#include <thrust/device_vector.h>\n...\nthrust::device_vector<int> vec1(4);\nthrust::device_vector<int> vec2(4);\n\nvec1[0] = 0;  vec2[0] = 0; \nvec1[1] = 5;  vec2[1] = 5;\nvec1[2] = 3;  vec2[2] = 8;\nvec1[3] = 7;  vec2[3] = 7;\n\ntypedef thrust::device_vector<int>::iterator Iterator;\nthrust::pair<Iterator,Iterator> result;\n\nresult = thrust::mismatch(vec1.begin(), vec1.end(), vec2.begin());\n\n// result.first  is vec1.begin() + 2\n// result.second is vec2.begin() + 2\n```",
       "explicit": false,
@@ -816,6 +841,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 14,
         "file": "thrust/mismatch.h",
@@ -855,13 +881,14 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__searching_1ga59f5413e7093fb77ab6c1c9646f8963b",
+      "qualifiedname": "thrust::mismatch",
+      "refid": "group__searching_1ga6aa2c3aa696e60b8e7d68d7d8eacb531",
       "returns": [
         "The first position where the sequences differ."
       ],
       "see": [
-        "<a href=\"/api/groups/group__searching.html#function-find\">find</a>",
-        "<a href=\"/api/groups/group__searching.html#function-find_if\">find_if</a>"
+        "find ",
+        "find_if "
       ],
       "static": false,
       "strong": false,
@@ -888,9 +915,9 @@
         }
       ],
       "title": "mismatch",
-      "type": "thrust::pair< InputIterator1, InputIterator2 >",
+      "type": "<a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1pair.html\">thrust::pair</a>< InputIterator1, InputIterator2 >",
       "typePlain": "thrust::pair< InputIterator1, InputIterator2 >",
-      "url": "/api/groups/group__searching.html#function-mismatch",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html#function-mismatch",
       "virtual": false,
       "visibility": "public"
     },
@@ -901,7 +928,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ thrust::pair<InputIterator1, InputIterator2> mismatch",
+      "definition": "__host__ __device__ thrust::pair< InputIterator1, InputIterator2 > thrust::mismatch",
       "deleted": false,
       "details": "<code>mismatch</code> finds the first position where the two ranges <code>[first1, last1)</code> and <code>[first2, first2 + (last1 - first1))</code> differ. The two versions of <code>mismatch</code> use different tests for whether elements differ.\n\nThis version of <code>mismatch</code> finds the first iterator <code>i</code> in <code>[first1, last1)</code> such that <code>pred(&#42;i, &#42;(first2 + (i - first1))</code> is <code>false</code>. The return value is a <code>pair</code> whose first element is <code>i</code> and whose second element is <code>&#42;(first2 + (i - first1))</code>. If no such iterator <code>i</code> exists, the return value is a <code>pair</code> whose first element is <code>last1</code> and whose second element is <code>&#42;(first2 + (last1 - first1))</code>.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\n\n```cpp\n#include <thrust/mismatch.h>\n#include <thrust/device_vector.h>\n#include <thrust/execution_policy.h>\n...\nthrust::device_vector<int> vec1(4);\nthrust::device_vector<int> vec2(4);\n\nvec1[0] = 0;  vec2[0] = 0; \nvec1[1] = 5;  vec2[1] = 5;\nvec1[2] = 3;  vec2[2] = 8;\nvec1[3] = 7;  vec2[3] = 7;\n\ntypedef thrust::device_vector<int>::iterator Iterator;\nthrust::pair<Iterator,Iterator> result;\n\nresult = thrust::mismatch(thrust::device, vec1.begin(), vec1.end(), vec2.begin(), thrust::equal_to<int>());\n\n// result.first  is vec1.begin() + 2\n// result.second is vec2.begin() + 2\n```",
       "explicit": false,
@@ -909,6 +936,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 14,
         "file": "thrust/mismatch.h",
@@ -966,13 +994,14 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__searching_1gac6f40793c3aa345991e31546e05c9e23",
+      "qualifiedname": "thrust::mismatch",
+      "refid": "group__searching_1ga34b87eb3d366133121ca90f3bda80538",
       "returns": [
         "The first position where the sequences differ."
       ],
       "see": [
-        "<a href=\"/api/groups/group__searching.html#function-find\">find</a>",
-        "<a href=\"/api/groups/group__searching.html#function-find_if\">find_if</a>"
+        "find ",
+        "find_if "
       ],
       "static": false,
       "strong": false,
@@ -1017,9 +1046,9 @@
         }
       ],
       "title": "mismatch",
-      "type": "__host__ __device__ thrust::pair< InputIterator1, InputIterator2 >",
+      "type": "__host__ __device__ <a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1pair.html\">thrust::pair</a>< InputIterator1, InputIterator2 >",
       "typePlain": "__host__ __device__ thrust::pair< InputIterator1, InputIterator2 >",
-      "url": "/api/groups/group__searching.html#function-mismatch",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html#function-mismatch",
       "virtual": false,
       "visibility": "public"
     },
@@ -1030,7 +1059,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "thrust::pair<InputIterator1, InputIterator2> mismatch",
+      "definition": "thrust::pair< InputIterator1, InputIterator2 > thrust::mismatch",
       "deleted": false,
       "details": "<code>mismatch</code> finds the first position where the two ranges <code>[first1, last1)</code> and <code>[first2, first2 + (last1 - first1))</code> differ. The two versions of <code>mismatch</code> use different tests for whether elements differ.\n\nThis version of <code>mismatch</code> finds the first iterator <code>i</code> in <code>[first1, last1)</code> such that <code>pred(&#42;i, &#42;(first2 + (i - first1))</code> is <code>false</code>. The return value is a <code>pair</code> whose first element is <code>i</code> and whose second element is <code>&#42;(first2 + (i - first1))</code>. If no such iterator <code>i</code> exists, the return value is a <code>pair</code> whose first element is <code>last1</code> and whose second element is <code>&#42;(first2 + (last1 - first1))</code>.\n\n\n\n```cpp\n#include <thrust/mismatch.h>\n#include <thrust/device_vector.h>\n...\nthrust::device_vector<int> vec1(4);\nthrust::device_vector<int> vec2(4);\n\nvec1[0] = 0;  vec2[0] = 0; \nvec1[1] = 5;  vec2[1] = 5;\nvec1[2] = 3;  vec2[2] = 8;\nvec1[3] = 7;  vec2[3] = 7;\n\ntypedef thrust::device_vector<int>::iterator Iterator;\nthrust::pair<Iterator,Iterator> result;\n\nresult = thrust::mismatch(vec1.begin(), vec1.end(), vec2.begin(), thrust::equal_to<int>());\n\n// result.first  is vec1.begin() + 2\n// result.second is vec2.begin() + 2\n```",
       "explicit": false,
@@ -1038,6 +1067,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 14,
         "file": "thrust/mismatch.h",
@@ -1086,13 +1116,14 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__searching_1ga3e16ccac9162474cf1f0ea73cc90c55f",
+      "qualifiedname": "thrust::mismatch",
+      "refid": "group__searching_1ga015dbb88bd1190ad9b98708b1c6c4669",
       "returns": [
         "The first position where the sequences differ."
       ],
       "see": [
-        "<a href=\"/api/groups/group__searching.html#function-find\">find</a>",
-        "<a href=\"/api/groups/group__searching.html#function-find_if\">find_if</a>"
+        "find ",
+        "find_if "
       ],
       "static": false,
       "strong": false,
@@ -1128,20 +1159,20 @@
         }
       ],
       "title": "mismatch",
-      "type": "thrust::pair< InputIterator1, InputIterator2 >",
+      "type": "<a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1pair.html\">thrust::pair</a>< InputIterator1, InputIterator2 >",
       "typePlain": "thrust::pair< InputIterator1, InputIterator2 >",
-      "url": "/api/groups/group__searching.html#function-mismatch",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html#function-mismatch",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-partition_point",
+      "anchor": "#function-partition-point",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, ForwardIterator first, ForwardIterator last, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ ForwardIterator partition_point",
+      "definition": "__host__ __device__ ForwardIterator thrust::partition_point",
       "deleted": false,
       "details": "<code>partition&#95;point</code> returns an iterator pointing to the end of the true partition of a partitioned range. <code>partition&#95;point</code> requires the input range <code>[first,last)</code> to be a partition; that is, all elements which satisfy <code>pred</code> shall appear before those that do not.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\n\n```cpp\n#include <thrust/partition.h>\n#include <thrust/execution_policy.h>\n\nstruct is_even\n{\n  __host__ __device__\n  bool operator()(const int &x)\n  {\n    return (x % 2) == 0;\n  }\n};\n\n...\n\nint A[] = {2, 4, 6, 8, 10, 1, 3, 5, 7, 9};\nint * B = thrust::partition_point(thrust::host, A, A + 10, is_even());\n// B - A is 5\n// [A, B) contains only even values\n```",
       "explicit": false,
@@ -1149,6 +1180,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 19,
         "file": "thrust/partition.h",
@@ -1203,13 +1235,14 @@
         "The range <code>[first, last)</code> shall be partitioned by <code>pred</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__searching_1ga36ee2a2b43b7bd4d0d4c598e1e03358d",
+      "qualifiedname": "thrust::partition_point",
+      "refid": "group__searching_1ga0955d3dd985587746b8437643d5ff14a",
       "returns": [
         "An iterator <code>mid</code> such that <code>all&#95;of(first, mid, pred)</code> and <code>none&#95;of(mid, last, pred)</code> are both true."
       ],
       "see": [
-        "<code><a href=\"/api/groups/group__partitioning.html#function-partition\">partition</a></code>",
-        "<code><a href=\"/api/groups/group__searching.html#function-find_if_not\">find&#95;if&#95;not</a></code>"
+        "<code>partition</code>",
+        "<code>find&#95;if&#95;not</code>"
       ],
       "static": false,
       "strong": false,
@@ -1247,18 +1280,18 @@
       "title": "partition_point",
       "type": "__host__ __device__ ForwardIterator",
       "typePlain": "__host__ __device__ ForwardIterator",
-      "url": "/api/groups/group__searching.html#function-partition_point",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html#function-partition-point",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-partition_point",
+      "anchor": "#function-partition-point",
       "argsString": "(ForwardIterator first, ForwardIterator last, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "ForwardIterator partition_point",
+      "definition": "ForwardIterator thrust::partition_point",
       "deleted": false,
       "details": "<code>partition&#95;point</code> returns an iterator pointing to the end of the true partition of a partitioned range. <code>partition&#95;point</code> requires the input range <code>[first,last)</code> to be a partition; that is, all elements which satisfy <code>pred</code> shall appear before those that do not. \n\n```cpp\n#include <thrust/partition.h>\n\nstruct is_even\n{\n  __host__ __device__\n  bool operator()(const int &x)\n  {\n    return (x % 2) == 0;\n  }\n};\n\n...\n\nint A[] = {2, 4, 6, 8, 10, 1, 3, 5, 7, 9};\nint * B = thrust::partition_point(A, A + 10, is_even());\n// B - A is 5\n// [A, B) contains only even values\n```",
       "explicit": false,
@@ -1266,6 +1299,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 19,
         "file": "thrust/partition.h",
@@ -1311,13 +1345,14 @@
         "The range <code>[first, last)</code> shall be partitioned by <code>pred</code>."
       ],
       "pureVirtual": false,
-      "refid": "group__searching_1ga8147a8bc085b48fb1b8a69fc98e26c70",
+      "qualifiedname": "thrust::partition_point",
+      "refid": "group__searching_1gacc1aa2e2a54dee829eab21c5bdabbc94",
       "returns": [
         "An iterator <code>mid</code> such that <code>all&#95;of(first, mid, pred)</code> and <code>none&#95;of(mid, last, pred)</code> are both true."
       ],
       "see": [
-        "<code><a href=\"/api/groups/group__partitioning.html#function-partition\">partition</a></code>",
-        "<code><a href=\"/api/groups/group__searching.html#function-find_if_not\">find&#95;if&#95;not</a></code>"
+        "<code>partition</code>",
+        "<code>find&#95;if&#95;not</code>"
       ],
       "static": false,
       "strong": false,
@@ -1346,15 +1381,16 @@
       "title": "partition_point",
       "type": "ForwardIterator",
       "typePlain": "ForwardIterator",
-      "url": "/api/groups/group__searching.html#function-partition_point",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html#function-partition-point",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "searching",
   "refid": "group__searching",
   "static": false,
   "strong": false,
   "title": "Searching",
-  "url": "/api/groups/group__searching.html",
+  "url": "{{ site.baseurl }}/api/groups/group__searching.html",
   "visibility": "public"
 }

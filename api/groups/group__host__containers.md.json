@@ -10,15 +10,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "container_classes",
     "kind": "group",
+    "language": "",
     "name": "container_classes",
+    "qualifiedname": "container_classes",
     "refid": "group__container__classes",
     "title": "Container Classes",
-    "url": "/api/groups/group__container__classes.html",
+    "url": "{{ site.baseurl }}/api/groups/group__container__classes.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -27,10 +30,12 @@
       "category": "modules",
       "fullname": "container_classes",
       "kind": "group",
+      "language": "",
       "name": "container_classes",
+      "qualifiedname": "container_classes",
       "refid": "group__container__classes",
       "title": "Container Classes",
-      "url": "/api/groups/group__container__classes.html",
+      "url": "{{ site.baseurl }}/api/groups/group__container__classes.html",
       "visibility": "public"
     }
   ],
@@ -41,10 +46,12 @@
     "category": "modules",
     "fullname": "container_classes",
     "kind": "group",
+    "language": "",
     "name": "container_classes",
+    "qualifiedname": "container_classes",
     "refid": "group__container__classes",
     "title": "Container Classes",
-    "url": "/api/groups/group__container__classes.html",
+    "url": "{{ site.baseurl }}/api/groups/group__container__classes.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -53,10 +60,12 @@
       "category": "modules",
       "fullname": "container_classes",
       "kind": "group",
+      "language": "",
       "name": "container_classes",
+      "qualifiedname": "container_classes",
       "refid": "group__container__classes",
       "title": "Container Classes",
-      "url": "/api/groups/group__container__classes.html",
+      "url": "{{ site.baseurl }}/api/groups/group__container__classes.html",
       "visibility": "public"
     }
   ],
@@ -72,12 +81,14 @@
         }
       ],
       "category": "classes",
-      "fullname": "host_vector",
+      "fullname": "thrust::host_vector",
       "kind": "class",
-      "name": "host_vector",
-      "refid": "classhost__vector",
-      "title": "host_vector",
-      "url": "/api/classes/classhost__vector.html",
+      "language": "cpp",
+      "name": "thrust::host_vector",
+      "qualifiedname": "thrust::host_vector",
+      "refid": "classthrust_1_1host__vector",
+      "title": "thrust::host_vector",
+      "url": "{{ site.baseurl }}/api/classes/classthrust_1_1host__vector.html",
       "visibility": "public"
     }
   ],
@@ -89,14 +100,15 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "void swap",
+      "definition": "void thrust::swap",
       "deleted": false,
-      "details": "Exchanges the values of two vectors. <code>x</code> The first <code><a href=\"/api/classes/classhost__vector.html\">host&#95;vector</a></code> of interest. <code>y</code> The second <code><a href=\"/api/classes/classhost__vector.html\">host&#95;vector</a></code> of interest. ",
+      "details": "Exchanges the values of two vectors. <code>x</code> The first <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1host__vector.html\">host&#95;vector</a></code> of interest. <code>y</code> The second <code><a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1host__vector.html\">host&#95;vector</a></code> of interest. ",
       "explicit": false,
       "fullname": "host_containers::swap",
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "bodyEnd": 508,
         "bodyFile": "thrust/host_vector.h",
@@ -110,17 +122,18 @@
       "params": [
         {
           "name": "a",
-          "type": "<a href=\"/api/classes/classhost__vector.html\">host_vector</a>< T, Alloc > &",
+          "type": "host_vector< T, Alloc > &",
           "typePlain": "host_vector< T, Alloc > &"
         },
         {
           "name": "b",
-          "type": "<a href=\"/api/classes/classhost__vector.html\">host_vector</a>< T, Alloc > &",
+          "type": "host_vector< T, Alloc > &",
           "typePlain": "host_vector< T, Alloc > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__host__containers_1ga785e0cb6175413cdf4912ef7ca355618",
+      "qualifiedname": "thrust::swap",
+      "refid": "group__host__containers_1ga2d69d9d0a30180fe96b24c84d997a376",
       "static": false,
       "strong": false,
       "templateParams": [
@@ -138,15 +151,16 @@
       "title": "swap",
       "type": "void",
       "typePlain": "void",
-      "url": "/api/groups/group__host__containers.html#function-swap",
+      "url": "{{ site.baseurl }}/api/groups/group__host__containers.html#function-swap",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "host_containers",
   "refid": "group__host__containers",
   "static": false,
   "strong": false,
   "title": "Host Containers",
-  "url": "/api/groups/group__host__containers.html",
+  "url": "{{ site.baseurl }}/api/groups/group__host__containers.html",
   "visibility": "public"
 }

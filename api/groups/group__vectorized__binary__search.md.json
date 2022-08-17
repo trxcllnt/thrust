@@ -10,15 +10,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "binary_search",
     "kind": "group",
+    "language": "",
     "name": "binary_search",
+    "qualifiedname": "binary_search",
     "refid": "group__binary__search",
     "title": "Binary Search",
-    "url": "/api/groups/group__binary__search.html",
+    "url": "{{ site.baseurl }}/api/groups/group__binary__search.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -27,10 +30,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     },
     {
@@ -38,10 +43,12 @@
       "category": "modules",
       "fullname": "searching",
       "kind": "group",
+      "language": "",
       "name": "searching",
+      "qualifiedname": "searching",
       "refid": "group__searching",
       "title": "Searching",
-      "url": "/api/groups/group__searching.html",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html",
       "visibility": "public"
     },
     {
@@ -49,10 +56,12 @@
       "category": "modules",
       "fullname": "binary_search",
       "kind": "group",
+      "language": "",
       "name": "binary_search",
+      "qualifiedname": "binary_search",
       "refid": "group__binary__search",
       "title": "Binary Search",
-      "url": "/api/groups/group__binary__search.html",
+      "url": "{{ site.baseurl }}/api/groups/group__binary__search.html",
       "visibility": "public"
     }
   ],
@@ -63,10 +72,12 @@
     "category": "modules",
     "fullname": "binary_search",
     "kind": "group",
+    "language": "",
     "name": "binary_search",
+    "qualifiedname": "binary_search",
     "refid": "group__binary__search",
     "title": "Binary Search",
-    "url": "/api/groups/group__binary__search.html",
+    "url": "{{ site.baseurl }}/api/groups/group__binary__search.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -75,10 +86,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     },
     {
@@ -86,10 +99,12 @@
       "category": "modules",
       "fullname": "searching",
       "kind": "group",
+      "language": "",
       "name": "searching",
+      "qualifiedname": "searching",
       "refid": "group__searching",
       "title": "Searching",
-      "url": "/api/groups/group__searching.html",
+      "url": "{{ site.baseurl }}/api/groups/group__searching.html",
       "visibility": "public"
     },
     {
@@ -97,22 +112,24 @@
       "category": "modules",
       "fullname": "binary_search",
       "kind": "group",
+      "language": "",
       "name": "binary_search",
+      "qualifiedname": "binary_search",
       "refid": "group__binary__search",
       "title": "Binary Search",
-      "url": "/api/groups/group__binary__search.html",
+      "url": "{{ site.baseurl }}/api/groups/group__binary__search.html",
       "visibility": "public"
     }
   ],
   "publicFunctions": [
     {
       "abstract": false,
-      "anchor": "#function-lower_bound",
+      "anchor": "#function-lower-bound",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, ForwardIterator first, ForwardIterator last, InputIterator values_first, InputIterator values_last, OutputIterator result)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ OutputIterator lower_bound",
+      "definition": "__host__ __device__ OutputIterator thrust::lower_bound",
       "deleted": false,
       "details": "<code>lower&#95;bound</code> is a vectorized version of binary search: for each iterator <code>v</code> in <code>[values&#95;first, values&#95;last)</code> it attempts to find the value <code>&#42;v</code> in an ordered range <code>[first, last)</code>. Specifically, it returns the index of first position where value could be inserted without violating the ordering.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>lower&#95;bound</code> to search for multiple values in a ordered range using the <code>thrust::device</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/binary_search.h>\n#include <thrust/device_vector.h>\n#include <thrust/execution_policy.h>\n...\nthrust::device_vector<int> input(5);\n\ninput[0] = 0;\ninput[1] = 2;\ninput[2] = 5;\ninput[3] = 7;\ninput[4] = 8;\n\nthrust::device_vector<int> values(6);\nvalues[0] = 0; \nvalues[1] = 1;\nvalues[2] = 2;\nvalues[3] = 3;\nvalues[4] = 8;\nvalues[5] = 9;\n\nthrust::device_vector<unsigned int> output(6);\n\nthrust::lower_bound(thrust::device,\n                    input.begin(), input.end(),\n                    values.begin(), values.end(),\n                    output.begin());\n\n// output is now [0, 1, 1, 2, 4, 5]\n```",
       "explicit": false,
@@ -120,6 +137,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/binary_search.h",
@@ -189,12 +207,13 @@
         "The ranges <code>[first,last)</code> and <code>[result, result + (last - first))</code> shall not overlap."
       ],
       "pureVirtual": false,
-      "refid": "group__vectorized__binary__search_1gabc683242b22d6f4cb433979bfb7907a0",
+      "qualifiedname": "thrust::lower_bound",
+      "refid": "group__vectorized__binary__search_1gaa3898ae9d0866d16694c66899f01cf52",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/lower_bound\">https://en.cppreference.com/w/cpp/algorithm/lower_bound</a>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-upper_bound\">upper&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-equal_range\">equal&#95;range</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-binary_search\">binary&#95;search</a></code>"
+        "<code>upper&#95;bound</code>",
+        "<code>equal&#95;range</code>",
+        "<code><a href=\"{{ site.baseurl }}/api/groups/group__binary__search.html\">Binary Search</a></code>"
       ],
       "static": false,
       "strong": false,
@@ -241,18 +260,18 @@
       "title": "lower_bound",
       "type": "__host__ __device__ OutputIterator",
       "typePlain": "__host__ __device__ OutputIterator",
-      "url": "/api/groups/group__vectorized__binary__search.html#function-lower_bound",
+      "url": "{{ site.baseurl }}/api/groups/group__vectorized__binary__search.html#function-lower-bound",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-lower_bound",
+      "anchor": "#function-lower-bound",
       "argsString": "(ForwardIterator first, ForwardIterator last, InputIterator values_first, InputIterator values_last, OutputIterator result)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "OutputIterator lower_bound",
+      "definition": "OutputIterator thrust::lower_bound",
       "deleted": false,
       "details": "<code>lower&#95;bound</code> is a vectorized version of binary search: for each iterator <code>v</code> in <code>[values&#95;first, values&#95;last)</code> it attempts to find the value <code>&#42;v</code> in an ordered range <code>[first, last)</code>. Specifically, it returns the index of first position where value could be inserted without violating the ordering.\n\n\nThe following code snippet demonstrates how to use <code>lower&#95;bound</code> to search for multiple values in a ordered range.\n\n\n\n```cpp\n#include <thrust/binary_search.h>\n#include <thrust/device_vector.h>\n...\nthrust::device_vector<int> input(5);\n\ninput[0] = 0;\ninput[1] = 2;\ninput[2] = 5;\ninput[3] = 7;\ninput[4] = 8;\n\nthrust::device_vector<int> values(6);\nvalues[0] = 0; \nvalues[1] = 1;\nvalues[2] = 2;\nvalues[3] = 3;\nvalues[4] = 8;\nvalues[5] = 9;\n\nthrust::device_vector<unsigned int> output(6);\n\nthrust::lower_bound(input.begin(), input.end(),\n                    values.begin(), values.end(),\n                    output.begin());\n\n// output is now [0, 1, 1, 2, 4, 5]\n```",
       "explicit": false,
@@ -260,6 +279,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/binary_search.h",
@@ -320,12 +340,13 @@
         "The ranges <code>[first,last)</code> and <code>[result, result + (last - first))</code> shall not overlap."
       ],
       "pureVirtual": false,
-      "refid": "group__vectorized__binary__search_1gaf25fe47e363ee61c3b55b050f4af54cb",
+      "qualifiedname": "thrust::lower_bound",
+      "refid": "group__vectorized__binary__search_1gab6283107548915e5541be0e3efe958f1",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/lower_bound\">https://en.cppreference.com/w/cpp/algorithm/lower_bound</a>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-upper_bound\">upper&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-equal_range\">equal&#95;range</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-binary_search\">binary&#95;search</a></code>"
+        "<code>upper&#95;bound</code>",
+        "<code>equal&#95;range</code>",
+        "<code><a href=\"{{ site.baseurl }}/api/groups/group__binary__search.html\">Binary Search</a></code>"
       ],
       "static": false,
       "strong": false,
@@ -363,18 +384,18 @@
       "title": "lower_bound",
       "type": "OutputIterator",
       "typePlain": "OutputIterator",
-      "url": "/api/groups/group__vectorized__binary__search.html#function-lower_bound",
+      "url": "{{ site.baseurl }}/api/groups/group__vectorized__binary__search.html#function-lower-bound",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-lower_bound",
+      "anchor": "#function-lower-bound",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, ForwardIterator first, ForwardIterator last, InputIterator values_first, InputIterator values_last, OutputIterator result, StrictWeakOrdering comp)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ OutputIterator lower_bound",
+      "definition": "__host__ __device__ OutputIterator thrust::lower_bound",
       "deleted": false,
       "details": "<code>lower&#95;bound</code> is a vectorized version of binary search: for each iterator <code>v</code> in <code>[values&#95;first, values&#95;last)</code> it attempts to find the value <code>&#42;v</code> in an ordered range <code>[first, last)</code>. Specifically, it returns the index of first position where value could be inserted without violating the ordering. This version of <code>lower&#95;bound</code> uses function object <code>comp</code> for comparison.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>lower&#95;bound</code> to search for multiple values in a ordered range.\n\n\n\n```cpp\n#include <thrust/binary_search.h>\n#include <thrust/device_vector.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\nthrust::device_vector<int> input(5);\n\ninput[0] = 0;\ninput[1] = 2;\ninput[2] = 5;\ninput[3] = 7;\ninput[4] = 8;\n\nthrust::device_vector<int> values(6);\nvalues[0] = 0; \nvalues[1] = 1;\nvalues[2] = 2;\nvalues[3] = 3;\nvalues[4] = 8;\nvalues[5] = 9;\n\nthrust::device_vector<unsigned int> output(6);\n\nthrust::lower_bound(input.begin(), input.end(),\n                    values.begin(), values.end(), \n                    output.begin(),\n                    thrust::less<int>());\n\n// output is now [0, 1, 1, 2, 4, 5]\n```",
       "explicit": false,
@@ -382,6 +403,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/binary_search.h",
@@ -460,12 +482,13 @@
         "The ranges <code>[first,last)</code> and <code>[result, result + (last - first))</code> shall not overlap."
       ],
       "pureVirtual": false,
-      "refid": "group__vectorized__binary__search_1gaffbced76d7371fd5f87ea7b79fab8823",
+      "qualifiedname": "thrust::lower_bound",
+      "refid": "group__vectorized__binary__search_1ga04b5a67cd0daf7be4b35c2bc75d22bee",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/lower_bound\">https://en.cppreference.com/w/cpp/algorithm/lower_bound</a>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-upper_bound\">upper&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-equal_range\">equal&#95;range</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-binary_search\">binary&#95;search</a></code>"
+        "<code>upper&#95;bound</code>",
+        "<code>equal&#95;range</code>",
+        "<code><a href=\"{{ site.baseurl }}/api/groups/group__binary__search.html\">Binary Search</a></code>"
       ],
       "static": false,
       "strong": false,
@@ -521,18 +544,18 @@
       "title": "lower_bound",
       "type": "__host__ __device__ OutputIterator",
       "typePlain": "__host__ __device__ OutputIterator",
-      "url": "/api/groups/group__vectorized__binary__search.html#function-lower_bound",
+      "url": "{{ site.baseurl }}/api/groups/group__vectorized__binary__search.html#function-lower-bound",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-lower_bound",
+      "anchor": "#function-lower-bound",
       "argsString": "(ForwardIterator first, ForwardIterator last, InputIterator values_first, InputIterator values_last, OutputIterator result, StrictWeakOrdering comp)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "OutputIterator lower_bound",
+      "definition": "OutputIterator thrust::lower_bound",
       "deleted": false,
       "details": "<code>lower&#95;bound</code> is a vectorized version of binary search: for each iterator <code>v</code> in <code>[values&#95;first, values&#95;last)</code> it attempts to find the value <code>&#42;v</code> in an ordered range <code>[first, last)</code>. Specifically, it returns the index of first position where value could be inserted without violating the ordering. This version of <code>lower&#95;bound</code> uses function object <code>comp</code> for comparison.\n\n\nThe following code snippet demonstrates how to use <code>lower&#95;bound</code> to search for multiple values in a ordered range.\n\n\n\n```cpp\n#include <thrust/binary_search.h>\n#include <thrust/device_vector.h>\n#include <thrust/functional.h>\n...\nthrust::device_vector<int> input(5);\n\ninput[0] = 0;\ninput[1] = 2;\ninput[2] = 5;\ninput[3] = 7;\ninput[4] = 8;\n\nthrust::device_vector<int> values(6);\nvalues[0] = 0; \nvalues[1] = 1;\nvalues[2] = 2;\nvalues[3] = 3;\nvalues[4] = 8;\nvalues[5] = 9;\n\nthrust::device_vector<unsigned int> output(6);\n\nthrust::lower_bound(input.begin(), input.end(),\n                    values.begin(), values.end(), \n                    output.begin(),\n                    thrust::less<int>());\n\n// output is now [0, 1, 1, 2, 4, 5]\n```",
       "explicit": false,
@@ -540,6 +563,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/binary_search.h",
@@ -609,12 +633,13 @@
         "The ranges <code>[first,last)</code> and <code>[result, result + (last - first))</code> shall not overlap."
       ],
       "pureVirtual": false,
-      "refid": "group__vectorized__binary__search_1ga6fdc1dc28ffd2a03b5ad24cf698e4b31",
+      "qualifiedname": "thrust::lower_bound",
+      "refid": "group__vectorized__binary__search_1ga30acecaad39c7d9f299f0cc515b762ce",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/lower_bound\">https://en.cppreference.com/w/cpp/algorithm/lower_bound</a>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-upper_bound\">upper&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-equal_range\">equal&#95;range</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-binary_search\">binary&#95;search</a></code>"
+        "<code>upper&#95;bound</code>",
+        "<code>equal&#95;range</code>",
+        "<code><a href=\"{{ site.baseurl }}/api/groups/group__binary__search.html\">Binary Search</a></code>"
       ],
       "static": false,
       "strong": false,
@@ -661,18 +686,18 @@
       "title": "lower_bound",
       "type": "OutputIterator",
       "typePlain": "OutputIterator",
-      "url": "/api/groups/group__vectorized__binary__search.html#function-lower_bound",
+      "url": "{{ site.baseurl }}/api/groups/group__vectorized__binary__search.html#function-lower-bound",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-upper_bound",
+      "anchor": "#function-upper-bound",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, ForwardIterator first, ForwardIterator last, InputIterator values_first, InputIterator values_last, OutputIterator result)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ OutputIterator upper_bound",
+      "definition": "__host__ __device__ OutputIterator thrust::upper_bound",
       "deleted": false,
       "details": "<code>upper&#95;bound</code> is a vectorized version of binary search: for each iterator <code>v</code> in <code>[values&#95;first, values&#95;last)</code> it attempts to find the value <code>&#42;v</code> in an ordered range <code>[first, last)</code>. Specifically, it returns the index of last position where value could be inserted without violating the ordering.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>upper&#95;bound</code> to search for multiple values in a ordered range using the <code>thrust::device</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/binary_search.h>\n#include <thrust/device_vector.h>\n#include <thrust/execution_policy.h>\n...\nthrust::device_vector<int> input(5);\n\ninput[0] = 0;\ninput[1] = 2;\ninput[2] = 5;\ninput[3] = 7;\ninput[4] = 8;\n\nthrust::device_vector<int> values(6);\nvalues[0] = 0; \nvalues[1] = 1;\nvalues[2] = 2;\nvalues[3] = 3;\nvalues[4] = 8;\nvalues[5] = 9;\n\nthrust::device_vector<unsigned int> output(6);\n\nthrust::upper_bound(thrust::device,\n                    input.begin(), input.end(),\n                    values.begin(), values.end(),\n                    output.begin());\n\n// output is now [1, 1, 2, 2, 5, 5]\n```",
       "explicit": false,
@@ -680,6 +705,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/binary_search.h",
@@ -749,12 +775,13 @@
         "The ranges <code>[first,last)</code> and <code>[result, result + (last - first))</code> shall not overlap."
       ],
       "pureVirtual": false,
-      "refid": "group__vectorized__binary__search_1ga410cdf8983ec243594cb0b3267292c21",
+      "qualifiedname": "thrust::upper_bound",
+      "refid": "group__vectorized__binary__search_1ga64d08ecd00ab164fe785a2416aa30941",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/upper_bound\">https://en.cppreference.com/w/cpp/algorithm/upper_bound</a>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-upper_bound\">upper&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-equal_range\">equal&#95;range</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-binary_search\">binary&#95;search</a></code>"
+        "<code>upper&#95;bound</code>",
+        "<code>equal&#95;range</code>",
+        "<code><a href=\"{{ site.baseurl }}/api/groups/group__binary__search.html\">Binary Search</a></code>"
       ],
       "static": false,
       "strong": false,
@@ -801,18 +828,18 @@
       "title": "upper_bound",
       "type": "__host__ __device__ OutputIterator",
       "typePlain": "__host__ __device__ OutputIterator",
-      "url": "/api/groups/group__vectorized__binary__search.html#function-upper_bound",
+      "url": "{{ site.baseurl }}/api/groups/group__vectorized__binary__search.html#function-upper-bound",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-upper_bound",
+      "anchor": "#function-upper-bound",
       "argsString": "(ForwardIterator first, ForwardIterator last, InputIterator values_first, InputIterator values_last, OutputIterator result)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "OutputIterator upper_bound",
+      "definition": "OutputIterator thrust::upper_bound",
       "deleted": false,
       "details": "<code>upper&#95;bound</code> is a vectorized version of binary search: for each iterator <code>v</code> in <code>[values&#95;first, values&#95;last)</code> it attempts to find the value <code>&#42;v</code> in an ordered range <code>[first, last)</code>. Specifically, it returns the index of last position where value could be inserted without violating the ordering.\n\n\nThe following code snippet demonstrates how to use <code>upper&#95;bound</code> to search for multiple values in a ordered range.\n\n\n\n```cpp\n#include <thrust/binary_search.h>\n#include <thrust/device_vector.h>\n...\nthrust::device_vector<int> input(5);\n\ninput[0] = 0;\ninput[1] = 2;\ninput[2] = 5;\ninput[3] = 7;\ninput[4] = 8;\n\nthrust::device_vector<int> values(6);\nvalues[0] = 0; \nvalues[1] = 1;\nvalues[2] = 2;\nvalues[3] = 3;\nvalues[4] = 8;\nvalues[5] = 9;\n\nthrust::device_vector<unsigned int> output(6);\n\nthrust::upper_bound(input.begin(), input.end(),\n                    values.begin(), values.end(),\n                    output.begin());\n\n// output is now [1, 1, 2, 2, 5, 5]\n```",
       "explicit": false,
@@ -820,6 +847,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/binary_search.h",
@@ -880,12 +908,13 @@
         "The ranges <code>[first,last)</code> and <code>[result, result + (last - first))</code> shall not overlap."
       ],
       "pureVirtual": false,
-      "refid": "group__vectorized__binary__search_1ga27c8ce12992b9b70d3b9c02b4eb82442",
+      "qualifiedname": "thrust::upper_bound",
+      "refid": "group__vectorized__binary__search_1gaaedf46dd0857b3f31725eb2a13ee0e26",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/upper_bound\">https://en.cppreference.com/w/cpp/algorithm/upper_bound</a>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-upper_bound\">upper&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-equal_range\">equal&#95;range</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-binary_search\">binary&#95;search</a></code>"
+        "<code>upper&#95;bound</code>",
+        "<code>equal&#95;range</code>",
+        "<code><a href=\"{{ site.baseurl }}/api/groups/group__binary__search.html\">Binary Search</a></code>"
       ],
       "static": false,
       "strong": false,
@@ -923,18 +952,18 @@
       "title": "upper_bound",
       "type": "OutputIterator",
       "typePlain": "OutputIterator",
-      "url": "/api/groups/group__vectorized__binary__search.html#function-upper_bound",
+      "url": "{{ site.baseurl }}/api/groups/group__vectorized__binary__search.html#function-upper-bound",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-upper_bound",
+      "anchor": "#function-upper-bound",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, ForwardIterator first, ForwardIterator last, InputIterator values_first, InputIterator values_last, OutputIterator result, StrictWeakOrdering comp)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ OutputIterator upper_bound",
+      "definition": "__host__ __device__ OutputIterator thrust::upper_bound",
       "deleted": false,
       "details": "<code>upper&#95;bound</code> is a vectorized version of binary search: for each iterator <code>v</code> in <code>[values&#95;first, values&#95;last)</code> it attempts to find the value <code>&#42;v</code> in an ordered range <code>[first, last)</code>. Specifically, it returns the index of first position where value could be inserted without violating the ordering. This version of <code>upper&#95;bound</code> uses function object <code>comp</code> for comparison.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>upper&#95;bound</code> to search for multiple values in a ordered range using the <code>thrust::device</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/binary_search.h>\n#include <thrust/device_vector.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\nthrust::device_vector<int> input(5);\n\ninput[0] = 0;\ninput[1] = 2;\ninput[2] = 5;\ninput[3] = 7;\ninput[4] = 8;\n\nthrust::device_vector<int> values(6);\nvalues[0] = 0; \nvalues[1] = 1;\nvalues[2] = 2;\nvalues[3] = 3;\nvalues[4] = 8;\nvalues[5] = 9;\n\nthrust::device_vector<unsigned int> output(6);\n\nthrust::upper_bound(thrust::device,\n                    input.begin(), input.end(),\n                    values.begin(), values.end(), \n                    output.begin(),\n                    thrust::less<int>());\n\n// output is now [1, 1, 2, 2, 5, 5]\n```",
       "explicit": false,
@@ -942,6 +971,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/binary_search.h",
@@ -1020,12 +1050,13 @@
         "The ranges <code>[first,last)</code> and <code>[result, result + (last - first))</code> shall not overlap."
       ],
       "pureVirtual": false,
-      "refid": "group__vectorized__binary__search_1ga55bfa73da660aff12ab849b2328ced23",
+      "qualifiedname": "thrust::upper_bound",
+      "refid": "group__vectorized__binary__search_1ga45cc7c0ff8450c54b6d43a28b787b0c0",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/upper_bound\">https://en.cppreference.com/w/cpp/algorithm/upper_bound</a>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-lower_bound\">lower&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-equal_range\">equal&#95;range</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-binary_search\">binary&#95;search</a></code>"
+        "<code>lower&#95;bound</code>",
+        "<code>equal&#95;range</code>",
+        "<code><a href=\"{{ site.baseurl }}/api/groups/group__binary__search.html\">Binary Search</a></code>"
       ],
       "static": false,
       "strong": false,
@@ -1081,18 +1112,18 @@
       "title": "upper_bound",
       "type": "__host__ __device__ OutputIterator",
       "typePlain": "__host__ __device__ OutputIterator",
-      "url": "/api/groups/group__vectorized__binary__search.html#function-upper_bound",
+      "url": "{{ site.baseurl }}/api/groups/group__vectorized__binary__search.html#function-upper-bound",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-upper_bound",
+      "anchor": "#function-upper-bound",
       "argsString": "(ForwardIterator first, ForwardIterator last, InputIterator values_first, InputIterator values_last, OutputIterator result, StrictWeakOrdering comp)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "OutputIterator upper_bound",
+      "definition": "OutputIterator thrust::upper_bound",
       "deleted": false,
       "details": "<code>upper&#95;bound</code> is a vectorized version of binary search: for each iterator <code>v</code> in <code>[values&#95;first, values&#95;last)</code> it attempts to find the value <code>&#42;v</code> in an ordered range <code>[first, last)</code>. Specifically, it returns the index of first position where value could be inserted without violating the ordering. This version of <code>upper&#95;bound</code> uses function object <code>comp</code> for comparison.\n\n\nThe following code snippet demonstrates how to use <code>upper&#95;bound</code> to search for multiple values in a ordered range.\n\n\n\n```cpp\n#include <thrust/binary_search.h>\n#include <thrust/device_vector.h>\n#include <thrust/functional.h>\n...\nthrust::device_vector<int> input(5);\n\ninput[0] = 0;\ninput[1] = 2;\ninput[2] = 5;\ninput[3] = 7;\ninput[4] = 8;\n\nthrust::device_vector<int> values(6);\nvalues[0] = 0; \nvalues[1] = 1;\nvalues[2] = 2;\nvalues[3] = 3;\nvalues[4] = 8;\nvalues[5] = 9;\n\nthrust::device_vector<unsigned int> output(6);\n\nthrust::upper_bound(input.begin(), input.end(),\n                    values.begin(), values.end(), \n                    output.begin(),\n                    thrust::less<int>());\n\n// output is now [1, 1, 2, 2, 5, 5]\n```",
       "explicit": false,
@@ -1100,6 +1131,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/binary_search.h",
@@ -1169,12 +1201,13 @@
         "The ranges <code>[first,last)</code> and <code>[result, result + (last - first))</code> shall not overlap."
       ],
       "pureVirtual": false,
-      "refid": "group__vectorized__binary__search_1gacb645ed4d2eda3b2617d045dab9b2fc9",
+      "qualifiedname": "thrust::upper_bound",
+      "refid": "group__vectorized__binary__search_1gabe5e2b1b20a3e1066d52a9831e20abe5",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/upper_bound\">https://en.cppreference.com/w/cpp/algorithm/upper_bound</a>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-lower_bound\">lower&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-equal_range\">equal&#95;range</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-binary_search\">binary&#95;search</a></code>"
+        "<code>lower&#95;bound</code>",
+        "<code>equal&#95;range</code>",
+        "<code><a href=\"{{ site.baseurl }}/api/groups/group__binary__search.html\">Binary Search</a></code>"
       ],
       "static": false,
       "strong": false,
@@ -1221,18 +1254,18 @@
       "title": "upper_bound",
       "type": "OutputIterator",
       "typePlain": "OutputIterator",
-      "url": "/api/groups/group__vectorized__binary__search.html#function-upper_bound",
+      "url": "{{ site.baseurl }}/api/groups/group__vectorized__binary__search.html#function-upper-bound",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-binary_search",
+      "anchor": "#function-binary-search",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, ForwardIterator first, ForwardIterator last, InputIterator values_first, InputIterator values_last, OutputIterator result)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ OutputIterator binary_search",
+      "definition": "__host__ __device__ OutputIterator thrust::binary_search",
       "deleted": false,
       "details": "<code>binary&#95;search</code> is a vectorized version of binary search: for each iterator <code>v</code> in <code>[values&#95;first, values&#95;last)</code> it attempts to find the value <code>&#42;v</code> in an ordered range <code>[first, last)</code>. It returns <code>true</code> if an element that is equivalent to <code>value</code> is present in <code>[first, last)</code> and <code>false</code> if no such element exists.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>binary&#95;search</code> to search for multiple values in a ordered range using the <code>thrust::device</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/binary_search.h>\n#include <thrust/device_vector.h>\n#include <thrust/execution_policy.h>\n...\nthrust::device_vector<int> input(5);\n\ninput[0] = 0;\ninput[1] = 2;\ninput[2] = 5;\ninput[3] = 7;\ninput[4] = 8;\n\nthrust::device_vector<int> values(6);\nvalues[0] = 0; \nvalues[1] = 1;\nvalues[2] = 2;\nvalues[3] = 3;\nvalues[4] = 8;\nvalues[5] = 9;\n\nthrust::device_vector<bool> output(6);\n\nthrust::binary_search(thrust::device,\n                      input.begin(), input.end(),\n                      values.begin(), values.end(),\n                      output.begin());\n\n// output is now [true, false, true, false, true, false]\n```",
       "explicit": false,
@@ -1240,6 +1273,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/binary_search.h",
@@ -1309,12 +1343,13 @@
         "The ranges <code>[first,last)</code> and <code>[result, result + (last - first))</code> shall not overlap."
       ],
       "pureVirtual": false,
-      "refid": "group__vectorized__binary__search_1ga7e0e26041aa7a2a921dd7c3ad6bb428a",
+      "qualifiedname": "thrust::binary_search",
+      "refid": "group__vectorized__binary__search_1ga64307ce5162346031df34fd09a7de1ff",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/binary_search\">https://en.cppreference.com/w/cpp/algorithm/binary_search</a>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-lower_bound\">lower&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-upper_bound\">upper&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-equal_range\">equal&#95;range</a></code>"
+        "<code>lower&#95;bound</code>",
+        "<code>upper&#95;bound</code>",
+        "<code>equal&#95;range</code>"
       ],
       "static": false,
       "strong": false,
@@ -1361,18 +1396,18 @@
       "title": "binary_search",
       "type": "__host__ __device__ OutputIterator",
       "typePlain": "__host__ __device__ OutputIterator",
-      "url": "/api/groups/group__vectorized__binary__search.html#function-binary_search",
+      "url": "{{ site.baseurl }}/api/groups/group__vectorized__binary__search.html#function-binary-search",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-binary_search",
+      "anchor": "#function-binary-search",
       "argsString": "(ForwardIterator first, ForwardIterator last, InputIterator values_first, InputIterator values_last, OutputIterator result)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "OutputIterator binary_search",
+      "definition": "OutputIterator thrust::binary_search",
       "deleted": false,
       "details": "<code>binary&#95;search</code> is a vectorized version of binary search: for each iterator <code>v</code> in <code>[values&#95;first, values&#95;last)</code> it attempts to find the value <code>&#42;v</code> in an ordered range <code>[first, last)</code>. It returns <code>true</code> if an element that is equivalent to <code>value</code> is present in <code>[first, last)</code> and <code>false</code> if no such element exists.\n\n\nThe following code snippet demonstrates how to use <code>binary&#95;search</code> to search for multiple values in a ordered range.\n\n\n\n```cpp\n#include <thrust/binary_search.h>\n#include <thrust/device_vector.h>\n...\nthrust::device_vector<int> input(5);\n\ninput[0] = 0;\ninput[1] = 2;\ninput[2] = 5;\ninput[3] = 7;\ninput[4] = 8;\n\nthrust::device_vector<int> values(6);\nvalues[0] = 0; \nvalues[1] = 1;\nvalues[2] = 2;\nvalues[3] = 3;\nvalues[4] = 8;\nvalues[5] = 9;\n\nthrust::device_vector<bool> output(6);\n\nthrust::binary_search(input.begin(), input.end(),\n                      values.begin(), values.end(),\n                      output.begin());\n\n// output is now [true, false, true, false, true, false]\n```",
       "explicit": false,
@@ -1380,6 +1415,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/binary_search.h",
@@ -1440,12 +1476,13 @@
         "The ranges <code>[first,last)</code> and <code>[result, result + (last - first))</code> shall not overlap."
       ],
       "pureVirtual": false,
-      "refid": "group__vectorized__binary__search_1ga9cff326565917388bd833e2a04b1f298",
+      "qualifiedname": "thrust::binary_search",
+      "refid": "group__vectorized__binary__search_1gaca4b5ad62a005948659a605a73515d02",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/binary_search\">https://en.cppreference.com/w/cpp/algorithm/binary_search</a>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-lower_bound\">lower&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-upper_bound\">upper&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-equal_range\">equal&#95;range</a></code>"
+        "<code>lower&#95;bound</code>",
+        "<code>upper&#95;bound</code>",
+        "<code>equal&#95;range</code>"
       ],
       "static": false,
       "strong": false,
@@ -1483,18 +1520,18 @@
       "title": "binary_search",
       "type": "OutputIterator",
       "typePlain": "OutputIterator",
-      "url": "/api/groups/group__vectorized__binary__search.html#function-binary_search",
+      "url": "{{ site.baseurl }}/api/groups/group__vectorized__binary__search.html#function-binary-search",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-binary_search",
+      "anchor": "#function-binary-search",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, ForwardIterator first, ForwardIterator last, InputIterator values_first, InputIterator values_last, OutputIterator result, StrictWeakOrdering comp)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ OutputIterator binary_search",
+      "definition": "__host__ __device__ OutputIterator thrust::binary_search",
       "deleted": false,
       "details": "<code>binary&#95;search</code> is a vectorized version of binary search: for each iterator <code>v</code> in <code>[values&#95;first, values&#95;last)</code> it attempts to find the value <code>&#42;v</code> in an ordered range <code>[first, last)</code>. It returns <code>true</code> if an element that is equivalent to <code>value</code> is present in <code>[first, last)</code> and <code>false</code> if no such element exists. This version of <code>binary&#95;search</code> uses function object <code>comp</code> for comparison.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\nThe following code snippet demonstrates how to use <code>binary&#95;search</code> to search for multiple values in a ordered range using the <code>thrust::device</code> execution policy for parallelization:\n\n\n\n```cpp\n#include <thrust/binary_search.h>\n#include <thrust/device_vector.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\nthrust::device_vector<int> input(5);\n\ninput[0] = 0;\ninput[1] = 2;\ninput[2] = 5;\ninput[3] = 7;\ninput[4] = 8;\n\nthrust::device_vector<int> values(6);\nvalues[0] = 0; \nvalues[1] = 1;\nvalues[2] = 2;\nvalues[3] = 3;\nvalues[4] = 8;\nvalues[5] = 9;\n\nthrust::device_vector<bool> output(6);\n\nthrust::binary_search(thrust::device,\n                      input.begin(), input.end(),\n                      values.begin(), values.end(),\n                      output.begin(),\n                      thrust::less<T>());\n\n// output is now [true, false, true, false, true, false]\n```",
       "explicit": false,
@@ -1502,6 +1539,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/binary_search.h",
@@ -1580,12 +1618,13 @@
         "The ranges <code>[first,last)</code> and <code>[result, result + (last - first))</code> shall not overlap."
       ],
       "pureVirtual": false,
-      "refid": "group__vectorized__binary__search_1ga6b4094858d2c19f260636e6cabd6121b",
+      "qualifiedname": "thrust::binary_search",
+      "refid": "group__vectorized__binary__search_1gad17d49fa72297cc0e6480df3bf3a9c2b",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/binary_search\">https://en.cppreference.com/w/cpp/algorithm/binary_search</a>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-lower_bound\">lower&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-upper_bound\">upper&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-equal_range\">equal&#95;range</a></code>"
+        "<code>lower&#95;bound</code>",
+        "<code>upper&#95;bound</code>",
+        "<code>equal&#95;range</code>"
       ],
       "static": false,
       "strong": false,
@@ -1641,18 +1680,18 @@
       "title": "binary_search",
       "type": "__host__ __device__ OutputIterator",
       "typePlain": "__host__ __device__ OutputIterator",
-      "url": "/api/groups/group__vectorized__binary__search.html#function-binary_search",
+      "url": "{{ site.baseurl }}/api/groups/group__vectorized__binary__search.html#function-binary-search",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-binary_search",
+      "anchor": "#function-binary-search",
       "argsString": "(ForwardIterator first, ForwardIterator last, InputIterator values_first, InputIterator values_last, OutputIterator result, StrictWeakOrdering comp)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "OutputIterator binary_search",
+      "definition": "OutputIterator thrust::binary_search",
       "deleted": false,
       "details": "<code>binary&#95;search</code> is a vectorized version of binary search: for each iterator <code>v</code> in <code>[values&#95;first, values&#95;last)</code> it attempts to find the value <code>&#42;v</code> in an ordered range <code>[first, last)</code>. It returns <code>true</code> if an element that is equivalent to <code>value</code> is present in <code>[first, last)</code> and <code>false</code> if no such element exists. This version of <code>binary&#95;search</code> uses function object <code>comp</code> for comparison.\n\n\nThe following code snippet demonstrates how to use <code>binary&#95;search</code> to search for multiple values in a ordered range.\n\n\n\n```cpp\n#include <thrust/binary_search.h>\n#include <thrust/device_vector.h>\n#include <thrust/functional.h>\n...\nthrust::device_vector<int> input(5);\n\ninput[0] = 0;\ninput[1] = 2;\ninput[2] = 5;\ninput[3] = 7;\ninput[4] = 8;\n\nthrust::device_vector<int> values(6);\nvalues[0] = 0; \nvalues[1] = 1;\nvalues[2] = 2;\nvalues[3] = 3;\nvalues[4] = 8;\nvalues[5] = 9;\n\nthrust::device_vector<bool> output(6);\n\nthrust::binary_search(input.begin(), input.end(),\n                      values.begin(), values.end(),\n                      output.begin(),\n                      thrust::less<T>());\n\n// output is now [true, false, true, false, true, false]\n```",
       "explicit": false,
@@ -1660,6 +1699,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 16,
         "file": "thrust/binary_search.h",
@@ -1729,12 +1769,13 @@
         "The ranges <code>[first,last)</code> and <code>[result, result + (last - first))</code> shall not overlap."
       ],
       "pureVirtual": false,
-      "refid": "group__vectorized__binary__search_1ga36c535b56c209a7b70d2b6234fda6cdc",
+      "qualifiedname": "thrust::binary_search",
+      "refid": "group__vectorized__binary__search_1gac35a115642366fff80e85de54a9882c6",
       "see": [
         "<a href=\"https://en.cppreference.com/w/cpp/algorithm/binary_search\">https://en.cppreference.com/w/cpp/algorithm/binary_search</a>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-lower_bound\">lower&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-upper_bound\">upper&#95;bound</a></code>",
-        "<code><a href=\"/api/groups/group__binary__search.html#function-equal_range\">equal&#95;range</a></code>"
+        "<code>lower&#95;bound</code>",
+        "<code>upper&#95;bound</code>",
+        "<code>equal&#95;range</code>"
       ],
       "static": false,
       "strong": false,
@@ -1781,15 +1822,16 @@
       "title": "binary_search",
       "type": "OutputIterator",
       "typePlain": "OutputIterator",
-      "url": "/api/groups/group__vectorized__binary__search.html#function-binary_search",
+      "url": "{{ site.baseurl }}/api/groups/group__vectorized__binary__search.html#function-binary-search",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "vectorized_binary_search",
   "refid": "group__vectorized__binary__search",
   "static": false,
   "strong": false,
   "title": "Vectorized Searches",
-  "url": "/api/groups/group__vectorized__binary__search.html",
+  "url": "{{ site.baseurl }}/api/groups/group__vectorized__binary__search.html",
   "visibility": "public"
 }

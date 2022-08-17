@@ -10,15 +10,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "utility",
     "kind": "group",
+    "language": "",
     "name": "utility",
+    "qualifiedname": "utility",
     "refid": "group__utility",
     "title": "Utility",
-    "url": "/api/groups/group__utility.html",
+    "url": "{{ site.baseurl }}/api/groups/group__utility.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -27,10 +30,12 @@
       "category": "modules",
       "fullname": "utility",
       "kind": "group",
+      "language": "",
       "name": "utility",
+      "qualifiedname": "utility",
       "refid": "group__utility",
       "title": "Utility",
-      "url": "/api/groups/group__utility.html",
+      "url": "{{ site.baseurl }}/api/groups/group__utility.html",
       "visibility": "public"
     }
   ],
@@ -41,10 +46,12 @@
     "category": "modules",
     "fullname": "utility",
     "kind": "group",
+    "language": "",
     "name": "utility",
+    "qualifiedname": "utility",
     "refid": "group__utility",
     "title": "Utility",
-    "url": "/api/groups/group__utility.html",
+    "url": "{{ site.baseurl }}/api/groups/group__utility.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -53,10 +60,12 @@
       "category": "modules",
       "fullname": "utility",
       "kind": "group",
+      "language": "",
       "name": "utility",
+      "qualifiedname": "utility",
       "refid": "group__utility",
       "title": "Utility",
-      "url": "/api/groups/group__utility.html",
+      "url": "{{ site.baseurl }}/api/groups/group__utility.html",
       "visibility": "public"
     }
   ],
@@ -64,36 +73,42 @@
     {
       "anchor": "",
       "category": "classes",
-      "fullname": "tuple_element",
+      "fullname": "thrust::tuple_element",
       "kind": "struct",
-      "name": "tuple_element",
-      "refid": "structtuple__element",
-      "title": "tuple_element",
-      "url": "/api/classes/structtuple__element.html",
+      "language": "cpp",
+      "name": "thrust::tuple_element",
+      "qualifiedname": "thrust::tuple_element",
+      "refid": "structthrust_1_1tuple__element",
+      "title": "thrust::tuple_element",
+      "url": "{{ site.baseurl }}/api/classes/structthrust_1_1tuple__element.html",
       "visibility": "public"
     },
     {
       "anchor": "",
       "category": "classes",
-      "fullname": "tuple_size",
+      "fullname": "thrust::tuple_size",
       "kind": "struct",
-      "name": "tuple_size",
-      "refid": "structtuple__size",
-      "title": "tuple_size",
-      "url": "/api/classes/structtuple__size.html",
+      "language": "cpp",
+      "name": "thrust::tuple_size",
+      "qualifiedname": "thrust::tuple_size",
+      "refid": "structthrust_1_1tuple__size",
+      "title": "thrust::tuple_size",
+      "url": "{{ site.baseurl }}/api/classes/structthrust_1_1tuple__size.html",
       "visibility": "public"
     },
     {
       "anchor": "",
       "brief": "<code>tuple</code> is a class template that can be instantiated with up to ten arguments. Each template argument specifies the type of element in the <code>tuple</code>. Consequently, tuples are heterogeneous, fixed-size collections of values. An instantiation of <code>tuple</code> with two arguments is similar to an instantiation of <code>pair</code> with the same two arguments. Individual elements of a <code>tuple</code> may be accessed with the <code>get</code> function. ",
       "category": "classes",
-      "fullname": "tuple",
+      "fullname": "thrust::tuple",
       "kind": "class",
-      "name": "tuple",
-      "refid": "classtuple",
+      "language": "cpp",
+      "name": "thrust::tuple",
+      "qualifiedname": "thrust::tuple",
+      "refid": "classthrust_1_1tuple",
       "summary": "tuple is a class template that can be instantiated with up to ten arguments. Each template argument specifies the type of element in the tuple. Consequently, tuples are heterogeneous, fixed-size collections of values. An instantiation of tuple with two arguments is similar to an instantiation of pair with the same two arguments. Individual elements of a tuple may be accessed with the get function. ",
-      "title": "tuple",
-      "url": "/api/classes/classtuple.html",
+      "title": "thrust::tuple",
+      "url": "{{ site.baseurl }}/api/classes/classthrust_1_1tuple.html",
       "visibility": "public"
     }
   ],
@@ -105,7 +120,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ access_traits< typename tuple_element<N, detail::cons<HT, TT> >::type >::non_const_type get",
+      "definition": "__host__ __device__ access_traits< typenametuple_element< N, detail::cons< HT, TT > >::type >::non_const_type thrust::get",
       "deleted": false,
       "details": "The <code>get</code> function returns a reference to a <code>tuple</code> element of interest.\n\n\nThe following code snippet demonstrates how to use <code>get</code> to print the value of a <code>tuple</code> element.\n\n\n\n```cpp\n#include <thrust/tuple.h>\n#include <iostream>\n...\nthrust::tuple<int, const char *> t(13, \"thrust\");\n\nstd::cout << \"The 1st value of t is \" << thrust::get<0>(t) << std::endl;\n```",
       "explicit": false,
@@ -113,6 +128,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 1,
         "file": "thrust/tuple.h",
@@ -134,13 +150,14 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__tuple_1ga8f7c84c459e360dd315dd84954fd2abe",
+      "qualifiedname": "thrust::get",
+      "refid": "group__tuple_1gac48449da61b5067a2feb2bc138c3917f",
       "returns": [
         "A reference to <code>t's</code><code>N</code>th element."
       ],
       "see": [
-        "<a href=\"/api/classes/structpair.html\">pair</a>",
-        "<a href=\"/api/classes/classtuple.html\">tuple</a>"
+        "<a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1pair.html\">pair</a>",
+        "<a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1tuple.html\">tuple</a>"
       ],
       "static": false,
       "strong": false,
@@ -168,9 +185,9 @@
         }
       ],
       "title": "get",
-      "type": "__host__ __device__ access_traits< typename <a href=\"/api/classes/structtuple__element.html\">tuple_element</a>< N, detail::cons< HT, TT > >::type >::non_const_type",
-      "typePlain": "__host__ __device__ access_traits< typename tuple_element< N, detail::cons< HT, TT > >::type >::non_const_type",
-      "url": "/api/groups/group__tuple.html#function-get",
+      "type": "__host__ __device__ access_traits< typenametuple_element< N, detail::cons< HT, TT > >::type >::non_const_type",
+      "typePlain": "__host__ __device__ access_traits< typenametuple_element< N, detail::cons< HT, TT > >::type >::non_const_type",
+      "url": "{{ site.baseurl }}/api/groups/group__tuple.html#function-get",
       "virtual": false,
       "visibility": "public"
     },
@@ -181,7 +198,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ access_traits< typename tuple_element<N, detail::cons<HT, TT> >::type >::const_type get",
+      "definition": "__host__ __device__ access_traits< typenametuple_element< N, detail::cons< HT, TT > >::type >::const_type thrust::get",
       "deleted": false,
       "details": "The <code>get</code> function returns a <code>const</code> reference to a <code>tuple</code> element of interest.\n\n\nThe following code snippet demonstrates how to use <code>get</code> to print the value of a <code>tuple</code> element.\n\n\n\n```cpp\n#include <thrust/tuple.h>\n#include <iostream>\n...\nthrust::tuple<int, const char *> t(13, \"thrust\");\n\nstd::cout << \"The 1st value of t is \" << thrust::get<0>(t) << std::endl;\n```",
       "explicit": false,
@@ -189,6 +206,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 1,
         "file": "thrust/tuple.h",
@@ -210,13 +228,14 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__tuple_1ga06c62d7dd7b0860ccdbf61aeb037e5e8",
+      "qualifiedname": "thrust::get",
+      "refid": "group__tuple_1ga07538bc1313d4bd564d6c06084a8ecbf",
       "returns": [
         "A <code>const</code> reference to <code>t's</code><code>N</code>th element."
       ],
       "see": [
-        "<a href=\"/api/classes/structpair.html\">pair</a>",
-        "<a href=\"/api/classes/classtuple.html\">tuple</a>"
+        "<a href=\"{{ site.baseurl }}/api/classes/structthrust_1_1pair.html\">pair</a>",
+        "<a href=\"{{ site.baseurl }}/api/classes/classthrust_1_1tuple.html\">tuple</a>"
       ],
       "static": false,
       "strong": false,
@@ -244,20 +263,20 @@
         }
       ],
       "title": "get",
-      "type": "__host__ __device__ access_traits< typename <a href=\"/api/classes/structtuple__element.html\">tuple_element</a>< N, detail::cons< HT, TT > >::type >::const_type",
-      "typePlain": "__host__ __device__ access_traits< typename tuple_element< N, detail::cons< HT, TT > >::type >::const_type",
-      "url": "/api/groups/group__tuple.html#function-get",
+      "type": "__host__ __device__ access_traits< typenametuple_element< N, detail::cons< HT, TT > >::type >::const_type",
+      "typePlain": "__host__ __device__ access_traits< typenametuple_element< N, detail::cons< HT, TT > >::type >::const_type",
+      "url": "{{ site.baseurl }}/api/groups/group__tuple.html#function-get",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-make_tuple",
+      "anchor": "#function-make-tuple",
       "argsString": "(const T0 &t0)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ detail::make_tuple_mapper<T0>::type make_tuple",
+      "definition": "__host__ __device__ detail::make_tuple_mapper< T0 >::type thrust::make_tuple",
       "deleted": false,
       "details": "This version of <code>make&#95;tuple</code> creates a new <code>tuple</code> object from a single object.",
       "explicit": false,
@@ -265,6 +284,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 5,
         "file": "thrust/tuple.h",
@@ -286,7 +306,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__tuple_1gacb28fded2827101d0a1ca71224016406",
+      "qualifiedname": "thrust::make_tuple",
+      "refid": "group__tuple_1gacfc5034da62bff5809d499d54639f759",
       "returns": [
         "A <code>tuple</code> object with a single member which is a copy of <code>t0</code>. "
       ],
@@ -302,18 +323,18 @@
       "title": "make_tuple",
       "type": "__host__ __device__ detail::make_tuple_mapper< T0 >::type",
       "typePlain": "__host__ __device__ detail::make_tuple_mapper< T0 >::type",
-      "url": "/api/groups/group__tuple.html#function-make_tuple",
+      "url": "{{ site.baseurl }}/api/groups/group__tuple.html#function-make-tuple",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-make_tuple",
+      "anchor": "#function-make-tuple",
       "argsString": "(const T0 &t0, const T1 &t1)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ detail::make_tuple_mapper<T0, T1>::type make_tuple",
+      "definition": "__host__ __device__ detail::make_tuple_mapper< T0, T1 >::type thrust::make_tuple",
       "deleted": false,
       "details": "This version of <code>make&#95;tuple</code> creates a new <code>tuple</code> object from two objects.",
       "explicit": false,
@@ -321,6 +342,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 5,
         "file": "thrust/tuple.h",
@@ -354,7 +376,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__tuple_1gaa03874ce72dc0a52eb3c91287338e5b7",
+      "qualifiedname": "thrust::make_tuple",
+      "refid": "group__tuple_1ga42f3a8f78456baaf51bd3bae6664d28f",
       "returns": [
         "A <code>tuple</code> object with two members which are copies of <code>t0</code> and <code>t1</code>."
       ],
@@ -375,7 +398,7 @@
       "title": "make_tuple",
       "type": "__host__ __device__ detail::make_tuple_mapper< T0, T1 >::type",
       "typePlain": "__host__ __device__ detail::make_tuple_mapper< T0, T1 >::type",
-      "url": "/api/groups/group__tuple.html#function-make_tuple",
+      "url": "{{ site.baseurl }}/api/groups/group__tuple.html#function-make-tuple",
       "virtual": false,
       "visibility": "public"
     },
@@ -386,7 +409,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ tuple<T0&> tie",
+      "definition": "__host__ __device__ tuple< T0 & > thrust::tie",
       "deleted": false,
       "details": "This version of <code>tie</code> creates a new <code>tuple</code> whose single element is a reference which refers to this function's argument.",
       "explicit": false,
@@ -394,6 +417,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 7,
         "file": "thrust/tuple.h",
@@ -415,7 +439,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__tuple_1ga76b6d77a7d94f97ec22d1814196c5b3d",
+      "qualifiedname": "thrust::tie",
+      "refid": "group__tuple_1gad566b7568ed9a302cf73afaf64284c62",
       "returns": [
         "A <code>tuple</code> object with one member which is a reference to <code>t0</code>. "
       ],
@@ -429,9 +454,9 @@
         }
       ],
       "title": "tie",
-      "type": "__host__ __device__ <a href=\"/api/classes/classtuple.html\">tuple</a>< T0 & >",
+      "type": "__host__ __device__ tuple< T0 & >",
       "typePlain": "__host__ __device__ tuple< T0 & >",
-      "url": "/api/groups/group__tuple.html#function-tie",
+      "url": "{{ site.baseurl }}/api/groups/group__tuple.html#function-tie",
       "virtual": false,
       "visibility": "public"
     },
@@ -442,7 +467,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ tuple<T0&,T1&> tie",
+      "definition": "__host__ __device__ tuple< T0 &, T1 & > thrust::tie",
       "deleted": false,
       "details": "This version of <code>tie</code> creates a new <code>tuple</code> of references object which refers to this function's arguments.",
       "explicit": false,
@@ -450,6 +475,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 7,
         "file": "thrust/tuple.h",
@@ -483,7 +509,8 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__tuple_1gaf53602e274a147ec7664293cc388a27a",
+      "qualifiedname": "thrust::tie",
+      "refid": "group__tuple_1gaae469d53a3e3825d8ad3d08fdb09de95",
       "returns": [
         "A <code>tuple</code> object with two members which are references to <code>t0</code> and <code>t1</code>."
       ],
@@ -502,9 +529,9 @@
         }
       ],
       "title": "tie",
-      "type": "__host__ __device__ <a href=\"/api/classes/classtuple.html\">tuple</a>< T0 &, T1 & >",
+      "type": "__host__ __device__ tuple< T0 &, T1 & >",
       "typePlain": "__host__ __device__ tuple< T0 &, T1 & >",
-      "url": "/api/groups/group__tuple.html#function-tie",
+      "url": "{{ site.baseurl }}/api/groups/group__tuple.html#function-tie",
       "virtual": false,
       "visibility": "public"
     },
@@ -515,7 +542,7 @@
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ void swap",
+      "definition": "__host__ __device__ void thrust::swap",
       "deleted": false,
       "details": "<code>swap</code> swaps the contents of two <code>tuple</code>s.",
       "explicit": false,
@@ -523,6 +550,7 @@
       "hasDetails": true,
       "inline": true,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 6,
         "file": "thrust/tuple.h",
@@ -543,17 +571,18 @@
       "params": [
         {
           "name": "x",
-          "type": "<a href=\"/api/classes/classtuple.html\">tuple</a>< T0, T1, T2, T3, T4, T5, T6, T7, T8, T9 > &",
+          "type": "tuple< T0, T1, T2, T3, T4, T5, T6, T7, T8, T9 > &",
           "typePlain": "tuple< T0, T1, T2, T3, T4, T5, T6, T7, T8, T9 > &"
         },
         {
           "name": "y",
-          "type": "<a href=\"/api/classes/classtuple.html\">tuple</a>< U0, U1, U2, U3, U4, U5, U6, U7, U8, U9 > &",
+          "type": "tuple< U0, U1, U2, U3, U4, U5, U6, U7, U8, U9 > &",
           "typePlain": "tuple< U0, U1, U2, U3, U4, U5, U6, U7, U8, U9 > &"
         }
       ],
       "pureVirtual": false,
-      "refid": "group__tuple_1gababe4dcf9c6b6b165eb8d0875cd11e4d",
+      "qualifiedname": "thrust::swap",
+      "refid": "group__tuple_1gab9893725c2bd9ae1971e7eb8ef061792",
       "static": false,
       "strong": false,
       "templateParams": [
@@ -661,15 +690,16 @@
       "title": "swap",
       "type": "__host__ __device__ void",
       "typePlain": "__host__ __device__ void",
-      "url": "/api/groups/group__tuple.html#function-swap",
+      "url": "{{ site.baseurl }}/api/groups/group__tuple.html#function-swap",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "tuple",
   "refid": "group__tuple",
   "static": false,
   "strong": false,
   "title": "Tuple",
-  "url": "/api/groups/group__tuple.html",
+  "url": "{{ site.baseurl }}/api/groups/group__tuple.html",
   "visibility": "public"
 }

@@ -13,14 +13,14 @@ has_toc: false
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ ForwardIterator </span><span><b><a href="/api/groups/group__partitioning.html#function-partition">partition</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-partition">thrust::partition</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span>
 <br>
 <span>template &lt;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>ForwardIterator </span><span><b><a href="/api/groups/group__partitioning.html#function-partition">partition</a></b>(ForwardIterator first,</span>
+<span>ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-partition">thrust::partition</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span>
 <br>
@@ -28,7 +28,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ ForwardIterator </span><span><b><a href="/api/groups/group__partitioning.html#function-partition">partition</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-partition">thrust::partition</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;InputIterator stencil,</span>
@@ -37,7 +37,7 @@ has_toc: false
 <span>template &lt;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>ForwardIterator </span><span><b><a href="/api/groups/group__partitioning.html#function-partition">partition</a></b>(ForwardIterator first,</span>
+<span>ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-partition">thrust::partition</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;InputIterator stencil,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span>
@@ -47,7 +47,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b><a href="/api/groups/group__partitioning.html#function-partition_copy">partition&#95;copy</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-partition-copy">thrust::partition&#95;copy</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;OutputIterator1 out_true,</span>
@@ -58,7 +58,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b><a href="/api/groups/group__partitioning.html#function-partition_copy">partition&#95;copy</a></b>(InputIterator first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-partition-copy">thrust::partition&#95;copy</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;OutputIterator1 out_true,</span>
 <span>&nbsp;&nbsp;OutputIterator2 out_false,</span>
@@ -70,7 +70,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b><a href="/api/groups/group__partitioning.html#function-partition_copy">partition&#95;copy</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-partition-copy">thrust::partition&#95;copy</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 first,</span>
 <span>&nbsp;&nbsp;InputIterator1 last,</span>
 <span>&nbsp;&nbsp;InputIterator2 stencil,</span>
@@ -83,7 +83,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b><a href="/api/groups/group__partitioning.html#function-partition_copy">partition&#95;copy</a></b>(InputIterator1 first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-partition-copy">thrust::partition&#95;copy</a></b>(InputIterator1 first,</span>
 <span>&nbsp;&nbsp;InputIterator1 last,</span>
 <span>&nbsp;&nbsp;InputIterator2 stencil,</span>
 <span>&nbsp;&nbsp;OutputIterator1 out_true,</span>
@@ -93,14 +93,14 @@ has_toc: false
 <span>template &lt;typename DerivedPolicy,</span>
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ ForwardIterator </span><span><b><a href="/api/groups/group__partitioning.html#function-stable_partition">stable&#95;partition</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-stable-partition">thrust::stable&#95;partition</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span>
 <br>
 <span>template &lt;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>ForwardIterator </span><span><b><a href="/api/groups/group__partitioning.html#function-stable_partition">stable&#95;partition</a></b>(ForwardIterator first,</span>
+<span>ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-stable-partition">thrust::stable&#95;partition</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span>
 <br>
@@ -108,7 +108,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ ForwardIterator </span><span><b><a href="/api/groups/group__partitioning.html#function-stable_partition">stable&#95;partition</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-stable-partition">thrust::stable&#95;partition</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;InputIterator stencil,</span>
@@ -117,7 +117,7 @@ has_toc: false
 <span>template &lt;typename ForwardIterator,</span>
 <span>&nbsp;&nbsp;typename InputIterator,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>ForwardIterator </span><span><b><a href="/api/groups/group__partitioning.html#function-stable_partition">stable&#95;partition</a></b>(ForwardIterator first,</span>
+<span>ForwardIterator </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-stable-partition">thrust::stable&#95;partition</a></b>(ForwardIterator first,</span>
 <span>&nbsp;&nbsp;ForwardIterator last,</span>
 <span>&nbsp;&nbsp;InputIterator stencil,</span>
 <span>&nbsp;&nbsp;Predicate pred);</span>
@@ -127,7 +127,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b><a href="/api/groups/group__partitioning.html#function-stable_partition_copy">stable&#95;partition&#95;copy</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-stable-partition-copy">thrust::stable&#95;partition&#95;copy</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;OutputIterator1 out_true,</span>
@@ -138,7 +138,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b><a href="/api/groups/group__partitioning.html#function-stable_partition_copy">stable&#95;partition&#95;copy</a></b>(InputIterator first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-stable-partition-copy">thrust::stable&#95;partition&#95;copy</a></b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;OutputIterator1 out_true,</span>
 <span>&nbsp;&nbsp;OutputIterator2 out_false,</span>
@@ -150,7 +150,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b><a href="/api/groups/group__partitioning.html#function-stable_partition_copy">stable&#95;partition&#95;copy</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-stable-partition-copy">thrust::stable&#95;partition&#95;copy</a></b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 first,</span>
 <span>&nbsp;&nbsp;InputIterator1 last,</span>
 <span>&nbsp;&nbsp;InputIterator2 stencil,</span>
@@ -163,7 +163,7 @@ has_toc: false
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b><a href="/api/groups/group__partitioning.html#function-stable_partition_copy">stable&#95;partition&#95;copy</a></b>(InputIterator1 first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b><a href="{{ site.baseurl }}/api/groups/group__partitioning.html#function-stable-partition-copy">thrust::stable&#95;partition&#95;copy</a></b>(InputIterator1 first,</span>
 <span>&nbsp;&nbsp;InputIterator1 last,</span>
 <span>&nbsp;&nbsp;InputIterator2 stencil,</span>
 <span>&nbsp;&nbsp;OutputIterator1 out_true,</span>
@@ -174,7 +174,7 @@ has_toc: false
 ## Functions
 
 <h3 id="function-partition">
-Function <code>partition</code>
+Function <code>thrust::partition</code>
 </h3>
 
 <code class="doxybook">
@@ -233,11 +233,11 @@ An iterator referring to the first element of the second partition, that is, the
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/partition">https://en.cppreference.com/w/cpp/algorithm/partition</a>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition">stable&#95;partition</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-partition_copy">partition&#95;copy</a></code>
+* <code>stable&#95;partition</code>
+* <code>partition&#95;copy</code>
 
 <h3 id="function-partition">
-Function <code>partition</code>
+Function <code>thrust::partition</code>
 </h3>
 
 <code class="doxybook">
@@ -288,11 +288,11 @@ An iterator referring to the first element of the second partition, that is, the
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/partition">https://en.cppreference.com/w/cpp/algorithm/partition</a>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition">stable&#95;partition</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-partition_copy">partition&#95;copy</a></code>
+* <code>stable&#95;partition</code>
+* <code>partition&#95;copy</code>
 
 <h3 id="function-partition">
-Function <code>partition</code>
+Function <code>thrust::partition</code>
 </h3>
 
 <code class="doxybook">
@@ -358,11 +358,11 @@ An iterator referring to the first element of the second partition, that is, the
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/partition">https://en.cppreference.com/w/cpp/algorithm/partition</a>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition">stable&#95;partition</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-partition_copy">partition&#95;copy</a></code>
+* <code>stable&#95;partition</code>
+* <code>partition&#95;copy</code>
 
 <h3 id="function-partition">
-Function <code>partition</code>
+Function <code>thrust::partition</code>
 </h3>
 
 <code class="doxybook">
@@ -421,11 +421,11 @@ An iterator referring to the first element of the second partition, that is, the
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/partition">https://en.cppreference.com/w/cpp/algorithm/partition</a>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition">stable&#95;partition</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-partition_copy">partition&#95;copy</a></code>
+* <code>stable&#95;partition</code>
+* <code>partition&#95;copy</code>
 
-<h3 id="function-partition_copy">
-Function <code>partition&#95;copy</code>
+<h3 id="function-partition-copy">
+Function <code>thrust::partition&#95;copy</code>
 </h3>
 
 <code class="doxybook">
@@ -434,7 +434,7 @@ Function <code>partition&#95;copy</code>
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b>partition_copy</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b>partition_copy</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;OutputIterator1 out_true,</span>
@@ -502,11 +502,11 @@ A <code>pair</code> p such that <code>p.first</code> is the end of the output ra
 
 **See**:
 * <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf</a>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition_copy">stable&#95;partition&#95;copy</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-partition">partition</a></code>
+* <code>stable&#95;partition&#95;copy</code>
+* <code>partition</code>
 
-<h3 id="function-partition_copy">
-Function <code>partition&#95;copy</code>
+<h3 id="function-partition-copy">
+Function <code>thrust::partition&#95;copy</code>
 </h3>
 
 <code class="doxybook">
@@ -514,7 +514,7 @@ Function <code>partition&#95;copy</code>
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b>partition_copy</b>(InputIterator first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b>partition_copy</b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;OutputIterator1 out_true,</span>
 <span>&nbsp;&nbsp;OutputIterator2 out_false,</span>
@@ -576,11 +576,11 @@ A <code>pair</code> p such that <code>p.first</code> is the end of the output ra
 
 **See**:
 * <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf</a>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition_copy">stable&#95;partition&#95;copy</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-partition">partition</a></code>
+* <code>stable&#95;partition&#95;copy</code>
+* <code>partition</code>
 
-<h3 id="function-partition_copy">
-Function <code>partition&#95;copy</code>
+<h3 id="function-partition-copy">
+Function <code>thrust::partition&#95;copy</code>
 </h3>
 
 <code class="doxybook">
@@ -590,7 +590,7 @@ Function <code>partition&#95;copy</code>
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b>partition_copy</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b>partition_copy</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 first,</span>
 <span>&nbsp;&nbsp;InputIterator1 last,</span>
 <span>&nbsp;&nbsp;InputIterator2 stencil,</span>
@@ -655,11 +655,11 @@ A <code>pair</code> p such that <code>p.first</code> is the end of the output ra
 
 **See**:
 * <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf</a>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition_copy">stable&#95;partition&#95;copy</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-partition">partition</a></code>
+* <code>stable&#95;partition&#95;copy</code>
+* <code>partition</code>
 
-<h3 id="function-partition_copy">
-Function <code>partition&#95;copy</code>
+<h3 id="function-partition-copy">
+Function <code>thrust::partition&#95;copy</code>
 </h3>
 
 <code class="doxybook">
@@ -668,7 +668,7 @@ Function <code>partition&#95;copy</code>
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b>partition_copy</b>(InputIterator1 first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b>partition_copy</b>(InputIterator1 first,</span>
 <span>&nbsp;&nbsp;InputIterator1 last,</span>
 <span>&nbsp;&nbsp;InputIterator2 stencil,</span>
 <span>&nbsp;&nbsp;OutputIterator1 out_true,</span>
@@ -727,11 +727,11 @@ A <code>pair</code> p such that <code>p.first</code> is the end of the output ra
 
 **See**:
 * <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf</a>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition_copy">stable&#95;partition&#95;copy</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-partition">partition</a></code>
+* <code>stable&#95;partition&#95;copy</code>
+* <code>partition</code>
 
-<h3 id="function-stable_partition">
-Function <code>stable&#95;partition</code>
+<h3 id="function-stable-partition">
+Function <code>thrust::stable&#95;partition</code>
 </h3>
 
 <code class="doxybook">
@@ -790,11 +790,11 @@ An iterator referring to the first element of the second partition, that is, the
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/stable_partition">https://en.cppreference.com/w/cpp/algorithm/stable_partition</a>
-* <code><a href="/api/groups/group__partitioning.html#function-partition">partition</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition_copy">stable&#95;partition&#95;copy</a></code>
+* <code>partition</code>
+* <code>stable&#95;partition&#95;copy</code>
 
-<h3 id="function-stable_partition">
-Function <code>stable&#95;partition</code>
+<h3 id="function-stable-partition">
+Function <code>thrust::stable&#95;partition</code>
 </h3>
 
 <code class="doxybook">
@@ -845,11 +845,11 @@ An iterator referring to the first element of the second partition, that is, the
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/stable_partition">https://en.cppreference.com/w/cpp/algorithm/stable_partition</a>
-* <code><a href="/api/groups/group__partitioning.html#function-partition">partition</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition_copy">stable&#95;partition&#95;copy</a></code>
+* <code>partition</code>
+* <code>stable&#95;partition&#95;copy</code>
 
-<h3 id="function-stable_partition">
-Function <code>stable&#95;partition</code>
+<h3 id="function-stable-partition">
+Function <code>thrust::stable&#95;partition</code>
 </h3>
 
 <code class="doxybook">
@@ -915,11 +915,11 @@ An iterator referring to the first element of the second partition, that is, the
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/stable_partition">https://en.cppreference.com/w/cpp/algorithm/stable_partition</a>
-* <code><a href="/api/groups/group__partitioning.html#function-partition">partition</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition_copy">stable&#95;partition&#95;copy</a></code>
+* <code>partition</code>
+* <code>stable&#95;partition&#95;copy</code>
 
-<h3 id="function-stable_partition">
-Function <code>stable&#95;partition</code>
+<h3 id="function-stable-partition">
+Function <code>thrust::stable&#95;partition</code>
 </h3>
 
 <code class="doxybook">
@@ -978,11 +978,11 @@ An iterator referring to the first element of the second partition, that is, the
 
 **See**:
 * <a href="https://en.cppreference.com/w/cpp/algorithm/stable_partition">https://en.cppreference.com/w/cpp/algorithm/stable_partition</a>
-* <code><a href="/api/groups/group__partitioning.html#function-partition">partition</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition_copy">stable&#95;partition&#95;copy</a></code>
+* <code>partition</code>
+* <code>stable&#95;partition&#95;copy</code>
 
-<h3 id="function-stable_partition_copy">
-Function <code>stable&#95;partition&#95;copy</code>
+<h3 id="function-stable-partition-copy">
+Function <code>thrust::stable&#95;partition&#95;copy</code>
 </h3>
 
 <code class="doxybook">
@@ -991,7 +991,7 @@ Function <code>stable&#95;partition&#95;copy</code>
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b>stable_partition_copy</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b>stable_partition_copy</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;OutputIterator1 out_true,</span>
@@ -1058,11 +1058,11 @@ A <code>pair</code> p such that <code>p.first</code> is the end of the output ra
 
 **See**:
 * <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf</a>
-* <code><a href="/api/groups/group__partitioning.html#function-partition_copy">partition&#95;copy</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition">stable&#95;partition</a></code>
+* <code>partition&#95;copy</code>
+* <code>stable&#95;partition</code>
 
-<h3 id="function-stable_partition_copy">
-Function <code>stable&#95;partition&#95;copy</code>
+<h3 id="function-stable-partition-copy">
+Function <code>thrust::stable&#95;partition&#95;copy</code>
 </h3>
 
 <code class="doxybook">
@@ -1070,7 +1070,7 @@ Function <code>stable&#95;partition&#95;copy</code>
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b>stable_partition_copy</b>(InputIterator first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b>stable_partition_copy</b>(InputIterator first,</span>
 <span>&nbsp;&nbsp;InputIterator last,</span>
 <span>&nbsp;&nbsp;OutputIterator1 out_true,</span>
 <span>&nbsp;&nbsp;OutputIterator2 out_false,</span>
@@ -1131,11 +1131,11 @@ A <code>pair</code> p such that <code>p.first</code> is the end of the output ra
 
 **See**:
 * <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf</a>
-* <code><a href="/api/groups/group__partitioning.html#function-partition_copy">partition&#95;copy</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition">stable&#95;partition</a></code>
+* <code>partition&#95;copy</code>
+* <code>stable&#95;partition</code>
 
-<h3 id="function-stable_partition_copy">
-Function <code>stable&#95;partition&#95;copy</code>
+<h3 id="function-stable-partition-copy">
+Function <code>thrust::stable&#95;partition&#95;copy</code>
 </h3>
 
 <code class="doxybook">
@@ -1145,7 +1145,7 @@ Function <code>stable&#95;partition&#95;copy</code>
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>__host__ __device__ thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b>stable_partition_copy</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
+<span>__host__ __device__ <a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b>stable_partition_copy</b>(const thrust::detail::execution_policy_base< DerivedPolicy > & exec,</span>
 <span>&nbsp;&nbsp;InputIterator1 first,</span>
 <span>&nbsp;&nbsp;InputIterator1 last,</span>
 <span>&nbsp;&nbsp;InputIterator2 stencil,</span>
@@ -1209,11 +1209,11 @@ A <code>pair</code> p such that <code>p.first</code> is the end of the output ra
 
 **See**:
 * <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf</a>
-* <code><a href="/api/groups/group__partitioning.html#function-partition_copy">partition&#95;copy</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition">stable&#95;partition</a></code>
+* <code>partition&#95;copy</code>
+* <code>stable&#95;partition</code>
 
-<h3 id="function-stable_partition_copy">
-Function <code>stable&#95;partition&#95;copy</code>
+<h3 id="function-stable-partition-copy">
+Function <code>thrust::stable&#95;partition&#95;copy</code>
 </h3>
 
 <code class="doxybook">
@@ -1222,7 +1222,7 @@ Function <code>stable&#95;partition&#95;copy</code>
 <span>&nbsp;&nbsp;typename OutputIterator1,</span>
 <span>&nbsp;&nbsp;typename OutputIterator2,</span>
 <span>&nbsp;&nbsp;typename Predicate&gt;</span>
-<span>thrust::pair< OutputIterator1, OutputIterator2 > </span><span><b>stable_partition_copy</b>(InputIterator1 first,</span>
+<span><a href="{{ site.baseurl }}/api/classes/structthrust_1_1pair.html">thrust::pair</a>< OutputIterator1, OutputIterator2 > </span><span><b>stable_partition_copy</b>(InputIterator1 first,</span>
 <span>&nbsp;&nbsp;InputIterator1 last,</span>
 <span>&nbsp;&nbsp;InputIterator2 stencil,</span>
 <span>&nbsp;&nbsp;OutputIterator1 out_true,</span>
@@ -1280,7 +1280,7 @@ A <code>pair</code> p such that <code>p.first</code> is the end of the output ra
 
 **See**:
 * <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2569.pdf</a>
-* <code><a href="/api/groups/group__partitioning.html#function-partition_copy">partition&#95;copy</a></code>
-* <code><a href="/api/groups/group__partitioning.html#function-stable_partition">stable&#95;partition</a></code>
+* <code>partition&#95;copy</code>
+* <code>stable&#95;partition</code>
 
 

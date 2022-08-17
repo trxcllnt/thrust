@@ -10,15 +10,18 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "module": {
     "anchor": "",
     "category": "modules",
     "fullname": "reductions",
     "kind": "group",
+    "language": "",
     "name": "reductions",
+    "qualifiedname": "reductions",
     "refid": "group__reductions",
     "title": "Reductions",
-    "url": "/api/groups/group__reductions.html",
+    "url": "{{ site.baseurl }}/api/groups/group__reductions.html",
     "visibility": "public"
   },
   "moduleBreadcrumbs": [
@@ -27,10 +30,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     },
     {
@@ -38,10 +43,12 @@
       "category": "modules",
       "fullname": "reductions",
       "kind": "group",
+      "language": "",
       "name": "reductions",
+      "qualifiedname": "reductions",
       "refid": "group__reductions",
       "title": "Reductions",
-      "url": "/api/groups/group__reductions.html",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html",
       "visibility": "public"
     }
   ],
@@ -52,10 +59,12 @@
     "category": "modules",
     "fullname": "reductions",
     "kind": "group",
+    "language": "",
     "name": "reductions",
+    "qualifiedname": "reductions",
     "refid": "group__reductions",
     "title": "Reductions",
-    "url": "/api/groups/group__reductions.html",
+    "url": "{{ site.baseurl }}/api/groups/group__reductions.html",
     "visibility": "public"
   },
   "parentBreadcrumbs": [
@@ -64,10 +73,12 @@
       "category": "modules",
       "fullname": "algorithms",
       "kind": "group",
+      "language": "",
       "name": "algorithms",
+      "qualifiedname": "algorithms",
       "refid": "group__algorithms",
       "title": "Algorithms",
-      "url": "/api/groups/group__algorithms.html",
+      "url": "{{ site.baseurl }}/api/groups/group__algorithms.html",
       "visibility": "public"
     },
     {
@@ -75,22 +86,24 @@
       "category": "modules",
       "fullname": "reductions",
       "kind": "group",
+      "language": "",
       "name": "reductions",
+      "qualifiedname": "reductions",
       "refid": "group__reductions",
       "title": "Reductions",
-      "url": "/api/groups/group__reductions.html",
+      "url": "{{ site.baseurl }}/api/groups/group__reductions.html",
       "visibility": "public"
     }
   ],
   "publicFunctions": [
     {
       "abstract": false,
-      "anchor": "#function-all_of",
+      "anchor": "#function-all-of",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator first, InputIterator last, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ bool all_of",
+      "definition": "__host__ __device__ bool thrust::all_of",
       "deleted": false,
       "details": "<code>all&#95;of</code> determines whether all elements in a range satify a predicate. Specifically, <code>all&#95;of</code> returns <code>true</code> if <code>pred(&#42;i)</code> is <code>true</code> for every iterator <code>i</code> in the range <code>[first, last)</code> and <code>false</code> otherwise.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\n\n```cpp\n#include <thrust/logical.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\nbool A[3] = {true, true, false};\n\nthrust::all_of(thrust::host, A, A + 2, thrust::identity<bool>()); // returns true\nthrust::all_of(thrust::host, A, A + 3, thrust::identity<bool>()); // returns false\n\n// empty range\nthrust::all_of(thrust::host, A, A, thrust::identity<bool>()); // returns false\n```",
       "explicit": false,
@@ -98,6 +111,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 6,
         "file": "thrust/logical.h",
@@ -146,14 +160,15 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__logical_1ga51028243b8d712cd8a4fd32ec5604cc2",
+      "qualifiedname": "thrust::all_of",
+      "refid": "group__logical_1ga084fd0d3e070824248ffadf46f5f7765",
       "returns": [
         "<code>true</code>, if all elements satisfy the predicate; <code>false</code>, otherwise."
       ],
       "see": [
-        "<a href=\"/api/groups/group__logical.html#function-any_of\">any_of</a>",
-        "<a href=\"/api/groups/group__logical.html#function-none_of\">none_of</a>",
-        "<a href=\"/api/groups/group__transformed__reductions.html#function-transform_reduce\">transform_reduce</a>"
+        "any_of ",
+        "none_of ",
+        "transform_reduce "
       ],
       "static": false,
       "strong": false,
@@ -191,18 +206,18 @@
       "title": "all_of",
       "type": "__host__ __device__ bool",
       "typePlain": "__host__ __device__ bool",
-      "url": "/api/groups/group__logical.html#function-all_of",
+      "url": "{{ site.baseurl }}/api/groups/group__logical.html#function-all-of",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-all_of",
+      "anchor": "#function-all-of",
       "argsString": "(InputIterator first, InputIterator last, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "bool all_of",
+      "definition": "bool thrust::all_of",
       "deleted": false,
       "details": "<code>all&#95;of</code> determines whether all elements in a range satify a predicate. Specifically, <code>all&#95;of</code> returns <code>true</code> if <code>pred(&#42;i)</code> is <code>true</code> for every iterator <code>i</code> in the range <code>[first, last)</code> and <code>false</code> otherwise.\n\n\n\n```cpp\n#include <thrust/logical.h>\n#include <thrust/functional.h>\n...\nbool A[3] = {true, true, false};\n\nthrust::all_of(A, A + 2, thrust::identity<bool>()); // returns true\nthrust::all_of(A, A + 3, thrust::identity<bool>()); // returns false\n\n// empty range\nthrust::all_of(A, A, thrust::identity<bool>()); // returns false\n```",
       "explicit": false,
@@ -210,6 +225,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 6,
         "file": "thrust/logical.h",
@@ -249,14 +265,15 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__logical_1ga753a8c6c3d601e013c5cf47ef8c5bde0",
+      "qualifiedname": "thrust::all_of",
+      "refid": "group__logical_1gab2ec420fbc55976ebefecad00acb2b40",
       "returns": [
         "<code>true</code>, if all elements satisfy the predicate; <code>false</code>, otherwise."
       ],
       "see": [
-        "<a href=\"/api/groups/group__logical.html#function-any_of\">any_of</a>",
-        "<a href=\"/api/groups/group__logical.html#function-none_of\">none_of</a>",
-        "<a href=\"/api/groups/group__transformed__reductions.html#function-transform_reduce\">transform_reduce</a>"
+        "any_of ",
+        "none_of ",
+        "transform_reduce "
       ],
       "static": false,
       "strong": false,
@@ -285,18 +302,18 @@
       "title": "all_of",
       "type": "bool",
       "typePlain": "bool",
-      "url": "/api/groups/group__logical.html#function-all_of",
+      "url": "{{ site.baseurl }}/api/groups/group__logical.html#function-all-of",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-any_of",
+      "anchor": "#function-any-of",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator first, InputIterator last, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ bool any_of",
+      "definition": "__host__ __device__ bool thrust::any_of",
       "deleted": false,
       "details": "<code>any&#95;of</code> determines whether any element in a range satifies a predicate. Specifically, <code>any&#95;of</code> returns <code>true</code> if <code>pred(&#42;i)</code> is <code>true</code> for any iterator <code>i</code> in the range <code>[first, last)</code> and <code>false</code> otherwise.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\n\n```cpp\n#include <thrust/logical.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\nbool A[3] = {true, true, false};\n\nthrust::any_of(thrust::host, A, A + 2, thrust::identity<bool>()); // returns true\nthrust::any_of(thrust::host, A, A + 3, thrust::identity<bool>()); // returns true\n\nthrust::any_of(thrust::host, A + 2, A + 3, thrust::identity<bool>()); // returns false\n\n// empty range\nthrust::any_of(thrust::host, A, A, thrust::identity<bool>()); // returns false\n```",
       "explicit": false,
@@ -304,6 +321,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 6,
         "file": "thrust/logical.h",
@@ -352,14 +370,15 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__logical_1gad1318987525389675b04ffd618a15061",
+      "qualifiedname": "thrust::any_of",
+      "refid": "group__logical_1ga37bb33079f2becfcda2f0d6cad4d3efc",
       "returns": [
         "<code>true</code>, if any element satisfies the predicate; <code>false</code>, otherwise."
       ],
       "see": [
-        "<a href=\"/api/groups/group__logical.html#function-all_of\">all_of</a>",
-        "<a href=\"/api/groups/group__logical.html#function-none_of\">none_of</a>",
-        "<a href=\"/api/groups/group__transformed__reductions.html#function-transform_reduce\">transform_reduce</a>"
+        "all_of ",
+        "none_of ",
+        "transform_reduce "
       ],
       "static": false,
       "strong": false,
@@ -397,18 +416,18 @@
       "title": "any_of",
       "type": "__host__ __device__ bool",
       "typePlain": "__host__ __device__ bool",
-      "url": "/api/groups/group__logical.html#function-any_of",
+      "url": "{{ site.baseurl }}/api/groups/group__logical.html#function-any-of",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-any_of",
+      "anchor": "#function-any-of",
       "argsString": "(InputIterator first, InputIterator last, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "bool any_of",
+      "definition": "bool thrust::any_of",
       "deleted": false,
       "details": "<code>any&#95;of</code> determines whether any element in a range satifies a predicate. Specifically, <code>any&#95;of</code> returns <code>true</code> if <code>pred(&#42;i)</code> is <code>true</code> for any iterator <code>i</code> in the range <code>[first, last)</code> and <code>false</code> otherwise.\n\n\n\n```cpp\n#include <thrust/logical.h>\n#include <thrust/functional.h>\n...\nbool A[3] = {true, true, false};\n\nthrust::any_of(A, A + 2, thrust::identity<bool>()); // returns true\nthrust::any_of(A, A + 3, thrust::identity<bool>()); // returns true\n\nthrust::any_of(A + 2, A + 3, thrust::identity<bool>()); // returns false\n\n// empty range\nthrust::any_of(A, A, thrust::identity<bool>()); // returns false\n```",
       "explicit": false,
@@ -416,6 +435,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 6,
         "file": "thrust/logical.h",
@@ -455,14 +475,15 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__logical_1gafe8c7d5f97672c6410bf838ef50cd424",
+      "qualifiedname": "thrust::any_of",
+      "refid": "group__logical_1ga55fa5c5afc62720119dc1d244fc40d5b",
       "returns": [
         "<code>true</code>, if any element satisfies the predicate; <code>false</code>, otherwise."
       ],
       "see": [
-        "<a href=\"/api/groups/group__logical.html#function-all_of\">all_of</a>",
-        "<a href=\"/api/groups/group__logical.html#function-none_of\">none_of</a>",
-        "<a href=\"/api/groups/group__transformed__reductions.html#function-transform_reduce\">transform_reduce</a>"
+        "all_of ",
+        "none_of ",
+        "transform_reduce "
       ],
       "static": false,
       "strong": false,
@@ -491,18 +512,18 @@
       "title": "any_of",
       "type": "bool",
       "typePlain": "bool",
-      "url": "/api/groups/group__logical.html#function-any_of",
+      "url": "{{ site.baseurl }}/api/groups/group__logical.html#function-any-of",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-none_of",
+      "anchor": "#function-none-of",
       "argsString": "(const thrust::detail::execution_policy_base< DerivedPolicy > &exec, InputIterator first, InputIterator last, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "__host__ __device__ bool none_of",
+      "definition": "__host__ __device__ bool thrust::none_of",
       "deleted": false,
       "details": "<code>none&#95;of</code> determines whether no element in a range satifies a predicate. Specifically, <code>none&#95;of</code> returns <code>true</code> if there is no iterator <code>i</code> in the range <code>[first, last)</code> such that <code>pred(&#42;i)</code> is <code>true</code>, and <code>false</code> otherwise.\n\nThe algorithm's execution is parallelized as determined by <code>exec</code>.\n\n\n\n```cpp\n#include <thrust/logical.h>\n#include <thrust/functional.h>\n#include <thrust/execution_policy.h>\n...\nbool A[3] = {true, true, false};\n\nthrust::none_of(thrust::host, A, A + 2, thrust::identity<bool>()); // returns false\nthrust::none_of(thrust::host, A, A + 3, thrust::identity<bool>()); // returns false\n\nthrust::none_of(thrust::host, A + 2, A + 3, thrust::identity<bool>()); // returns true\n\n// empty range\nthrust::none_of(thrust::host, A, A, thrust::identity<bool>()); // returns true\n```",
       "explicit": false,
@@ -510,6 +531,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 6,
         "file": "thrust/logical.h",
@@ -558,14 +580,15 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__logical_1ga1ea06de9fc7d3743f290919c29d201db",
+      "qualifiedname": "thrust::none_of",
+      "refid": "group__logical_1ga0597bc81880a6f8e1050da853f1000c1",
       "returns": [
         "<code>true</code>, if no element satisfies the predicate; <code>false</code>, otherwise."
       ],
       "see": [
-        "<a href=\"/api/groups/group__logical.html#function-all_of\">all_of</a>",
-        "<a href=\"/api/groups/group__logical.html#function-any_of\">any_of</a>",
-        "<a href=\"/api/groups/group__transformed__reductions.html#function-transform_reduce\">transform_reduce</a>"
+        "all_of ",
+        "any_of ",
+        "transform_reduce "
       ],
       "static": false,
       "strong": false,
@@ -603,18 +626,18 @@
       "title": "none_of",
       "type": "__host__ __device__ bool",
       "typePlain": "__host__ __device__ bool",
-      "url": "/api/groups/group__logical.html#function-none_of",
+      "url": "{{ site.baseurl }}/api/groups/group__logical.html#function-none-of",
       "virtual": false,
       "visibility": "public"
     },
     {
       "abstract": false,
-      "anchor": "#function-none_of",
+      "anchor": "#function-none-of",
       "argsString": "(InputIterator first, InputIterator last, Predicate pred)",
       "category": "functions",
       "const": false,
       "default": false,
-      "definition": "bool none_of",
+      "definition": "bool thrust::none_of",
       "deleted": false,
       "details": "<code>none&#95;of</code> determines whether no element in a range satifies a predicate. Specifically, <code>none&#95;of</code> returns <code>true</code> if there is no iterator <code>i</code> in the range <code>[first, last)</code> such that <code>pred(&#42;i)</code> is <code>true</code>, and <code>false</code> otherwise.\n\n\n\n```cpp\n#include <thrust/logical.h>\n#include <thrust/functional.h>\n...\nbool A[3] = {true, true, false};\n\nthrust::none_of(A, A + 2, thrust::identity<bool>()); // returns false\nthrust::none_of(A, A + 3, thrust::identity<bool>()); // returns false\n\nthrust::none_of(A + 2, A + 3, thrust::identity<bool>()); // returns true\n\n// empty range\nthrust::none_of(A, A, thrust::identity<bool>()); // returns true\n```",
       "explicit": false,
@@ -622,6 +645,7 @@
       "hasDetails": true,
       "inline": false,
       "kind": "function",
+      "language": "",
       "location": {
         "column": 6,
         "file": "thrust/logical.h",
@@ -661,14 +685,15 @@
         }
       ],
       "pureVirtual": false,
-      "refid": "group__logical_1gac14ec4a2cb14a46136f1d5d88f0a7670",
+      "qualifiedname": "thrust::none_of",
+      "refid": "group__logical_1gab2296f35374d339646d94a8d560aebf3",
       "returns": [
         "<code>true</code>, if no element satisfies the predicate; <code>false</code>, otherwise."
       ],
       "see": [
-        "<a href=\"/api/groups/group__logical.html#function-all_of\">all_of</a>",
-        "<a href=\"/api/groups/group__logical.html#function-any_of\">any_of</a>",
-        "<a href=\"/api/groups/group__transformed__reductions.html#function-transform_reduce\">transform_reduce</a>"
+        "all_of ",
+        "any_of ",
+        "transform_reduce "
       ],
       "static": false,
       "strong": false,
@@ -697,15 +722,16 @@
       "title": "none_of",
       "type": "bool",
       "typePlain": "bool",
-      "url": "/api/groups/group__logical.html#function-none_of",
+      "url": "{{ site.baseurl }}/api/groups/group__logical.html#function-none-of",
       "virtual": false,
       "visibility": "public"
     }
   ],
+  "qualifiedname": "logical",
   "refid": "group__logical",
   "static": false,
   "strong": false,
   "title": "Logical",
-  "url": "/api/groups/group__logical.html",
+  "url": "{{ site.baseurl }}/api/groups/group__logical.html",
   "visibility": "public"
 }

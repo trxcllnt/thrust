@@ -12,10 +12,12 @@
       "category": "modules",
       "fullname": "pair",
       "kind": "group",
+      "language": "",
       "name": "pair",
+      "qualifiedname": "pair",
       "refid": "group__pair",
       "title": "Pair",
-      "url": "/api/groups/group__pair.html",
+      "url": "{{ site.baseurl }}/api/groups/group__pair.html",
       "visibility": "public"
     },
     {
@@ -23,10 +25,12 @@
       "category": "modules",
       "fullname": "swap",
       "kind": "group",
+      "language": "",
       "name": "swap",
+      "qualifiedname": "swap",
       "refid": "group__swap",
       "title": "Swap",
-      "url": "/api/groups/group__swap.html",
+      "url": "{{ site.baseurl }}/api/groups/group__swap.html",
       "visibility": "public"
     },
     {
@@ -34,10 +38,12 @@
       "category": "modules",
       "fullname": "tuple",
       "kind": "group",
+      "language": "",
       "name": "tuple",
+      "qualifiedname": "tuple",
       "refid": "group__tuple",
       "title": "Tuple",
-      "url": "/api/groups/group__tuple.html",
+      "url": "{{ site.baseurl }}/api/groups/group__tuple.html",
       "visibility": "public"
     },
     {
@@ -45,10 +51,12 @@
       "category": "modules",
       "fullname": "type_traits",
       "kind": "group",
+      "language": "",
       "name": "type_traits",
+      "qualifiedname": "type_traits",
       "refid": "group__type__traits",
       "title": "Type Traits",
-      "url": "/api/groups/group__type__traits.html",
+      "url": "{{ site.baseurl }}/api/groups/group__type__traits.html",
       "visibility": "public"
     }
   ],
@@ -56,13 +64,15 @@
   "hasDetails": false,
   "inline": false,
   "kind": "group",
+  "language": "",
   "name": "utility",
   "override": false,
   "parent": null,
+  "qualifiedname": "utility",
   "refid": "group__utility",
   "static": false,
   "strong": false,
   "title": "Utility",
-  "url": "/api/groups/group__utility.html",
+  "url": "{{ site.baseurl }}/api/groups/group__utility.html",
   "visibility": "public"
 }
